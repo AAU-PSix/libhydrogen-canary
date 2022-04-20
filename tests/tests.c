@@ -5,7 +5,6 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "Canary.h"
 #include "hydrogen.h"
 
 static const char *ctx = "libtests";
@@ -24,7 +23,6 @@ streq(const char *expected, const char *found)
 static void
 test_randombytes(void)
 {
-    CANARY_TWEET_LOCATION("CANARY HEST_TEST");
     uint8_t       dk[hydro_random_SEEDBYTES];
     uint8_t       tmp[10000];
     unsigned long b = 0U;

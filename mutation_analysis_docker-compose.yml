@@ -1,0 +1,20 @@
+version: '3.3'
+
+services:
+  canary:
+    image: canary:dev
+    privileged: true
+    volumes:
+      - ./:/input/:rw
+    command:
+      - mutate
+      - --base=/input
+      - --file=impl/core.h
+      - --unit=hydro_equal
+      - --out=./
+      - --mutations=5
+      - --build_command=make -C /input/ tests/tests
+      - --test_command=/input/tests/tests
+      - --persist
+      - --log
+

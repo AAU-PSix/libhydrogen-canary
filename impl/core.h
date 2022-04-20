@@ -1,3 +1,6 @@
+#include "Canary.h"
+#include <stdio.h>
+
 int
 hydro_init(void)
 {
@@ -20,6 +23,7 @@ hydro_memzero(void *pnt, size_t len)
 #endif
 }
 
+// TAGGED Interesting
 void
 hydro_increment(uint8_t *n, size_t len)
 {
@@ -33,6 +37,7 @@ hydro_increment(uint8_t *n, size_t len)
     }
 }
 
+// TAGGED Un-interesting
 char *
 hydro_bin2hex(char *hex, size_t hex_maxlen, const uint8_t *bin, size_t bin_len)
 {
@@ -59,6 +64,7 @@ hydro_bin2hex(char *hex, size_t hex_maxlen, const uint8_t *bin, size_t bin_len)
     return hex;
 }
 
+// TAGGED Un-interesting
 int
 hydro_hex2bin(uint8_t *bin, size_t bin_maxlen, const char *hex, size_t hex_len, const char *ignore,
               const char **hex_end_p)
@@ -120,6 +126,7 @@ hydro_hex2bin(uint8_t *bin, size_t bin_maxlen, const char *hex, size_t hex_len, 
     return (int) bin_pos;
 }
 
+// TAGGED Interesting
 bool
 hydro_equal(const void *b1_, const void *b2_, size_t len)
 {
@@ -137,6 +144,7 @@ hydro_equal(const void *b1_, const void *b2_, size_t len)
     return (bool) (1 & ((d - 1) >> 8));
 }
 
+// TAGGED un-interesting
 int
 hydro_compare(const uint8_t *b1_, const uint8_t *b2_, size_t len)
 {
@@ -155,7 +163,7 @@ hydro_compare(const uint8_t *b1_, const uint8_t *b2_, size_t len)
     return (int) (gt + gt + eq) - 1;
 }
 
-// TAGGED Interesting
+// TAGGED un-interesting
 int
 hydro_pad(unsigned char *buf, size_t unpadded_buflen, size_t blocksize, size_t max_buflen)
 {

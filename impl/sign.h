@@ -141,7 +141,6 @@ hydro_sign_keygen_deterministic(hydro_sign_keypair *kp, const uint8_t seed[hydro
     memcpy(pk_copy, kp->pk, hydro_x25519_PUBLICKEYBYTES);
 }
 
-// TAGGED Interesting
 int
 hydro_sign_init(hydro_sign_state *state, const char ctx[hydro_sign_CONTEXTBYTES])
 {

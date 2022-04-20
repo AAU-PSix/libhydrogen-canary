@@ -59,3 +59,6 @@ clean:
 check: test
 
 distclean: clean
+
+mutate:
+	docker-compose -f mutation_analysis_docker-compose.yml up
