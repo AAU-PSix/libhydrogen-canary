@@ -11,10 +11,11 @@ services:
       - --base=/input
       - --file=impl/core.h
       - --unit=hydro_equal
-      - --out=./
+      - --out=./mutation_analysis
       - --mutations=5
       - --build_command=make -C /input/ tests/tests
       - --test_command=/input/tests/tests
       - --persist
       - --log
+      - --testing_backend=ffs_gnu_assert
 

@@ -1,0 +1,14 @@
+tests: tests/tests.c:154: test_core: Assertion `hydro_equal(a, b, sizeof a)' failed.
+Location=0
+Location=1
+Location=3
+Location=2
+Location=3
+Location=2
+Location=3
+Location=2
+Location=3
+Location=2
+Location=3
+Location=2
+Location=4
