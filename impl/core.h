@@ -155,6 +155,7 @@ hydro_compare(const uint8_t *b1_, const uint8_t *b2_, size_t len)
     return (int) (gt + gt + eq) - 1;
 }
 
+// TAGGED Interesting
 int
 hydro_pad(unsigned char *buf, size_t unpadded_buflen, size_t blocksize, size_t max_buflen)
 {

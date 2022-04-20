@@ -29,6 +29,7 @@ static TLS struct {
 # error Unsupported platform
 #endif
 
+// TAGGED Interesting
 static void
 hydro_random_ensure_initialized(void)
 {
@@ -42,6 +43,7 @@ hydro_random_ensure_initialized(void)
     }
 }
 
+// TAGGED Interesting
 void
 hydro_random_ratchet(void)
 {
