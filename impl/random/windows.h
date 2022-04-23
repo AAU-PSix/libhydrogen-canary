@@ -1,3 +1,4 @@
+#include "../Canary.h"
 #include <windows.h>
 #define RtlGenRandom SystemFunction036
 #if defined(__cplusplus)

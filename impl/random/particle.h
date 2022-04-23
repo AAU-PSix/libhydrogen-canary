@@ -3,6 +3,7 @@
 // https://github.com/particle-iot/device-os/blob/mesh-develop/hal/shared/platforms.h
 
 #include <Particle.h>
+#include "../Canary.h"
 
 static int
 hydro_random_init(void)

@@ -1,4 +1,5 @@
 #include <random.h>
+#include "../Canary.h"
 
 static int
 hydro_random_init(void)

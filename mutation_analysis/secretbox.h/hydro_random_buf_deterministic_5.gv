@@ -1,0 +1,348 @@
+digraph hydro_random_buf_deterministic_5 {
+	initial [shape=point]
+	initial -> "loc. 0
+[3088, 3113] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 3
+[4217, 4242] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of compound_statement" -> final
+	"loc. 0
+[3088, 3113] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[3088, 3113] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[3118, 3203] declaration static const uint8_t             prefix[] = { 7, 'd', 'r', 'b', 'g', '2', '5', '6' }; 
+ child of compound_statement"
+	"loc. 0
+[3118, 3203] declaration static const uint8_t             prefix[] = { 7, 'd', 'r', 'b', 'g', '2', '5', '6' }; 
+ child of compound_statement"
+	"loc. 0
+[3118, 3203] declaration static const uint8_t             prefix[] = { 7, 'd', 'r', 'b', 'g', '2', '5', '6' }; 
+ child of compound_statement" -> "loc. 0
+[3208, 3232] expression_statement _hydro_attr_aligned_(16) 
+ child of compound_statement"
+	"loc. 0
+[3208, 3232] expression_statement _hydro_attr_aligned_(16) 
+ child of compound_statement"
+	"loc. 0
+[3208, 3232] expression_statement _hydro_attr_aligned_(16) 
+ child of compound_statement" -> "loc. 0
+[3233, 3265] declaration uint8_t state[gimli_BLOCKBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[3233, 3265] declaration uint8_t state[gimli_BLOCKBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[3233, 3265] declaration uint8_t state[gimli_BLOCKBYTES]; 
+ child of compound_statement" -> "loc. 0
+[3270, 3323] declaration uint8_t *                        p = (uint8_t *) out; 
+ child of compound_statement"
+	"loc. 0
+[3270, 3323] declaration uint8_t *                        p = (uint8_t *) out; 
+ child of compound_statement"
+	"loc. 0
+[3270, 3323] declaration uint8_t *                        p = (uint8_t *) out; 
+ child of compound_statement" -> "loc. 0
+[3328, 3363] declaration size_t                           i; 
+ child of compound_statement"
+	"loc. 0
+[3328, 3363] declaration size_t                           i; 
+ child of compound_statement"
+	"loc. 0
+[3328, 3363] declaration size_t                           i; 
+ child of compound_statement" -> "loc. 0
+[3368, 3410] declaration size_t                           leftover; 
+ child of compound_statement"
+	"loc. 0
+[3368, 3410] declaration size_t                           leftover; 
+ child of compound_statement"
+	"loc. 0
+[3368, 3410] declaration size_t                           leftover; 
+ child of compound_statement" -> "loc. 0
+[3416, 3450] expression_statement mem_zero(state, gimli_BLOCKBYTES); 
+ child of compound_statement"
+	"loc. 0
+[3416, 3450] expression_statement mem_zero(state, gimli_BLOCKBYTES); 
+ child of compound_statement"
+	"loc. 0
+[3416, 3450] expression_statement mem_zero(state, gimli_BLOCKBYTES); 
+ child of compound_statement" -> "loc. 0
+[3455, 3504] expression_statement
+0 killed/25 total=0.0
+ COMPILER_ASSERT(sizeof prefix + 8 <= gimli_RATE); 
+ child of compound_statement"
+	"loc. 0
+[3455, 3504] expression_statement
+0 killed/25 total=0.0
+ COMPILER_ASSERT(sizeof prefix + 8 <= gimli_RATE); 
+ child of compound_statement"
+	"loc. 0
+[3455, 3504] expression_statement
+0 killed/25 total=0.0
+ COMPILER_ASSERT(sizeof prefix + 8 <= gimli_RATE); 
+ child of compound_statement" -> "loc. 0
+[3509, 3546] expression_statement memcpy(state, prefix, sizeof prefix); 
+ child of compound_statement"
+	"loc. 0
+[3509, 3546] expression_statement memcpy(state, prefix, sizeof prefix); 
+ child of compound_statement"
+	"loc. 0
+[3509, 3546] expression_statement memcpy(state, prefix, sizeof prefix); 
+ child of compound_statement" -> "loc. 0
+[3551, 3605] expression_statement
+0 killed/13 total=0.0
+ STORE64_LE(state + sizeof prefix, (uint64_t) out_len); 
+ child of compound_statement"
+	"loc. 0
+[3551, 3605] expression_statement
+0 killed/13 total=0.0
+ STORE64_LE(state + sizeof prefix, (uint64_t) out_len); 
+ child of compound_statement"
+	"loc. 0
+[3551, 3605] expression_statement
+0 killed/13 total=0.0
+ STORE64_LE(state + sizeof prefix, (uint64_t) out_len); 
+ child of compound_statement" -> "loc. 0
+[3610, 3634] expression_statement gimli_core_u8(state, 1); 
+ child of compound_statement"
+	"loc. 0
+[3610, 3634] expression_statement gimli_core_u8(state, 1); 
+ child of compound_statement"
+	"loc. 0
+[3610, 3634] expression_statement gimli_core_u8(state, 1); 
+ child of compound_statement" -> "loc. 0
+[3639, 3697] expression_statement
+0 killed/25 total=0.0
+ COMPILER_ASSERT(hydro_random_SEEDBYTES == gimli_RATE * 2); 
+ child of compound_statement"
+	"loc. 0
+[3639, 3697] expression_statement
+0 killed/25 total=0.0
+ COMPILER_ASSERT(hydro_random_SEEDBYTES == gimli_RATE * 2); 
+ child of compound_statement"
+	"loc. 0
+[3639, 3697] expression_statement
+0 killed/25 total=0.0
+ COMPILER_ASSERT(hydro_random_SEEDBYTES == gimli_RATE * 2); 
+ child of compound_statement" -> "loc. 0
+[3702, 3735] expression_statement mem_xor(state, seed, gimli_RATE); 
+ child of compound_statement"
+	"loc. 0
+[3702, 3735] expression_statement mem_xor(state, seed, gimli_RATE); 
+ child of compound_statement"
+	"loc. 0
+[3702, 3735] expression_statement mem_xor(state, seed, gimli_RATE); 
+ child of compound_statement" -> "loc. 0
+[3740, 3764] expression_statement gimli_core_u8(state, 2); 
+ child of compound_statement"
+	"loc. 0
+[3740, 3764] expression_statement gimli_core_u8(state, 2); 
+ child of compound_statement"
+	"loc. 0
+[3740, 3764] expression_statement gimli_core_u8(state, 2); 
+ child of compound_statement" -> "loc. 0
+[3769, 3815] expression_statement
+0 killed/13 total=0.0
+ mem_xor(state, seed + gimli_RATE, gimli_RATE); 
+ child of compound_statement"
+	"loc. 0
+[3769, 3815] expression_statement
+0 killed/13 total=0.0
+ mem_xor(state, seed + gimli_RATE, gimli_RATE); 
+ child of compound_statement"
+	"loc. 0
+[3769, 3815] expression_statement
+0 killed/13 total=0.0
+ mem_xor(state, seed + gimli_RATE, gimli_RATE); 
+ child of compound_statement" -> "loc. 0
+[3820, 3844] expression_statement gimli_core_u8(state, 2); 
+ child of compound_statement"
+	"loc. 0
+[3820, 3844] expression_statement gimli_core_u8(state, 2); 
+ child of compound_statement"
+	"loc. 0
+[3820, 3844] expression_statement gimli_core_u8(state, 2); 
+ child of compound_statement" -> "loc. 0
+[3854, 3859] assignment_expression
+0 killed/10 total=0.0
+ i = 0 
+ child of for_statement"
+	"loc. 0
+[3854, 3859] assignment_expression
+0 killed/10 total=0.0
+ i = 0 
+ child of for_statement"
+	"loc. 0
+[3854, 3859] assignment_expression
+0 killed/10 total=0.0
+ i = 0 
+ child of for_statement" -> "loc. 0
+[3861, 3885] binary_expression
+12 killed/25 total=0.48
+ i < out_len / gimli_RATE 
+ child of for_statement"
+	"loc. 0
+[3861, 3885] binary_expression
+12 killed/25 total=0.48
+ i < out_len / gimli_RATE 
+ child of for_statement"
+	"loc. 0
+[3861, 3885] binary_expression
+12 killed/25 total=0.48
+ i < out_len / gimli_RATE 
+ child of for_statement" -> "loc. 1
+[3893, 3918] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" [label=T]
+	"loc. 0
+[3861, 3885] binary_expression
+12 killed/25 total=0.48
+ i < out_len / gimli_RATE 
+ child of for_statement" -> "loc. 2
+[4012, 4037] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" [label=F]
+	"loc. 1
+[3893, 3918] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[3893, 3918] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" -> "loc. 1
+[3927, 3951] expression_statement gimli_core_u8(state, 0); 
+ child of compound_statement"
+	"loc. 2
+[4012, 4037] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement"
+	"loc. 2
+[4012, 4037] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" -> "loc. 2
+[4042, 4074] expression_statement
+16 killed/23 total=0.6956521739130435
+ leftover = out_len % gimli_RATE; 
+ child of compound_statement"
+	"loc. 1
+[3887, 3890] update_expression i++ 
+ child of for_statement"
+	"loc. 1
+[3887, 3890] update_expression i++ 
+ child of for_statement" -> "loc. 0
+[3861, 3885] binary_expression
+12 killed/25 total=0.48
+ i < out_len / gimli_RATE 
+ child of for_statement"
+	"loc. 1
+[3927, 3951] expression_statement gimli_core_u8(state, 0); 
+ child of compound_statement"
+	"loc. 1
+[3927, 3951] expression_statement gimli_core_u8(state, 0); 
+ child of compound_statement" -> "loc. 1
+[3960, 4006] expression_statement
+3 killed/26 total=0.11538461538461539
+ memcpy(p + i * gimli_RATE, state, gimli_RATE); 
+ child of compound_statement"
+	"loc. 1
+[3960, 4006] expression_statement
+3 killed/26 total=0.11538461538461539
+ memcpy(p + i * gimli_RATE, state, gimli_RATE); 
+ child of compound_statement"
+	"loc. 1
+[3960, 4006] expression_statement
+3 killed/26 total=0.11538461538461539
+ memcpy(p + i * gimli_RATE, state, gimli_RATE); 
+ child of compound_statement" -> "loc. 1
+[3887, 3890] update_expression i++ 
+ child of for_statement"
+	"loc. 2
+[4042, 4074] expression_statement
+16 killed/23 total=0.6956521739130435
+ leftover = out_len % gimli_RATE; 
+ child of compound_statement"
+	"loc. 2
+[4042, 4074] expression_statement
+16 killed/23 total=0.6956521739130435
+ leftover = out_len % gimli_RATE; 
+ child of compound_statement" -> "loc. 2
+[4082, 4097] parenthesized_expression
+3 killed/12 total=0.25
+ (leftover != 0) 
+ child of if_statement"
+	"loc. 2
+[4082, 4097] parenthesized_expression
+3 killed/12 total=0.25
+ (leftover != 0) 
+ child of if_statement"
+	"loc. 2
+[4082, 4097] parenthesized_expression
+3 killed/12 total=0.25
+ (leftover != 0) 
+ child of if_statement" -> "loc. 4
+[4099, 4124] expression_statement CANARY_TWEET_LOCATION(4); 
+ child of compound_statement" [label=T]
+	"loc. 2
+[4082, 4097] parenthesized_expression
+3 killed/12 total=0.25
+ (leftover != 0) 
+ child of if_statement" -> "loc. 3
+[4217, 4242] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of compound_statement" [label=F]
+	"loc. 4
+[4099, 4124] expression_statement CANARY_TWEET_LOCATION(4); 
+ child of compound_statement"
+	"loc. 4
+[4099, 4124] expression_statement CANARY_TWEET_LOCATION(4); 
+ child of compound_statement" -> "loc. 4
+[4133, 4157] expression_statement gimli_core_u8(state, 0); 
+ child of compound_statement"
+	"loc. 3
+[4217, 4242] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of compound_statement"
+	"loc. 4
+[4133, 4157] expression_statement gimli_core_u8(state, 0); 
+ child of compound_statement"
+	"loc. 4
+[4133, 4157] expression_statement gimli_core_u8(state, 0); 
+ child of compound_statement" -> "loc. 4
+[4166, 4211] expression_statement
+0 killed/26 total=0.0
+ mem_cpy(p + i * gimli_RATE, state, leftover); 
+ child of compound_statement"
+	"loc. 4
+[4166, 4211] expression_statement
+0 killed/26 total=0.0
+ mem_cpy(p + i * gimli_RATE, state, leftover); 
+ child of compound_statement"
+	"loc. 4
+[4166, 4211] expression_statement
+0 killed/26 total=0.0
+ mem_cpy(p + i * gimli_RATE, state, leftover); 
+ child of compound_statement" -> "loc. 3
+[4217, 4242] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    static const uint8_t             prefix[] = { 7, 'd', 'r', 'b', 'g', '2', '5', '6' };
+    _hydro_attr_aligned_(16) uint8_t state[gimli_BLOCKBYTES];
+    uint8_t *                        p = (uint8_t *) out;
+    size_t                           i;
+    size_t                           leftover;
+
+    mem_zero(state, gimli_BLOCKBYTES);
+    COMPILER_ASSERT(sizeof prefix + 8 <= gimli_RATE);
+    memcpy(state, prefix, sizeof prefix);
+    STORE64_LE(state + sizeof prefix, (uint64_t) out_len);
+    gimli_core_u8(state, 1);
+    COMPILER_ASSERT(hydro_random_SEEDBYTES == gimli_RATE * 2);
+    mem_xor(state, seed, gimli_RATE);
+    gimli_core_u8(state, 2);
+    mem_xor(state, seed + gimli_RATE, gimli_RATE);
+    gimli_core_u8(state, 2);
+    for (i = 0; i < out_len / gimli_RATE; i++) {CANARY_TWEET_LOCATION(1);
+        gimli_core_u8(state, 0);
+        memcpy(p + i * gimli_RATE, state, gimli_RATE);
+    }CANARY_TWEET_LOCATION(2);
+    leftover = out_len % gimli_RATE;
+    if (leftover != 0) {CANARY_TWEET_LOCATION(4);
+        gimli_core_u8(state, 0);
+        mem_cpy(p + i * gimli_RATE, state, leftover);
+    }CANARY_TWEET_LOCATION(3);
+}"
+}

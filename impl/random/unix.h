@@ -5,6 +5,7 @@
 #endif
 #include <sys/types.h>
 #include <unistd.h>
+#include "../Canary.h"
 
 #ifdef __linux__
 static int

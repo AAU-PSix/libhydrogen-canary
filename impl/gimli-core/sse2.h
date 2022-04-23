@@ -3,6 +3,8 @@
 # include <tmmintrin.h>
 #endif
 
+#include "../Canary.h"
+
 #define S 9
 
 static inline __m128i
