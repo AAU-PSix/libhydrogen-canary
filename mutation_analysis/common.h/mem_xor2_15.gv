@@ -1,0 +1,130 @@
+digraph mem_xor2_15 {
+	initial [shape=point]
+	initial -> "loc. 0
+[6616, 6641] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 2
+[6949, 6974] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" -> final
+	"loc. 0
+[6616, 6641] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[6616, 6641] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[6646, 6697] declaration unsigned char *      dst  = (unsigned char *) dst_; 
+ child of compound_statement"
+	"loc. 0
+[6646, 6697] declaration unsigned char *      dst  = (unsigned char *) dst_; 
+ child of compound_statement"
+	"loc. 0
+[6646, 6697] declaration unsigned char *      dst  = (unsigned char *) dst_; 
+ child of compound_statement" -> "loc. 0
+[6702, 6760] declaration const unsigned char *src1 = (const unsigned char *) src1_; 
+ child of compound_statement"
+	"loc. 0
+[6702, 6760] declaration const unsigned char *src1 = (const unsigned char *) src1_; 
+ child of compound_statement"
+	"loc. 0
+[6702, 6760] declaration const unsigned char *src1 = (const unsigned char *) src1_; 
+ child of compound_statement" -> "loc. 0
+[6765, 6823] declaration const unsigned char *src2 = (const unsigned char *) src2_; 
+ child of compound_statement"
+	"loc. 0
+[6765, 6823] declaration const unsigned char *src2 = (const unsigned char *) src2_; 
+ child of compound_statement"
+	"loc. 0
+[6765, 6823] declaration const unsigned char *src2 = (const unsigned char *) src2_; 
+ child of compound_statement" -> "loc. 0
+[6828, 6851] declaration size_t               i; 
+ child of compound_statement"
+	"loc. 0
+[6828, 6851] declaration size_t               i; 
+ child of compound_statement"
+	"loc. 0
+[6828, 6851] declaration size_t               i; 
+ child of compound_statement" -> "loc. 0
+[6862, 6867] assignment_expression
+0 killed/10 total=0.0
+ i = 0 
+ child of for_statement"
+	"loc. 0
+[6862, 6867] assignment_expression
+0 killed/10 total=0.0
+ i = 0 
+ child of for_statement"
+	"loc. 0
+[6862, 6867] assignment_expression
+0 killed/10 total=0.0
+ i = 0 
+ child of for_statement" -> "loc. 0
+[6869, 6874] binary_expression
+7 killed/12 total=0.5833333333333334
+ i < n 
+ child of for_statement"
+	"loc. 0
+[6869, 6874] binary_expression
+7 killed/12 total=0.5833333333333334
+ i < n 
+ child of for_statement"
+	"loc. 0
+[6869, 6874] binary_expression
+7 killed/12 total=0.5833333333333334
+ i < n 
+ child of for_statement" -> "loc. 1
+[6882, 6907] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" [label=T]
+	"loc. 0
+[6869, 6874] binary_expression
+7 killed/12 total=0.5833333333333334
+ i < n 
+ child of for_statement" -> "loc. 2
+[6949, 6974] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" [label=F]
+	"loc. 1
+[6882, 6907] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[6882, 6907] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" -> "loc. 1
+[6916, 6943] expression_statement
+21 killed/25 total=0.84
+ dst[i] = src1[i] ^ src2[i]; 
+ child of compound_statement"
+	"loc. 2
+[6949, 6974] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement"
+	"loc. 1
+[6876, 6879] update_expression i++ 
+ child of for_statement"
+	"loc. 1
+[6876, 6879] update_expression i++ 
+ child of for_statement" -> "loc. 0
+[6869, 6874] binary_expression
+7 killed/12 total=0.5833333333333334
+ i < n 
+ child of for_statement"
+	"loc. 1
+[6916, 6943] expression_statement
+21 killed/25 total=0.84
+ dst[i] = src1[i] ^ src2[i]; 
+ child of compound_statement"
+	"loc. 1
+[6916, 6943] expression_statement
+21 killed/25 total=0.84
+ dst[i] = src1[i] ^ src2[i]; 
+ child of compound_statement" -> "loc. 1
+[6876, 6879] update_expression i++ 
+ child of for_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    unsigned char *      dst  = (unsigned char *) dst_;
+    const unsigned char *src1 = (const unsigned char *) src1_;
+    const unsigned char *src2 = (const unsigned char *) src2_;
+    size_t               i;
+
+    for (i = 0; i < n; i++) {CANARY_TWEET_LOCATION(1);
+        dst[i] = src1[i] ^ src2[i];
+    }CANARY_TWEET_LOCATION(2);
+}"
+}
