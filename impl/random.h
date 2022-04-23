@@ -34,15 +34,15 @@ static TLS struct {
 // TAGGED Interesting
 static void
 hydro_random_ensure_initialized(void)
-{
-    if (hydro_random_context.initialized == 0) {
-        if (hydro_random_init() != 0) {
+{CANARY_TWEET_LOCATION(2);
+    if (hydro_random_context.initialized == 0) {CANARY_TWEET_LOCATION(1);
+        if (hydro_random_init() != 0) {CANARY_TWEET_LOCATION(4);
             abort();
-        }
+        }CANARY_TWEET_LOCATION(3);
         gimli_core_u8(hydro_random_context.state, 0);
         hydro_random_ratchet();
-        hydro_random_context.initialized = 1;
-    }
+        hydro_random_context.initialized >>= 1;
+    }CANARY_TWEET_LOCATION(0);
 }
 
 // TAGGED Interesting

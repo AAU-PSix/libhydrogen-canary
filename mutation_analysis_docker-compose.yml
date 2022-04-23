@@ -9,7 +9,7 @@ services:
     command:
       - mutate
       - --base=/input
-      - --file=impl/pwhash.h
+      - --file=impl/random.h
       - --out=./mutation_analysis
       - --build_command=make -C /input/ tests/tests
       - --test_command=/input/tests/tests
