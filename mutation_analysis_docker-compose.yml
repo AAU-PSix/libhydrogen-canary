@@ -9,57 +9,59 @@ services:
     command:
       - mutate
       - --base=/input
-      - --file=impl/gimli-core/sse.h
+      - --file=impl/random/windows.h
       - --out=./mutation_analysis
       - --build_command=make -C /input/ tests/tests
       - --test_command=/input/tests/tests
       - --placement_strategy=pathbased
       - --testing_backend=ffs_gnu_assert
       - --mutation_strategy=obom
+      - --unit_whitelist=hydro_random_init
 
 # random/windows.h
-# --unit_blacklistlist=
+# --unit_blacklist=
 
 # random/wasi.h
-# --unit_blacklistlist=
+# --unit_blacklist=
 
 # random/unix.h
-# --unit_blacklistlist=
+# --unit_blacklist=
+
+
 
 # random/riot.h
-# --unit_blacklistlist=
+# --unit_blacklist=
 
 # random/particle.h
-# --unit_blacklistlist=
+# --unit_blacklist=
 
 # random/nrf52832.h
-# --unit_blacklistlist=
+# --unit_blacklist=
 
 # random/avr.h
-# --unit_blacklistlist=
+# --unit_blacklist=
 
-
-
-# gimli-core/sse.h
-# --unit_blacklistlist=
+# IMPOSSIBLE DUE TO AMOUNT OF CALLS
+# gimli-core/sse2.h
+# --unit_blacklist=
 
 # gimli-core/portable.h
-# --unit_blacklistlist=
+# --unit_blacklist=
 
 # x25519.h
-# --unit_blacklistlist=
+# --unit_blacklist=
 
 # sign.h
-# --unit_blacklistlist=
+# --unit_blacklist=
 
 # secretbox.h
-# --unit_blacklistlist=
+# --unit_blacklist=
 
 # random.h
-# --unit_blacklistlist=
+# --unit_blacklist=
 
 # pwhash.h
-# --unit_blacklistlist=hydro_pwhash_upgrade
+# --unit_blacklist=hydro_pwhash_upgrade
 # hydro_pwhash_upgrade causes infinite loop
 
 # kx.h

@@ -68,18 +68,18 @@ hydro_random_init(void)
         return -1;
     }
 #endif
-    do {
+    do {CANARY_TWEET_LOCATION(3);
         fd = open("/dev/urandom", O_RDONLY);
-        if (fd == -1 && errno != EINTR) {
+        if (fd == -1 && errno != EINTR) {CANARY_TWEET_LOCATION(2);
             return -1;
-        }
-    } while (fd == -1);
-    if (hydro_random_safe_read(fd, tmp, sizeof tmp) == (ssize_t) sizeof tmp) {
+        }CANARY_TWEET_LOCATION(1);
+    } while (fd == -1);CANARY_TWEET_LOCATION(4);
+    if (hydro_random_safe_read(fd, tmp, sizeof tmp) == (ssize_t) sizeof tmp) {CANARY_TWEET_LOCATION(6);
         memcpy(hydro_random_context.state, tmp, gimli_BLOCKBYTES);
         memcpy(&hydro_random_context.counter, tmp + gimli_BLOCKBYTES, 8);
         hydro_memzero(tmp, sizeof tmp);
         ret = 0;
-    }
+    }CANARY_TWEET_LOCATION(5);
     ret |= close(fd);
 
     return ret;
