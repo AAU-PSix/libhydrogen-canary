@@ -9,14 +9,14 @@ services:
     command:
       - mutate
       - --base=/input
-      - --file=impl/core.h
+      - --file=impl/hash.h
       - --out=./mutation_analysis
       - --build_command=make -C /input/ tests/tests
       - --test_command=/input/tests/tests
       - --placement_strategy=pathbased
       - --testing_backend=ffs_gnu_assert
       - --mutation_strategy=obom
-      - --unit_blacklist=hydro_memzero hydro_compare
+      - --unit_whitelist=hydro_hash_init hydro_hash_init_with_tweak hydro_hash_final hydro_hash_hash hydro_hash_keygen
 # pwhash.h
 # random.h
 # secretbox.h
