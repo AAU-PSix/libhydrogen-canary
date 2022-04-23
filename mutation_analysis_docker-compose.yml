@@ -9,20 +9,29 @@ services:
     command:
       - mutate
       - --base=/input
-      - --file=impl/kx.h
+      - --file=impl/core.h
       - --out=./mutation_analysis
       - --build_command=make -C /input/ tests/tests
       - --test_command=/input/tests/tests
       - --placement_strategy=pathbased
       - --testing_backend=ffs_gnu_assert
       - --mutation_strategy=obom
-      - --unit_blacklist=hydro_kx_aead_final hydro_kx_aead_init hydro_kx_aead_xor_dec_3 hydro_kx_aead_xor_enc_2
+      - --unit_blacklist=hydro_memzero hydro_compare
+# pwhash.h
+# random.h
+# secretbox.h
+# sign.h
+# x25519.h
+
+# kx.h
+# - --unit_blacklist=hydro_kx_aead_final hydro_kx_aead_init hydro_kx_aead_xor_dec_3 hydro_kx_aead_xor_enc_2
+
 # hash.h
 # - --unit_whitelist=hydro_hash_init hydro_hash_init_with_tweak hydro_hash_final hydro_hash_hash hydro_hash_keygen
-# common.h
-# - --unit_whitelist=mem_cpy mem_xor mem_xor2
-# mem_zero causes infinite loop
+
 # core.h
-# --unit_blacklist=hydro_memzero hydro_increment hydro_init hydro_bin2hex hydro_equal hydro_hex2bin hydro_compare
+# --unit_blacklist=hydro_memzero hydro_compare
 # hydro_compare causes infinite loop
 
+# common.h
+# --unit_whitelist=mem_cpy mem_xor mem_xor2
