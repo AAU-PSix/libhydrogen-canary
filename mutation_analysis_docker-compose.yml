@@ -9,14 +9,13 @@ services:
     command:
       - mutate
       - --base=/input
-      - --file=impl/kx.h
+      - --file=impl/pwhash.h
       - --out=./mutation_analysis
       - --build_command=make -C /input/ tests/tests
       - --test_command=/input/tests/tests
       - --placement_strategy=pathbased
       - --testing_backend=ffs_gnu_assert
       - --mutation_strategy=obom
-      - --unit_blacklist=hydro_kx_aead_final hydro_kx_aead_init hydro_kx_aead_xor_dec_3 hydro_kx_aead_xor_enc_2
 
 # x25519.h
 # --unit_blacklistlist=
@@ -27,12 +26,13 @@ services:
 # secretbox.h
 # --unit_blacklistlist=
 
+
 # random.h
 # --unit_blacklistlist=
 
 # pwhash.h
-# --unit_blacklistlist=
-
+# --unit_blacklistlist=hydro_pwhash_upgrade
+# hydro_pwhash_upgrade causes infinite loop
 
 # kx.h
 # --unit_blacklist=hydro_kx_aead_final hydro_kx_aead_init hydro_kx_aead_xor_dec_3 hydro_kx_aead_xor_enc_2
