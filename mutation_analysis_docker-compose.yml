@@ -9,13 +9,42 @@ services:
     command:
       - mutate
       - --base=/input
-      - --file=impl/random.h
+      - --file=impl/gimli-core/sse.h
       - --out=./mutation_analysis
       - --build_command=make -C /input/ tests/tests
       - --test_command=/input/tests/tests
       - --placement_strategy=pathbased
       - --testing_backend=ffs_gnu_assert
       - --mutation_strategy=obom
+
+# random/windows.h
+# --unit_blacklistlist=
+
+# random/wasi.h
+# --unit_blacklistlist=
+
+# random/unix.h
+# --unit_blacklistlist=
+
+# random/riot.h
+# --unit_blacklistlist=
+
+# random/particle.h
+# --unit_blacklistlist=
+
+# random/nrf52832.h
+# --unit_blacklistlist=
+
+# random/avr.h
+# --unit_blacklistlist=
+
+
+
+# gimli-core/sse.h
+# --unit_blacklistlist=
+
+# gimli-core/portable.h
+# --unit_blacklistlist=
 
 # x25519.h
 # --unit_blacklistlist=
@@ -25,7 +54,6 @@ services:
 
 # secretbox.h
 # --unit_blacklistlist=
-
 
 # random.h
 # --unit_blacklistlist=
