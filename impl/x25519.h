@@ -26,6 +26,8 @@ typedef int64_t  hydro_x25519_sdlimb_t;
 #error "Need to know hydro_x25519_WBITS"
 #endif
 
+#include "Canary.h"
+
 #define hydro_x25519_NLIMBS (256 / hydro_x25519_WBITS)
 typedef hydro_x25519_limb_t hydro_x25519_fe[hydro_x25519_NLIMBS];
 

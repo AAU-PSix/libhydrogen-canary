@@ -2,6 +2,8 @@
 #define hydro_secretbox_SIVBYTES 20
 #define hydro_secretbox_MACBYTES 16
 
+#include "Canary.h"
+
 void
 hydro_secretbox_keygen(uint8_t key[hydro_secretbox_KEYBYTES])
 {
