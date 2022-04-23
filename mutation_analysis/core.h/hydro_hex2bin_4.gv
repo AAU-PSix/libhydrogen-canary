@@ -1,0 +1,829 @@
+digraph hydro_hex2bin_4 {
+	initial [shape=point]
+	initial -> "loc. 0
+[1497, 1522] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 17
+[3528, 3549] return_statement return (int) bin_pos; 
+ child of compound_statement" -> final
+	"loc. 0
+[1497, 1522] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[1497, 1522] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[1527, 1563] declaration size_t        bin_pos = (size_t) 0U; 
+ child of compound_statement"
+	"loc. 0
+[1527, 1563] declaration size_t        bin_pos = (size_t) 0U; 
+ child of compound_statement"
+	"loc. 0
+[1527, 1563] declaration size_t        bin_pos = (size_t) 0U; 
+ child of compound_statement" -> "loc. 0
+[1568, 1604] declaration size_t        hex_pos = (size_t) 0U; 
+ child of compound_statement"
+	"loc. 0
+[1568, 1604] declaration size_t        hex_pos = (size_t) 0U; 
+ child of compound_statement"
+	"loc. 0
+[1568, 1604] declaration size_t        hex_pos = (size_t) 0U; 
+ child of compound_statement" -> "loc. 0
+[1609, 1635] declaration int           ret     = 0; 
+ child of compound_statement"
+	"loc. 0
+[1609, 1635] declaration int           ret     = 0; 
+ child of compound_statement"
+	"loc. 0
+[1609, 1635] declaration int           ret     = 0; 
+ child of compound_statement" -> "loc. 0
+[1640, 1656] declaration unsigned char c; 
+ child of compound_statement"
+	"loc. 0
+[1640, 1656] declaration unsigned char c; 
+ child of compound_statement"
+	"loc. 0
+[1640, 1656] declaration unsigned char c; 
+ child of compound_statement" -> "loc. 0
+[1661, 1693] declaration unsigned char c_alpha0, c_alpha; 
+ child of compound_statement"
+	"loc. 0
+[1661, 1693] declaration unsigned char c_alpha0, c_alpha; 
+ child of compound_statement"
+	"loc. 0
+[1661, 1693] declaration unsigned char c_alpha0, c_alpha; 
+ child of compound_statement" -> "loc. 0
+[1698, 1726] declaration unsigned char c_num0, c_num; 
+ child of compound_statement"
+	"loc. 0
+[1698, 1726] declaration unsigned char c_num0, c_num; 
+ child of compound_statement"
+	"loc. 0
+[1698, 1726] declaration unsigned char c_num0, c_num; 
+ child of compound_statement" -> "loc. 0
+[1731, 1756] declaration uint8_t       c_acc = 0U; 
+ child of compound_statement"
+	"loc. 0
+[1731, 1756] declaration uint8_t       c_acc = 0U; 
+ child of compound_statement"
+	"loc. 0
+[1731, 1756] declaration uint8_t       c_acc = 0U; 
+ child of compound_statement" -> "loc. 0
+[1761, 1781] declaration uint8_t       c_val; 
+ child of compound_statement"
+	"loc. 0
+[1761, 1781] declaration uint8_t       c_val; 
+ child of compound_statement"
+	"loc. 0
+[1761, 1781] declaration uint8_t       c_val; 
+ child of compound_statement" -> "loc. 0
+[1786, 1811] declaration unsigned char state = 0U; 
+ child of compound_statement"
+	"loc. 0
+[1786, 1811] declaration unsigned char state = 0U; 
+ child of compound_statement"
+	"loc. 0
+[1786, 1811] declaration unsigned char state = 0U; 
+ child of compound_statement" -> "loc. 0
+[1823, 1842] parenthesized_expression
+10 killed/12 total=0.8333333333333334
+ (hex_pos < hex_len) 
+ child of while_statement"
+	"loc. 0
+[1823, 1842] parenthesized_expression
+10 killed/12 total=0.8333333333333334
+ (hex_pos < hex_len) 
+ child of while_statement"
+	"loc. 0
+[1823, 1842] parenthesized_expression
+10 killed/12 total=0.8333333333333334
+ (hex_pos < hex_len) 
+ child of while_statement" -> "loc. 1
+[1844, 1869] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" [label=T]
+	"loc. 0
+[1823, 1842] parenthesized_expression
+10 killed/12 total=0.8333333333333334
+ (hex_pos < hex_len) 
+ child of while_statement" -> "loc. 2
+[2919, 2944] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" [label=F]
+	"loc. 1
+[1844, 1869] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[1844, 1869] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" -> "loc. 1
+[1878, 1918] expression_statement
+10 killed/10 total=1.0
+ c        = (unsigned char) hex[hex_pos]; 
+ child of compound_statement"
+	"loc. 2
+[2919, 2944] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement"
+	"loc. 2
+[2919, 2944] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" -> "loc. 2
+[2952, 2965] parenthesized_expression
+0 killed/12 total=0.0
+ (state != 0U) 
+ child of if_statement"
+	"loc. 6
+[2296, 2305] continue_statement continue; 
+ child of compound_statement"
+	"loc. 6
+[2296, 2305] continue_statement continue; 
+ child of compound_statement" -> "loc. 0
+[1823, 1842] parenthesized_expression
+10 killed/12 total=0.8333333333333334
+ (hex_pos < hex_len) 
+ child of while_statement" [label=C]
+	"loc. 6
+[2296, 2305] continue_statement continue; 
+ child of compound_statement" -> "loc. 5
+[2319, 2344] expression_statement CANARY_TWEET_LOCATION(5); 
+ child of compound_statement"
+	"loc. 0
+[2893, 2918] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[2893, 2918] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[1823, 1842] parenthesized_expression
+10 killed/12 total=0.8333333333333334
+ (hex_pos < hex_len) 
+ child of while_statement"
+	"loc. 1
+[1878, 1918] expression_statement
+10 killed/10 total=1.0
+ c        = (unsigned char) hex[hex_pos]; 
+ child of compound_statement"
+	"loc. 1
+[1878, 1918] expression_statement
+10 killed/10 total=1.0
+ c        = (unsigned char) hex[hex_pos]; 
+ child of compound_statement" -> "loc. 1
+[1927, 1946] expression_statement
+22 killed/25 total=0.88
+ c_num    = c ^ 48U; 
+ child of compound_statement"
+	"loc. 1
+[1927, 1946] expression_statement
+22 killed/25 total=0.88
+ c_num    = c ^ 48U; 
+ child of compound_statement"
+	"loc. 1
+[1927, 1946] expression_statement
+22 killed/25 total=0.88
+ c_num    = c ^ 48U; 
+ child of compound_statement" -> "loc. 1
+[1955, 1985] expression_statement
+37 killed/37 total=1.0
+ c_num0   = (c_num - 10U) >> 8; 
+ child of compound_statement"
+	"loc. 1
+[1955, 1985] expression_statement
+37 killed/37 total=1.0
+ c_num0   = (c_num - 10U) >> 8; 
+ child of compound_statement"
+	"loc. 1
+[1955, 1985] expression_statement
+37 killed/37 total=1.0
+ c_num0   = (c_num - 10U) >> 8; 
+ child of compound_statement" -> "loc. 1
+[1994, 2022] expression_statement
+38 killed/38 total=1.0
+ c_alpha  = (c & ~32U) - 55U; 
+ child of compound_statement"
+	"loc. 1
+[1994, 2022] expression_statement
+38 killed/38 total=1.0
+ c_alpha  = (c & ~32U) - 55U; 
+ child of compound_statement"
+	"loc. 1
+[1994, 2022] expression_statement
+38 killed/38 total=1.0
+ c_alpha  = (c & ~32U) - 55U; 
+ child of compound_statement" -> "loc. 1
+[2031, 2083] expression_statement
+53 killed/65 total=0.8153846153846154
+ c_alpha0 = ((c_alpha - 10U) ^ (c_alpha - 16U)) >> 8; 
+ child of compound_statement"
+	"loc. 1
+[2031, 2083] expression_statement
+53 killed/65 total=0.8153846153846154
+ c_alpha0 = ((c_alpha - 10U) ^ (c_alpha - 16U)) >> 8; 
+ child of compound_statement"
+	"loc. 1
+[2031, 2083] expression_statement
+53 killed/65 total=0.8153846153846154
+ c_alpha0 = ((c_alpha - 10U) ^ (c_alpha - 16U)) >> 8; 
+ child of compound_statement" -> "loc. 1
+[2095, 2122] parenthesized_expression
+19 killed/27 total=0.7037037037037037
+ ((c_num0 | c_alpha0) == 0U) 
+ child of if_statement"
+	"loc. 1
+[2095, 2122] parenthesized_expression
+19 killed/27 total=0.7037037037037037
+ ((c_num0 | c_alpha0) == 0U) 
+ child of if_statement"
+	"loc. 1
+[2095, 2122] parenthesized_expression
+19 killed/27 total=0.7037037037037037
+ ((c_num0 | c_alpha0) == 0U) 
+ child of if_statement" -> "loc. 4
+[2124, 2149] expression_statement CANARY_TWEET_LOCATION(4); 
+ child of compound_statement" [label=T]
+	"loc. 1
+[2095, 2122] parenthesized_expression
+19 killed/27 total=0.7037037037037037
+ ((c_num0 | c_alpha0) == 0U) 
+ child of if_statement" -> "loc. 3
+[2373, 2398] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of compound_statement" [label=F]
+	"loc. 4
+[2124, 2149] expression_statement CANARY_TWEET_LOCATION(4); 
+ child of compound_statement"
+	"loc. 4
+[2124, 2149] expression_statement CANARY_TWEET_LOCATION(4); 
+ child of compound_statement" -> "loc. 4
+[2165, 2225] parenthesized_expression
+31 killed/72 total=0.4305555555555556
+ (ignore != NULL && state == 0U && strchr(ignore, c) != NULL) 
+ child of if_statement"
+	"loc. 3
+[2373, 2398] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of compound_statement"
+	"loc. 3
+[2373, 2398] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of compound_statement" -> "loc. 3
+[2407, 2467] expression_statement
+48 killed/55 total=0.8727272727272727
+ c_val = (uint8_t) ((c_num0 & c_num) | (c_alpha0 & c_alpha)); 
+ child of compound_statement"
+	"loc. 4
+[2165, 2225] parenthesized_expression
+31 killed/72 total=0.4305555555555556
+ (ignore != NULL && state == 0U && strchr(ignore, c) != NULL) 
+ child of if_statement"
+	"loc. 4
+[2165, 2225] parenthesized_expression
+31 killed/72 total=0.4305555555555556
+ (ignore != NULL && state == 0U && strchr(ignore, c) != NULL) 
+ child of if_statement" -> "loc. 6
+[2227, 2252] expression_statement CANARY_TWEET_LOCATION(6); 
+ child of compound_statement" [label=T]
+	"loc. 4
+[2165, 2225] parenthesized_expression
+31 killed/72 total=0.4305555555555556
+ (ignore != NULL && state == 0U && strchr(ignore, c) != NULL) 
+ child of if_statement" -> "loc. 5
+[2319, 2344] expression_statement CANARY_TWEET_LOCATION(5); 
+ child of compound_statement" [label=F]
+	"loc. 6
+[2227, 2252] expression_statement CANARY_TWEET_LOCATION(6); 
+ child of compound_statement"
+	"loc. 6
+[2227, 2252] expression_statement CANARY_TWEET_LOCATION(6); 
+ child of compound_statement" -> "loc. 6
+[2269, 2279] expression_statement hex_pos++; 
+ child of compound_statement"
+	"loc. 5
+[2319, 2344] expression_statement CANARY_TWEET_LOCATION(5); 
+ child of compound_statement"
+	"loc. 5
+[2319, 2344] expression_statement CANARY_TWEET_LOCATION(5); 
+ child of compound_statement" -> "loc. 5
+[2357, 2363] break_statement break; 
+ child of compound_statement"
+	"loc. 6
+[2269, 2279] expression_statement hex_pos++; 
+ child of compound_statement"
+	"loc. 6
+[2269, 2279] expression_statement hex_pos++; 
+ child of compound_statement" -> "loc. 6
+[2296, 2305] continue_statement continue; 
+ child of compound_statement"
+	"loc. 5
+[2357, 2363] break_statement break; 
+ child of compound_statement"
+	"loc. 5
+[2357, 2363] break_statement break; 
+ child of compound_statement" -> "loc. 2
+[2919, 2944] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" [label=B]
+	"loc. 5
+[2357, 2363] break_statement break; 
+ child of compound_statement" -> "loc. 3
+[2373, 2398] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of compound_statement"
+	"loc. 2
+[2952, 2965] parenthesized_expression
+0 killed/12 total=0.0
+ (state != 0U) 
+ child of if_statement"
+	"loc. 2
+[2952, 2965] parenthesized_expression
+0 killed/12 total=0.0
+ (state != 0U) 
+ child of if_statement" -> "loc. 8
+[2967, 2992] expression_statement CANARY_TWEET_LOCATION(8); 
+ child of compound_statement" [label=T]
+	"loc. 2
+[2952, 2965] parenthesized_expression
+0 killed/12 total=0.0
+ (state != 0U) 
+ child of if_statement" -> "loc. 7
+[3061, 3086] expression_statement CANARY_TWEET_LOCATION(7); 
+ child of compound_statement" [label=F]
+	"loc. 10
+[2595, 2601] break_statement break; 
+ child of compound_statement"
+	"loc. 10
+[2595, 2601] break_statement break; 
+ child of compound_statement" -> "loc. 2
+[2919, 2944] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" [label=B]
+	"loc. 10
+[2595, 2601] break_statement break; 
+ child of compound_statement" -> "loc. 9
+[2611, 2636] expression_statement CANARY_TWEET_LOCATION(9); 
+ child of compound_statement"
+	"loc. 3
+[2407, 2467] expression_statement
+48 killed/55 total=0.8727272727272727
+ c_val = (uint8_t) ((c_num0 & c_num) | (c_alpha0 & c_alpha)); 
+ child of compound_statement"
+	"loc. 3
+[2407, 2467] expression_statement
+48 killed/55 total=0.8727272727272727
+ c_val = (uint8_t) ((c_num0 & c_num) | (c_alpha0 & c_alpha)); 
+ child of compound_statement" -> "loc. 3
+[2479, 2502] parenthesized_expression
+10 killed/12 total=0.8333333333333334
+ (bin_pos >= bin_maxlen) 
+ child of if_statement"
+	"loc. 3
+[2479, 2502] parenthesized_expression
+10 killed/12 total=0.8333333333333334
+ (bin_pos >= bin_maxlen) 
+ child of if_statement"
+	"loc. 3
+[2479, 2502] parenthesized_expression
+10 killed/12 total=0.8333333333333334
+ (bin_pos >= bin_maxlen) 
+ child of if_statement" -> "loc. 10
+[2504, 2530] expression_statement CANARY_TWEET_LOCATION(10); 
+ child of compound_statement" [label=T]
+	"loc. 3
+[2479, 2502] parenthesized_expression
+10 killed/12 total=0.8333333333333334
+ (bin_pos >= bin_maxlen) 
+ child of if_statement" -> "loc. 9
+[2611, 2636] expression_statement CANARY_TWEET_LOCATION(9); 
+ child of compound_statement" [label=F]
+	"loc. 10
+[2504, 2530] expression_statement CANARY_TWEET_LOCATION(10); 
+ child of compound_statement"
+	"loc. 10
+[2504, 2530] expression_statement CANARY_TWEET_LOCATION(10); 
+ child of compound_statement" -> "loc. 10
+[2543, 2554] expression_statement
+0 killed/10 total=0.0
+ ret   = -1; 
+ child of compound_statement"
+	"loc. 9
+[2611, 2636] expression_statement CANARY_TWEET_LOCATION(9); 
+ child of compound_statement"
+	"loc. 9
+[2611, 2636] expression_statement CANARY_TWEET_LOCATION(9); 
+ child of compound_statement" -> "loc. 9
+[2648, 2661] parenthesized_expression
+10 killed/12 total=0.8333333333333334
+ (state == 0U) 
+ child of if_statement"
+	"loc. 10
+[2543, 2554] expression_statement
+0 killed/10 total=0.0
+ ret   = -1; 
+ child of compound_statement"
+	"loc. 10
+[2543, 2554] expression_statement
+0 killed/10 total=0.0
+ ret   = -1; 
+ child of compound_statement" -> "loc. 10
+[2567, 2582] expression_statement
+0 killed/10 total=0.0
+ errno = ERANGE; 
+ child of compound_statement"
+	"loc. 10
+[2567, 2582] expression_statement
+0 killed/10 total=0.0
+ errno = ERANGE; 
+ child of compound_statement"
+	"loc. 10
+[2567, 2582] expression_statement
+0 killed/10 total=0.0
+ errno = ERANGE; 
+ child of compound_statement" -> "loc. 10
+[2595, 2601] break_statement break; 
+ child of compound_statement"
+	"loc. 9
+[2648, 2661] parenthesized_expression
+10 killed/12 total=0.8333333333333334
+ (state == 0U) 
+ child of if_statement"
+	"loc. 9
+[2648, 2661] parenthesized_expression
+10 killed/12 total=0.8333333333333334
+ (state == 0U) 
+ child of if_statement" -> "loc. 12
+[2663, 2689] expression_statement CANARY_TWEET_LOCATION(12); 
+ child of compound_statement" [label=T]
+	"loc. 9
+[2648, 2661] parenthesized_expression
+10 killed/12 total=0.8333333333333334
+ (state == 0U) 
+ child of if_statement" -> "loc. 13
+[2739, 2765] expression_statement CANARY_TWEET_LOCATION(13); 
+ child of compound_statement" [label=F]
+	"loc. 12
+[2663, 2689] expression_statement CANARY_TWEET_LOCATION(12); 
+ child of compound_statement"
+	"loc. 12
+[2663, 2689] expression_statement CANARY_TWEET_LOCATION(12); 
+ child of compound_statement" -> "loc. 12
+[2702, 2722] expression_statement
+23 killed/23 total=1.0
+ c_acc = c_val * 16U; 
+ child of compound_statement"
+	"loc. 13
+[2739, 2765] expression_statement CANARY_TWEET_LOCATION(13); 
+ child of compound_statement"
+	"loc. 13
+[2739, 2765] expression_statement CANARY_TWEET_LOCATION(13); 
+ child of compound_statement" -> "loc. 13
+[2778, 2809] expression_statement
+22 killed/25 total=0.88
+ bin[bin_pos++] = c_acc | c_val; 
+ child of compound_statement"
+	"loc. 12
+[2702, 2722] expression_statement
+23 killed/23 total=1.0
+ c_acc = c_val * 16U; 
+ child of compound_statement"
+	"loc. 12
+[2702, 2722] expression_statement
+23 killed/23 total=1.0
+ c_acc = c_val * 16U; 
+ child of compound_statement" -> "loc. 11
+[2819, 2845] expression_statement CANARY_TWEET_LOCATION(11); 
+ child of compound_statement"
+	"loc. 11
+[2819, 2845] expression_statement CANARY_TWEET_LOCATION(11); 
+ child of compound_statement"
+	"loc. 11
+[2819, 2845] expression_statement CANARY_TWEET_LOCATION(11); 
+ child of compound_statement" -> "loc. 11
+[2854, 2869] expression_statement
+10 killed/10 total=1.0
+ state = ~state; 
+ child of compound_statement"
+	"loc. 11
+[2854, 2869] expression_statement
+10 killed/10 total=1.0
+ state = ~state; 
+ child of compound_statement"
+	"loc. 11
+[2854, 2869] expression_statement
+10 killed/10 total=1.0
+ state = ~state; 
+ child of compound_statement" -> "loc. 11
+[2878, 2888] expression_statement hex_pos++; 
+ child of compound_statement"
+	"loc. 13
+[2778, 2809] expression_statement
+22 killed/25 total=0.88
+ bin[bin_pos++] = c_acc | c_val; 
+ child of compound_statement"
+	"loc. 13
+[2778, 2809] expression_statement
+22 killed/25 total=0.88
+ bin[bin_pos++] = c_acc | c_val; 
+ child of compound_statement" -> "loc. 11
+[2819, 2845] expression_statement CANARY_TWEET_LOCATION(11); 
+ child of compound_statement"
+	"loc. 11
+[2878, 2888] expression_statement hex_pos++; 
+ child of compound_statement"
+	"loc. 11
+[2878, 2888] expression_statement hex_pos++; 
+ child of compound_statement" -> "loc. 0
+[2893, 2918] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 8
+[2967, 2992] expression_statement CANARY_TWEET_LOCATION(8); 
+ child of compound_statement"
+	"loc. 8
+[2967, 2992] expression_statement CANARY_TWEET_LOCATION(8); 
+ child of compound_statement" -> "loc. 8
+[3001, 3011] expression_statement hex_pos--; 
+ child of compound_statement"
+	"loc. 7
+[3061, 3086] expression_statement CANARY_TWEET_LOCATION(7); 
+ child of compound_statement"
+	"loc. 7
+[3061, 3086] expression_statement CANARY_TWEET_LOCATION(7); 
+ child of compound_statement" -> "loc. 7
+[3094, 3104] parenthesized_expression
+0 killed/12 total=0.0
+ (ret != 0) 
+ child of if_statement"
+	"loc. 8
+[3001, 3011] expression_statement hex_pos--; 
+ child of compound_statement"
+	"loc. 8
+[3001, 3011] expression_statement hex_pos--; 
+ child of compound_statement" -> "loc. 8
+[3020, 3035] expression_statement errno = EINVAL; 
+ child of compound_statement"
+	"loc. 8
+[3020, 3035] expression_statement errno = EINVAL; 
+ child of compound_statement"
+	"loc. 8
+[3020, 3035] expression_statement errno = EINVAL; 
+ child of compound_statement" -> "loc. 8
+[3044, 3055] expression_statement ret   = -1; 
+ child of compound_statement"
+	"loc. 8
+[3044, 3055] expression_statement ret   = -1; 
+ child of compound_statement"
+	"loc. 8
+[3044, 3055] expression_statement ret   = -1; 
+ child of compound_statement" -> "loc. 7
+[3061, 3086] expression_statement CANARY_TWEET_LOCATION(7); 
+ child of compound_statement"
+	"loc. 7
+[3094, 3104] parenthesized_expression
+0 killed/12 total=0.0
+ (ret != 0) 
+ child of if_statement"
+	"loc. 7
+[3094, 3104] parenthesized_expression
+0 killed/12 total=0.0
+ (ret != 0) 
+ child of if_statement" -> "loc. 15
+[3106, 3132] expression_statement CANARY_TWEET_LOCATION(15); 
+ child of compound_statement" [label=T]
+	"loc. 7
+[3094, 3104] parenthesized_expression
+0 killed/12 total=0.0
+ (ret != 0) 
+ child of if_statement" -> "loc. 14
+[3169, 3195] expression_statement CANARY_TWEET_LOCATION(14); 
+ child of compound_statement" [label=F]
+	"loc. 15
+[3106, 3132] expression_statement CANARY_TWEET_LOCATION(15); 
+ child of compound_statement"
+	"loc. 15
+[3106, 3132] expression_statement CANARY_TWEET_LOCATION(15); 
+ child of compound_statement" -> "loc. 15
+[3141, 3163] expression_statement
+0 killed/10 total=0.0
+ bin_pos = (size_t) 0U; 
+ child of compound_statement"
+	"loc. 14
+[3169, 3195] expression_statement CANARY_TWEET_LOCATION(14); 
+ child of compound_statement"
+	"loc. 14
+[3169, 3195] expression_statement CANARY_TWEET_LOCATION(14); 
+ child of compound_statement" -> "loc. 14
+[3203, 3222] parenthesized_expression
+1 killed/12 total=0.08333333333333333
+ (hex_end_p != NULL) 
+ child of if_statement"
+	"loc. 15
+[3141, 3163] expression_statement
+0 killed/10 total=0.0
+ bin_pos = (size_t) 0U; 
+ child of compound_statement"
+	"loc. 15
+[3141, 3163] expression_statement
+0 killed/10 total=0.0
+ bin_pos = (size_t) 0U; 
+ child of compound_statement" -> "loc. 14
+[3169, 3195] expression_statement CANARY_TWEET_LOCATION(14); 
+ child of compound_statement"
+	"loc. 14
+[3203, 3222] parenthesized_expression
+1 killed/12 total=0.08333333333333333
+ (hex_end_p != NULL) 
+ child of if_statement"
+	"loc. 14
+[3203, 3222] parenthesized_expression
+1 killed/12 total=0.08333333333333333
+ (hex_end_p != NULL) 
+ child of if_statement" -> "loc. 16
+[3224, 3250] expression_statement CANARY_TWEET_LOCATION(16); 
+ child of compound_statement" [label=T]
+	"loc. 14
+[3203, 3222] parenthesized_expression
+1 killed/12 total=0.08333333333333333
+ (hex_end_p != NULL) 
+ child of if_statement" -> "loc. 14
+[3301, 3321] parenthesized_expression
+9 killed/12 total=0.75
+ (hex_pos != hex_len) 
+ child of if_statement" [label=F]
+	"loc. 16
+[3224, 3250] expression_statement CANARY_TWEET_LOCATION(16); 
+ child of compound_statement"
+	"loc. 16
+[3224, 3250] expression_statement CANARY_TWEET_LOCATION(16); 
+ child of compound_statement" -> "loc. 16
+[3259, 3286] expression_statement
+10 killed/10 total=1.0
+ *hex_end_p = &hex[hex_pos]; 
+ child of compound_statement"
+	"loc. 14
+[3301, 3321] parenthesized_expression
+9 killed/12 total=0.75
+ (hex_pos != hex_len) 
+ child of if_statement"
+	"loc. 14
+[3301, 3321] parenthesized_expression
+9 killed/12 total=0.75
+ (hex_pos != hex_len) 
+ child of if_statement" -> "loc. 19
+[3399, 3425] expression_statement CANARY_TWEET_LOCATION(19); 
+ child of compound_statement" [label=F]
+	"loc. 14
+[3301, 3321] parenthesized_expression
+9 killed/12 total=0.75
+ (hex_pos != hex_len) 
+ child of if_statement" -> "loc. 20
+[3323, 3349] expression_statement CANARY_TWEET_LOCATION(20); 
+ child of compound_statement" [label=T]
+	"loc. 16
+[3259, 3286] expression_statement
+10 killed/10 total=1.0
+ *hex_end_p = &hex[hex_pos]; 
+ child of compound_statement"
+	"loc. 16
+[3259, 3286] expression_statement
+10 killed/10 total=1.0
+ *hex_end_p = &hex[hex_pos]; 
+ child of compound_statement" -> "loc. 19
+[3399, 3425] expression_statement CANARY_TWEET_LOCATION(19); 
+ child of compound_statement"
+	"loc. 19
+[3399, 3425] expression_statement CANARY_TWEET_LOCATION(19); 
+ child of compound_statement"
+	"loc. 19
+[3399, 3425] expression_statement CANARY_TWEET_LOCATION(19); 
+ child of compound_statement" -> "loc. 19
+[3433, 3443] parenthesized_expression
+3 killed/12 total=0.25
+ (ret != 0) 
+ child of if_statement"
+	"loc. 19
+[3433, 3443] parenthesized_expression
+3 killed/12 total=0.25
+ (ret != 0) 
+ child of if_statement"
+	"loc. 19
+[3433, 3443] parenthesized_expression
+3 killed/12 total=0.25
+ (ret != 0) 
+ child of if_statement" -> "loc. 18
+[3445, 3471] expression_statement CANARY_TWEET_LOCATION(18); 
+ child of compound_statement" [label=T]
+	"loc. 19
+[3433, 3443] parenthesized_expression
+3 killed/12 total=0.25
+ (ret != 0) 
+ child of if_statement" -> "loc. 17
+[3497, 3523] expression_statement CANARY_TWEET_LOCATION(17); 
+ child of compound_statement" [label=F]
+	"loc. 20
+[3382, 3393] expression_statement
+9 killed/10 total=0.9
+ ret   = -1; 
+ child of compound_statement"
+	"loc. 20
+[3382, 3393] expression_statement
+9 killed/10 total=0.9
+ ret   = -1; 
+ child of compound_statement" -> "loc. 19
+[3399, 3425] expression_statement CANARY_TWEET_LOCATION(19); 
+ child of compound_statement"
+	"loc. 20
+[3323, 3349] expression_statement CANARY_TWEET_LOCATION(20); 
+ child of compound_statement"
+	"loc. 20
+[3323, 3349] expression_statement CANARY_TWEET_LOCATION(20); 
+ child of compound_statement" -> "loc. 20
+[3358, 3373] expression_statement
+0 killed/10 total=0.0
+ errno = EINVAL; 
+ child of compound_statement"
+	"loc. 20
+[3358, 3373] expression_statement
+0 killed/10 total=0.0
+ errno = EINVAL; 
+ child of compound_statement"
+	"loc. 20
+[3358, 3373] expression_statement
+0 killed/10 total=0.0
+ errno = EINVAL; 
+ child of compound_statement" -> "loc. 20
+[3382, 3393] expression_statement
+9 killed/10 total=0.9
+ ret   = -1; 
+ child of compound_statement"
+	"loc. 18
+[3445, 3471] expression_statement CANARY_TWEET_LOCATION(18); 
+ child of compound_statement"
+	"loc. 18
+[3445, 3471] expression_statement CANARY_TWEET_LOCATION(18); 
+ child of compound_statement" -> "loc. 18
+[3480, 3491] return_statement return ret; 
+ child of compound_statement"
+	"loc. 17
+[3497, 3523] expression_statement CANARY_TWEET_LOCATION(17); 
+ child of compound_statement"
+	"loc. 17
+[3497, 3523] expression_statement CANARY_TWEET_LOCATION(17); 
+ child of compound_statement" -> "loc. 17
+[3528, 3549] return_statement return (int) bin_pos; 
+ child of compound_statement"
+	"loc. 18
+[3480, 3491] return_statement return ret; 
+ child of compound_statement"
+	"loc. 18
+[3480, 3491] return_statement return ret; 
+ child of compound_statement" -> "loc. 17
+[3497, 3523] expression_statement CANARY_TWEET_LOCATION(17); 
+ child of compound_statement"
+	"loc. 17
+[3528, 3549] return_statement return (int) bin_pos; 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    size_t        bin_pos = (size_t) 0U;
+    size_t        hex_pos = (size_t) 0U;
+    int           ret     = 0;
+    unsigned char c;
+    unsigned char c_alpha0, c_alpha;
+    unsigned char c_num0, c_num;
+    uint8_t       c_acc = 0U;
+    uint8_t       c_val;
+    unsigned char state = 0U;
+
+    while (hex_pos < hex_len) {CANARY_TWEET_LOCATION(1);
+        c        = (unsigned char) hex[hex_pos];
+        c_num    = c ^ 48U;
+        c_num0   = (c_num - 10U) >> 8;
+        c_alpha  = (c & ~32U) - 55U;
+        c_alpha0 = ((c_alpha - 10U) ^ (c_alpha - 16U)) >> 8;
+        if ((c_num0 | c_alpha0) == 0U) {CANARY_TWEET_LOCATION(4);
+            if (ignore != NULL && state == 0U && strchr(ignore, c) != NULL) {CANARY_TWEET_LOCATION(6);
+                hex_pos++;
+                continue;
+            }CANARY_TWEET_LOCATION(5);
+            break;
+        }CANARY_TWEET_LOCATION(3);
+        c_val = (uint8_t) ((c_num0 & c_num) | (c_alpha0 & c_alpha));
+        if (bin_pos >= bin_maxlen) {CANARY_TWEET_LOCATION(10);
+            ret   = -1;
+            errno = ERANGE;
+            break;
+        }CANARY_TWEET_LOCATION(9);
+        if (state == 0U) {CANARY_TWEET_LOCATION(12);
+            c_acc = c_val * 16U;
+        } else {CANARY_TWEET_LOCATION(13);
+            bin[bin_pos++] = c_acc | c_val;
+        }CANARY_TWEET_LOCATION(11);
+        state = ~state;
+        hex_pos++;
+    CANARY_TWEET_LOCATION(0);}CANARY_TWEET_LOCATION(2);
+    if (state != 0U) {CANARY_TWEET_LOCATION(8);
+        hex_pos--;
+        errno = EINVAL;
+        ret   = -1;
+    }CANARY_TWEET_LOCATION(7);
+    if (ret != 0) {CANARY_TWEET_LOCATION(15);
+        bin_pos = (size_t) 0U;
+    }CANARY_TWEET_LOCATION(14);
+    if (hex_end_p != NULL) {CANARY_TWEET_LOCATION(16);
+        *hex_end_p = &hex[hex_pos];
+    } else if (hex_pos != hex_len) {CANARY_TWEET_LOCATION(20);
+        errno = EINVAL;
+        ret   = -1;
+    }CANARY_TWEET_LOCATION(19);
+    if (ret != 0) {CANARY_TWEET_LOCATION(18);
+        return ret;
+    }CANARY_TWEET_LOCATION(17);
+    return (int) bin_pos;
+}"
+}

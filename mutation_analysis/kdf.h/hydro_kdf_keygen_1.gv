@@ -1,0 +1,24 @@
+digraph hydro_kdf_keygen_1 {
+	initial [shape=point]
+	initial -> "loc. 0
+[591, 616] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 0
+[621, 663] expression_statement hydro_random_buf(key, hydro_kdf_KEYBYTES); 
+ child of compound_statement" -> final
+	"loc. 0
+[591, 616] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[591, 616] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[621, 663] expression_statement hydro_random_buf(key, hydro_kdf_KEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[621, 663] expression_statement hydro_random_buf(key, hydro_kdf_KEYBYTES); 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    hydro_random_buf(key, hydro_kdf_KEYBYTES);
+}"
+}

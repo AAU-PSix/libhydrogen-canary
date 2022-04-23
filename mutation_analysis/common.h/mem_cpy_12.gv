@@ -1,0 +1,129 @@
+digraph mem_cpy_12 {
+	initial [shape=point]
+	initial -> "loc. 0
+[5781, 5806] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 2
+[6062, 6087] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" -> final
+	"loc. 0
+[5781, 5806] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[5781, 5806] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[5811, 5861] declaration unsigned char *      dst = (unsigned char *) dst_; 
+ child of compound_statement"
+	"loc. 0
+[5811, 5861] declaration unsigned char *      dst = (unsigned char *) dst_; 
+ child of compound_statement"
+	"loc. 0
+[5811, 5861] declaration unsigned char *      dst = (unsigned char *) dst_; 
+ child of compound_statement" -> "loc. 0
+[5866, 5922] declaration const unsigned char *src = (const unsigned char *) src_; 
+ child of compound_statement"
+	"loc. 0
+[5866, 5922] declaration const unsigned char *src = (const unsigned char *) src_; 
+ child of compound_statement"
+	"loc. 0
+[5866, 5922] declaration const unsigned char *src = (const unsigned char *) src_; 
+ child of compound_statement" -> "loc. 0
+[5927, 5950] declaration size_t               i; 
+ child of compound_statement"
+	"loc. 0
+[5927, 5950] declaration size_t               i; 
+ child of compound_statement"
+	"loc. 0
+[5927, 5950] declaration size_t               i; 
+ child of compound_statement" -> "loc. 0
+[5961, 5966] assignment_expression
+0 killed/10 total=0.0
+ i = 0 
+ child of for_statement"
+	"loc. 0
+[5961, 5966] assignment_expression
+0 killed/10 total=0.0
+ i = 0 
+ child of for_statement"
+	"loc. 0
+[5961, 5966] assignment_expression
+0 killed/10 total=0.0
+ i = 0 
+ child of for_statement" -> "loc. 0
+[5968, 5973] binary_expression
+7 killed/12 total=0.5833333333333334
+ i < n 
+ child of for_statement"
+	"loc. 0
+[5968, 5973] binary_expression
+7 killed/12 total=0.5833333333333334
+ i < n 
+ child of for_statement"
+	"loc. 0
+[5968, 5973] binary_expression
+7 killed/12 total=0.5833333333333334
+ i < n 
+ child of for_statement" -> "loc. 1
+[5981, 6006] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" [label=T]
+	"loc. 0
+[5968, 5973] binary_expression
+7 killed/12 total=0.5833333333333334
+ i < n 
+ child of for_statement" -> "loc. 2
+[6062, 6087] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" [label=F]
+	"loc. 1
+[5981, 6006] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[5981, 6006] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" -> "loc. 1
+[6015, 6031] expression_statement
+8 killed/10 total=0.8
+ dst[i] = src[i]; 
+ child of compound_statement"
+	"loc. 2
+[6062, 6087] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement"
+	"loc. 0
+[5975, 5978] update_expression i++ 
+ child of for_statement"
+	"loc. 0
+[5975, 5978] update_expression i++ 
+ child of for_statement" -> "loc. 0
+[5968, 5973] binary_expression
+7 killed/12 total=0.5833333333333334
+ i < n 
+ child of for_statement"
+	"loc. 1
+[6015, 6031] expression_statement
+8 killed/10 total=0.8
+ dst[i] = src[i]; 
+ child of compound_statement"
+	"loc. 1
+[6015, 6031] expression_statement
+8 killed/10 total=0.8
+ dst[i] = src[i]; 
+ child of compound_statement" -> "loc. 0
+[6036, 6061] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[6036, 6061] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[6036, 6061] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[5975, 5978] update_expression i++ 
+ child of for_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    unsigned char *      dst = (unsigned char *) dst_;
+    const unsigned char *src = (const unsigned char *) src_;
+    size_t               i;
+
+    for (i = 0; i < n; i++) {CANARY_TWEET_LOCATION(1);
+        dst[i] = src[i];
+    CANARY_TWEET_LOCATION(0);}CANARY_TWEET_LOCATION(2);
+}"
+}

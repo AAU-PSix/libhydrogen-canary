@@ -1,0 +1,96 @@
+digraph hydro_hash_hash_4 {
+	initial [shape=point]
+	initial -> "loc. 0
+[4058, 4083] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 1
+[4380, 4389] return_statement return 0; 
+ child of compound_statement" -> final
+	"loc. 0
+[4058, 4083] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[4058, 4083] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[4088, 4108] declaration hydro_hash_state st; 
+ child of compound_statement"
+	"loc. 0
+[4088, 4108] declaration hydro_hash_state st; 
+ child of compound_statement"
+	"loc. 0
+[4088, 4108] declaration hydro_hash_state st; 
+ child of compound_statement" -> "loc. 0
+[4113, 4157] declaration const uint8_t *  in = (const uint8_t *) in_; 
+ child of compound_statement"
+	"loc. 0
+[4113, 4157] declaration const uint8_t *  in = (const uint8_t *) in_; 
+ child of compound_statement"
+	"loc. 0
+[4113, 4157] declaration const uint8_t *  in = (const uint8_t *) in_; 
+ child of compound_statement" -> "loc. 0
+[4166, 4298] parenthesized_expression
+13 killed/72 total=0.18055555555555555
+ (hydro_hash_init(&st, ctx, key) != 0 || hydro_hash_update(&st, in, in_len) != 0 ||
+        hydro_hash_final(&st, out, out_len) != 0) 
+ child of if_statement"
+	"loc. 0
+[4166, 4298] parenthesized_expression
+13 killed/72 total=0.18055555555555555
+ (hydro_hash_init(&st, ctx, key) != 0 || hydro_hash_update(&st, in, in_len) != 0 ||
+        hydro_hash_final(&st, out, out_len) != 0) 
+ child of if_statement"
+	"loc. 0
+[4166, 4298] parenthesized_expression
+13 killed/72 total=0.18055555555555555
+ (hydro_hash_init(&st, ctx, key) != 0 || hydro_hash_update(&st, in, in_len) != 0 ||
+        hydro_hash_final(&st, out, out_len) != 0) 
+ child of if_statement" -> "loc. 2
+[4300, 4325] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" [label=T]
+	"loc. 0
+[4166, 4298] parenthesized_expression
+13 killed/72 total=0.18055555555555555
+ (hydro_hash_init(&st, ctx, key) != 0 || hydro_hash_update(&st, in, in_len) != 0 ||
+        hydro_hash_final(&st, out, out_len) != 0) 
+ child of if_statement" -> "loc. 1
+[4350, 4375] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" [label=F]
+	"loc. 2
+[4300, 4325] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement"
+	"loc. 2
+[4300, 4325] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" -> "loc. 2
+[4334, 4344] return_statement return -1; 
+ child of compound_statement"
+	"loc. 1
+[4350, 4375] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[4350, 4375] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" -> "loc. 1
+[4380, 4389] return_statement return 0; 
+ child of compound_statement"
+	"loc. 2
+[4334, 4344] return_statement return -1; 
+ child of compound_statement"
+	"loc. 2
+[4334, 4344] return_statement return -1; 
+ child of compound_statement" -> "loc. 1
+[4350, 4375] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[4380, 4389] return_statement return 0; 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    hydro_hash_state st;
+    const uint8_t *  in = (const uint8_t *) in_;
+
+    if (hydro_hash_init(&st, ctx, key) != 0 || hydro_hash_update(&st, in, in_len) != 0 ||
+        hydro_hash_final(&st, out, out_len) != 0) {CANARY_TWEET_LOCATION(2);
+        return -1;
+    }CANARY_TWEET_LOCATION(1);
+    return 0;
+}"
+}

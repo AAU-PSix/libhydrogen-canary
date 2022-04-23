@@ -1,0 +1,78 @@
+digraph hydro_kx_aead_final_1 {
+	initial [shape=point]
+	initial -> "loc. 0
+[933, 958] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 0
+[1208, 1251] expression_statement gimli_core_u8(aead_state, gimli_TAG_FINAL); 
+ child of compound_statement" -> final
+	"loc. 0
+[933, 958] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[933, 958] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[963, 1021] expression_statement
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_kx_AEAD_KEYBYTES == gimli_CAPACITY); 
+ child of compound_statement"
+	"loc. 0
+[963, 1021] expression_statement
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_kx_AEAD_KEYBYTES == gimli_CAPACITY); 
+ child of compound_statement"
+	"loc. 0
+[963, 1021] expression_statement
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_kx_AEAD_KEYBYTES == gimli_CAPACITY); 
+ child of compound_statement" -> "loc. 0
+[1026, 1088] expression_statement
+0 killed/13 total=0.0
+ mem_xor(aead_state + gimli_RATE, key, hydro_kx_AEAD_KEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[1026, 1088] expression_statement
+0 killed/13 total=0.0
+ mem_xor(aead_state + gimli_RATE, key, hydro_kx_AEAD_KEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[1026, 1088] expression_statement
+0 killed/13 total=0.0
+ mem_xor(aead_state + gimli_RATE, key, hydro_kx_AEAD_KEYBYTES); 
+ child of compound_statement" -> "loc. 0
+[1093, 1136] expression_statement gimli_core_u8(aead_state, gimli_TAG_FINAL); 
+ child of compound_statement"
+	"loc. 0
+[1093, 1136] expression_statement gimli_core_u8(aead_state, gimli_TAG_FINAL); 
+ child of compound_statement"
+	"loc. 0
+[1093, 1136] expression_statement gimli_core_u8(aead_state, gimli_TAG_FINAL); 
+ child of compound_statement" -> "loc. 0
+[1141, 1203] expression_statement
+0 killed/13 total=0.0
+ mem_xor(aead_state + gimli_RATE, key, hydro_kx_AEAD_KEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[1141, 1203] expression_statement
+0 killed/13 total=0.0
+ mem_xor(aead_state + gimli_RATE, key, hydro_kx_AEAD_KEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[1141, 1203] expression_statement
+0 killed/13 total=0.0
+ mem_xor(aead_state + gimli_RATE, key, hydro_kx_AEAD_KEYBYTES); 
+ child of compound_statement" -> "loc. 0
+[1208, 1251] expression_statement gimli_core_u8(aead_state, gimli_TAG_FINAL); 
+ child of compound_statement"
+	"loc. 0
+[1208, 1251] expression_statement gimli_core_u8(aead_state, gimli_TAG_FINAL); 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    COMPILER_ASSERT(hydro_kx_AEAD_KEYBYTES == gimli_CAPACITY);
+    mem_xor(aead_state + gimli_RATE, key, hydro_kx_AEAD_KEYBYTES);
+    gimli_core_u8(aead_state, gimli_TAG_FINAL);
+    mem_xor(aead_state + gimli_RATE, key, hydro_kx_AEAD_KEYBYTES);
+    gimli_core_u8(aead_state, gimli_TAG_FINAL);
+}"
+}

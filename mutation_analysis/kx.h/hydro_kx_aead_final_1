@@ -1,0 +1,66 @@
+Visited locations 0
+Unvisited locations 
+Visited 1, Unvisted 0, percentage visited 1.0
+
+Visited nodes 6
+Unvisited nodes 0
+Percentage visited 1.0
+
+Visited candidates 3
+Unvisited candidates 0
+Percentage visited 1.0
+
+Tested mutations 38
+Untested mutations 0
+Percentage visited 1.0
+
+Location 0
+Killed 0 and 0 survived
+[Point(line=27, char=43), Point(line=27, char=45)] '==' --> '+' :: SURVIVED
+[Point(line=27, char=43), Point(line=27, char=45)] '==' --> '-' :: SURVIVED
+[Point(line=27, char=43), Point(line=27, char=45)] '==' --> '*' :: SURVIVED
+[Point(line=27, char=43), Point(line=27, char=45)] '==' --> '/' :: SURVIVED
+[Point(line=27, char=43), Point(line=27, char=45)] '==' --> '%' :: SURVIVED
+[Point(line=27, char=43), Point(line=27, char=45)] '==' --> '|' :: SURVIVED
+[Point(line=27, char=43), Point(line=27, char=45)] '==' --> '&' :: SURVIVED
+[Point(line=27, char=43), Point(line=27, char=45)] '==' --> '^' :: SURVIVED
+[Point(line=27, char=43), Point(line=27, char=45)] '==' --> '&&' :: SURVIVED
+[Point(line=27, char=43), Point(line=27, char=45)] '==' --> '||' :: SURVIVED
+[Point(line=27, char=43), Point(line=27, char=45)] '==' --> '<<' :: SURVIVED
+[Point(line=27, char=43), Point(line=27, char=45)] '==' --> '>>' :: SURVIVED
+Killed 0 and 12 survived, mutation score of 0.0
+[Point(line=28, char=23), Point(line=28, char=24)] '+' --> '|' :: SURVIVED
+[Point(line=28, char=23), Point(line=28, char=24)] '+' --> '&' :: SURVIVED
+[Point(line=28, char=23), Point(line=28, char=24)] '+' --> '^' :: SURVIVED
+[Point(line=28, char=23), Point(line=28, char=24)] '+' --> '&&' :: SURVIVED
+[Point(line=28, char=23), Point(line=28, char=24)] '+' --> '||' :: SURVIVED
+[Point(line=28, char=23), Point(line=28, char=24)] '+' --> '>' :: SURVIVED
+[Point(line=28, char=23), Point(line=28, char=24)] '+' --> '>=' :: SURVIVED
+[Point(line=28, char=23), Point(line=28, char=24)] '+' --> '<' :: SURVIVED
+[Point(line=28, char=23), Point(line=28, char=24)] '+' --> '<=' :: SURVIVED
+[Point(line=28, char=23), Point(line=28, char=24)] '+' --> '==' :: SURVIVED
+[Point(line=28, char=23), Point(line=28, char=24)] '+' --> '!=' :: SURVIVED
+[Point(line=28, char=23), Point(line=28, char=24)] '+' --> '<<' :: SURVIVED
+[Point(line=28, char=23), Point(line=28, char=24)] '+' --> '>>' :: SURVIVED
+Killed 0 and 13 survived, mutation score of 0.0
+Killed 0 and 0 survived
+[Point(line=30, char=23), Point(line=30, char=24)] '+' --> '|' :: SURVIVED
+[Point(line=30, char=23), Point(line=30, char=24)] '+' --> '&' :: SURVIVED
+[Point(line=30, char=23), Point(line=30, char=24)] '+' --> '^' :: SURVIVED
+[Point(line=30, char=23), Point(line=30, char=24)] '+' --> '&&' :: SURVIVED
+[Point(line=30, char=23), Point(line=30, char=24)] '+' --> '||' :: SURVIVED
+[Point(line=30, char=23), Point(line=30, char=24)] '+' --> '>' :: SURVIVED
+[Point(line=30, char=23), Point(line=30, char=24)] '+' --> '>=' :: SURVIVED
+[Point(line=30, char=23), Point(line=30, char=24)] '+' --> '<' :: SURVIVED
+[Point(line=30, char=23), Point(line=30, char=24)] '+' --> '<=' :: SURVIVED
+[Point(line=30, char=23), Point(line=30, char=24)] '+' --> '==' :: SURVIVED
+[Point(line=30, char=23), Point(line=30, char=24)] '+' --> '!=' :: SURVIVED
+[Point(line=30, char=23), Point(line=30, char=24)] '+' --> '<<' :: SURVIVED
+[Point(line=30, char=23), Point(line=30, char=24)] '+' --> '>>' :: SURVIVED
+Killed 0 and 13 survived, mutation score of 0.0
+Killed 0 and 0 survived
+Killed 0 and 38 survived, mutation score of 0.0
+
+Total killed 0 and 38 total survived, with a total mutations score of 0.0
+
+Took 64.02702779699757 seconds

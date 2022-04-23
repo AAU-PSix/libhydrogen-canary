@@ -1,0 +1,112 @@
+digraph hydro_kdf_derive_from_key_0 {
+	initial [shape=point]
+	initial -> "loc. 0
+[221, 246] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 1
+[557, 606] return_statement return hydro_hash_final(&st, subkey, subkey_len); 
+ child of compound_statement" -> final
+	"loc. 0
+[221, 246] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[221, 246] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[251, 271] declaration hydro_hash_state st; 
+ child of compound_statement"
+	"loc. 0
+[251, 271] declaration hydro_hash_state st; 
+ child of compound_statement"
+	"loc. 0
+[251, 271] declaration hydro_hash_state st; 
+ child of compound_statement" -> "loc. 0
+[277, 344] expression_statement
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_kdf_CONTEXTBYTES >= hydro_hash_CONTEXTBYTES); 
+ child of compound_statement"
+	"loc. 0
+[277, 344] expression_statement
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_kdf_CONTEXTBYTES >= hydro_hash_CONTEXTBYTES); 
+ child of compound_statement"
+	"loc. 0
+[277, 344] expression_statement
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_kdf_CONTEXTBYTES >= hydro_hash_CONTEXTBYTES); 
+ child of compound_statement" -> "loc. 0
+[349, 408] expression_statement
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_kdf_KEYBYTES >= hydro_hash_KEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[349, 408] expression_statement
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_kdf_KEYBYTES >= hydro_hash_KEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[349, 408] expression_statement
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_kdf_KEYBYTES >= hydro_hash_KEYBYTES); 
+ child of compound_statement" -> "loc. 0
+[416, 475] parenthesized_expression
+0 killed/12 total=0.0
+ (hydro_hash_init_with_tweak(&st, ctx, subkey_id, key) != 0) 
+ child of if_statement"
+	"loc. 0
+[416, 475] parenthesized_expression
+0 killed/12 total=0.0
+ (hydro_hash_init_with_tweak(&st, ctx, subkey_id, key) != 0) 
+ child of if_statement"
+	"loc. 0
+[416, 475] parenthesized_expression
+0 killed/12 total=0.0
+ (hydro_hash_init_with_tweak(&st, ctx, subkey_id, key) != 0) 
+ child of if_statement" -> "loc. 2
+[477, 502] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" [label=T]
+	"loc. 0
+[416, 475] parenthesized_expression
+0 killed/12 total=0.0
+ (hydro_hash_init_with_tweak(&st, ctx, subkey_id, key) != 0) 
+ child of if_statement" -> "loc. 1
+[527, 552] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" [label=F]
+	"loc. 2
+[477, 502] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement"
+	"loc. 2
+[477, 502] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" -> "loc. 2
+[511, 521] return_statement return -1; 
+ child of compound_statement"
+	"loc. 1
+[527, 552] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[527, 552] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" -> "loc. 1
+[557, 606] return_statement return hydro_hash_final(&st, subkey, subkey_len); 
+ child of compound_statement"
+	"loc. 2
+[511, 521] return_statement return -1; 
+ child of compound_statement"
+	"loc. 2
+[511, 521] return_statement return -1; 
+ child of compound_statement" -> "loc. 1
+[527, 552] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[557, 606] return_statement return hydro_hash_final(&st, subkey, subkey_len); 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    hydro_hash_state st;
+
+    COMPILER_ASSERT(hydro_kdf_CONTEXTBYTES >= hydro_hash_CONTEXTBYTES);
+    COMPILER_ASSERT(hydro_kdf_KEYBYTES >= hydro_hash_KEYBYTES);
+    if (hydro_hash_init_with_tweak(&st, ctx, subkey_id, key) != 0) {CANARY_TWEET_LOCATION(2);
+        return -1;
+    }CANARY_TWEET_LOCATION(1);
+    return hydro_hash_final(&st, subkey, subkey_len);
+}"
+}

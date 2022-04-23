@@ -1,6 +1,7 @@
 {
     "makefile.extensionOutputFolder": "./.vscode",
     "files.associations": {
-        "assert.h": "c"
+        "assert.h": "c",
+        "canary.h": "c"
     }
 }

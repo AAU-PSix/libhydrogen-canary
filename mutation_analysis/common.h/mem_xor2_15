@@ -1,0 +1,120 @@
+Visited locations 0, 1, 2
+Unvisited locations 
+Visited 3, Unvisted 0, percentage visited 1.0
+
+Visited nodes 12
+Unvisited nodes 0
+Percentage visited 1.0
+
+Visited candidates 4
+Unvisited candidates 0
+Percentage visited 1.0
+
+Tested mutations 47
+Untested mutations 0
+Percentage visited 1.0
+
+Location 0
+Killed 0 and 0 survived
+Killed 0 and 0 survived
+Killed 0 and 0 survived
+Killed 0 and 0 survived
+Killed 0 and 0 survived
+[Point(line=316, char=11), Point(line=316, char=12)] '=' --> '+=' :: SURVIVED
+[Point(line=316, char=11), Point(line=316, char=12)] '=' --> '-=' :: SURVIVED
+[Point(line=316, char=11), Point(line=316, char=12)] '=' --> '*=' :: SURVIVED
+[Point(line=316, char=11), Point(line=316, char=12)] '=' --> '/=' :: SURVIVED
+[Point(line=316, char=11), Point(line=316, char=12)] '=' --> '%=' :: SURVIVED
+[Point(line=316, char=11), Point(line=316, char=12)] '=' --> '|=' :: SURVIVED
+[Point(line=316, char=11), Point(line=316, char=12)] '=' --> '&=' :: SURVIVED
+[Point(line=316, char=11), Point(line=316, char=12)] '=' --> '^=' :: SURVIVED
+[Point(line=316, char=11), Point(line=316, char=12)] '=' --> '<<=' :: SURVIVED
+[Point(line=316, char=11), Point(line=316, char=12)] '=' --> '>>=' :: SURVIVED
+Is :: for-initalisation
+Killed 0 and 10 survived, mutation score of 0.0
+[Point(line=316, char=18), Point(line=316, char=19)] '<' --> '+' :: SURVIVED
+[Point(line=316, char=18), Point(line=316, char=19)] '<' --> '-' :: SURVIVED
+[Point(line=316, char=18), Point(line=316, char=19)] '<' --> '*' :: KILLED
+[Point(line=316, char=18), Point(line=316, char=19)] '<' --> '/' :: KILLED
+[Point(line=316, char=18), Point(line=316, char=19)] '<' --> '%' :: KILLED
+[Point(line=316, char=18), Point(line=316, char=19)] '<' --> '|' :: SURVIVED
+[Point(line=316, char=18), Point(line=316, char=19)] '<' --> '&' :: KILLED
+[Point(line=316, char=18), Point(line=316, char=19)] '<' --> '^' :: SURVIVED
+[Point(line=316, char=18), Point(line=316, char=19)] '<' --> '&&' :: KILLED
+[Point(line=316, char=18), Point(line=316, char=19)] '<' --> '||' :: SURVIVED
+[Point(line=316, char=18), Point(line=316, char=19)] '<' --> '<<' :: KILLED
+[Point(line=316, char=18), Point(line=316, char=19)] '<' --> '>>' :: KILLED
+Is :: for-condition
+Killed 7 and 5 survived, mutation score of 0.5833333333333334
+Killed 0 and 0 survived
+Killed 0 and 0 survived
+Is :: for-udapte
+Killed 0 and 0 survived
+Killed 0 and 0 survived
+Killed 0 and 0 survived
+Killed 7 and 15 survived, mutation score of 0.3181818181818182
+
+Location 1
+Killed 0 and 0 survived
+Killed 0 and 0 survived
+Killed 0 and 0 survived
+Killed 0 and 0 survived
+Killed 0 and 0 survived
+Is :: for-initalisation
+Killed 0 and 0 survived
+Is :: for-condition
+Killed 0 and 0 survived
+Killed 0 and 0 survived
+Killed 0 and 0 survived
+Is :: for-udapte
+Killed 0 and 0 survived
+[Point(line=317, char=15), Point(line=317, char=16)] '=' --> '+=' :: KILLED
+[Point(line=317, char=15), Point(line=317, char=16)] '=' --> '-=' :: KILLED
+[Point(line=317, char=15), Point(line=317, char=16)] '=' --> '*=' :: KILLED
+[Point(line=317, char=15), Point(line=317, char=16)] '=' --> '/=' :: KILLED
+[Point(line=317, char=15), Point(line=317, char=16)] '=' --> '%=' :: SURVIVED
+[Point(line=317, char=15), Point(line=317, char=16)] '=' --> '|=' :: KILLED
+[Point(line=317, char=15), Point(line=317, char=16)] '=' --> '&=' :: KILLED
+[Point(line=317, char=15), Point(line=317, char=16)] '=' --> '^=' :: KILLED
+[Point(line=317, char=15), Point(line=317, char=16)] '=' --> '<<=' :: KILLED
+[Point(line=317, char=15), Point(line=317, char=16)] '=' --> '>>=' :: KILLED
+[Point(line=317, char=25), Point(line=317, char=26)] '^' --> '+' :: KILLED
+[Point(line=317, char=25), Point(line=317, char=26)] '^' --> '-' :: KILLED
+[Point(line=317, char=25), Point(line=317, char=26)] '^' --> '*' :: KILLED
+[Point(line=317, char=25), Point(line=317, char=26)] '^' --> '/' :: SURVIVED
+[Point(line=317, char=25), Point(line=317, char=26)] '^' --> '%' :: KILLED
+[Point(line=317, char=25), Point(line=317, char=26)] '^' --> '&&' :: KILLED
+[Point(line=317, char=25), Point(line=317, char=26)] '^' --> '||' :: KILLED
+[Point(line=317, char=25), Point(line=317, char=26)] '^' --> '>' :: KILLED
+[Point(line=317, char=25), Point(line=317, char=26)] '^' --> '>=' :: KILLED
+[Point(line=317, char=25), Point(line=317, char=26)] '^' --> '<' :: KILLED
+[Point(line=317, char=25), Point(line=317, char=26)] '^' --> '<=' :: KILLED
+[Point(line=317, char=25), Point(line=317, char=26)] '^' --> '==' :: KILLED
+[Point(line=317, char=25), Point(line=317, char=26)] '^' --> '!=' :: KILLED
+[Point(line=317, char=25), Point(line=317, char=26)] '^' --> '<<' :: KILLED
+[Point(line=317, char=25), Point(line=317, char=26)] '^' --> '>>' :: KILLED
+Killed 23 and 2 survived, mutation score of 0.92
+Killed 0 and 0 survived
+Killed 23 and 2 survived, mutation score of 0.92
+
+Location 2
+Killed 0 and 0 survived
+Killed 0 and 0 survived
+Killed 0 and 0 survived
+Killed 0 and 0 survived
+Killed 0 and 0 survived
+Is :: for-initalisation
+Killed 0 and 0 survived
+Is :: for-condition
+Killed 0 and 0 survived
+Killed 0 and 0 survived
+Killed 0 and 0 survived
+Is :: for-udapte
+Killed 0 and 0 survived
+Killed 0 and 0 survived
+Killed 0 and 0 survived
+Killed 0 and 0 survived
+
+Total killed 30 and 17 total survived, with a total mutations score of 0.6382978723404256
+
+Took 113.62012781799422 seconds

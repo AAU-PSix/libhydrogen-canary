@@ -1,0 +1,278 @@
+digraph hydro_unpad_8 {
+	initial [shape=point]
+	initial -> "loc. 0
+[5177, 5202] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 5
+[6047, 6090] return_statement return (int) (padded_buflen - 1 - pad_len); 
+ child of compound_statement" -> final
+	"loc. 0
+[5177, 5202] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[5177, 5202] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[5207, 5233] declaration const unsigned char *tail; 
+ child of compound_statement"
+	"loc. 0
+[5207, 5233] declaration const unsigned char *tail; 
+ child of compound_statement"
+	"loc. 0
+[5207, 5233] declaration const unsigned char *tail; 
+ child of compound_statement" -> "loc. 0
+[5238, 5268] declaration unsigned char        acc = 0U; 
+ child of compound_statement"
+	"loc. 0
+[5238, 5268] declaration unsigned char        acc = 0U; 
+ child of compound_statement"
+	"loc. 0
+[5238, 5268] declaration unsigned char        acc = 0U; 
+ child of compound_statement" -> "loc. 0
+[5273, 5296] declaration unsigned char        c; 
+ child of compound_statement"
+	"loc. 0
+[5273, 5296] declaration unsigned char        c; 
+ child of compound_statement"
+	"loc. 0
+[5273, 5296] declaration unsigned char        c; 
+ child of compound_statement" -> "loc. 0
+[5301, 5335] declaration unsigned char        valid   = 0U; 
+ child of compound_statement"
+	"loc. 0
+[5301, 5335] declaration unsigned char        valid   = 0U; 
+ child of compound_statement"
+	"loc. 0
+[5301, 5335] declaration unsigned char        valid   = 0U; 
+ child of compound_statement" -> "loc. 0
+[5340, 5374] declaration volatile size_t      pad_len = 0U; 
+ child of compound_statement"
+	"loc. 0
+[5340, 5374] declaration volatile size_t      pad_len = 0U; 
+ child of compound_statement"
+	"loc. 0
+[5340, 5374] declaration volatile size_t      pad_len = 0U; 
+ child of compound_statement" -> "loc. 0
+[5379, 5402] declaration size_t               i; 
+ child of compound_statement"
+	"loc. 0
+[5379, 5402] declaration size_t               i; 
+ child of compound_statement"
+	"loc. 0
+[5379, 5402] declaration size_t               i; 
+ child of compound_statement" -> "loc. 0
+[5407, 5439] declaration size_t               is_barrier; 
+ child of compound_statement"
+	"loc. 0
+[5407, 5439] declaration size_t               is_barrier; 
+ child of compound_statement"
+	"loc. 0
+[5407, 5439] declaration size_t               is_barrier; 
+ child of compound_statement" -> "loc. 0
+[5448, 5494] parenthesized_expression (padded_buflen < blocksize || blocksize <= 0U) 
+ child of if_statement"
+	"loc. 0
+[5448, 5494] parenthesized_expression (padded_buflen < blocksize || blocksize <= 0U) 
+ child of if_statement"
+	"loc. 0
+[5448, 5494] parenthesized_expression (padded_buflen < blocksize || blocksize <= 0U) 
+ child of if_statement" -> "loc. 2
+[5496, 5521] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" [label=T]
+	"loc. 0
+[5448, 5494] parenthesized_expression (padded_buflen < blocksize || blocksize <= 0U) 
+ child of if_statement" -> "loc. 1
+[5546, 5571] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" [label=F]
+	"loc. 2
+[5496, 5521] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement"
+	"loc. 2
+[5496, 5521] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" -> "loc. 2
+[5530, 5540] return_statement return -1; 
+ child of compound_statement"
+	"loc. 1
+[5546, 5571] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[5546, 5571] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" -> "loc. 1
+[5576, 5608] expression_statement tail = &buf[padded_buflen - 1U]; 
+ child of compound_statement"
+	"loc. 2
+[5530, 5540] return_statement return -1; 
+ child of compound_statement"
+	"loc. 2
+[5530, 5540] return_statement return -1; 
+ child of compound_statement" -> "loc. 1
+[5546, 5571] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[5576, 5608] expression_statement tail = &buf[padded_buflen - 1U]; 
+ child of compound_statement"
+	"loc. 1
+[5576, 5608] expression_statement tail = &buf[padded_buflen - 1U]; 
+ child of compound_statement" -> "loc. 1
+[5619, 5625] assignment_expression i = 0U 
+ child of for_statement"
+	"loc. 1
+[5619, 5625] assignment_expression i = 0U 
+ child of for_statement"
+	"loc. 1
+[5619, 5625] assignment_expression i = 0U 
+ child of for_statement" -> "loc. 1
+[5627, 5640] binary_expression i < blocksize 
+ child of for_statement"
+	"loc. 1
+[5627, 5640] binary_expression i < blocksize 
+ child of for_statement"
+	"loc. 1
+[5627, 5640] binary_expression i < blocksize 
+ child of for_statement" -> "loc. 3
+[5648, 5673] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of compound_statement" [label=T]
+	"loc. 1
+[5627, 5640] binary_expression i < blocksize 
+ child of for_statement" -> "loc. 4
+[5920, 5945] expression_statement CANARY_TWEET_LOCATION(4); 
+ child of compound_statement" [label=F]
+	"loc. 3
+[5648, 5673] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of compound_statement"
+	"loc. 3
+[5648, 5673] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of compound_statement" -> "loc. 3
+[5682, 5704] expression_statement c          = tail[-i]; 
+ child of compound_statement"
+	"loc. 4
+[5920, 5945] expression_statement CANARY_TWEET_LOCATION(4); 
+ child of compound_statement"
+	"loc. 4
+[5920, 5945] expression_statement CANARY_TWEET_LOCATION(4); 
+ child of compound_statement" -> "loc. 4
+[5953, 5965] parenthesized_expression (valid == 0) 
+ child of if_statement"
+	"loc. 2
+[5642, 5645] update_expression i++ 
+ child of for_statement"
+	"loc. 2
+[5642, 5645] update_expression i++ 
+ child of for_statement" -> "loc. 1
+[5627, 5640] binary_expression i < blocksize 
+ child of for_statement"
+	"loc. 3
+[5682, 5704] expression_statement c          = tail[-i]; 
+ child of compound_statement"
+	"loc. 3
+[5682, 5704] expression_statement c          = tail[-i]; 
+ child of compound_statement" -> "loc. 3
+[5713, 5788] expression_statement is_barrier = (((acc - 1U) & (pad_len - 1U) & ((c ^ 0x80) - 1U)) >> 8) & 1U; 
+ child of compound_statement"
+	"loc. 3
+[5713, 5788] expression_statement is_barrier = (((acc - 1U) & (pad_len - 1U) & ((c ^ 0x80) - 1U)) >> 8) & 1U; 
+ child of compound_statement"
+	"loc. 3
+[5713, 5788] expression_statement is_barrier = (((acc - 1U) & (pad_len - 1U) & ((c ^ 0x80) - 1U)) >> 8) & 1U; 
+ child of compound_statement" -> "loc. 3
+[5797, 5806] expression_statement acc |= c; 
+ child of compound_statement"
+	"loc. 3
+[5797, 5806] expression_statement acc |= c; 
+ child of compound_statement"
+	"loc. 3
+[5797, 5806] expression_statement acc |= c; 
+ child of compound_statement" -> "loc. 3
+[5815, 5844] expression_statement pad_len |= (i & -is_barrier); 
+ child of compound_statement"
+	"loc. 3
+[5815, 5844] expression_statement pad_len |= (i & -is_barrier); 
+ child of compound_statement"
+	"loc. 3
+[5815, 5844] expression_statement pad_len |= (i & -is_barrier); 
+ child of compound_statement" -> "loc. 3
+[5853, 5889] expression_statement valid |= (unsigned char) is_barrier; 
+ child of compound_statement"
+	"loc. 3
+[5853, 5889] expression_statement valid |= (unsigned char) is_barrier; 
+ child of compound_statement"
+	"loc. 3
+[5853, 5889] expression_statement valid |= (unsigned char) is_barrier; 
+ child of compound_statement" -> "loc. 2
+[5894, 5919] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement"
+	"loc. 2
+[5894, 5919] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement"
+	"loc. 2
+[5894, 5919] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" -> "loc. 2
+[5642, 5645] update_expression i++ 
+ child of for_statement"
+	"loc. 4
+[5953, 5965] parenthesized_expression (valid == 0) 
+ child of if_statement"
+	"loc. 4
+[5953, 5965] parenthesized_expression (valid == 0) 
+ child of if_statement" -> "loc. 6
+[5967, 5992] expression_statement CANARY_TWEET_LOCATION(6); 
+ child of compound_statement" [label=T]
+	"loc. 4
+[5953, 5965] parenthesized_expression (valid == 0) 
+ child of if_statement" -> "loc. 5
+[6017, 6042] expression_statement CANARY_TWEET_LOCATION(5); 
+ child of compound_statement" [label=F]
+	"loc. 6
+[5967, 5992] expression_statement CANARY_TWEET_LOCATION(6); 
+ child of compound_statement"
+	"loc. 6
+[5967, 5992] expression_statement CANARY_TWEET_LOCATION(6); 
+ child of compound_statement" -> "loc. 6
+[6001, 6011] return_statement return -1; 
+ child of compound_statement"
+	"loc. 5
+[6017, 6042] expression_statement CANARY_TWEET_LOCATION(5); 
+ child of compound_statement"
+	"loc. 5
+[6017, 6042] expression_statement CANARY_TWEET_LOCATION(5); 
+ child of compound_statement" -> "loc. 5
+[6047, 6090] return_statement return (int) (padded_buflen - 1 - pad_len); 
+ child of compound_statement"
+	"loc. 6
+[6001, 6011] return_statement return -1; 
+ child of compound_statement"
+	"loc. 6
+[6001, 6011] return_statement return -1; 
+ child of compound_statement" -> "loc. 5
+[6017, 6042] expression_statement CANARY_TWEET_LOCATION(5); 
+ child of compound_statement"
+	"loc. 5
+[6047, 6090] return_statement return (int) (padded_buflen - 1 - pad_len); 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    const unsigned char *tail;
+    unsigned char        acc = 0U;
+    unsigned char        c;
+    unsigned char        valid   = 0U;
+    volatile size_t      pad_len = 0U;
+    size_t               i;
+    size_t               is_barrier;
+
+    if (padded_buflen < blocksize || blocksize <= 0U) {CANARY_TWEET_LOCATION(2);
+        return -1;
+    }CANARY_TWEET_LOCATION(1);
+    tail = &buf[padded_buflen - 1U];
+
+    for (i = 0U; i < blocksize; i++) {CANARY_TWEET_LOCATION(3);
+        c          = tail[-i];
+        is_barrier = (((acc - 1U) & (pad_len - 1U) & ((c ^ 0x80) - 1U)) >> 8) & 1U;
+        acc |= c;
+        pad_len |= (i & -is_barrier);
+        valid |= (unsigned char) is_barrier;
+    CANARY_TWEET_LOCATION(2);}CANARY_TWEET_LOCATION(4);
+    if (valid == 0) {CANARY_TWEET_LOCATION(6);
+        return -1;
+    }CANARY_TWEET_LOCATION(5);
+    return (int) (padded_buflen - 1 - pad_len);
+}"
+}
