@@ -1,0 +1,226 @@
+digraph hydro_random_block_on_dev_random_0 {
+	initial [shape=point]
+	initial -> "loc. 0
+[215, 240] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 5
+[817, 834] return_statement return close(fd); 
+ child of compound_statement" -> final
+	"loc. 0
+[215, 240] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[215, 240] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[245, 263] declaration struct pollfd pfd; 
+ child of compound_statement"
+	"loc. 0
+[245, 263] declaration struct pollfd pfd; 
+ child of compound_statement"
+	"loc. 0
+[245, 263] declaration struct pollfd pfd; 
+ child of compound_statement" -> "loc. 0
+[268, 285] declaration int           fd; 
+ child of compound_statement"
+	"loc. 0
+[268, 285] declaration int           fd; 
+ child of compound_statement"
+	"loc. 0
+[268, 285] declaration int           fd; 
+ child of compound_statement" -> "loc. 0
+[290, 309] declaration int           pret; 
+ child of compound_statement"
+	"loc. 0
+[290, 309] declaration int           pret; 
+ child of compound_statement"
+	"loc. 0
+[290, 309] declaration int           pret; 
+ child of compound_statement" -> "loc. 0
+[315, 350] expression_statement fd = open(\"/dev/random\", O_RDONLY); 
+ child of compound_statement"
+	"loc. 0
+[315, 350] expression_statement fd = open(\"/dev/random\", O_RDONLY); 
+ child of compound_statement"
+	"loc. 0
+[315, 350] expression_statement fd = open(\"/dev/random\", O_RDONLY); 
+ child of compound_statement" -> "loc. 0
+[358, 368] parenthesized_expression (fd == -1) 
+ child of if_statement"
+	"loc. 0
+[358, 368] parenthesized_expression (fd == -1) 
+ child of if_statement"
+	"loc. 0
+[358, 368] parenthesized_expression (fd == -1) 
+ child of if_statement" -> "loc. 2
+[370, 395] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" [label=T]
+	"loc. 0
+[358, 368] parenthesized_expression (fd == -1) 
+ child of if_statement" -> "loc. 1
+[419, 444] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" [label=F]
+	"loc. 2
+[370, 395] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement"
+	"loc. 2
+[370, 395] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" -> "loc. 2
+[404, 413] return_statement return 0; 
+ child of compound_statement"
+	"loc. 1
+[419, 444] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[419, 444] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" -> "loc. 1
+[449, 466] expression_statement pfd.fd      = fd; 
+ child of compound_statement"
+	"loc. 2
+[404, 413] return_statement return 0; 
+ child of compound_statement"
+	"loc. 2
+[404, 413] return_statement return 0; 
+ child of compound_statement" -> "loc. 1
+[419, 444] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[449, 466] expression_statement pfd.fd      = fd; 
+ child of compound_statement"
+	"loc. 1
+[449, 466] expression_statement pfd.fd      = fd; 
+ child of compound_statement" -> "loc. 1
+[471, 492] expression_statement pfd.events  = POLLIN; 
+ child of compound_statement"
+	"loc. 1
+[471, 492] expression_statement pfd.events  = POLLIN; 
+ child of compound_statement"
+	"loc. 1
+[471, 492] expression_statement pfd.events  = POLLIN; 
+ child of compound_statement" -> "loc. 1
+[497, 513] expression_statement pfd.revents = 0; 
+ child of compound_statement"
+	"loc. 1
+[497, 513] expression_statement pfd.revents = 0; 
+ child of compound_statement"
+	"loc. 1
+[497, 513] expression_statement pfd.revents = 0; 
+ child of compound_statement" -> "loc. 3
+[522, 547] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of compound_statement"
+	"loc. 3
+[522, 547] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of compound_statement"
+	"loc. 3
+[522, 547] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of compound_statement" -> "loc. 3
+[556, 581] expression_statement pret = poll(&pfd, 1, -1); 
+ child of compound_statement"
+	"loc. 3
+[556, 581] expression_statement pret = poll(&pfd, 1, -1); 
+ child of compound_statement"
+	"loc. 3
+[556, 581] expression_statement pret = poll(&pfd, 1, -1); 
+ child of compound_statement" -> "loc. 3
+[594, 643] parenthesized_expression (pret < 0 && (errno == EINTR || errno == EAGAIN)) 
+ child of do_statement"
+	"loc. 3
+[594, 643] parenthesized_expression (pret < 0 && (errno == EINTR || errno == EAGAIN)) 
+ child of do_statement"
+	"loc. 3
+[594, 643] parenthesized_expression (pret < 0 && (errno == EINTR || errno == EAGAIN)) 
+ child of do_statement" -> "loc. 3
+[522, 547] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of compound_statement" [label=T]
+	"loc. 3
+[594, 643] parenthesized_expression (pret < 0 && (errno == EINTR || errno == EAGAIN)) 
+ child of do_statement" -> "loc. 4
+[644, 669] expression_statement CANARY_TWEET_LOCATION(4); 
+ child of compound_statement" [label=F]
+	"loc. 4
+[644, 669] expression_statement CANARY_TWEET_LOCATION(4); 
+ child of compound_statement"
+	"loc. 4
+[644, 669] expression_statement CANARY_TWEET_LOCATION(4); 
+ child of compound_statement" -> "loc. 4
+[677, 688] parenthesized_expression (pret != 1) 
+ child of if_statement"
+	"loc. 4
+[677, 688] parenthesized_expression (pret != 1) 
+ child of if_statement"
+	"loc. 4
+[677, 688] parenthesized_expression (pret != 1) 
+ child of if_statement" -> "loc. 6
+[690, 715] expression_statement CANARY_TWEET_LOCATION(6); 
+ child of compound_statement" [label=T]
+	"loc. 4
+[677, 688] parenthesized_expression (pret != 1) 
+ child of if_statement" -> "loc. 5
+[787, 812] expression_statement CANARY_TWEET_LOCATION(5); 
+ child of compound_statement" [label=F]
+	"loc. 6
+[690, 715] expression_statement CANARY_TWEET_LOCATION(6); 
+ child of compound_statement"
+	"loc. 6
+[690, 715] expression_statement CANARY_TWEET_LOCATION(6); 
+ child of compound_statement" -> "loc. 6
+[724, 741] expression_statement (void) close(fd); 
+ child of compound_statement"
+	"loc. 5
+[787, 812] expression_statement CANARY_TWEET_LOCATION(5); 
+ child of compound_statement"
+	"loc. 5
+[787, 812] expression_statement CANARY_TWEET_LOCATION(5); 
+ child of compound_statement" -> "loc. 5
+[817, 834] return_statement return close(fd); 
+ child of compound_statement"
+	"loc. 6
+[724, 741] expression_statement (void) close(fd); 
+ child of compound_statement"
+	"loc. 6
+[724, 741] expression_statement (void) close(fd); 
+ child of compound_statement" -> "loc. 6
+[750, 762] expression_statement errno = EIO; 
+ child of compound_statement"
+	"loc. 6
+[750, 762] expression_statement errno = EIO; 
+ child of compound_statement"
+	"loc. 6
+[750, 762] expression_statement errno = EIO; 
+ child of compound_statement" -> "loc. 6
+[771, 781] return_statement return -1; 
+ child of compound_statement"
+	"loc. 6
+[771, 781] return_statement return -1; 
+ child of compound_statement"
+	"loc. 6
+[771, 781] return_statement return -1; 
+ child of compound_statement" -> "loc. 5
+[787, 812] expression_statement CANARY_TWEET_LOCATION(5); 
+ child of compound_statement"
+	"loc. 5
+[817, 834] return_statement return close(fd); 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    struct pollfd pfd;
+    int           fd;
+    int           pret;
+
+    fd = open(\"/dev/random\", O_RDONLY);
+    if (fd == -1) {CANARY_TWEET_LOCATION(2);
+        return 0;
+    }CANARY_TWEET_LOCATION(1);
+    pfd.fd      = fd;
+    pfd.events  = POLLIN;
+    pfd.revents = 0;
+    do {CANARY_TWEET_LOCATION(3);
+        pret = poll(&pfd, 1, -1);
+    } while (pret < 0 && (errno == EINTR || errno == EAGAIN));CANARY_TWEET_LOCATION(4);
+    if (pret != 1) {CANARY_TWEET_LOCATION(6);
+        (void) close(fd);
+        errno = EIO;
+        return -1;
+    }CANARY_TWEET_LOCATION(5);
+    return close(fd);
+}"
+}

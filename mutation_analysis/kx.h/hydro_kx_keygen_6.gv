@@ -1,0 +1,72 @@
+digraph hydro_kx_keygen_6 {
+	initial [shape=point]
+	initial -> "loc. 0
+[4968, 4993] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 1
+[5178, 5203] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" -> final
+	"loc. 0
+[4968, 4993] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[4968, 4993] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[4998, 5055] expression_statement hydro_random_buf(static_kp->sk, hydro_kx_SECRETKEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[4998, 5055] expression_statement hydro_random_buf(static_kp->sk, hydro_kx_SECRETKEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[4998, 5055] expression_statement hydro_random_buf(static_kp->sk, hydro_kx_SECRETKEYBYTES); 
+ child of compound_statement" -> "loc. 0
+[5063, 5128] parenthesized_expression
+0 killed/12 total=0.0
+ (hydro_x25519_scalarmult_base(static_kp->pk, static_kp->sk) != 0) 
+ child of if_statement"
+	"loc. 0
+[5063, 5128] parenthesized_expression
+0 killed/12 total=0.0
+ (hydro_x25519_scalarmult_base(static_kp->pk, static_kp->sk) != 0) 
+ child of if_statement"
+	"loc. 0
+[5063, 5128] parenthesized_expression
+0 killed/12 total=0.0
+ (hydro_x25519_scalarmult_base(static_kp->pk, static_kp->sk) != 0) 
+ child of if_statement" -> "loc. 2
+[5130, 5155] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" [label=T]
+	"loc. 0
+[5063, 5128] parenthesized_expression
+0 killed/12 total=0.0
+ (hydro_x25519_scalarmult_base(static_kp->pk, static_kp->sk) != 0) 
+ child of if_statement" -> "loc. 1
+[5178, 5203] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" [label=F]
+	"loc. 2
+[5130, 5155] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement"
+	"loc. 2
+[5130, 5155] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" -> "loc. 2
+[5164, 5172] expression_statement abort(); 
+ child of compound_statement"
+	"loc. 1
+[5178, 5203] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 2
+[5164, 5172] expression_statement abort(); 
+ child of compound_statement"
+	"loc. 2
+[5164, 5172] expression_statement abort(); 
+ child of compound_statement" -> "loc. 1
+[5178, 5203] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    hydro_random_buf(static_kp->sk, hydro_kx_SECRETKEYBYTES);
+    if (hydro_x25519_scalarmult_base(static_kp->pk, static_kp->sk) != 0) {CANARY_TWEET_LOCATION(2);
+        abort();
+    }CANARY_TWEET_LOCATION(1);
+}"
+}

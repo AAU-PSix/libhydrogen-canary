@@ -1,0 +1,164 @@
+digraph hydro_kx_kk_3_16 {
+	initial [shape=point]
+	initial -> "loc. 0
+[11148, 11173] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 3
+[11776, 11785] return_statement return 0; 
+ child of compound_statement" -> final
+	"loc. 0
+[11148, 11173] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[11148, 11173] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[11178, 11215] declaration const uint8_t *peer_eph_pk = packet2; 
+ child of compound_statement"
+	"loc. 0
+[11178, 11215] declaration const uint8_t *peer_eph_pk = packet2; 
+ child of compound_statement"
+	"loc. 0
+[11178, 11215] declaration const uint8_t *peer_eph_pk = packet2; 
+ child of compound_statement" -> "loc. 0
+[11220, 11283] declaration const uint8_t *packet2_mac = &packet2[hydro_kx_PUBLICKEYBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[11220, 11283] declaration const uint8_t *packet2_mac = &packet2[hydro_kx_PUBLICKEYBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[11220, 11283] declaration const uint8_t *packet2_mac = &packet2[hydro_kx_PUBLICKEYBYTES]; 
+ child of compound_statement" -> "loc. 0
+[11289, 11359] expression_statement hydro_hash_update(&state->h_st, peer_eph_pk, hydro_kx_PUBLICKEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[11289, 11359] expression_statement hydro_hash_update(&state->h_st, peer_eph_pk, hydro_kx_PUBLICKEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[11289, 11359] expression_statement hydro_hash_update(&state->h_st, peer_eph_pk, hydro_kx_PUBLICKEYBYTES); 
+ child of compound_statement" -> "loc. 0
+[11367, 11486] parenthesized_expression
+8 killed/42 total=0.19047619047619047
+ (hydro_kx_dh(state, state->eph_kp.sk, peer_eph_pk) != 0 ||
+        hydro_kx_dh(state, static_kp->sk, peer_eph_pk) != 0) 
+ child of if_statement"
+	"loc. 0
+[11367, 11486] parenthesized_expression
+8 killed/42 total=0.19047619047619047
+ (hydro_kx_dh(state, state->eph_kp.sk, peer_eph_pk) != 0 ||
+        hydro_kx_dh(state, static_kp->sk, peer_eph_pk) != 0) 
+ child of if_statement"
+	"loc. 0
+[11367, 11486] parenthesized_expression
+8 killed/42 total=0.19047619047619047
+ (hydro_kx_dh(state, state->eph_kp.sk, peer_eph_pk) != 0 ||
+        hydro_kx_dh(state, static_kp->sk, peer_eph_pk) != 0) 
+ child of if_statement" -> "loc. 2
+[11488, 11513] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" [label=T]
+	"loc. 0
+[11367, 11486] parenthesized_expression
+8 killed/42 total=0.19047619047619047
+ (hydro_kx_dh(state, state->eph_kp.sk, peer_eph_pk) != 0 ||
+        hydro_kx_dh(state, static_kp->sk, peer_eph_pk) != 0) 
+ child of if_statement" -> "loc. 1
+[11538, 11563] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" [label=F]
+	"loc. 2
+[11488, 11513] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement"
+	"loc. 2
+[11488, 11513] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" -> "loc. 2
+[11522, 11532] return_statement return -1; 
+ child of compound_statement"
+	"loc. 1
+[11538, 11563] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[11538, 11563] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" -> "loc. 1
+[11572, 11650] parenthesized_expression
+0 killed/12 total=0.0
+ (hydro_kx_aead_decrypt(state, NULL, packet2_mac, hydro_kx_AEAD_MACBYTES) != 0) 
+ child of if_statement"
+	"loc. 2
+[11522, 11532] return_statement return -1; 
+ child of compound_statement"
+	"loc. 2
+[11522, 11532] return_statement return -1; 
+ child of compound_statement" -> "loc. 1
+[11538, 11563] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[11572, 11650] parenthesized_expression
+0 killed/12 total=0.0
+ (hydro_kx_aead_decrypt(state, NULL, packet2_mac, hydro_kx_AEAD_MACBYTES) != 0) 
+ child of if_statement"
+	"loc. 1
+[11572, 11650] parenthesized_expression
+0 killed/12 total=0.0
+ (hydro_kx_aead_decrypt(state, NULL, packet2_mac, hydro_kx_AEAD_MACBYTES) != 0) 
+ child of if_statement" -> "loc. 4
+[11652, 11677] expression_statement CANARY_TWEET_LOCATION(4); 
+ child of compound_statement" [label=T]
+	"loc. 1
+[11572, 11650] parenthesized_expression
+0 killed/12 total=0.0
+ (hydro_kx_aead_decrypt(state, NULL, packet2_mac, hydro_kx_AEAD_MACBYTES) != 0) 
+ child of if_statement" -> "loc. 3
+[11702, 11727] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of compound_statement" [label=F]
+	"loc. 4
+[11652, 11677] expression_statement CANARY_TWEET_LOCATION(4); 
+ child of compound_statement"
+	"loc. 4
+[11652, 11677] expression_statement CANARY_TWEET_LOCATION(4); 
+ child of compound_statement" -> "loc. 4
+[11686, 11696] return_statement return -1; 
+ child of compound_statement"
+	"loc. 3
+[11702, 11727] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of compound_statement"
+	"loc. 3
+[11702, 11727] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of compound_statement" -> "loc. 3
+[11732, 11770] expression_statement hydro_kx_final(state, kp->rx, kp->tx); 
+ child of compound_statement"
+	"loc. 4
+[11686, 11696] return_statement return -1; 
+ child of compound_statement"
+	"loc. 4
+[11686, 11696] return_statement return -1; 
+ child of compound_statement" -> "loc. 3
+[11702, 11727] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of compound_statement"
+	"loc. 3
+[11732, 11770] expression_statement hydro_kx_final(state, kp->rx, kp->tx); 
+ child of compound_statement"
+	"loc. 3
+[11732, 11770] expression_statement hydro_kx_final(state, kp->rx, kp->tx); 
+ child of compound_statement" -> "loc. 3
+[11776, 11785] return_statement return 0; 
+ child of compound_statement"
+	"loc. 3
+[11776, 11785] return_statement return 0; 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    const uint8_t *peer_eph_pk = packet2;
+    const uint8_t *packet2_mac = &packet2[hydro_kx_PUBLICKEYBYTES];
+
+    hydro_hash_update(&state->h_st, peer_eph_pk, hydro_kx_PUBLICKEYBYTES);
+    if (hydro_kx_dh(state, state->eph_kp.sk, peer_eph_pk) != 0 ||
+        hydro_kx_dh(state, static_kp->sk, peer_eph_pk) != 0) {CANARY_TWEET_LOCATION(2);
+        return -1;
+    }CANARY_TWEET_LOCATION(1);
+
+    if (hydro_kx_aead_decrypt(state, NULL, packet2_mac, hydro_kx_AEAD_MACBYTES) != 0) {CANARY_TWEET_LOCATION(4);
+        return -1;
+    }CANARY_TWEET_LOCATION(3);
+    hydro_kx_final(state, kp->rx, kp->tx);
+
+    return 0;
+}"
+}

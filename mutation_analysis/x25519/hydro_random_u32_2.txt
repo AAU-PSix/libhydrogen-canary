@@ -1,0 +1,465 @@
+Mutation took 90.02267663300154 seconds
+Original execution 108001 traces
+
+Visted count
+0 was visited 3130029 times
+2 was visited 1749578 times
+1 was visited 3130027 times
+
+Visited locations 0, 1, 2
+Unvisited locations 
+Visited 3, Unvisted 0, percentage visited 1.0
+
+Visited nodes 10
+Unvisited nodes 0
+Percentage visited 1.0
+
+Visited candidates 3
+Unvisited candidates 0
+Percentage visited 1.0
+
+Tested mutations 31
+Untested mutations 0
+Percentage visited 1.0
+
+Location 0
+10 Runs
+
+Code :: 'CANARY_TWEET_LOCATION(2);'
+No mutations
+
+Code :: 'CANARY_TWEET_LOCATION(1);'
+No mutations
+
+Code :: 'hydro_random_ratchet();'
+No mutations
+
+Code :: 'memcpy(&v, &hydro_random_context.state[gimli_RATE - hydro_random_context.available], 4);'
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 26998 times
+[Point(line=67, char=54), Point(line=67, char=55)] '-' --> '|' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 26998 times
+[Point(line=67, char=54), Point(line=67, char=55)] '-' --> '&' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 26998 times
+[Point(line=67, char=54), Point(line=67, char=55)] '-' --> '^' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 26998 times
+[Point(line=67, char=54), Point(line=67, char=55)] '-' --> '&&' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 26998 times
+[Point(line=67, char=54), Point(line=67, char=55)] '-' --> '||' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 26998 times
+[Point(line=67, char=54), Point(line=67, char=55)] '-' --> '>' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 26998 times
+[Point(line=67, char=54), Point(line=67, char=55)] '-' --> '>=' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 26998 times
+[Point(line=67, char=54), Point(line=67, char=55)] '-' --> '<' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 26998 times
+[Point(line=67, char=54), Point(line=67, char=55)] '-' --> '<=' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 26998 times
+[Point(line=67, char=54), Point(line=67, char=55)] '-' --> '==' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 26998 times
+[Point(line=67, char=54), Point(line=67, char=55)] '-' --> '!=' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=67, char=54), Point(line=67, char=55)] '-' --> '<<' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 26998 times
+[Point(line=67, char=54), Point(line=67, char=55)] '-' --> '>>' :: SURVIVED
+
+Killed 0 and 13 survived, mutation score of 0.0
+
+Code :: 'hydro_random_context.available -= 4;'
+Mutant trace count 9999
+0 was visited 10000 times
+1 was visited 9999 times
+[Point(line=68, char=35), Point(line=68, char=37)] '-=' --> '|=' :: KILLED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 107998 times
+[Point(line=68, char=35), Point(line=68, char=37)] '-=' --> '&=' :: SURVIVED
+
+Mutant trace count 194002
+0 was visited 194002 times
+1 was visited 194002 times
+[Point(line=68, char=35), Point(line=68, char=37)] '-=' --> '^=' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+[Point(line=68, char=35), Point(line=68, char=37)] '-=' --> '=' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 107998 times
+[Point(line=68, char=35), Point(line=68, char=37)] '-=' --> '<<=' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 107998 times
+[Point(line=68, char=35), Point(line=68, char=37)] '-=' --> '>>=' :: SURVIVED
+
+Killed 1 and 5 survived, mutation score of 0.16666666666666666
+
+Code :: 'return v;'
+No mutations
+
+Location Killed 1 and 18 survived, mutation score of 0.05263157894736842
+
+
+Location 1
+10 Runs
+
+Code :: 'CANARY_TWEET_LOCATION(0);'
+No mutations
+
+Code :: 'uint32_t v;'
+No mutations
+
+Code :: 'hydro_random_ensure_initialized();'
+No mutations
+
+Code :: '(hydro_random_context.available < 4)'
+Is :: if-condition
+Mutant trace count 108001
+0 was visited 108001 times
+2 was visited 108001 times
+1 was visited 108001 times
+[Point(line=64, char=39), Point(line=64, char=40)] '<' --> '+' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+2 was visited 108001 times
+1 was visited 108001 times
+[Point(line=64, char=39), Point(line=64, char=40)] '<' --> '-' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+2 was visited 108001 times
+1 was visited 108001 times
+[Point(line=64, char=39), Point(line=64, char=40)] '<' --> '*' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+2 was visited 108001 times
+1 was visited 108001 times
+[Point(line=64, char=39), Point(line=64, char=40)] '<' --> '/' :: SURVIVED
+
+Mutant trace count 9999
+0 was visited 10000 times
+1 was visited 9999 times
+[Point(line=64, char=39), Point(line=64, char=40)] '<' --> '%' :: KILLED
+
+Mutant trace count 108001
+0 was visited 108001 times
+2 was visited 108001 times
+1 was visited 108001 times
+[Point(line=64, char=39), Point(line=64, char=40)] '<' --> '|' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 107998 times
+[Point(line=64, char=39), Point(line=64, char=40)] '<' --> '&' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+2 was visited 108001 times
+1 was visited 108001 times
+[Point(line=64, char=39), Point(line=64, char=40)] '<' --> '^' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+2 was visited 108001 times
+1 was visited 108001 times
+[Point(line=64, char=39), Point(line=64, char=40)] '<' --> '&&' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+2 was visited 108001 times
+1 was visited 108001 times
+[Point(line=64, char=39), Point(line=64, char=40)] '<' --> '||' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+2 was visited 108001 times
+1 was visited 108001 times
+[Point(line=64, char=39), Point(line=64, char=40)] '<' --> '<<' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+2 was visited 21601 times
+1 was visited 108001 times
+[Point(line=64, char=39), Point(line=64, char=40)] '<' --> '>>' :: SURVIVED
+
+Killed 1 and 11 survived, mutation score of 0.08333333333333333
+
+Code :: 'CANARY_TWEET_LOCATION(2);'
+No mutations
+
+Code :: 'hydro_random_ratchet();'
+No mutations
+
+Location Killed 1 and 11 survived, mutation score of 0.08333333333333333
+
+
+Location 2
+10 Runs
+
+Code :: 'CANARY_TWEET_LOCATION(0);'
+No mutations
+
+Code :: 'uint32_t v;'
+No mutations
+
+Code :: 'hydro_random_ensure_initialized();'
+No mutations
+
+Code :: '(hydro_random_context.available < 4)'
+Is :: if-condition
+Mutant trace count 108001
+0 was visited 108001 times
+2 was visited 108001 times
+1 was visited 108001 times
+[Point(line=64, char=39), Point(line=64, char=40)] '<' --> '+' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+2 was visited 108001 times
+1 was visited 108001 times
+[Point(line=64, char=39), Point(line=64, char=40)] '<' --> '-' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+2 was visited 108001 times
+1 was visited 108001 times
+[Point(line=64, char=39), Point(line=64, char=40)] '<' --> '*' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+2 was visited 108001 times
+1 was visited 108001 times
+[Point(line=64, char=39), Point(line=64, char=40)] '<' --> '/' :: SURVIVED
+
+Mutant trace count 9999
+0 was visited 10000 times
+1 was visited 9999 times
+[Point(line=64, char=39), Point(line=64, char=40)] '<' --> '%' :: KILLED
+
+Mutant trace count 108001
+0 was visited 108001 times
+2 was visited 108001 times
+1 was visited 108001 times
+[Point(line=64, char=39), Point(line=64, char=40)] '<' --> '|' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 107998 times
+[Point(line=64, char=39), Point(line=64, char=40)] '<' --> '&' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+2 was visited 108001 times
+1 was visited 108001 times
+[Point(line=64, char=39), Point(line=64, char=40)] '<' --> '^' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+2 was visited 108001 times
+1 was visited 108001 times
+[Point(line=64, char=39), Point(line=64, char=40)] '<' --> '&&' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+2 was visited 108001 times
+1 was visited 108001 times
+[Point(line=64, char=39), Point(line=64, char=40)] '<' --> '||' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+2 was visited 108001 times
+1 was visited 108001 times
+[Point(line=64, char=39), Point(line=64, char=40)] '<' --> '<<' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+2 was visited 21601 times
+1 was visited 108001 times
+[Point(line=64, char=39), Point(line=64, char=40)] '<' --> '>>' :: SURVIVED
+
+Killed 1 and 11 survived, mutation score of 0.08333333333333333
+
+Code :: 'CANARY_TWEET_LOCATION(1);'
+No mutations
+
+Code :: 'memcpy(&v, &hydro_random_context.state[gimli_RATE - hydro_random_context.available], 4);'
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 26998 times
+[Point(line=67, char=54), Point(line=67, char=55)] '-' --> '|' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 26998 times
+[Point(line=67, char=54), Point(line=67, char=55)] '-' --> '&' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 26998 times
+[Point(line=67, char=54), Point(line=67, char=55)] '-' --> '^' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 26998 times
+[Point(line=67, char=54), Point(line=67, char=55)] '-' --> '&&' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 26998 times
+[Point(line=67, char=54), Point(line=67, char=55)] '-' --> '||' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 26998 times
+[Point(line=67, char=54), Point(line=67, char=55)] '-' --> '>' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 26998 times
+[Point(line=67, char=54), Point(line=67, char=55)] '-' --> '>=' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 26998 times
+[Point(line=67, char=54), Point(line=67, char=55)] '-' --> '<' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 26998 times
+[Point(line=67, char=54), Point(line=67, char=55)] '-' --> '<=' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 26998 times
+[Point(line=67, char=54), Point(line=67, char=55)] '-' --> '==' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 26998 times
+[Point(line=67, char=54), Point(line=67, char=55)] '-' --> '!=' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=67, char=54), Point(line=67, char=55)] '-' --> '<<' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 26998 times
+[Point(line=67, char=54), Point(line=67, char=55)] '-' --> '>>' :: SURVIVED
+
+Killed 0 and 13 survived, mutation score of 0.0
+
+Code :: 'hydro_random_context.available -= 4;'
+Mutant trace count 9999
+0 was visited 10000 times
+1 was visited 9999 times
+[Point(line=68, char=35), Point(line=68, char=37)] '-=' --> '|=' :: KILLED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 107998 times
+[Point(line=68, char=35), Point(line=68, char=37)] '-=' --> '&=' :: SURVIVED
+
+Mutant trace count 194002
+0 was visited 194002 times
+1 was visited 194002 times
+[Point(line=68, char=35), Point(line=68, char=37)] '-=' --> '^=' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+[Point(line=68, char=35), Point(line=68, char=37)] '-=' --> '=' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 107998 times
+[Point(line=68, char=35), Point(line=68, char=37)] '-=' --> '<<=' :: SURVIVED
+
+Mutant trace count 108001
+0 was visited 108001 times
+1 was visited 108001 times
+2 was visited 107998 times
+[Point(line=68, char=35), Point(line=68, char=37)] '-=' --> '>>=' :: SURVIVED
+
+Killed 1 and 5 survived, mutation score of 0.16666666666666666
+
+Code :: 'return v;'
+No mutations
+
+Location Killed 2 and 29 survived, mutation score of 0.06451612903225806
+
+
+Total killed 4 and 58 total survived, with a total mutations score of 0.06451612903225806
+
+Took 119.98193963999802 seconds
