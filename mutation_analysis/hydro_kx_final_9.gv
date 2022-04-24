@@ -1,0 +1,52 @@
+digraph hydro_kx_final_9 {
+	initial [shape=point]
+	initial -> "loc. 0
+[5921, 5946] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 0
+[6153, 6247] expression_statement hydro_kdf_derive_from_key(session_k2, hydro_kx_SESSIONKEYBYTES, 1, hydro_kx_CONTEXT, kdf_key); 
+ child of compound_statement" -> final
+	"loc. 0
+[5921, 5946] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[5921, 5946] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[5951, 5987] declaration uint8_t kdf_key[hydro_kdf_KEYBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[5951, 5987] declaration uint8_t kdf_key[hydro_kdf_KEYBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[5951, 5987] declaration uint8_t kdf_key[hydro_kdf_KEYBYTES]; 
+ child of compound_statement" -> "loc. 0
+[5993, 6049] expression_statement hydro_hash_final(&state->h_st, kdf_key, sizeof kdf_key); 
+ child of compound_statement"
+	"loc. 0
+[5993, 6049] expression_statement hydro_hash_final(&state->h_st, kdf_key, sizeof kdf_key); 
+ child of compound_statement"
+	"loc. 0
+[5993, 6049] expression_statement hydro_hash_final(&state->h_st, kdf_key, sizeof kdf_key); 
+ child of compound_statement" -> "loc. 0
+[6054, 6148] expression_statement hydro_kdf_derive_from_key(session_k1, hydro_kx_SESSIONKEYBYTES, 0, hydro_kx_CONTEXT, kdf_key); 
+ child of compound_statement"
+	"loc. 0
+[6054, 6148] expression_statement hydro_kdf_derive_from_key(session_k1, hydro_kx_SESSIONKEYBYTES, 0, hydro_kx_CONTEXT, kdf_key); 
+ child of compound_statement"
+	"loc. 0
+[6054, 6148] expression_statement hydro_kdf_derive_from_key(session_k1, hydro_kx_SESSIONKEYBYTES, 0, hydro_kx_CONTEXT, kdf_key); 
+ child of compound_statement" -> "loc. 0
+[6153, 6247] expression_statement hydro_kdf_derive_from_key(session_k2, hydro_kx_SESSIONKEYBYTES, 1, hydro_kx_CONTEXT, kdf_key); 
+ child of compound_statement"
+	"loc. 0
+[6153, 6247] expression_statement hydro_kdf_derive_from_key(session_k2, hydro_kx_SESSIONKEYBYTES, 1, hydro_kx_CONTEXT, kdf_key); 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    uint8_t kdf_key[hydro_kdf_KEYBYTES];
+
+    hydro_hash_final(&state->h_st, kdf_key, sizeof kdf_key);
+    hydro_kdf_derive_from_key(session_k1, hydro_kx_SESSIONKEYBYTES, 0, hydro_kx_CONTEXT, kdf_key);
+    hydro_kdf_derive_from_key(session_k2, hydro_kx_SESSIONKEYBYTES, 1, hydro_kx_CONTEXT, kdf_key);
+}"
+}

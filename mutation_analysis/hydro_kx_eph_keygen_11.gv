@@ -1,0 +1,33 @@
+digraph hydro_kx_eph_keygen_11 {
+	initial [shape=point]
+	initial -> "loc. 0
+[6675, 6700] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 0
+[6730, 6785] expression_statement hydro_hash_update(&state->h_st, kp->pk, sizeof kp->pk); 
+ child of compound_statement" -> final
+	"loc. 0
+[6675, 6700] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[6675, 6700] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[6705, 6725] expression_statement hydro_kx_keygen(kp); 
+ child of compound_statement"
+	"loc. 0
+[6705, 6725] expression_statement hydro_kx_keygen(kp); 
+ child of compound_statement"
+	"loc. 0
+[6705, 6725] expression_statement hydro_kx_keygen(kp); 
+ child of compound_statement" -> "loc. 0
+[6730, 6785] expression_statement hydro_hash_update(&state->h_st, kp->pk, sizeof kp->pk); 
+ child of compound_statement"
+	"loc. 0
+[6730, 6785] expression_statement hydro_hash_update(&state->h_st, kp->pk, sizeof kp->pk); 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    hydro_kx_keygen(kp);
+    hydro_hash_update(&state->h_st, kp->pk, sizeof kp->pk);
+}"
+}

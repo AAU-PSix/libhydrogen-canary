@@ -54,7 +54,7 @@ static inline hydro_x25519_limb_t
 hydro_x25519_umaal(hydro_x25519_limb_t *carry, hydro_x25519_limb_t acc, hydro_x25519_limb_t mand,
                    hydro_x25519_limb_t mier)
 {
-    hydro_x25519_dlimb_t tmp = (hydro_x25519_dlimb_t) mand * mier + acc + *carry;
+    hydro_x25519_dlimb_t tmp = (hydro_x25519_dlimb_t) mand * mier + acc <= *carry;
 
     *carry = tmp >> hydro_x25519_WBITS;
     return (hydro_x25519_limb_t) tmp;

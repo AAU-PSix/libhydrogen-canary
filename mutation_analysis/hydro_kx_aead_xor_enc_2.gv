@@ -1,0 +1,226 @@
+digraph hydro_kx_aead_xor_enc_2 {
+	initial [shape=point]
+	initial -> "loc. 0
+[1372, 1397] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 3
+[2061, 2106] expression_statement gimli_core_u8(aead_state, gimli_TAG_PAYLOAD); 
+ child of compound_statement" -> final
+	"loc. 0
+[1372, 1397] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[1372, 1397] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[1402, 1411] declaration size_t i; 
+ child of compound_statement"
+	"loc. 0
+[1402, 1411] declaration size_t i; 
+ child of compound_statement"
+	"loc. 0
+[1402, 1411] declaration size_t i; 
+ child of compound_statement" -> "loc. 0
+[1416, 1432] declaration size_t leftover; 
+ child of compound_statement"
+	"loc. 0
+[1416, 1432] declaration size_t leftover; 
+ child of compound_statement"
+	"loc. 0
+[1416, 1432] declaration size_t leftover; 
+ child of compound_statement" -> "loc. 0
+[1443, 1448] assignment_expression
+0 killed/10 total=0.0
+ i = 0 
+ child of for_statement"
+	"loc. 0
+[1443, 1448] assignment_expression
+0 killed/10 total=0.0
+ i = 0 
+ child of for_statement"
+	"loc. 0
+[1443, 1448] assignment_expression
+0 killed/10 total=0.0
+ i = 0 
+ child of for_statement" -> "loc. 0
+[1450, 1472] binary_expression
+13 killed/25 total=0.52
+ i < inlen / gimli_RATE 
+ child of for_statement"
+	"loc. 0
+[1450, 1472] binary_expression
+13 killed/25 total=0.52
+ i < inlen / gimli_RATE 
+ child of for_statement"
+	"loc. 0
+[1450, 1472] binary_expression
+13 killed/25 total=0.52
+ i < inlen / gimli_RATE 
+ child of for_statement" -> "loc. 1
+[1480, 1505] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" [label=T]
+	"loc. 0
+[1450, 1472] binary_expression
+13 killed/25 total=0.52
+ i < inlen / gimli_RATE 
+ child of for_statement" -> "loc. 2
+[1712, 1737] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" [label=F]
+	"loc. 1
+[1480, 1505] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[1480, 1505] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" -> "loc. 1
+[1514, 1590] expression_statement
+24 killed/26 total=0.9230769230769231
+ mem_xor2(&out[i * gimli_RATE], &in[i * gimli_RATE], aead_state, gimli_RATE); 
+ child of compound_statement"
+	"loc. 2
+[1712, 1737] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement"
+	"loc. 2
+[1712, 1737] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" -> "loc. 2
+[1742, 1772] expression_statement
+3 killed/23 total=0.13043478260869565
+ leftover = inlen % gimli_RATE; 
+ child of compound_statement"
+	"loc. 1
+[1474, 1477] update_expression i++ 
+ child of for_statement"
+	"loc. 1
+[1474, 1477] update_expression i++ 
+ child of for_statement" -> "loc. 0
+[1450, 1472] binary_expression
+13 killed/25 total=0.52
+ i < inlen / gimli_RATE 
+ child of for_statement"
+	"loc. 1
+[1514, 1590] expression_statement
+24 killed/26 total=0.9230769230769231
+ mem_xor2(&out[i * gimli_RATE], &in[i * gimli_RATE], aead_state, gimli_RATE); 
+ child of compound_statement"
+	"loc. 1
+[1514, 1590] expression_statement
+24 killed/26 total=0.9230769230769231
+ mem_xor2(&out[i * gimli_RATE], &in[i * gimli_RATE], aead_state, gimli_RATE); 
+ child of compound_statement" -> "loc. 1
+[1599, 1652] expression_statement
+12 killed/13 total=0.9230769230769231
+ memcpy(aead_state, &out[i * gimli_RATE], gimli_RATE); 
+ child of compound_statement"
+	"loc. 1
+[1599, 1652] expression_statement
+12 killed/13 total=0.9230769230769231
+ memcpy(aead_state, &out[i * gimli_RATE], gimli_RATE); 
+ child of compound_statement"
+	"loc. 1
+[1599, 1652] expression_statement
+12 killed/13 total=0.9230769230769231
+ memcpy(aead_state, &out[i * gimli_RATE], gimli_RATE); 
+ child of compound_statement" -> "loc. 1
+[1661, 1706] expression_statement gimli_core_u8(aead_state, gimli_TAG_PAYLOAD); 
+ child of compound_statement"
+	"loc. 1
+[1661, 1706] expression_statement gimli_core_u8(aead_state, gimli_TAG_PAYLOAD); 
+ child of compound_statement"
+	"loc. 1
+[1661, 1706] expression_statement gimli_core_u8(aead_state, gimli_TAG_PAYLOAD); 
+ child of compound_statement" -> "loc. 1
+[1474, 1477] update_expression i++ 
+ child of for_statement"
+	"loc. 2
+[1742, 1772] expression_statement
+3 killed/23 total=0.13043478260869565
+ leftover = inlen % gimli_RATE; 
+ child of compound_statement"
+	"loc. 2
+[1742, 1772] expression_statement
+3 killed/23 total=0.13043478260869565
+ leftover = inlen % gimli_RATE; 
+ child of compound_statement" -> "loc. 2
+[1780, 1795] parenthesized_expression
+0 killed/12 total=0.0
+ (leftover != 0) 
+ child of if_statement"
+	"loc. 2
+[1780, 1795] parenthesized_expression
+0 killed/12 total=0.0
+ (leftover != 0) 
+ child of if_statement"
+	"loc. 2
+[1780, 1795] parenthesized_expression
+0 killed/12 total=0.0
+ (leftover != 0) 
+ child of if_statement" -> "loc. 4
+[1797, 1822] expression_statement CANARY_TWEET_LOCATION(4); 
+ child of compound_statement" [label=T]
+	"loc. 2
+[1780, 1795] parenthesized_expression
+0 killed/12 total=0.0
+ (leftover != 0) 
+ child of if_statement" -> "loc. 3
+[1972, 1997] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of compound_statement" [label=F]
+	"loc. 4
+[1797, 1822] expression_statement CANARY_TWEET_LOCATION(4); 
+ child of compound_statement"
+	"loc. 4
+[1797, 1822] expression_statement CANARY_TWEET_LOCATION(4); 
+ child of compound_statement" -> "loc. 4
+[1831, 1905] expression_statement mem_xor2(&out[i * gimli_RATE], &in[i * gimli_RATE], aead_state, leftover); 
+ child of compound_statement"
+	"loc. 3
+[1972, 1997] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of compound_statement"
+	"loc. 3
+[1972, 1997] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of compound_statement" -> "loc. 3
+[2002, 2056] expression_statement gimli_pad_u8(aead_state, leftover, gimli_DOMAIN_AEAD); 
+ child of compound_statement"
+	"loc. 4
+[1831, 1905] expression_statement mem_xor2(&out[i * gimli_RATE], &in[i * gimli_RATE], aead_state, leftover); 
+ child of compound_statement"
+	"loc. 4
+[1831, 1905] expression_statement mem_xor2(&out[i * gimli_RATE], &in[i * gimli_RATE], aead_state, leftover); 
+ child of compound_statement" -> "loc. 4
+[1914, 1966] expression_statement mem_cpy(aead_state, &out[i * gimli_RATE], leftover); 
+ child of compound_statement"
+	"loc. 4
+[1914, 1966] expression_statement mem_cpy(aead_state, &out[i * gimli_RATE], leftover); 
+ child of compound_statement"
+	"loc. 4
+[1914, 1966] expression_statement mem_cpy(aead_state, &out[i * gimli_RATE], leftover); 
+ child of compound_statement" -> "loc. 3
+[1972, 1997] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of compound_statement"
+	"loc. 3
+[2002, 2056] expression_statement gimli_pad_u8(aead_state, leftover, gimli_DOMAIN_AEAD); 
+ child of compound_statement"
+	"loc. 3
+[2002, 2056] expression_statement gimli_pad_u8(aead_state, leftover, gimli_DOMAIN_AEAD); 
+ child of compound_statement" -> "loc. 3
+[2061, 2106] expression_statement gimli_core_u8(aead_state, gimli_TAG_PAYLOAD); 
+ child of compound_statement"
+	"loc. 3
+[2061, 2106] expression_statement gimli_core_u8(aead_state, gimli_TAG_PAYLOAD); 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    size_t i;
+    size_t leftover;
+
+    for (i = 0; i < inlen / gimli_RATE; i++) {CANARY_TWEET_LOCATION(1);
+        mem_xor2(&out[i * gimli_RATE], &in[i * gimli_RATE], aead_state, gimli_RATE);
+        memcpy(aead_state, &out[i * gimli_RATE], gimli_RATE);
+        gimli_core_u8(aead_state, gimli_TAG_PAYLOAD);
+    }CANARY_TWEET_LOCATION(2);
+    leftover = inlen % gimli_RATE;
+    if (leftover != 0) {CANARY_TWEET_LOCATION(4);
+        mem_xor2(&out[i * gimli_RATE], &in[i * gimli_RATE], aead_state, leftover);
+        mem_cpy(aead_state, &out[i * gimli_RATE], leftover);
+    }CANARY_TWEET_LOCATION(3);
+    gimli_pad_u8(aead_state, leftover, gimli_DOMAIN_AEAD);
+    gimli_core_u8(aead_state, gimli_TAG_PAYLOAD);
+}"
+}

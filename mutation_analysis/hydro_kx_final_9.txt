@@ -1,0 +1,42 @@
+Mutation took 0.008409524998569395 seconds
+Original execution 12 traces
+\Visited count
+
+Visited locations 0
+Unvisited locations 
+Visited 1, Unvisted 0, percentage visited 1.0
+
+Visited nodes 5
+Unvisited nodes 0
+Percentage visited 1.0
+
+Visited candidates 0
+Unvisited candidates 0
+
+Tested mutations 0
+Untested mutations 0
+
+Location 0
+5 Runs
+
+Code :: 'CANARY_TWEET_LOCATION(0);'
+No mutations
+
+Code :: 'uint8_t kdf_key[hydro_kdf_KEYBYTES];'
+No mutations
+
+Code :: 'hydro_hash_final(&state->h_st, kdf_key, sizeof kdf_key);'
+No mutations
+
+Code :: 'hydro_kdf_derive_from_key(session_k1, hydro_kx_SESSIONKEYBYTES, 0, hydro_kx_CONTEXT, kdf_key);'
+No mutations
+
+Code :: 'hydro_kdf_derive_from_key(session_k2, hydro_kx_SESSIONKEYBYTES, 1, hydro_kx_CONTEXT, kdf_key);'
+No mutations
+
+Location Killed 0 and 0 survived
+
+
+Total killed 0 and 0 total survived
+
+Took 2.13246177900146 seconds

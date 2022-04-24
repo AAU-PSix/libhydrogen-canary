@@ -1,0 +1,33 @@
+digraph hydro_random_reseed_6 {
+	initial [shape=point]
+	initial -> "loc. 0
+[4153, 4178] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 0
+[4225, 4259] expression_statement hydro_random_ensure_initialized(); 
+ child of compound_statement" -> final
+	"loc. 0
+[4153, 4178] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[4153, 4178] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[4183, 4220] expression_statement hydro_random_context.initialized = 0; 
+ child of compound_statement"
+	"loc. 0
+[4183, 4220] expression_statement hydro_random_context.initialized = 0; 
+ child of compound_statement"
+	"loc. 0
+[4183, 4220] expression_statement hydro_random_context.initialized = 0; 
+ child of compound_statement" -> "loc. 0
+[4225, 4259] expression_statement hydro_random_ensure_initialized(); 
+ child of compound_statement"
+	"loc. 0
+[4225, 4259] expression_statement hydro_random_ensure_initialized(); 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    hydro_random_context.initialized = 0;
+    hydro_random_ensure_initialized();
+}"
+}
