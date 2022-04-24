@@ -1,0 +1,23 @@
+Mutation took 0.04850893399998313 seconds
+Original execution 0 traces
+\Visited count
+
+Visited locations 
+Unvisited locations 0, 1, 2, 4, 3
+Visited 0, Unvisted 5, percentage visited 0.0
+
+Visited nodes 0
+Unvisited nodes 37
+Percentage visited 0.0
+
+Visited candidates 0
+Unvisited candidates 15
+Percentage visited 0.0
+
+Tested mutations 0
+Untested mutations 160
+Percentage visited 0.0
+
+Total killed 0 and 0 total survived
+
+Took 0.34725035299925366 seconds

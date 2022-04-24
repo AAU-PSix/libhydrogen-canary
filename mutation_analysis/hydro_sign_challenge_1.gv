@@ -1,0 +1,70 @@
+digraph hydro_sign_challenge_1 {
+	initial [shape=point]
+	initial -> "loc. 0
+[1080, 1105] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 0
+[1368, 1428] expression_statement hydro_hash_final(&st, challenge, hydro_sign_CHALLENGEBYTES); 
+ child of compound_statement" -> final
+	"loc. 0
+[1080, 1105] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[1080, 1105] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[1110, 1130] declaration hydro_hash_state st; 
+ child of compound_statement"
+	"loc. 0
+[1110, 1130] declaration hydro_hash_state st; 
+ child of compound_statement"
+	"loc. 0
+[1110, 1130] declaration hydro_hash_state st; 
+ child of compound_statement" -> "loc. 0
+[1136, 1184] expression_statement hydro_hash_init(&st, (const char *) zero, NULL); 
+ child of compound_statement"
+	"loc. 0
+[1136, 1184] expression_statement hydro_hash_init(&st, (const char *) zero, NULL); 
+ child of compound_statement"
+	"loc. 0
+[1136, 1184] expression_statement hydro_hash_init(&st, (const char *) zero, NULL); 
+ child of compound_statement" -> "loc. 0
+[1189, 1242] expression_statement hydro_hash_update(&st, nonce, hydro_sign_NONCEBYTES); 
+ child of compound_statement"
+	"loc. 0
+[1189, 1242] expression_statement hydro_hash_update(&st, nonce, hydro_sign_NONCEBYTES); 
+ child of compound_statement"
+	"loc. 0
+[1189, 1242] expression_statement hydro_hash_update(&st, nonce, hydro_sign_NONCEBYTES); 
+ child of compound_statement" -> "loc. 0
+[1247, 1301] expression_statement hydro_hash_update(&st, pk, hydro_sign_PUBLICKEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[1247, 1301] expression_statement hydro_hash_update(&st, pk, hydro_sign_PUBLICKEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[1247, 1301] expression_statement hydro_hash_update(&st, pk, hydro_sign_PUBLICKEYBYTES); 
+ child of compound_statement" -> "loc. 0
+[1306, 1363] expression_statement hydro_hash_update(&st, prehash, hydro_sign_PREHASHBYTES); 
+ child of compound_statement"
+	"loc. 0
+[1306, 1363] expression_statement hydro_hash_update(&st, prehash, hydro_sign_PREHASHBYTES); 
+ child of compound_statement"
+	"loc. 0
+[1306, 1363] expression_statement hydro_hash_update(&st, prehash, hydro_sign_PREHASHBYTES); 
+ child of compound_statement" -> "loc. 0
+[1368, 1428] expression_statement hydro_hash_final(&st, challenge, hydro_sign_CHALLENGEBYTES); 
+ child of compound_statement"
+	"loc. 0
+[1368, 1428] expression_statement hydro_hash_final(&st, challenge, hydro_sign_CHALLENGEBYTES); 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    hydro_hash_state st;
+
+    hydro_hash_init(&st, (const char *) zero, NULL);
+    hydro_hash_update(&st, nonce, hydro_sign_NONCEBYTES);
+    hydro_hash_update(&st, pk, hydro_sign_PUBLICKEYBYTES);
+    hydro_hash_update(&st, prehash, hydro_sign_PREHASHBYTES);
+    hydro_hash_final(&st, challenge, hydro_sign_CHALLENGEBYTES);
+}"
+}

@@ -1,0 +1,103 @@
+digraph hydro_sign_p2_0 {
+	initial [shape=point]
+	initial -> "loc. 0
+[339, 364] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 0
+[780, 815] expression_statement hydro_x25519_swapout(sig, scalar2); 
+ child of compound_statement" -> final
+	"loc. 0
+[339, 364] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[339, 364] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[369, 417] declaration hydro_x25519_scalar_t scalar1, scalar2, scalar3; 
+ child of compound_statement"
+	"loc. 0
+[369, 417] declaration hydro_x25519_scalar_t scalar1, scalar2, scalar3; 
+ child of compound_statement"
+	"loc. 0
+[369, 417] declaration hydro_x25519_scalar_t scalar1, scalar2, scalar3; 
+ child of compound_statement" -> "loc. 0
+[423, 488] expression_statement
+12 killed/12 total=1.0
+ COMPILER_ASSERT(hydro_sign_CHALLENGEBYTES == hydro_x25519_BYTES); 
+ child of compound_statement"
+	"loc. 0
+[423, 488] expression_statement
+12 killed/12 total=1.0
+ COMPILER_ASSERT(hydro_sign_CHALLENGEBYTES == hydro_x25519_BYTES); 
+ child of compound_statement"
+	"loc. 0
+[423, 488] expression_statement
+12 killed/12 total=1.0
+ COMPILER_ASSERT(hydro_sign_CHALLENGEBYTES == hydro_x25519_BYTES); 
+ child of compound_statement" -> "loc. 0
+[493, 530] expression_statement hydro_x25519_swapin(scalar1, eph_sk); 
+ child of compound_statement"
+	"loc. 0
+[493, 530] expression_statement hydro_x25519_swapin(scalar1, eph_sk); 
+ child of compound_statement"
+	"loc. 0
+[493, 530] expression_statement hydro_x25519_swapin(scalar1, eph_sk); 
+ child of compound_statement" -> "loc. 0
+[535, 568] expression_statement hydro_x25519_swapin(scalar2, sk); 
+ child of compound_statement"
+	"loc. 0
+[535, 568] expression_statement hydro_x25519_swapin(scalar2, sk); 
+ child of compound_statement"
+	"loc. 0
+[535, 568] expression_statement hydro_x25519_swapin(scalar2, sk); 
+ child of compound_statement" -> "loc. 0
+[573, 613] expression_statement hydro_x25519_swapin(scalar3, challenge); 
+ child of compound_statement"
+	"loc. 0
+[573, 613] expression_statement hydro_x25519_swapin(scalar3, challenge); 
+ child of compound_statement"
+	"loc. 0
+[573, 613] expression_statement hydro_x25519_swapin(scalar3, challenge); 
+ child of compound_statement" -> "loc. 0
+[618, 669] expression_statement hydro_x25519_sc_montmul(scalar1, scalar2, scalar3); 
+ child of compound_statement"
+	"loc. 0
+[618, 669] expression_statement hydro_x25519_sc_montmul(scalar1, scalar2, scalar3); 
+ child of compound_statement"
+	"loc. 0
+[618, 669] expression_statement hydro_x25519_sc_montmul(scalar1, scalar2, scalar3); 
+ child of compound_statement" -> "loc. 0
+[674, 708] expression_statement mem_zero(scalar2, sizeof scalar2); 
+ child of compound_statement"
+	"loc. 0
+[674, 708] expression_statement mem_zero(scalar2, sizeof scalar2); 
+ child of compound_statement"
+	"loc. 0
+[674, 708] expression_statement mem_zero(scalar2, sizeof scalar2); 
+ child of compound_statement" -> "loc. 0
+[713, 775] expression_statement hydro_x25519_sc_montmul(scalar2, scalar1, hydro_x25519_sc_r2); 
+ child of compound_statement"
+	"loc. 0
+[713, 775] expression_statement hydro_x25519_sc_montmul(scalar2, scalar1, hydro_x25519_sc_r2); 
+ child of compound_statement"
+	"loc. 0
+[713, 775] expression_statement hydro_x25519_sc_montmul(scalar2, scalar1, hydro_x25519_sc_r2); 
+ child of compound_statement" -> "loc. 0
+[780, 815] expression_statement hydro_x25519_swapout(sig, scalar2); 
+ child of compound_statement"
+	"loc. 0
+[780, 815] expression_statement hydro_x25519_swapout(sig, scalar2); 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    hydro_x25519_scalar_t scalar1, scalar2, scalar3;
+
+    COMPILER_ASSERT(hydro_sign_CHALLENGEBYTES == hydro_x25519_BYTES);
+    hydro_x25519_swapin(scalar1, eph_sk);
+    hydro_x25519_swapin(scalar2, sk);
+    hydro_x25519_swapin(scalar3, challenge);
+    hydro_x25519_sc_montmul(scalar1, scalar2, scalar3);
+    mem_zero(scalar2, sizeof scalar2);
+    hydro_x25519_sc_montmul(scalar2, scalar1, hydro_x25519_sc_r2);
+    hydro_x25519_swapout(sig, scalar2);
+}"
+}

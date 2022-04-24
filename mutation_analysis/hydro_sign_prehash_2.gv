@@ -1,0 +1,199 @@
+digraph hydro_sign_prehash_2 {
+	initial [shape=point]
+	initial -> "loc. 0
+[1582, 1607] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 0
+[2607, 2616] return_statement return 0; 
+ child of compound_statement" -> final
+	"loc. 0
+[1582, 1607] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[1582, 1607] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[1612, 1632] declaration hydro_hash_state st; 
+ child of compound_statement"
+	"loc. 0
+[1612, 1632] declaration hydro_hash_state st; 
+ child of compound_statement"
+	"loc. 0
+[1612, 1632] declaration hydro_hash_state st; 
+ child of compound_statement" -> "loc. 0
+[1637, 1691] declaration uint8_t          challenge[hydro_sign_CHALLENGEBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[1637, 1691] declaration uint8_t          challenge[hydro_sign_CHALLENGEBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[1637, 1691] declaration uint8_t          challenge[hydro_sign_CHALLENGEBYTES]; 
+ child of compound_statement" -> "loc. 0
+[1696, 1755] declaration const uint8_t *  pk     = &sk[hydro_x25519_SECRETKEYBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[1696, 1755] declaration const uint8_t *  pk     = &sk[hydro_x25519_SECRETKEYBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[1696, 1755] declaration const uint8_t *  pk     = &sk[hydro_x25519_SECRETKEYBYTES]; 
+ child of compound_statement" -> "loc. 0
+[1760, 1795] declaration uint8_t *        nonce  = &csig[0]; 
+ child of compound_statement"
+	"loc. 0
+[1760, 1795] declaration uint8_t *        nonce  = &csig[0]; 
+ child of compound_statement"
+	"loc. 0
+[1760, 1795] declaration uint8_t *        nonce  = &csig[0]; 
+ child of compound_statement" -> "loc. 0
+[1800, 1855] declaration uint8_t *        sig    = &csig[hydro_sign_NONCEBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[1800, 1855] declaration uint8_t *        sig    = &csig[hydro_sign_NONCEBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[1800, 1855] declaration uint8_t *        sig    = &csig[hydro_sign_NONCEBYTES]; 
+ child of compound_statement" -> "loc. 0
+[1860, 1890] declaration uint8_t *        eph_sk = sig; 
+ child of compound_statement"
+	"loc. 0
+[1860, 1890] declaration uint8_t *        eph_sk = sig; 
+ child of compound_statement"
+	"loc. 0
+[1860, 1890] declaration uint8_t *        eph_sk = sig; 
+ child of compound_statement" -> "loc. 0
+[1896, 1950] expression_statement hydro_random_buf(eph_sk, hydro_x25519_SECRETKEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[1896, 1950] expression_statement hydro_random_buf(eph_sk, hydro_x25519_SECRETKEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[1896, 1950] expression_statement hydro_random_buf(eph_sk, hydro_x25519_SECRETKEYBYTES); 
+ child of compound_statement" -> "loc. 0
+[1955, 2023] expression_statement
+12 killed/12 total=1.0
+ COMPILER_ASSERT(hydro_x25519_SECRETKEYBYTES == hydro_hash_KEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[1955, 2023] expression_statement
+12 killed/12 total=1.0
+ COMPILER_ASSERT(hydro_x25519_SECRETKEYBYTES == hydro_hash_KEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[1955, 2023] expression_statement
+12 killed/12 total=1.0
+ COMPILER_ASSERT(hydro_x25519_SECRETKEYBYTES == hydro_hash_KEYBYTES); 
+ child of compound_statement" -> "loc. 0
+[2028, 2074] expression_statement hydro_hash_init(&st, (const char *) zero, sk); 
+ child of compound_statement"
+	"loc. 0
+[2028, 2074] expression_statement hydro_hash_init(&st, (const char *) zero, sk); 
+ child of compound_statement"
+	"loc. 0
+[2028, 2074] expression_statement hydro_hash_init(&st, (const char *) zero, sk); 
+ child of compound_statement" -> "loc. 0
+[2079, 2139] expression_statement hydro_hash_update(&st, eph_sk, hydro_x25519_SECRETKEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[2079, 2139] expression_statement hydro_hash_update(&st, eph_sk, hydro_x25519_SECRETKEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[2079, 2139] expression_statement hydro_hash_update(&st, eph_sk, hydro_x25519_SECRETKEYBYTES); 
+ child of compound_statement" -> "loc. 0
+[2144, 2201] expression_statement hydro_hash_update(&st, prehash, hydro_sign_PREHASHBYTES); 
+ child of compound_statement"
+	"loc. 0
+[2144, 2201] expression_statement hydro_hash_update(&st, prehash, hydro_sign_PREHASHBYTES); 
+ child of compound_statement"
+	"loc. 0
+[2144, 2201] expression_statement hydro_hash_update(&st, prehash, hydro_sign_PREHASHBYTES); 
+ child of compound_statement" -> "loc. 0
+[2206, 2265] expression_statement hydro_hash_final(&st, eph_sk, hydro_x25519_SECRETKEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[2206, 2265] expression_statement hydro_hash_final(&st, eph_sk, hydro_x25519_SECRETKEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[2206, 2265] expression_statement hydro_hash_final(&st, eph_sk, hydro_x25519_SECRETKEYBYTES); 
+ child of compound_statement" -> "loc. 0
+[2271, 2323] expression_statement hydro_x25519_scalarmult_base_uniform(nonce, eph_sk); 
+ child of compound_statement"
+	"loc. 0
+[2271, 2323] expression_statement hydro_x25519_scalarmult_base_uniform(nonce, eph_sk); 
+ child of compound_statement"
+	"loc. 0
+[2271, 2323] expression_statement hydro_x25519_scalarmult_base_uniform(nonce, eph_sk); 
+ child of compound_statement" -> "loc. 0
+[2328, 2380] expression_statement hydro_sign_challenge(challenge, nonce, pk, prehash); 
+ child of compound_statement"
+	"loc. 0
+[2328, 2380] expression_statement hydro_sign_challenge(challenge, nonce, pk, prehash); 
+ child of compound_statement"
+	"loc. 0
+[2328, 2380] expression_statement hydro_sign_challenge(challenge, nonce, pk, prehash); 
+ child of compound_statement" -> "loc. 0
+[2386, 2475] expression_statement
+25 killed/25 total=1.0
+ COMPILER_ASSERT(hydro_sign_BYTES == hydro_sign_NONCEBYTES + hydro_x25519_SECRETKEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[2386, 2475] expression_statement
+25 killed/25 total=1.0
+ COMPILER_ASSERT(hydro_sign_BYTES == hydro_sign_NONCEBYTES + hydro_x25519_SECRETKEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[2386, 2475] expression_statement
+25 killed/25 total=1.0
+ COMPILER_ASSERT(hydro_sign_BYTES == hydro_sign_NONCEBYTES + hydro_x25519_SECRETKEYBYTES); 
+ child of compound_statement" -> "loc. 0
+[2480, 2554] expression_statement
+12 killed/12 total=1.0
+ COMPILER_ASSERT(hydro_x25519_SECRETKEYBYTES <= hydro_sign_CHALLENGEBYTES); 
+ child of compound_statement"
+	"loc. 0
+[2480, 2554] expression_statement
+12 killed/12 total=1.0
+ COMPILER_ASSERT(hydro_x25519_SECRETKEYBYTES <= hydro_sign_CHALLENGEBYTES); 
+ child of compound_statement"
+	"loc. 0
+[2480, 2554] expression_statement
+12 killed/12 total=1.0
+ COMPILER_ASSERT(hydro_x25519_SECRETKEYBYTES <= hydro_sign_CHALLENGEBYTES); 
+ child of compound_statement" -> "loc. 0
+[2559, 2601] expression_statement hydro_sign_p2(sig, challenge, eph_sk, sk); 
+ child of compound_statement"
+	"loc. 0
+[2559, 2601] expression_statement hydro_sign_p2(sig, challenge, eph_sk, sk); 
+ child of compound_statement"
+	"loc. 0
+[2559, 2601] expression_statement hydro_sign_p2(sig, challenge, eph_sk, sk); 
+ child of compound_statement" -> "loc. 0
+[2607, 2616] return_statement return 0; 
+ child of compound_statement"
+	"loc. 0
+[2607, 2616] return_statement return 0; 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    hydro_hash_state st;
+    uint8_t          challenge[hydro_sign_CHALLENGEBYTES];
+    const uint8_t *  pk     = &sk[hydro_x25519_SECRETKEYBYTES];
+    uint8_t *        nonce  = &csig[0];
+    uint8_t *        sig    = &csig[hydro_sign_NONCEBYTES];
+    uint8_t *        eph_sk = sig;
+
+    hydro_random_buf(eph_sk, hydro_x25519_SECRETKEYBYTES);
+    COMPILER_ASSERT(hydro_x25519_SECRETKEYBYTES == hydro_hash_KEYBYTES);
+    hydro_hash_init(&st, (const char *) zero, sk);
+    hydro_hash_update(&st, eph_sk, hydro_x25519_SECRETKEYBYTES);
+    hydro_hash_update(&st, prehash, hydro_sign_PREHASHBYTES);
+    hydro_hash_final(&st, eph_sk, hydro_x25519_SECRETKEYBYTES);
+
+    hydro_x25519_scalarmult_base_uniform(nonce, eph_sk);
+    hydro_sign_challenge(challenge, nonce, pk, prehash);
+
+    COMPILER_ASSERT(hydro_sign_BYTES == hydro_sign_NONCEBYTES + hydro_x25519_SECRETKEYBYTES);
+    COMPILER_ASSERT(hydro_x25519_SECRETKEYBYTES <= hydro_sign_CHALLENGEBYTES);
+    hydro_sign_p2(sig, challenge, eph_sk, sk);
+
+    return 0;
+}"
+}

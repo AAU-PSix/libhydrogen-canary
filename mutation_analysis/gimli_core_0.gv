@@ -1,0 +1,384 @@
+digraph gimli_core_0 {
+	initial [shape=point]
+	initial -> "loc. 0
+[86, 111] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 0
+[86, 111] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[86, 111] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[116, 135] declaration unsigned int round; 
+ child of compound_statement"
+	"loc. 0
+[116, 135] declaration unsigned int round; 
+ child of compound_statement"
+	"loc. 0
+[116, 135] declaration unsigned int round; 
+ child of compound_statement" -> "loc. 0
+[140, 160] declaration unsigned int column; 
+ child of compound_statement"
+	"loc. 0
+[140, 160] declaration unsigned int column; 
+ child of compound_statement"
+	"loc. 0
+[140, 160] declaration unsigned int column; 
+ child of compound_statement" -> "loc. 0
+[165, 180] declaration uint32_t     x; 
+ child of compound_statement"
+	"loc. 0
+[165, 180] declaration uint32_t     x; 
+ child of compound_statement"
+	"loc. 0
+[165, 180] declaration uint32_t     x; 
+ child of compound_statement" -> "loc. 0
+[185, 200] declaration uint32_t     y; 
+ child of compound_statement"
+	"loc. 0
+[185, 200] declaration uint32_t     y; 
+ child of compound_statement"
+	"loc. 0
+[185, 200] declaration uint32_t     y; 
+ child of compound_statement" -> "loc. 0
+[205, 220] declaration uint32_t     z; 
+ child of compound_statement"
+	"loc. 0
+[205, 220] declaration uint32_t     z; 
+ child of compound_statement"
+	"loc. 0
+[205, 220] declaration uint32_t     z; 
+ child of compound_statement" -> "loc. 0
+[231, 241] assignment_expression round = 24 
+ child of for_statement"
+	"loc. 0
+[231, 241] assignment_expression round = 24 
+ child of for_statement"
+	"loc. 0
+[231, 241] assignment_expression round = 24 
+ child of for_statement" -> "loc. 0
+[243, 252] binary_expression round > 0 
+ child of for_statement"
+	"loc. 0
+[243, 252] binary_expression round > 0 
+ child of for_statement"
+	"loc. 0
+[243, 252] binary_expression round > 0 
+ child of for_statement" -> "loc. 0
+[278, 288] assignment_expression column = 0 
+ child of for_statement" [label=T]
+	"loc. 0
+[278, 288] assignment_expression column = 0 
+ child of for_statement"
+	"loc. 0
+[278, 288] assignment_expression column = 0 
+ child of for_statement" -> "loc. 0
+[290, 300] binary_expression column < 4 
+ child of for_statement"
+	"loc. 5
+[254, 261] update_expression round-- 
+ child of for_statement"
+	"loc. 5
+[254, 261] update_expression round-- 
+ child of for_statement" -> "loc. 0
+[243, 252] binary_expression round > 0 
+ child of for_statement"
+	"loc. 0
+[290, 300] binary_expression column < 4 
+ child of for_statement"
+	"loc. 0
+[290, 300] binary_expression column < 4 
+ child of for_statement" -> "loc. 1
+[313, 338] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" [label=T]
+	"loc. 0
+[290, 300] binary_expression column < 4 
+ child of for_statement" -> "loc. 2
+[648, 673] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" [label=F]
+	"loc. 1
+[313, 338] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[313, 338] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" -> "loc. 1
+[351, 381] expression_statement x = ROTL32(state[column], 24); 
+ child of compound_statement"
+	"loc. 2
+[648, 673] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement"
+	"loc. 2
+[648, 673] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" -> "loc. 2
+[689, 700] parenthesized_expression (round & 3) 
+ child of switch_statement"
+	"loc. 1
+[302, 310] update_expression column++ 
+ child of for_statement"
+	"loc. 1
+[302, 310] update_expression column++ 
+ child of for_statement" -> "loc. 0
+[290, 300] binary_expression column < 4 
+ child of for_statement"
+	"loc. 1
+[351, 381] expression_statement x = ROTL32(state[column], 24); 
+ child of compound_statement"
+	"loc. 1
+[351, 381] expression_statement x = ROTL32(state[column], 24); 
+ child of compound_statement" -> "loc. 1
+[394, 427] expression_statement y = ROTL32(state[4 + column], 9); 
+ child of compound_statement"
+	"loc. 1
+[394, 427] expression_statement y = ROTL32(state[4 + column], 9); 
+ child of compound_statement"
+	"loc. 1
+[394, 427] expression_statement y = ROTL32(state[4 + column], 9); 
+ child of compound_statement" -> "loc. 1
+[440, 462] expression_statement z = state[8 + column]; 
+ child of compound_statement"
+	"loc. 1
+[440, 462] expression_statement z = state[8 + column]; 
+ child of compound_statement"
+	"loc. 1
+[440, 462] expression_statement z = state[8 + column]; 
+ child of compound_statement" -> "loc. 1
+[476, 526] expression_statement state[8 + column] = x ^ (z << 1) ^ ((y & z) << 2); 
+ child of compound_statement"
+	"loc. 1
+[476, 526] expression_statement state[8 + column] = x ^ (z << 1) ^ ((y & z) << 2); 
+ child of compound_statement"
+	"loc. 1
+[476, 526] expression_statement state[8 + column] = x ^ (z << 1) ^ ((y & z) << 2); 
+ child of compound_statement" -> "loc. 1
+[539, 582] expression_statement state[4 + column] = y ^ x ^ ((x | z) << 1); 
+ child of compound_statement"
+	"loc. 1
+[539, 582] expression_statement state[4 + column] = y ^ x ^ ((x | z) << 1); 
+ child of compound_statement"
+	"loc. 1
+[539, 582] expression_statement state[4 + column] = y ^ x ^ ((x | z) << 1); 
+ child of compound_statement" -> "loc. 1
+[595, 638] expression_statement state[column]     = z ^ y ^ ((x & y) << 3); 
+ child of compound_statement"
+	"loc. 1
+[595, 638] expression_statement state[column]     = z ^ y ^ ((x & y) << 3); 
+ child of compound_statement"
+	"loc. 1
+[595, 638] expression_statement state[column]     = z ^ y ^ ((x & y) << 3); 
+ child of compound_statement" -> "loc. 1
+[302, 310] update_expression column++ 
+ child of for_statement"
+	"loc. 2
+[689, 700] parenthesized_expression (round & 3) 
+ child of switch_statement"
+	"loc. 2
+[689, 700] parenthesized_expression (round & 3) 
+ child of switch_statement" -> "loc. 3
+[716, 717] number_literal 0 
+ child of case_statement" [label=C]
+	"loc. 2
+[689, 700] parenthesized_expression (round & 3) 
+ child of switch_statement" -> "loc. 4
+[1017, 1018] number_literal 2 
+ child of case_statement" [label=C]
+	"loc. 3
+[716, 717] number_literal 0 
+ child of case_statement"
+	"loc. 3
+[716, 717] number_literal 0 
+ child of case_statement" -> "loc. 3
+[718, 743] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of case_statement"
+	"loc. 4
+[1017, 1018] number_literal 2 
+ child of case_statement"
+	"loc. 4
+[1017, 1018] number_literal 2 
+ child of case_statement" -> "loc. 4
+[1019, 1044] expression_statement CANARY_TWEET_LOCATION(4); 
+ child of case_statement"
+	"loc. 3
+[718, 743] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of case_statement"
+	"loc. 3
+[718, 743] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of case_statement" -> "loc. 3
+[756, 776] expression_statement x        = state[0]; 
+ child of case_statement"
+	"loc. 3
+[756, 776] expression_statement x        = state[0]; 
+ child of case_statement"
+	"loc. 3
+[756, 776] expression_statement x        = state[0]; 
+ child of case_statement" -> "loc. 3
+[789, 809] expression_statement state[0] = state[1]; 
+ child of case_statement"
+	"loc. 3
+[789, 809] expression_statement state[0] = state[1]; 
+ child of case_statement"
+	"loc. 3
+[789, 809] expression_statement state[0] = state[1]; 
+ child of case_statement" -> "loc. 3
+[822, 835] expression_statement state[1] = x; 
+ child of case_statement"
+	"loc. 3
+[822, 835] expression_statement state[1] = x; 
+ child of case_statement"
+	"loc. 3
+[822, 835] expression_statement state[1] = x; 
+ child of case_statement" -> "loc. 3
+[848, 868] expression_statement x        = state[2]; 
+ child of case_statement"
+	"loc. 3
+[848, 868] expression_statement x        = state[2]; 
+ child of case_statement"
+	"loc. 3
+[848, 868] expression_statement x        = state[2]; 
+ child of case_statement" -> "loc. 3
+[881, 901] expression_statement state[2] = state[3]; 
+ child of case_statement"
+	"loc. 3
+[881, 901] expression_statement state[2] = state[3]; 
+ child of case_statement"
+	"loc. 3
+[881, 901] expression_statement state[2] = state[3]; 
+ child of case_statement" -> "loc. 3
+[914, 927] expression_statement state[3] = x; 
+ child of case_statement"
+	"loc. 3
+[914, 927] expression_statement state[3] = x; 
+ child of case_statement"
+	"loc. 3
+[914, 927] expression_statement state[3] = x; 
+ child of case_statement" -> "loc. 3
+[940, 984] expression_statement state[0] ^= ((uint32_t) 0x9e377900 | round); 
+ child of case_statement"
+	"loc. 3
+[940, 984] expression_statement state[0] ^= ((uint32_t) 0x9e377900 | round); 
+ child of case_statement"
+	"loc. 3
+[940, 984] expression_statement state[0] ^= ((uint32_t) 0x9e377900 | round); 
+ child of case_statement" -> "loc. 3
+[997, 1003] break_statement break; 
+ child of case_statement"
+	"loc. 3
+[997, 1003] break_statement break; 
+ child of case_statement"
+	"loc. 3
+[997, 1003] break_statement break; 
+ child of case_statement" -> "loc. 5
+[1238, 1263] expression_statement CANARY_TWEET_LOCATION(5); 
+ child of compound_statement" [label=B]
+	"loc. 3
+[997, 1003] break_statement break; 
+ child of case_statement" -> "loc. 4
+[1017, 1018] number_literal 2 
+ child of case_statement"
+	"loc. 3
+[997, 1003] break_statement break; 
+ child of case_statement" -> "loc. 5
+[1238, 1263] expression_statement CANARY_TWEET_LOCATION(5); 
+ child of compound_statement"
+	"loc. 5
+[1238, 1263] expression_statement CANARY_TWEET_LOCATION(5); 
+ child of compound_statement"
+	"loc. 5
+[1238, 1263] expression_statement CANARY_TWEET_LOCATION(5); 
+ child of compound_statement" -> "loc. 5
+[254, 261] update_expression round-- 
+ child of for_statement"
+	"loc. 4
+[1215, 1228] expression_statement state[3] = x; 
+ child of case_statement"
+	"loc. 4
+[1215, 1228] expression_statement state[3] = x; 
+ child of case_statement" -> "loc. 5
+[1238, 1263] expression_statement CANARY_TWEET_LOCATION(5); 
+ child of compound_statement"
+	"loc. 4
+[1019, 1044] expression_statement CANARY_TWEET_LOCATION(4); 
+ child of case_statement"
+	"loc. 4
+[1019, 1044] expression_statement CANARY_TWEET_LOCATION(4); 
+ child of case_statement" -> "loc. 4
+[1057, 1077] expression_statement x        = state[0]; 
+ child of case_statement"
+	"loc. 4
+[1057, 1077] expression_statement x        = state[0]; 
+ child of case_statement"
+	"loc. 4
+[1057, 1077] expression_statement x        = state[0]; 
+ child of case_statement" -> "loc. 4
+[1090, 1110] expression_statement state[0] = state[2]; 
+ child of case_statement"
+	"loc. 4
+[1090, 1110] expression_statement state[0] = state[2]; 
+ child of case_statement"
+	"loc. 4
+[1090, 1110] expression_statement state[0] = state[2]; 
+ child of case_statement" -> "loc. 4
+[1123, 1136] expression_statement state[2] = x; 
+ child of case_statement"
+	"loc. 4
+[1123, 1136] expression_statement state[2] = x; 
+ child of case_statement"
+	"loc. 4
+[1123, 1136] expression_statement state[2] = x; 
+ child of case_statement" -> "loc. 4
+[1149, 1169] expression_statement x        = state[1]; 
+ child of case_statement"
+	"loc. 4
+[1149, 1169] expression_statement x        = state[1]; 
+ child of case_statement"
+	"loc. 4
+[1149, 1169] expression_statement x        = state[1]; 
+ child of case_statement" -> "loc. 4
+[1182, 1202] expression_statement state[1] = state[3]; 
+ child of case_statement"
+	"loc. 4
+[1182, 1202] expression_statement state[1] = state[3]; 
+ child of case_statement"
+	"loc. 4
+[1182, 1202] expression_statement state[1] = state[3]; 
+ child of case_statement" -> "loc. 4
+[1215, 1228] expression_statement state[3] = x; 
+ child of case_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    unsigned int round;
+    unsigned int column;
+    uint32_t     x;
+    uint32_t     y;
+    uint32_t     z;
+
+    for (round = 24; round > 0; round--) {
+        for (column = 0; column < 4; column++) {CANARY_TWEET_LOCATION(1);
+            x = ROTL32(state[column], 24);
+            y = ROTL32(state[4 + column], 9);
+            z = state[8 + column];
+
+            state[8 + column] = x ^ (z << 1) ^ ((y & z) << 2);
+            state[4 + column] = y ^ x ^ ((x | z) << 1);
+            state[column]     = z ^ y ^ ((x & y) << 3);
+        }CANARY_TWEET_LOCATION(2);
+        switch (round & 3) {
+        case 0|CANARY_TWEET_LOCATION(3);
+            x        = state[0];
+            state[0] = state[1];
+            state[1] = x;
+            x        = state[2];
+            state[2] = state[3];
+            state[3] = x;
+            state[0] ^= ((uint32_t) 0x9e377900 | round);
+            break;
+        case 2|CANARY_TWEET_LOCATION(4);
+            x        = state[0];
+            state[0] = state[2];
+            state[2] = x;
+            x        = state[1];
+            state[1] = state[3];
+            state[3] = x;
+        }CANARY_TWEET_LOCATION(5);
+    }
+}"
+}

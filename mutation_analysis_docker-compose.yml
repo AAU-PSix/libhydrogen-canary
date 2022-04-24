@@ -9,14 +9,14 @@ services:
     command:
       - mutate
       - --base=/input
-      - --file=impl/x25519.h impl/sign.h impl/secretbox.h impl/gimli-core/portable.h impl/random/windows.h impl/random/wasi.h impl/random/unix.h impl/random/riot.h impl/random/particle.h impl/random/nrf52832.h impl/random/avr.h
+      - --file=impl/sign.h impl/secretbox.h impl/gimli-core/portable.h impl/random/windows.h impl/random/wasi.h impl/random/unix.h impl/random/riot.h impl/random/particle.h impl/random/nrf52832.h impl/random/avr.h
       - --out=./mutation_analysis
       - --build_command=make -C /input/ tests/tests
       - --test_command=/input/tests/tests
       - --placement_strategy=pathbased
       - --testing_backend=ffs_gnu_assert
       - --mutation_strategy=obom
-      - --unit_blacklist=hydro_memzero hydro_compare hydro_kx_aead_final hydro_kx_aead_init hydro_kx_aead_xor_dec_3 hydro_kx_aead_xor_enc_2 hydro_pwhash_upgrade
+      - --unit_blacklist=hydro_memzero hydro_compare hydro_kx_aead_final hydro_kx_aead_init hydro_kx_aead_xor_dec_3 hydro_kx_aead_xor_enc_2 hydro_pwhash_upgrade hydro_x25519_umaal hydro_x25519_adc0
 
 # Batch 1
 
@@ -49,6 +49,7 @@ services:
 # gimli-core/portable.h
 # --unit_blacklist=
 
+# IMPOSSIBLE DUE TO AMOUNT OF CALLS
 # x25519.h
 # --unit_blacklist=
 

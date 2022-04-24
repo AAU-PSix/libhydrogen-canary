@@ -1,0 +1,61 @@
+digraph hydro_sign_keygen_deterministic_7 {
+	initial [shape=point]
+	initial -> "loc. 0
+[5031, 5056] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 0
+[5329, 5382] expression_statement memcpy(pk_copy, kp->pk, hydro_x25519_PUBLICKEYBYTES); 
+ child of compound_statement" -> final
+	"loc. 0
+[5031, 5056] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[5031, 5056] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[5061, 5117] declaration uint8_t *pk_copy = &kp->sk[hydro_x25519_SECRETKEYBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[5061, 5117] declaration uint8_t *pk_copy = &kp->sk[hydro_x25519_SECRETKEYBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[5061, 5117] declaration uint8_t *pk_copy = &kp->sk[hydro_x25519_SECRETKEYBYTES]; 
+ child of compound_statement" -> "loc. 0
+[5123, 5187] expression_statement COMPILER_ASSERT(hydro_sign_SEEDBYTES >= hydro_random_SEEDBYTES); 
+ child of compound_statement"
+	"loc. 0
+[5123, 5187] expression_statement COMPILER_ASSERT(hydro_sign_SEEDBYTES >= hydro_random_SEEDBYTES); 
+ child of compound_statement"
+	"loc. 0
+[5123, 5187] expression_statement COMPILER_ASSERT(hydro_sign_SEEDBYTES >= hydro_random_SEEDBYTES); 
+ child of compound_statement" -> "loc. 0
+[5192, 5266] expression_statement hydro_random_buf_deterministic(kp->sk, hydro_x25519_SECRETKEYBYTES, seed); 
+ child of compound_statement"
+	"loc. 0
+[5192, 5266] expression_statement hydro_random_buf_deterministic(kp->sk, hydro_x25519_SECRETKEYBYTES, seed); 
+ child of compound_statement"
+	"loc. 0
+[5192, 5266] expression_statement hydro_random_buf_deterministic(kp->sk, hydro_x25519_SECRETKEYBYTES, seed); 
+ child of compound_statement" -> "loc. 0
+[5271, 5324] expression_statement hydro_x25519_scalarmult_base_uniform(kp->pk, kp->sk); 
+ child of compound_statement"
+	"loc. 0
+[5271, 5324] expression_statement hydro_x25519_scalarmult_base_uniform(kp->pk, kp->sk); 
+ child of compound_statement"
+	"loc. 0
+[5271, 5324] expression_statement hydro_x25519_scalarmult_base_uniform(kp->pk, kp->sk); 
+ child of compound_statement" -> "loc. 0
+[5329, 5382] expression_statement memcpy(pk_copy, kp->pk, hydro_x25519_PUBLICKEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[5329, 5382] expression_statement memcpy(pk_copy, kp->pk, hydro_x25519_PUBLICKEYBYTES); 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    uint8_t *pk_copy = &kp->sk[hydro_x25519_SECRETKEYBYTES];
+
+    COMPILER_ASSERT(hydro_sign_SEEDBYTES >= hydro_random_SEEDBYTES);
+    hydro_random_buf_deterministic(kp->sk, hydro_x25519_SECRETKEYBYTES, seed);
+    hydro_x25519_scalarmult_base_uniform(kp->pk, kp->sk);
+    memcpy(pk_copy, kp->pk, hydro_x25519_PUBLICKEYBYTES);
+}"
+}

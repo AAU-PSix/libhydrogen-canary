@@ -1,0 +1,354 @@
+digraph hydro_random_init_0 {
+	initial [shape=point]
+	initial -> "loc. 0
+[267, 292] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 4
+[1732, 1741] return_statement return 0; 
+ child of compound_statement" -> final
+	"loc. 0
+[267, 292] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[267, 292] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[297, 388] declaration const char       ctx[hydro_hash_CONTEXTBYTES] = { 'h', 'y', 'd', 'r', 'o', 'P', 'R', 'G' }; 
+ child of compound_statement"
+	"loc. 0
+[297, 388] declaration const char       ctx[hydro_hash_CONTEXTBYTES] = { 'h', 'y', 'd', 'r', 'o', 'P', 'R', 'G' }; 
+ child of compound_statement"
+	"loc. 0
+[297, 388] declaration const char       ctx[hydro_hash_CONTEXTBYTES] = { 'h', 'y', 'd', 'r', 'o', 'P', 'R', 'G' }; 
+ child of compound_statement" -> "loc. 0
+[393, 413] declaration hydro_hash_state st; 
+ child of compound_statement"
+	"loc. 0
+[393, 413] declaration hydro_hash_state st; 
+ child of compound_statement"
+	"loc. 0
+[393, 413] declaration hydro_hash_state st; 
+ child of compound_statement" -> "loc. 0
+[418, 456] declaration const uint8_t    total_bytes     = 32; 
+ child of compound_statement"
+	"loc. 0
+[418, 456] declaration const uint8_t    total_bytes     = 32; 
+ child of compound_statement"
+	"loc. 0
+[418, 456] declaration const uint8_t    total_bytes     = 32; 
+ child of compound_statement" -> "loc. 0
+[461, 508] declaration uint8_t          remaining_bytes = total_bytes; 
+ child of compound_statement"
+	"loc. 0
+[461, 508] declaration uint8_t          remaining_bytes = total_bytes; 
+ child of compound_statement"
+	"loc. 0
+[461, 508] declaration uint8_t          remaining_bytes = total_bytes; 
+ child of compound_statement" -> "loc. 0
+[513, 546] declaration uint8_t          available_bytes; 
+ child of compound_statement"
+	"loc. 0
+[513, 546] declaration uint8_t          available_bytes; 
+ child of compound_statement"
+	"loc. 0
+[513, 546] declaration uint8_t          available_bytes; 
+ child of compound_statement" -> "loc. 0
+[551, 584] declaration uint8_t          rand_buffer[32]; 
+ child of compound_statement"
+	"loc. 0
+[551, 584] declaration uint8_t          rand_buffer[32]; 
+ child of compound_statement"
+	"loc. 0
+[551, 584] declaration uint8_t          rand_buffer[32]; 
+ child of compound_statement" -> "loc. 0
+[590, 622] expression_statement hydro_hash_init(&st, ctx, NULL); 
+ child of compound_statement"
+	"loc. 0
+[590, 622] expression_statement hydro_hash_init(&st, ctx, NULL); 
+ child of compound_statement"
+	"loc. 0
+[590, 622] expression_statement hydro_hash_init(&st, ctx, NULL); 
+ child of compound_statement" -> "loc. 3
+[638, 663] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of compound_statement"
+	"loc. 3
+[638, 663] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of compound_statement"
+	"loc. 3
+[638, 663] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of compound_statement" -> "loc. 3
+[675, 749] parenthesized_expression (sd_rand_application_bytes_available_get(&available_bytes) != NRF_SUCCESS) 
+ child of if_statement"
+	"loc. 3
+[638, 663] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of compound_statement" -> "loc. 4
+[1536, 1561] expression_statement CANARY_TWEET_LOCATION(4); 
+ child of compound_statement"
+	"loc. 3
+[675, 749] parenthesized_expression (sd_rand_application_bytes_available_get(&available_bytes) != NRF_SUCCESS) 
+ child of if_statement"
+	"loc. 3
+[675, 749] parenthesized_expression (sd_rand_application_bytes_available_get(&available_bytes) != NRF_SUCCESS) 
+ child of if_statement" -> "loc. 2
+[751, 776] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" [label=T]
+	"loc. 3
+[675, 749] parenthesized_expression (sd_rand_application_bytes_available_get(&available_bytes) != NRF_SUCCESS) 
+ child of if_statement" -> "loc. 1
+[809, 834] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" [label=F]
+	"loc. 4
+[1536, 1561] expression_statement CANARY_TWEET_LOCATION(4); 
+ child of compound_statement"
+	"loc. 4
+[1536, 1561] expression_statement CANARY_TWEET_LOCATION(4); 
+ child of compound_statement" -> "loc. 4
+[1566, 1651] expression_statement hydro_hash_final(&st, hydro_random_context.state, sizeof hydro_random_context.state); 
+ child of compound_statement"
+	"loc. 11
+[1520, 1530] expression_statement delay(10); 
+ child of compound_statement"
+	"loc. 11
+[1520, 1530] expression_statement delay(10); 
+ child of compound_statement" -> "loc. 3
+[638, 663] expression_statement CANARY_TWEET_LOCATION(3); 
+ child of compound_statement"
+	"loc. 2
+[751, 776] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement"
+	"loc. 2
+[751, 776] expression_statement CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" -> "loc. 2
+[789, 799] return_statement return -1; 
+ child of compound_statement"
+	"loc. 1
+[809, 834] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[809, 834] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" -> "loc. 1
+[846, 867] parenthesized_expression (available_bytes > 0) 
+ child of if_statement"
+	"loc. 2
+[789, 799] return_statement return -1; 
+ child of compound_statement"
+	"loc. 2
+[789, 799] return_statement return -1; 
+ child of compound_statement" -> "loc. 1
+[809, 834] expression_statement CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[846, 867] parenthesized_expression (available_bytes > 0) 
+ child of if_statement"
+	"loc. 1
+[846, 867] parenthesized_expression (available_bytes > 0) 
+ child of if_statement" -> "loc. 6
+[869, 894] expression_statement CANARY_TWEET_LOCATION(6); 
+ child of compound_statement" [label=T]
+	"loc. 1
+[846, 867] parenthesized_expression (available_bytes > 0) 
+ child of if_statement" -> "loc. 5
+[1369, 1394] expression_statement CANARY_TWEET_LOCATION(5); 
+ child of compound_statement" [label=F]
+	"loc. 6
+[869, 894] expression_statement CANARY_TWEET_LOCATION(6); 
+ child of compound_statement"
+	"loc. 6
+[869, 894] expression_statement CANARY_TWEET_LOCATION(6); 
+ child of compound_statement" -> "loc. 6
+[910, 945] parenthesized_expression (available_bytes > remaining_bytes) 
+ child of if_statement"
+	"loc. 5
+[1369, 1394] expression_statement CANARY_TWEET_LOCATION(5); 
+ child of compound_statement"
+	"loc. 5
+[1369, 1394] expression_statement CANARY_TWEET_LOCATION(5); 
+ child of compound_statement" -> "loc. 5
+[1406, 1428] parenthesized_expression (remaining_bytes <= 0) 
+ child of if_statement"
+	"loc. 6
+[910, 945] parenthesized_expression (available_bytes > remaining_bytes) 
+ child of if_statement"
+	"loc. 6
+[910, 945] parenthesized_expression (available_bytes > remaining_bytes) 
+ child of if_statement" -> "loc. 8
+[947, 972] expression_statement CANARY_TWEET_LOCATION(8); 
+ child of compound_statement" [label=T]
+	"loc. 6
+[910, 945] parenthesized_expression (available_bytes > remaining_bytes) 
+ child of if_statement" -> "loc. 7
+[1037, 1062] expression_statement CANARY_TWEET_LOCATION(7); 
+ child of compound_statement" [label=F]
+	"loc. 8
+[947, 972] expression_statement CANARY_TWEET_LOCATION(8); 
+ child of compound_statement"
+	"loc. 8
+[947, 972] expression_statement CANARY_TWEET_LOCATION(8); 
+ child of compound_statement" -> "loc. 8
+[989, 1023] expression_statement available_bytes = remaining_bytes; 
+ child of compound_statement"
+	"loc. 7
+[1037, 1062] expression_statement CANARY_TWEET_LOCATION(7); 
+ child of compound_statement"
+	"loc. 7
+[1037, 1062] expression_statement CANARY_TWEET_LOCATION(7); 
+ child of compound_statement" -> "loc. 7
+[1078, 1155] parenthesized_expression (sd_rand_application_vector_get(rand_buffer, available_bytes) != NRF_SUCCESS) 
+ child of if_statement"
+	"loc. 8
+[989, 1023] expression_statement available_bytes = remaining_bytes; 
+ child of compound_statement"
+	"loc. 8
+[989, 1023] expression_statement available_bytes = remaining_bytes; 
+ child of compound_statement" -> "loc. 7
+[1037, 1062] expression_statement CANARY_TWEET_LOCATION(7); 
+ child of compound_statement"
+	"loc. 7
+[1078, 1155] parenthesized_expression (sd_rand_application_vector_get(rand_buffer, available_bytes) != NRF_SUCCESS) 
+ child of if_statement"
+	"loc. 7
+[1078, 1155] parenthesized_expression (sd_rand_application_vector_get(rand_buffer, available_bytes) != NRF_SUCCESS) 
+ child of if_statement" -> "loc. 10
+[1157, 1183] expression_statement CANARY_TWEET_LOCATION(10); 
+ child of compound_statement" [label=T]
+	"loc. 7
+[1078, 1155] parenthesized_expression (sd_rand_application_vector_get(rand_buffer, available_bytes) != NRF_SUCCESS) 
+ child of if_statement" -> "loc. 9
+[1224, 1249] expression_statement CANARY_TWEET_LOCATION(9); 
+ child of compound_statement" [label=F]
+	"loc. 10
+[1157, 1183] expression_statement CANARY_TWEET_LOCATION(10); 
+ child of compound_statement"
+	"loc. 10
+[1157, 1183] expression_statement CANARY_TWEET_LOCATION(10); 
+ child of compound_statement" -> "loc. 10
+[1200, 1210] return_statement return -1; 
+ child of compound_statement"
+	"loc. 9
+[1224, 1249] expression_statement CANARY_TWEET_LOCATION(9); 
+ child of compound_statement"
+	"loc. 9
+[1224, 1249] expression_statement CANARY_TWEET_LOCATION(9); 
+ child of compound_statement" -> "loc. 9
+[1262, 1311] expression_statement hydro_hash_update(&st, rand_buffer, total_bytes); 
+ child of compound_statement"
+	"loc. 10
+[1200, 1210] return_statement return -1; 
+ child of compound_statement"
+	"loc. 10
+[1200, 1210] return_statement return -1; 
+ child of compound_statement" -> "loc. 9
+[1224, 1249] expression_statement CANARY_TWEET_LOCATION(9); 
+ child of compound_statement"
+	"loc. 9
+[1262, 1311] expression_statement hydro_hash_update(&st, rand_buffer, total_bytes); 
+ child of compound_statement"
+	"loc. 9
+[1262, 1311] expression_statement hydro_hash_update(&st, rand_buffer, total_bytes); 
+ child of compound_statement" -> "loc. 9
+[1324, 1359] expression_statement remaining_bytes -= available_bytes; 
+ child of compound_statement"
+	"loc. 9
+[1324, 1359] expression_statement remaining_bytes -= available_bytes; 
+ child of compound_statement"
+	"loc. 9
+[1324, 1359] expression_statement remaining_bytes -= available_bytes; 
+ child of compound_statement" -> "loc. 5
+[1369, 1394] expression_statement CANARY_TWEET_LOCATION(5); 
+ child of compound_statement"
+	"loc. 5
+[1406, 1428] parenthesized_expression (remaining_bytes <= 0) 
+ child of if_statement"
+	"loc. 5
+[1406, 1428] parenthesized_expression (remaining_bytes <= 0) 
+ child of if_statement" -> "loc. 12
+[1430, 1456] expression_statement CANARY_TWEET_LOCATION(12); 
+ child of compound_statement" [label=T]
+	"loc. 5
+[1406, 1428] parenthesized_expression (remaining_bytes <= 0) 
+ child of if_statement" -> "loc. 11
+[1485, 1511] expression_statement CANARY_TWEET_LOCATION(11); 
+ child of compound_statement" [label=F]
+	"loc. 12
+[1430, 1456] expression_statement CANARY_TWEET_LOCATION(12); 
+ child of compound_statement"
+	"loc. 12
+[1430, 1456] expression_statement CANARY_TWEET_LOCATION(12); 
+ child of compound_statement" -> "loc. 12
+[1469, 1475] break_statement break; 
+ child of compound_statement"
+	"loc. 11
+[1485, 1511] expression_statement CANARY_TWEET_LOCATION(11); 
+ child of compound_statement"
+	"loc. 11
+[1485, 1511] expression_statement CANARY_TWEET_LOCATION(11); 
+ child of compound_statement" -> "loc. 11
+[1520, 1530] expression_statement delay(10); 
+ child of compound_statement"
+	"loc. 12
+[1469, 1475] break_statement break; 
+ child of compound_statement"
+	"loc. 12
+[1469, 1475] break_statement break; 
+ child of compound_statement" -> "loc. 4
+[1536, 1561] expression_statement CANARY_TWEET_LOCATION(4); 
+ child of compound_statement" [label=B]
+	"loc. 12
+[1469, 1475] break_statement break; 
+ child of compound_statement" -> "loc. 11
+[1485, 1511] expression_statement CANARY_TWEET_LOCATION(11); 
+ child of compound_statement"
+	"loc. 4
+[1566, 1651] expression_statement hydro_hash_final(&st, hydro_random_context.state, sizeof hydro_random_context.state); 
+ child of compound_statement"
+	"loc. 4
+[1566, 1651] expression_statement hydro_hash_final(&st, hydro_random_context.state, sizeof hydro_random_context.state); 
+ child of compound_statement" -> "loc. 4
+[1656, 1726] expression_statement hydro_random_context.counter = ~LOAD64_LE(hydro_random_context.state); 
+ child of compound_statement"
+	"loc. 4
+[1656, 1726] expression_statement hydro_random_context.counter = ~LOAD64_LE(hydro_random_context.state); 
+ child of compound_statement"
+	"loc. 4
+[1656, 1726] expression_statement hydro_random_context.counter = ~LOAD64_LE(hydro_random_context.state); 
+ child of compound_statement" -> "loc. 4
+[1732, 1741] return_statement return 0; 
+ child of compound_statement"
+	"loc. 4
+[1732, 1741] return_statement return 0; 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    const char       ctx[hydro_hash_CONTEXTBYTES] = { 'h', 'y', 'd', 'r', 'o', 'P', 'R', 'G' };
+    hydro_hash_state st;
+    const uint8_t    total_bytes     = 32;
+    uint8_t          remaining_bytes = total_bytes;
+    uint8_t          available_bytes;
+    uint8_t          rand_buffer[32];
+
+    hydro_hash_init(&st, ctx, NULL);
+
+    for (;;) {CANARY_TWEET_LOCATION(3);
+        if (sd_rand_application_bytes_available_get(&available_bytes) != NRF_SUCCESS) {CANARY_TWEET_LOCATION(2);
+            return -1;
+        }CANARY_TWEET_LOCATION(1);
+        if (available_bytes > 0) {CANARY_TWEET_LOCATION(6);
+            if (available_bytes > remaining_bytes) {CANARY_TWEET_LOCATION(8);
+                available_bytes = remaining_bytes;
+            }CANARY_TWEET_LOCATION(7);
+            if (sd_rand_application_vector_get(rand_buffer, available_bytes) != NRF_SUCCESS) {CANARY_TWEET_LOCATION(10);
+                return -1;
+            }CANARY_TWEET_LOCATION(9);
+            hydro_hash_update(&st, rand_buffer, total_bytes);
+            remaining_bytes -= available_bytes;
+        }CANARY_TWEET_LOCATION(5);
+        if (remaining_bytes <= 0) {CANARY_TWEET_LOCATION(12);
+            break;
+        }CANARY_TWEET_LOCATION(11);
+        delay(10);
+    }CANARY_TWEET_LOCATION(4);
+    hydro_hash_final(&st, hydro_random_context.state, sizeof hydro_random_context.state);
+    hydro_random_context.counter = ~LOAD64_LE(hydro_random_context.state);
+
+    return 0;
+}"
+}

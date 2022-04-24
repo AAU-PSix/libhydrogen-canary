@@ -1,0 +1,71 @@
+digraph hydro_random_rbit_0 {
+	initial [shape=point]
+	initial -> "loc. 0
+[88, 113] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 0
+[272, 295] return_statement return (bool) (x8 & 1); 
+ child of compound_statement" -> final
+	"loc. 0
+[88, 113] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[88, 113] expression_statement CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[118, 129] declaration uint8_t x8; 
+ child of compound_statement"
+	"loc. 0
+[118, 129] declaration uint8_t x8; 
+ child of compound_statement"
+	"loc. 0
+[118, 129] declaration uint8_t x8; 
+ child of compound_statement" -> "loc. 0
+[135, 175] expression_statement x8 = ((uint8_t) (x >> 8)) ^ (uint8_t) x; 
+ child of compound_statement"
+	"loc. 0
+[135, 175] expression_statement x8 = ((uint8_t) (x >> 8)) ^ (uint8_t) x; 
+ child of compound_statement"
+	"loc. 0
+[135, 175] expression_statement x8 = ((uint8_t) (x >> 8)) ^ (uint8_t) x; 
+ child of compound_statement" -> "loc. 0
+[180, 208] expression_statement x8 = (x8 >> 4) ^ (x8 & 0xf); 
+ child of compound_statement"
+	"loc. 0
+[180, 208] expression_statement x8 = (x8 >> 4) ^ (x8 & 0xf); 
+ child of compound_statement"
+	"loc. 0
+[180, 208] expression_statement x8 = (x8 >> 4) ^ (x8 & 0xf); 
+ child of compound_statement" -> "loc. 0
+[213, 241] expression_statement x8 = (x8 >> 2) ^ (x8 & 0x3); 
+ child of compound_statement"
+	"loc. 0
+[213, 241] expression_statement x8 = (x8 >> 2) ^ (x8 & 0x3); 
+ child of compound_statement"
+	"loc. 0
+[213, 241] expression_statement x8 = (x8 >> 2) ^ (x8 & 0x3); 
+ child of compound_statement" -> "loc. 0
+[246, 266] expression_statement x8 = (x8 >> 1) ^ x8; 
+ child of compound_statement"
+	"loc. 0
+[246, 266] expression_statement x8 = (x8 >> 1) ^ x8; 
+ child of compound_statement"
+	"loc. 0
+[246, 266] expression_statement x8 = (x8 >> 1) ^ x8; 
+ child of compound_statement" -> "loc. 0
+[272, 295] return_statement return (bool) (x8 & 1); 
+ child of compound_statement"
+	"loc. 0
+[272, 295] return_statement return (bool) (x8 & 1); 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    uint8_t x8;
+
+    x8 = ((uint8_t) (x >> 8)) ^ (uint8_t) x;
+    x8 = (x8 >> 4) ^ (x8 & 0xf);
+    x8 = (x8 >> 2) ^ (x8 & 0x3);
+    x8 = (x8 >> 1) ^ x8;
+
+    return (bool) (x8 & 1);
+}"
+}

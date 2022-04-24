@@ -1,0 +1,39 @@
+Mutation took 0.013353548994928133 seconds
+Original execution 1 traces
+\Visited count
+
+Visited locations 0
+Unvisited locations 
+Visited 1, Unvisted 0, percentage visited 1.0
+
+Visited nodes 4
+Unvisited nodes 0
+Percentage visited 1.0
+
+Visited candidates 0
+Unvisited candidates 0
+
+Tested mutations 0
+Untested mutations 0
+
+Location 0
+4 Runs
+
+Code :: 'CANARY_TWEET_LOCATION(0);'
+No mutations
+
+Code :: 'const uint8_t *nonce = &csig[0];'
+No mutations
+
+Code :: 'const uint8_t *sig   = &csig[hydro_sign_NONCEBYTES];'
+No mutations
+
+Code :: 'return hydro_sign_verify_p2(sig, challenge, nonce, pk);'
+No mutations
+
+Location Killed 0 and 0 survived
+
+
+Total killed 0 and 0 total survived
+
+Took 2.313479770993581 seconds
