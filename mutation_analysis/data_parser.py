@@ -174,6 +174,7 @@ class MutationFileData():
     def uniform_sample_size(self, weight: float) -> float:
         return self.mutant_count * weight
 
+    @property
     def location_weights(self) -> Dict[str, float]:
         result: Dict[str, float] = dict()
         total_inverse = 0
@@ -184,7 +185,8 @@ class MutationFileData():
         for location in self.original_execution_data.location_visition_ratio:
             ratio = self.original_execution_data.location_visition_ratio[location]
             if ratio == 0: continue
-            result[location.id] = (1 - ratio) / total_inverse
+            if total_inverse == 0: result[location.id] = 0
+            else: result[location.id] = (1 - ratio) / total_inverse
         return result
 
     def weight_sample_size(self, uniform_distribution: float, weights: Dict[str, float]) -> Dict[str, float]:
@@ -195,6 +197,16 @@ class MutationFileData():
             result[location.id] = min(uniform_sample_size * weights[location.id], location.mutant_count) / location.mutant_count
         return result
 
+    @property
+    def path_weighted_mutation_score(self) -> float:
+        return self.weight_mutation_score(
+            self.weight_sample_size(self.uniform_weight, self.location_weights)
+        )
+        
+    @property
+    def uniformly_weighted_mutation_score(self) -> float:
+        return self.weight_mutation_score(self.uniform_weights)
+
     def weight_mutation_score(self, weights: Dict[str, float]) -> float:
         survived_mutants = 0
         killed_mutants = 0
@@ -203,6 +215,7 @@ class MutationFileData():
             weight = weights[location.id]
             survived_mutants += location.mutants_survived_count * weight
             killed_mutants += location.mutants_killed_count * weight
+        if killed_mutants + survived_mutants == 0: return 1
         return killed_mutants / (killed_mutants + survived_mutants)
 
 def parse_file(path: str) -> MutationFileData:
@@ -312,10 +325,11 @@ for file in files:
 
 parsed_data.sort(reverse=True, key=lambda x: x.original_execution_data.untested_mutations_count)
 
-data = parsed_data[0]
-print(data.name)
-print(f"  Uniform mutation score '{data.weight_mutation_score(data.uniform_weights)}'")
-print(f"  Weighted mutation score '{data.weight_mutation_score(data.weight_sample_size(data.uniform_weight, data.location_weights()))}'")
+data = parsed_data[10]
+
+#print(data.name)
+#print(f"  Uniform mutation score '{data.uniformly_weighted_mutation_score}'")
+#print(f"  Weighted mutation score '{data.path_weighted_mutation_score}'")
 
 # total_inverse_ratio = 0
 # for location_ratio in data.original_execution_data.location_visition_ratio:
@@ -379,23 +393,34 @@ print(f"  Weighted mutation score '{data.weight_mutation_score(data.weight_sampl
 #         print(f"  {mutation_location.id} -> {mutation_location.sampled_mutation_score_str(weight)}")
 
 if False:
+    points = list()
+    for data in parsed_data:
+        exhaustive_ms = data.exhaustive_mutation_score
+        for location in data.mutation_locations_data:
+            points.append("%.2f" % round(exhaustive_ms - location.exhaustive_mutation_score, 2))
+        # points.append("%.2f" % round(data.path_based_mutation_score, 2))
+    print(", ".join(points))
+
+if True:
     for data in parsed_data:
         counter += 1
 
         line = ""
         line += f"{data.name}"
         line += f" & %.2f" % round(data.mutation_time, 2)
-        line += f" & {data.original_execution_data.location_visited_count}"
+        line += f" & {data.original_execution_data.location_count}"
         line += f" & {data.original_execution_data.location_unvisited_count}"
         line += f" & %.2f" % round(data.original_execution_data.location_coverage, 2)
-        line += f" & {data.original_execution_data.visited_candidates_count}"
+        line += f" & {data.original_execution_data.candidates_count}"
         line += f" & {data.original_execution_data.unvisited_candidates_count}"
         line += f" & %.2f" % round(data.original_execution_data.candidates_coverage, 2)
-        line += f" & {data.original_execution_data.tested_mutations_count}"
+        line += f" & {data.original_execution_data.mutations_count}"
         line += f" & {data.original_execution_data.untested_mutations_count}"
         line += f" & %.2f" % round(data.original_execution_data.mutations_coverage, 2)
+        
         line += f" & %.2f" % round(data.path_based_mutation_score, 2)
-        line += f" & %.2f" % round(data.random_mutation_score, 2)
+        line += f" & %.2f" % round(data.exhaustive_mutation_score, 2)
+        line += f" & %.2f" % round(data.path_weighted_mutation_score, 2)
         # line += f" & %.2f" % round(data.path_based_mutation_score - data.random_mutation_score, 2)
         line = line.replace("_", "\\_")
         print(line + " \\\\")
@@ -430,6 +455,7 @@ if False:
     total_mutant_coverage = 0
     total_ms_path_based = 0
     total_ms_random = 0
+    total_path_weighted_mutation_score = 0
     for data in parsed_data:
         total_mutation_time += data.mutation_time
         total_visited_locations += len(data.original_execution_data.visited_locations)
@@ -442,7 +468,8 @@ if False:
         total_untested_mutants += data.original_execution_data.untested_mutations_count
         total_mutant_coverage += data.original_execution_data.mutations_coverage
         total_ms_path_based += data.path_based_mutation_score
-        total_ms_random += data.random_mutation_score
+        total_ms_random += data.exhaustive_mutation_score
+        total_path_weighted_mutation_score += data.path_weighted_mutation_score
 
 
     # total_line = "Total"
@@ -470,6 +497,7 @@ if False:
     average_line += f' & %.2f ' % round(total_mutant_coverage / total_amount_of_data, 2)
     average_line += f' & %.2f ' % round(total_ms_path_based / total_amount_of_data, 2)
     average_line += f' & %.2f ' % round(total_ms_random / total_amount_of_data, 2)
+    average_line += f' & %.2f ' % round(total_path_weighted_mutation_score / total_amount_of_data, 2)
     print(average_line + "\\\\")
 
 
