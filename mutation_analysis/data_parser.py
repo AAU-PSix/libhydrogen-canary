@@ -325,7 +325,7 @@ for file in files:
 
 parsed_data.sort(reverse=True, key=lambda x: x.original_execution_data.untested_mutations_count)
 
-data = parsed_data[10]
+data = parsed_data[0]
 
 #print(data.name)
 #print(f"  Uniform mutation score '{data.uniformly_weighted_mutation_score}'")
@@ -420,7 +420,7 @@ if True:
         
         line += f" & %.2f" % round(data.path_based_mutation_score, 2)
         line += f" & %.2f" % round(data.exhaustive_mutation_score, 2)
-        line += f" & %.2f" % round(data.path_weighted_mutation_score, 2)
+        # line += f" & %.2f" % round(data.path_weighted_mutation_score, 2)
         # line += f" & %.2f" % round(data.path_based_mutation_score - data.random_mutation_score, 2)
         line = line.replace("_", "\\_")
         print(line + " \\\\")
@@ -497,7 +497,7 @@ if True:
     average_line += f' & %.2f ' % round(total_mutant_coverage / total_amount_of_data, 2)
     average_line += f' & %.2f ' % round(total_ms_path_based / total_amount_of_data, 2)
     average_line += f' & %.2f ' % round(total_ms_random / total_amount_of_data, 2)
-    average_line += f' & %.2f ' % round(total_path_weighted_mutation_score / total_amount_of_data, 2)
+    # average_line += f' & %.2f ' % round(total_path_weighted_mutation_score / total_amount_of_data, 2)
     print(average_line + "\\\\")
 
 

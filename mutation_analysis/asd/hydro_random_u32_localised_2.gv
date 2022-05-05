@@ -1,111 +1,197 @@
 digraph hydro_random_u32_localised_2 {
 	initial [shape=point]
 	initial -> "loc. 0
-[1630, 1655] expression_statement CANARY_TWEET_LOCATION(0); 
+[1630, 1655] expression_statement
+108001 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
  child of compound_statement"
 	final [shape=point]
 	"loc. 1
-[1985, 1994] return_statement return v; 
+[1985, 1994] return_statement
+108000 visited
+0 candidates
+ return v; 
  child of compound_statement" -> final
 	"loc. 0
-[1630, 1655] expression_statement CANARY_TWEET_LOCATION(0); 
+[1630, 1655] expression_statement
+108001 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
  child of compound_statement"
 	"loc. 0
-[1630, 1655] expression_statement CANARY_TWEET_LOCATION(0); 
+[1630, 1655] expression_statement
+108001 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
  child of compound_statement" -> "loc. 0
-[1660, 1671] declaration uint32_t v; 
+[1660, 1671] declaration
+108001 visited
+0 candidates
+ uint32_t v; 
  child of compound_statement"
 	"loc. 0
-[1660, 1671] declaration uint32_t v; 
+[1660, 1671] declaration
+108001 visited
+0 candidates
+ uint32_t v; 
  child of compound_statement"
 	"loc. 0
-[1660, 1671] declaration uint32_t v; 
+[1660, 1671] declaration
+108001 visited
+0 candidates
+ uint32_t v; 
  child of compound_statement" -> "loc. 0
-[1677, 1711] expression_statement hydro_random_ensure_initialized(); 
+[1677, 1711] expression_statement
+108001 visited
+0 candidates
+ hydro_random_ensure_initialized(); 
  child of compound_statement"
 	"loc. 0
-[1677, 1711] expression_statement hydro_random_ensure_initialized(); 
+[1677, 1711] expression_statement
+108001 visited
+0 candidates
+ hydro_random_ensure_initialized(); 
  child of compound_statement"
 	"loc. 0
-[1677, 1711] expression_statement hydro_random_ensure_initialized(); 
+[1677, 1711] expression_statement
+108001 visited
+0 candidates
+ hydro_random_ensure_initialized(); 
  child of compound_statement" -> "loc. 0
 [1719, 1755] parenthesized_expression
+108001 visited
+1 candidates
 12 killed/12 total=1.0
  (hydro_random_context.available < 4) 
  child of if_statement"
 	"loc. 0
 [1719, 1755] parenthesized_expression
+108001 visited
+1 candidates
 12 killed/12 total=1.0
  (hydro_random_context.available < 4) 
  child of if_statement"
 	"loc. 0
 [1719, 1755] parenthesized_expression
+108001 visited
+1 candidates
 12 killed/12 total=1.0
  (hydro_random_context.available < 4) 
  child of if_statement" -> "loc. 2
-[1757, 1782] expression_statement CANARY_TWEET_LOCATION(2); 
+[1757, 1782] expression_statement
+26998 visited
+0 candidates
+ CANARY_TWEET_LOCATION(2); 
  child of compound_statement" [label=T]
 	"loc. 0
 [1719, 1755] parenthesized_expression
+108001 visited
+1 candidates
 12 killed/12 total=1.0
  (hydro_random_context.available < 4) 
  child of if_statement" -> "loc. 1
-[1820, 1845] expression_statement CANARY_TWEET_LOCATION(1); 
+[1820, 1845] expression_statement
+108000 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
  child of compound_statement" [label=F]
 	"loc. 2
-[1757, 1782] expression_statement CANARY_TWEET_LOCATION(2); 
+[1757, 1782] expression_statement
+26998 visited
+0 candidates
+ CANARY_TWEET_LOCATION(2); 
  child of compound_statement"
 	"loc. 2
-[1757, 1782] expression_statement CANARY_TWEET_LOCATION(2); 
+[1757, 1782] expression_statement
+26998 visited
+0 candidates
+ CANARY_TWEET_LOCATION(2); 
  child of compound_statement" -> "loc. 2
-[1791, 1814] expression_statement hydro_random_ratchet(); 
+[1791, 1814] expression_statement
+26998 visited
+0 candidates
+ hydro_random_ratchet(); 
  child of compound_statement"
 	"loc. 1
-[1820, 1845] expression_statement CANARY_TWEET_LOCATION(1); 
+[1820, 1845] expression_statement
+108000 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
  child of compound_statement"
 	"loc. 1
-[1820, 1845] expression_statement CANARY_TWEET_LOCATION(1); 
+[1820, 1845] expression_statement
+108000 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
  child of compound_statement" -> "loc. 1
 [1850, 1938] expression_statement
+108000 visited
+1 candidates
 12 killed/13 total=0.9230769230769231
  memcpy(&v, &hydro_random_context.state[gimli_RATE - hydro_random_context.available], 4); 
  child of compound_statement"
 	"loc. 2
-[1791, 1814] expression_statement hydro_random_ratchet(); 
+[1791, 1814] expression_statement
+26998 visited
+0 candidates
+ hydro_random_ratchet(); 
  child of compound_statement"
 	"loc. 2
-[1791, 1814] expression_statement hydro_random_ratchet(); 
+[1791, 1814] expression_statement
+26998 visited
+0 candidates
+ hydro_random_ratchet(); 
  child of compound_statement" -> "loc. 1
-[1820, 1845] expression_statement CANARY_TWEET_LOCATION(1); 
+[1820, 1845] expression_statement
+108000 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
  child of compound_statement"
 	"loc. 1
 [1850, 1938] expression_statement
+108000 visited
+1 candidates
 12 killed/13 total=0.9230769230769231
  memcpy(&v, &hydro_random_context.state[gimli_RATE - hydro_random_context.available], 4); 
  child of compound_statement"
 	"loc. 1
 [1850, 1938] expression_statement
+108000 visited
+1 candidates
 12 killed/13 total=0.9230769230769231
  memcpy(&v, &hydro_random_context.state[gimli_RATE - hydro_random_context.available], 4); 
  child of compound_statement" -> "loc. 1
 [1943, 1979] expression_statement
+108000 visited
+1 candidates
 6 killed/6 total=1.0
  hydro_random_context.available -= 4; 
  child of compound_statement"
 	"loc. 1
 [1943, 1979] expression_statement
+108000 visited
+1 candidates
 6 killed/6 total=1.0
  hydro_random_context.available -= 4; 
  child of compound_statement"
 	"loc. 1
 [1943, 1979] expression_statement
+108000 visited
+1 candidates
 6 killed/6 total=1.0
  hydro_random_context.available -= 4; 
  child of compound_statement" -> "loc. 1
-[1985, 1994] return_statement return v; 
+[1985, 1994] return_statement
+108000 visited
+0 candidates
+ return v; 
  child of compound_statement"
 	"loc. 1
-[1985, 1994] return_statement return v; 
+[1985, 1994] return_statement
+108000 visited
+0 candidates
+ return v; 
  child of compound_statement"
 	label="{CANARY_TWEET_LOCATION(0);
     uint32_t v;

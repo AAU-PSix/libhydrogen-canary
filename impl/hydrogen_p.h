@@ -25,7 +25,6 @@ gimli_pad_u8(uint8_t buf[gimli_BLOCKBYTES], size_t pos, uint8_t domain)
     buf[gimli_RATE - 1] ^= 0x80;
 }
 
-// TAGGED Interesting
 static inline void
 hydro_mem_ct_zero_u32(uint32_t *dst_, size_t n)
 {

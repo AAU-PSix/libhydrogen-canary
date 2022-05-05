@@ -29,9 +29,6 @@ static TLS struct {
 # error Unsupported platform
 #endif
 
-#include "Canary.h"
-
-// TAGGED Interesting
 static void
 hydro_random_ensure_initialized(void)
 {
@@ -45,7 +42,6 @@ hydro_random_ensure_initialized(void)
     }
 }
 
-// TAGGED Interesting
 void
 hydro_random_ratchet(void)
 {

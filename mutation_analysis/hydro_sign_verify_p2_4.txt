@@ -1,0 +1,43 @@
+Mutation took 0.017001504000006662 seconds
+Original execution 1 traces
+\Visited count
+0 was visited 1 times
+
+Visited locations 0
+Unvisited locations 
+Visited 1, Unvisted 0, percentage visited 1.0
+
+Visited nodes 5
+Unvisited nodes 0
+Percentage visited 1.0
+
+Visited candidates 0
+Unvisited candidates 0
+
+Tested mutations 0
+Untested mutations 0
+
+Location 0
+5 Runs
+
+Code :: 'CANARY_TWEET_LOCATION(0);'
+No mutations
+
+Code :: 'hydro_x25519_fe xs[7];'
+No mutations
+
+Code :: 'hydro_x25519_core(&xs[0], challenge, pk, 0);'
+No mutations
+
+Code :: 'hydro_x25519_core(&xs[2], sig, hydro_x25519_BASE_POINT, 0);'
+No mutations
+
+Code :: 'return hydro_sign_verify_core(&xs[2], xs[0], nonce);'
+No mutations
+
+Location Killed 0 and 0 survived
+
+
+Total killed 0 and 0 total survived
+
+Took 2.172357821999981 seconds

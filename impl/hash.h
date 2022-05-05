@@ -1,5 +1,3 @@
-#include "Canary.h"
-
 int
 hydro_hash_update(hydro_hash_state *state, const void *in_, size_t in_len)
 {

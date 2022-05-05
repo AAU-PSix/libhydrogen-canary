@@ -2,8 +2,6 @@
 #define hydro_sign_NONCEBYTES     32
 #define hydro_sign_PREHASHBYTES   64
 
-#include "Canary.h"
-
 static void
 hydro_sign_p2(uint8_t sig[hydro_x25519_BYTES], const uint8_t challenge[hydro_sign_CHALLENGEBYTES],
               const uint8_t eph_sk[hydro_x25519_BYTES], const uint8_t sk[hydro_x25519_BYTES])

@@ -1,5 +1,4 @@
 #include <Arduino.h>
-#include "../Canary.h"
 
 static bool
 hydro_random_rbit(uint16_t x)

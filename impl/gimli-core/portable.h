@@ -1,5 +1,3 @@
-#include "../Canary.h"
-
 static void
 gimli_core(uint32_t state[gimli_BLOCKBYTES / 4])
 {

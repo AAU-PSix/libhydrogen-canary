@@ -1,0 +1,134 @@
+digraph hydro_sign_final_verify_localised_11 {
+	initial [shape=point]
+	initial -> "loc. 0
+[6128, 6153] expression_statement
+1 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 0
+[6428, 6484] return_statement
+1 visited
+0 candidates
+ return hydro_sign_verify_challenge(csig, challenge, pk); 
+ child of compound_statement" -> final
+	"loc. 0
+[6128, 6153] expression_statement
+1 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[6128, 6153] expression_statement
+1 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[6158, 6210] declaration
+1 visited
+0 candidates
+ uint8_t        challenge[hydro_sign_CHALLENGEBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[6158, 6210] declaration
+1 visited
+0 candidates
+ uint8_t        challenge[hydro_sign_CHALLENGEBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[6158, 6210] declaration
+1 visited
+0 candidates
+ uint8_t        challenge[hydro_sign_CHALLENGEBYTES]; 
+ child of compound_statement" -> "loc. 0
+[6215, 6263] declaration
+1 visited
+0 candidates
+ uint8_t        prehash[hydro_sign_PREHASHBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[6215, 6263] declaration
+1 visited
+0 candidates
+ uint8_t        prehash[hydro_sign_PREHASHBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[6215, 6263] declaration
+1 visited
+0 candidates
+ uint8_t        prehash[hydro_sign_PREHASHBYTES]; 
+ child of compound_statement" -> "loc. 0
+[6268, 6300] declaration
+1 visited
+0 candidates
+ const uint8_t *nonce = &csig[0]; 
+ child of compound_statement"
+	"loc. 0
+[6268, 6300] declaration
+1 visited
+0 candidates
+ const uint8_t *nonce = &csig[0]; 
+ child of compound_statement"
+	"loc. 0
+[6268, 6300] declaration
+1 visited
+0 candidates
+ const uint8_t *nonce = &csig[0]; 
+ child of compound_statement" -> "loc. 0
+[6306, 6365] expression_statement
+1 visited
+0 candidates
+ hydro_hash_final(&state->hash_st, prehash, sizeof prehash); 
+ child of compound_statement"
+	"loc. 0
+[6306, 6365] expression_statement
+1 visited
+0 candidates
+ hydro_hash_final(&state->hash_st, prehash, sizeof prehash); 
+ child of compound_statement"
+	"loc. 0
+[6306, 6365] expression_statement
+1 visited
+0 candidates
+ hydro_hash_final(&state->hash_st, prehash, sizeof prehash); 
+ child of compound_statement" -> "loc. 0
+[6370, 6422] expression_statement
+1 visited
+0 candidates
+ hydro_sign_challenge(challenge, nonce, pk, prehash); 
+ child of compound_statement"
+	"loc. 0
+[6370, 6422] expression_statement
+1 visited
+0 candidates
+ hydro_sign_challenge(challenge, nonce, pk, prehash); 
+ child of compound_statement"
+	"loc. 0
+[6370, 6422] expression_statement
+1 visited
+0 candidates
+ hydro_sign_challenge(challenge, nonce, pk, prehash); 
+ child of compound_statement" -> "loc. 0
+[6428, 6484] return_statement
+1 visited
+0 candidates
+ return hydro_sign_verify_challenge(csig, challenge, pk); 
+ child of compound_statement"
+	"loc. 0
+[6428, 6484] return_statement
+1 visited
+0 candidates
+ return hydro_sign_verify_challenge(csig, challenge, pk); 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    uint8_t        challenge[hydro_sign_CHALLENGEBYTES];
+    uint8_t        prehash[hydro_sign_PREHASHBYTES];
+    const uint8_t *nonce = &csig[0];
+
+    hydro_hash_final(&state->hash_st, prehash, sizeof prehash);
+    hydro_sign_challenge(challenge, nonce, pk, prehash);
+
+    return hydro_sign_verify_challenge(csig, challenge, pk);
+}"
+}

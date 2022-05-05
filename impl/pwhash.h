@@ -12,8 +12,6 @@
 #define hydro_pwhash_HASH_ALG 0x01
 #define hydro_pwhash_CONTEXT  "hydro_pw"
 
-#include "Canary.h"
-
 static int
 _hydro_pwhash_hash(uint8_t out[hydro_random_SEEDBYTES], size_t h_len,
                    const uint8_t salt[hydro_pwhash_SALTBYTES], const char *passwd,

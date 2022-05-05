@@ -1,0 +1,98 @@
+digraph hydro_sign_verify_p2_localised_4 {
+	initial [shape=point]
+	initial -> "loc. 0
+[3837, 3862] expression_statement
+1 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 0
+[4009, 4061] return_statement
+1 visited
+0 candidates
+ return hydro_sign_verify_core(&xs[2], xs[0], nonce); 
+ child of compound_statement" -> final
+	"loc. 0
+[3837, 3862] expression_statement
+1 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[3837, 3862] expression_statement
+1 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[3867, 3889] declaration
+1 visited
+0 candidates
+ hydro_x25519_fe xs[7]; 
+ child of compound_statement"
+	"loc. 0
+[3867, 3889] declaration
+1 visited
+0 candidates
+ hydro_x25519_fe xs[7]; 
+ child of compound_statement"
+	"loc. 0
+[3867, 3889] declaration
+1 visited
+0 candidates
+ hydro_x25519_fe xs[7]; 
+ child of compound_statement" -> "loc. 0
+[3895, 3939] expression_statement
+1 visited
+0 candidates
+ hydro_x25519_core(&xs[0], challenge, pk, 0); 
+ child of compound_statement"
+	"loc. 0
+[3895, 3939] expression_statement
+1 visited
+0 candidates
+ hydro_x25519_core(&xs[0], challenge, pk, 0); 
+ child of compound_statement"
+	"loc. 0
+[3895, 3939] expression_statement
+1 visited
+0 candidates
+ hydro_x25519_core(&xs[0], challenge, pk, 0); 
+ child of compound_statement" -> "loc. 0
+[3944, 4003] expression_statement
+1 visited
+0 candidates
+ hydro_x25519_core(&xs[2], sig, hydro_x25519_BASE_POINT, 0); 
+ child of compound_statement"
+	"loc. 0
+[3944, 4003] expression_statement
+1 visited
+0 candidates
+ hydro_x25519_core(&xs[2], sig, hydro_x25519_BASE_POINT, 0); 
+ child of compound_statement"
+	"loc. 0
+[3944, 4003] expression_statement
+1 visited
+0 candidates
+ hydro_x25519_core(&xs[2], sig, hydro_x25519_BASE_POINT, 0); 
+ child of compound_statement" -> "loc. 0
+[4009, 4061] return_statement
+1 visited
+0 candidates
+ return hydro_sign_verify_core(&xs[2], xs[0], nonce); 
+ child of compound_statement"
+	"loc. 0
+[4009, 4061] return_statement
+1 visited
+0 candidates
+ return hydro_sign_verify_core(&xs[2], xs[0], nonce); 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    hydro_x25519_fe xs[7];
+
+    hydro_x25519_core(&xs[0], challenge, pk, 0);
+    hydro_x25519_core(&xs[2], sig, hydro_x25519_BASE_POINT, 0);
+
+    return hydro_sign_verify_core(&xs[2], xs[0], nonce);
+}"
+}

@@ -1,0 +1,49 @@
+Mutation took 0.02128828699997598 seconds
+Original execution 2 traces
+\Visited count
+0 was visited 2 times
+
+Visited locations 0
+Unvisited locations 
+Visited 1, Unvisted 0, percentage visited 1.0
+
+Visited nodes 7
+Unvisited nodes 0
+Percentage visited 1.0
+
+Visited candidates 0
+Unvisited candidates 0
+
+Tested mutations 0
+Untested mutations 0
+
+Location 0
+7 Runs
+
+Code :: 'CANARY_TWEET_LOCATION(0);'
+No mutations
+
+Code :: 'hydro_hash_state st;'
+No mutations
+
+Code :: 'hydro_hash_init(&st, (const char *) zero, NULL);'
+No mutations
+
+Code :: 'hydro_hash_update(&st, nonce, hydro_sign_NONCEBYTES);'
+No mutations
+
+Code :: 'hydro_hash_update(&st, pk, hydro_sign_PUBLICKEYBYTES);'
+No mutations
+
+Code :: 'hydro_hash_update(&st, prehash, hydro_sign_PREHASHBYTES);'
+No mutations
+
+Code :: 'hydro_hash_final(&st, challenge, hydro_sign_CHALLENGEBYTES);'
+No mutations
+
+Location Killed 0 and 0 survived
+
+
+Total killed 0 and 0 total survived
+
+Took 1.6240591800000175 seconds

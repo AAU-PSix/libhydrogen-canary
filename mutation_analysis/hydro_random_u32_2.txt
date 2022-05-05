@@ -1,3 +1,0 @@
-Mutation took 87.929431475 seconds
-Original execution 108000 traces
-\Visited count

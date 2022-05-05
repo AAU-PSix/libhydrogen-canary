@@ -1,0 +1,253 @@
+Mutation took 62.30028356299954 seconds
+Original execution 973 traces
+\Visited count
+0 was visited 972 times
+1 was visited 7606 times
+2 was visited 973 times
+
+Visited locations 0, 1, 2
+Unvisited locations 
+Visited 3, Unvisted 0, percentage visited 1.0
+
+Visited nodes 10
+Unvisited nodes 0
+Percentage visited 1.0
+
+Visited candidates 3
+Unvisited candidates 0
+Percentage visited 1.0
+
+Tested mutations 32
+Untested mutations 0
+Percentage visited 1.0
+
+Location 0
+10 Runs
+
+Code :: 'CANARY_TWEET_LOCATION(0);'
+No mutations
+
+Code :: 'unsigned char *      dst = (unsigned char *) dst_;'
+No mutations
+
+Code :: 'const unsigned char *src = (const unsigned char *) src_;'
+No mutations
+
+Code :: 'size_t               i;'
+No mutations
+
+Code :: 'i = 0'
+Is :: for-initalisation
+Mutant trace count 973
+0 was visited 972 times
+1 was visited 7606 times
+2 was visited 973 times
+[Point(line=279, char=11), Point(line=279, char=12)] '=' --> '+=' :: KILLED
+
+Mutant trace count 973
+0 was visited 972 times
+1 was visited 7606 times
+2 was visited 973 times
+[Point(line=279, char=11), Point(line=279, char=12)] '=' --> '-=' :: KILLED
+
+Mutant trace count 973
+0 was visited 972 times
+1 was visited 7606 times
+2 was visited 973 times
+[Point(line=279, char=11), Point(line=279, char=12)] '=' --> '*=' :: KILLED
+
+Mutant trace count 973
+0 was visited 972 times
+1 was visited 7606 times
+2 was visited 973 times
+[Point(line=279, char=11), Point(line=279, char=12)] '=' --> '/=' :: KILLED
+
+Mutant trace count 973
+0 was visited 972 times
+1 was visited 7606 times
+2 was visited 973 times
+[Point(line=279, char=11), Point(line=279, char=12)] '=' --> '%=' :: KILLED
+
+Mutant trace count 973
+0 was visited 972 times
+1 was visited 7606 times
+2 was visited 973 times
+[Point(line=279, char=11), Point(line=279, char=12)] '=' --> '|=' :: KILLED
+
+Mutant trace count 973
+0 was visited 972 times
+1 was visited 7606 times
+2 was visited 973 times
+[Point(line=279, char=11), Point(line=279, char=12)] '=' --> '&=' :: KILLED
+
+Mutant trace count 973
+0 was visited 972 times
+1 was visited 7606 times
+2 was visited 973 times
+[Point(line=279, char=11), Point(line=279, char=12)] '=' --> '^=' :: KILLED
+
+Mutant trace count 973
+0 was visited 972 times
+1 was visited 7606 times
+2 was visited 973 times
+[Point(line=279, char=11), Point(line=279, char=12)] '=' --> '<<=' :: KILLED
+
+Mutant trace count 973
+0 was visited 972 times
+1 was visited 7606 times
+2 was visited 973 times
+[Point(line=279, char=11), Point(line=279, char=12)] '=' --> '>>=' :: KILLED
+
+Killed 10 and 0 survived, mutation score of 1.0
+
+Code :: 'i < n'
+Is :: for-condition
+Mutant trace count 0
+0 was visited 1 times
+1 was visited 7074 times
+[Point(line=279, char=18), Point(line=279, char=19)] '<' --> '+' :: SURVIVED
+
+Mutant trace count 973
+0 was visited 972 times
+1 was visited 7606 times
+2 was visited 973 times
+[Point(line=279, char=18), Point(line=279, char=19)] '<' --> '-' :: KILLED
+
+Mutant trace count 939
+0 was visited 940 times
+2 was visited 939 times
+[Point(line=279, char=18), Point(line=279, char=19)] '<' --> '*' :: KILLED
+
+Mutant trace count 939
+0 was visited 940 times
+2 was visited 939 times
+[Point(line=279, char=18), Point(line=279, char=19)] '<' --> '/' :: KILLED
+
+Mutant trace count 939
+0 was visited 940 times
+2 was visited 939 times
+[Point(line=279, char=18), Point(line=279, char=19)] '<' --> '%' :: KILLED
+
+Mutant trace count 0
+0 was visited 1 times
+1 was visited 3350 times
+[Point(line=279, char=18), Point(line=279, char=19)] '<' --> '|' :: SURVIVED
+
+Mutant trace count 939
+0 was visited 940 times
+2 was visited 939 times
+[Point(line=279, char=18), Point(line=279, char=19)] '<' --> '&' :: KILLED
+
+Mutant trace count 973
+0 was visited 972 times
+1 was visited 7606 times
+2 was visited 973 times
+[Point(line=279, char=18), Point(line=279, char=19)] '<' --> '^' :: KILLED
+
+Mutant trace count 939
+0 was visited 940 times
+2 was visited 939 times
+[Point(line=279, char=18), Point(line=279, char=19)] '<' --> '&&' :: KILLED
+
+Mutant trace count 0
+0 was visited 1 times
+1 was visited 8935 times
+None was visited 1 times
+[Point(line=279, char=18), Point(line=279, char=19)] '<' --> '||' :: SURVIVED
+
+Mutant trace count 939
+0 was visited 940 times
+2 was visited 939 times
+[Point(line=279, char=18), Point(line=279, char=19)] '<' --> '<<' :: KILLED
+
+Mutant trace count 939
+0 was visited 940 times
+2 was visited 939 times
+[Point(line=279, char=18), Point(line=279, char=19)] '<' --> '>>' :: KILLED
+
+Killed 9 and 3 survived, mutation score of 0.75
+
+Location Killed 19 and 3 survived, mutation score of 0.8636363636363636
+
+
+Location 1
+10 Runs
+
+Code :: 'CANARY_TWEET_LOCATION(1);'
+No mutations
+
+Code :: 'i++'
+No mutations
+
+Code :: 'dst[i] = src[i];'
+Mutant trace count 940
+0 was visited 939 times
+1 was visited 7484 times
+2 was visited 940 times
+[Point(line=280, char=15), Point(line=280, char=16)] '=' --> '+=' :: KILLED
+
+Mutant trace count 940
+0 was visited 939 times
+1 was visited 7484 times
+2 was visited 940 times
+[Point(line=280, char=15), Point(line=280, char=16)] '=' --> '-=' :: KILLED
+
+Mutant trace count 940
+0 was visited 939 times
+1 was visited 7484 times
+2 was visited 940 times
+[Point(line=280, char=15), Point(line=280, char=16)] '=' --> '*=' :: KILLED
+
+Mutant trace count 0
+[Point(line=280, char=15), Point(line=280, char=16)] '=' --> '/=' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=280, char=15), Point(line=280, char=16)] '=' --> '%=' :: SURVIVED
+
+Mutant trace count 940
+0 was visited 939 times
+1 was visited 7484 times
+2 was visited 940 times
+[Point(line=280, char=15), Point(line=280, char=16)] '=' --> '|=' :: KILLED
+
+Mutant trace count 940
+0 was visited 939 times
+1 was visited 7484 times
+2 was visited 940 times
+[Point(line=280, char=15), Point(line=280, char=16)] '=' --> '&=' :: KILLED
+
+Mutant trace count 940
+0 was visited 939 times
+1 was visited 7484 times
+2 was visited 940 times
+[Point(line=280, char=15), Point(line=280, char=16)] '=' --> '^=' :: KILLED
+
+Mutant trace count 940
+0 was visited 939 times
+1 was visited 7484 times
+2 was visited 940 times
+[Point(line=280, char=15), Point(line=280, char=16)] '=' --> '<<=' :: KILLED
+
+Mutant trace count 940
+0 was visited 939 times
+1 was visited 7484 times
+2 was visited 940 times
+[Point(line=280, char=15), Point(line=280, char=16)] '=' --> '>>=' :: KILLED
+
+Killed 8 and 2 survived, mutation score of 0.8
+
+Location Killed 8 and 2 survived, mutation score of 0.8
+
+
+Location 2
+10 Runs
+
+Code :: 'CANARY_TWEET_LOCATION(2);'
+No mutations
+
+Location Killed 0 and 0 survived
+
+
+Total killed 27 and 5 total survived, with a total mutations score of 0.84375
+
+Took 64.73081307800021 seconds
