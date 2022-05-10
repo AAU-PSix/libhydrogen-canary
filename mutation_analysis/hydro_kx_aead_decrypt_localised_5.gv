@@ -1,0 +1,607 @@
+digraph hydro_kx_aead_decrypt_localised_5 {
+	initial [shape=point]
+	initial -> "loc. 0
+[3720, 3745] expression_statement
+17 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 3
+[5039, 5048] return_statement
+17 visited
+0 candidates
+ return 0; 
+ child of compound_statement" -> final
+	"loc. 0
+[3720, 3745] expression_statement
+17 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[3720, 3745] expression_statement
+17 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[3750, 3774] expression_statement
+17 visited
+0 candidates
+ _hydro_attr_aligned_(16) 
+ child of compound_statement"
+	"loc. 0
+[3750, 3774] expression_statement
+17 visited
+0 candidates
+ _hydro_attr_aligned_(16) 
+ child of compound_statement"
+	"loc. 0
+[3750, 3774] expression_statement
+17 visited
+0 candidates
+ _hydro_attr_aligned_(16) 
+ child of compound_statement" -> "loc. 0
+[3775, 3816] declaration
+17 visited
+1 candidates
+1 killed/13 total=0.07692307692307693
+ uint32_t int_state[gimli_BLOCKBYTES / 4]; 
+ child of compound_statement"
+	"loc. 0
+[3775, 3816] declaration
+17 visited
+1 candidates
+1 killed/13 total=0.07692307692307693
+ uint32_t int_state[gimli_BLOCKBYTES / 4]; 
+ child of compound_statement"
+	"loc. 0
+[3775, 3816] declaration
+17 visited
+1 candidates
+1 killed/13 total=0.07692307692307693
+ uint32_t int_state[gimli_BLOCKBYTES / 4]; 
+ child of compound_statement" -> "loc. 0
+[3821, 3891] declaration
+17 visited
+1 candidates
+10 killed/13 total=0.7692307692307693
+ uint32_t                          pub_mac[hydro_kx_AEAD_MACBYTES / 4]; 
+ child of compound_statement"
+	"loc. 0
+[3821, 3891] declaration
+17 visited
+1 candidates
+10 killed/13 total=0.7692307692307693
+ uint32_t                          pub_mac[hydro_kx_AEAD_MACBYTES / 4]; 
+ child of compound_statement"
+	"loc. 0
+[3821, 3891] declaration
+17 visited
+1 candidates
+10 killed/13 total=0.7692307692307693
+ uint32_t                          pub_mac[hydro_kx_AEAD_MACBYTES / 4]; 
+ child of compound_statement" -> "loc. 0
+[3896, 3956] declaration
+17 visited
+0 candidates
+ uint8_t                           k[hydro_kx_AEAD_KEYBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[3896, 3956] declaration
+17 visited
+0 candidates
+ uint8_t                           k[hydro_kx_AEAD_KEYBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[3896, 3956] declaration
+17 visited
+0 candidates
+ uint8_t                           k[hydro_kx_AEAD_KEYBYTES]; 
+ child of compound_statement" -> "loc. 0
+[3961, 4039] declaration
+17 visited
+0 candidates
+ uint8_t *                         aead_state = (uint8_t *) (void *) int_state; 
+ child of compound_statement"
+	"loc. 0
+[3961, 4039] declaration
+17 visited
+0 candidates
+ uint8_t *                         aead_state = (uint8_t *) (void *) int_state; 
+ child of compound_statement"
+	"loc. 0
+[3961, 4039] declaration
+17 visited
+0 candidates
+ uint8_t *                         aead_state = (uint8_t *) (void *) int_state; 
+ child of compound_statement" -> "loc. 0
+[4044, 4082] declaration
+17 visited
+0 candidates
+ const uint8_t *                   mac; 
+ child of compound_statement"
+	"loc. 0
+[4044, 4082] declaration
+17 visited
+0 candidates
+ const uint8_t *                   mac; 
+ child of compound_statement"
+	"loc. 0
+[4044, 4082] declaration
+17 visited
+0 candidates
+ const uint8_t *                   mac; 
+ child of compound_statement" -> "loc. 0
+[4087, 4124] declaration
+17 visited
+0 candidates
+ const uint8_t *                   ct; 
+ child of compound_statement"
+	"loc. 0
+[4087, 4124] declaration
+17 visited
+0 candidates
+ const uint8_t *                   ct; 
+ child of compound_statement"
+	"loc. 0
+[4087, 4124] declaration
+17 visited
+0 candidates
+ const uint8_t *                   ct; 
+ child of compound_statement" -> "loc. 0
+[4129, 4168] declaration
+17 visited
+0 candidates
+ size_t                            mlen; 
+ child of compound_statement"
+	"loc. 0
+[4129, 4168] declaration
+17 visited
+0 candidates
+ size_t                            mlen; 
+ child of compound_statement"
+	"loc. 0
+[4129, 4168] declaration
+17 visited
+0 candidates
+ size_t                            mlen; 
+ child of compound_statement" -> "loc. 0
+[4173, 4210] declaration
+17 visited
+0 candidates
+ uint32_t                          cv; 
+ child of compound_statement"
+	"loc. 0
+[4173, 4210] declaration
+17 visited
+0 candidates
+ uint32_t                          cv; 
+ child of compound_statement"
+	"loc. 0
+[4173, 4210] declaration
+17 visited
+0 candidates
+ uint32_t                          cv; 
+ child of compound_statement" -> "loc. 0
+[4219, 4250] parenthesized_expression
+17 visited
+1 candidates
+10 killed/12 total=0.8333333333333334
+ (clen < hydro_kx_AEAD_MACBYTES) 
+ child of if_statement"
+	"loc. 0
+[4219, 4250] parenthesized_expression
+17 visited
+1 candidates
+10 killed/12 total=0.8333333333333334
+ (clen < hydro_kx_AEAD_MACBYTES) 
+ child of if_statement"
+	"loc. 0
+[4219, 4250] parenthesized_expression
+17 visited
+1 candidates
+10 killed/12 total=0.8333333333333334
+ (clen < hydro_kx_AEAD_MACBYTES) 
+ child of if_statement" -> "loc. 2
+[4252, 4277] expression_statement
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" [label=T]
+	"loc. 0
+[4219, 4250] parenthesized_expression
+17 visited
+1 candidates
+10 killed/12 total=0.8333333333333334
+ (clen < hydro_kx_AEAD_MACBYTES) 
+ child of if_statement" -> "loc. 1
+[4302, 4327] expression_statement
+17 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" [label=F]
+	"loc. 2
+[4252, 4277] expression_statement
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement"
+	"loc. 2
+[4252, 4277] expression_statement
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" -> "loc. 2
+[4286, 4296] return_statement
+ return -1; 
+ child of compound_statement"
+	"loc. 1
+[4302, 4327] expression_statement
+17 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[4302, 4327] expression_statement
+17 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" -> "loc. 1
+[4332, 4345] expression_statement
+17 visited
+1 candidates
+0 killed/10 total=0.0
+ mac  = &c[0]; 
+ child of compound_statement"
+	"loc. 2
+[4286, 4296] return_statement
+ return -1; 
+ child of compound_statement"
+	"loc. 2
+[4286, 4296] return_statement
+ return -1; 
+ child of compound_statement" -> "loc. 1
+[4302, 4327] expression_statement
+17 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[4332, 4345] expression_statement
+17 visited
+1 candidates
+0 killed/10 total=0.0
+ mac  = &c[0]; 
+ child of compound_statement"
+	"loc. 1
+[4332, 4345] expression_statement
+17 visited
+1 candidates
+0 killed/10 total=0.0
+ mac  = &c[0]; 
+ child of compound_statement" -> "loc. 1
+[4350, 4384] expression_statement
+17 visited
+1 candidates
+0 killed/10 total=0.0
+ ct   = &c[hydro_kx_AEAD_MACBYTES]; 
+ child of compound_statement"
+	"loc. 1
+[4350, 4384] expression_statement
+17 visited
+1 candidates
+0 killed/10 total=0.0
+ ct   = &c[hydro_kx_AEAD_MACBYTES]; 
+ child of compound_statement"
+	"loc. 1
+[4350, 4384] expression_statement
+17 visited
+1 candidates
+0 killed/10 total=0.0
+ ct   = &c[hydro_kx_AEAD_MACBYTES]; 
+ child of compound_statement" -> "loc. 1
+[4389, 4426] expression_statement
+17 visited
+2 candidates
+10 killed/23 total=0.43478260869565216
+ mlen = clen - hydro_kx_AEAD_MACBYTES; 
+ child of compound_statement"
+	"loc. 1
+[4389, 4426] expression_statement
+17 visited
+2 candidates
+10 killed/23 total=0.43478260869565216
+ mlen = clen - hydro_kx_AEAD_MACBYTES; 
+ child of compound_statement"
+	"loc. 1
+[4389, 4426] expression_statement
+17 visited
+2 candidates
+10 killed/23 total=0.43478260869565216
+ mlen = clen - hydro_kx_AEAD_MACBYTES; 
+ child of compound_statement" -> "loc. 1
+[4431, 4468] expression_statement
+17 visited
+0 candidates
+ memcpy(pub_mac, mac, sizeof pub_mac); 
+ child of compound_statement"
+	"loc. 1
+[4431, 4468] expression_statement
+17 visited
+0 candidates
+ memcpy(pub_mac, mac, sizeof pub_mac); 
+ child of compound_statement"
+	"loc. 1
+[4431, 4468] expression_statement
+17 visited
+0 candidates
+ memcpy(pub_mac, mac, sizeof pub_mac); 
+ child of compound_statement" -> "loc. 1
+[4473, 4514] expression_statement
+17 visited
+0 candidates
+ hydro_kx_aead_init(aead_state, k, state); 
+ child of compound_statement"
+	"loc. 1
+[4473, 4514] expression_statement
+17 visited
+0 candidates
+ hydro_kx_aead_init(aead_state, k, state); 
+ child of compound_statement"
+	"loc. 1
+[4473, 4514] expression_statement
+17 visited
+0 candidates
+ hydro_kx_aead_init(aead_state, k, state); 
+ child of compound_statement" -> "loc. 1
+[4519, 4560] expression_statement
+17 visited
+0 candidates
+ hydro_hash_update(&state->h_st, c, clen); 
+ child of compound_statement"
+	"loc. 1
+[4519, 4560] expression_statement
+17 visited
+0 candidates
+ hydro_hash_update(&state->h_st, c, clen); 
+ child of compound_statement"
+	"loc. 1
+[4519, 4560] expression_statement
+17 visited
+0 candidates
+ hydro_hash_update(&state->h_st, c, clen); 
+ child of compound_statement" -> "loc. 1
+[4565, 4612] expression_statement
+17 visited
+0 candidates
+ hydro_kx_aead_xor_dec(aead_state, m, ct, mlen); 
+ child of compound_statement"
+	"loc. 1
+[4565, 4612] expression_statement
+17 visited
+0 candidates
+ hydro_kx_aead_xor_dec(aead_state, m, ct, mlen); 
+ child of compound_statement"
+	"loc. 1
+[4565, 4612] expression_statement
+17 visited
+0 candidates
+ hydro_kx_aead_xor_dec(aead_state, m, ct, mlen); 
+ child of compound_statement" -> "loc. 1
+[4617, 4652] expression_statement
+17 visited
+0 candidates
+ hydro_kx_aead_final(aead_state, k); 
+ child of compound_statement"
+	"loc. 1
+[4617, 4652] expression_statement
+17 visited
+0 candidates
+ hydro_kx_aead_final(aead_state, k); 
+ child of compound_statement"
+	"loc. 1
+[4617, 4652] expression_statement
+17 visited
+0 candidates
+ hydro_kx_aead_final(aead_state, k); 
+ child of compound_statement" -> "loc. 1
+[4657, 4715] expression_statement
+17 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_kx_AEAD_MACBYTES <= gimli_CAPACITY); 
+ child of compound_statement"
+	"loc. 1
+[4657, 4715] expression_statement
+17 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_kx_AEAD_MACBYTES <= gimli_CAPACITY); 
+ child of compound_statement"
+	"loc. 1
+[4657, 4715] expression_statement
+17 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_kx_AEAD_MACBYTES <= gimli_CAPACITY); 
+ child of compound_statement" -> "loc. 1
+[4720, 4757] expression_statement
+17 visited
+2 candidates
+0 killed/25 total=0.0
+ COMPILER_ASSERT(gimli_RATE % 4 == 0); 
+ child of compound_statement"
+	"loc. 1
+[4720, 4757] expression_statement
+17 visited
+2 candidates
+0 killed/25 total=0.0
+ COMPILER_ASSERT(gimli_RATE % 4 == 0); 
+ child of compound_statement"
+	"loc. 1
+[4720, 4757] expression_statement
+17 visited
+2 candidates
+0 killed/25 total=0.0
+ COMPILER_ASSERT(gimli_RATE % 4 == 0); 
+ child of compound_statement" -> "loc. 1
+[4762, 4853] expression_statement
+17 visited
+4 candidates
+3 killed/49 total=0.061224489795918366
+ cv = hydro_mem_ct_cmp_u32(int_state + gimli_RATE / 4, pub_mac, hydro_kx_AEAD_MACBYTES / 4); 
+ child of compound_statement"
+	"loc. 1
+[4762, 4853] expression_statement
+17 visited
+4 candidates
+3 killed/49 total=0.061224489795918366
+ cv = hydro_mem_ct_cmp_u32(int_state + gimli_RATE / 4, pub_mac, hydro_kx_AEAD_MACBYTES / 4); 
+ child of compound_statement"
+	"loc. 1
+[4762, 4853] expression_statement
+17 visited
+4 candidates
+3 killed/49 total=0.061224489795918366
+ cv = hydro_mem_ct_cmp_u32(int_state + gimli_RATE / 4, pub_mac, hydro_kx_AEAD_MACBYTES / 4); 
+ child of compound_statement" -> "loc. 1
+[4858, 4913] expression_statement
+17 visited
+1 candidates
+0 killed/13 total=0.0
+ hydro_mem_ct_zero_u32(int_state, gimli_BLOCKBYTES / 4); 
+ child of compound_statement"
+	"loc. 1
+[4858, 4913] expression_statement
+17 visited
+1 candidates
+0 killed/13 total=0.0
+ hydro_mem_ct_zero_u32(int_state, gimli_BLOCKBYTES / 4); 
+ child of compound_statement"
+	"loc. 1
+[4858, 4913] expression_statement
+17 visited
+1 candidates
+0 killed/13 total=0.0
+ hydro_mem_ct_zero_u32(int_state, gimli_BLOCKBYTES / 4); 
+ child of compound_statement" -> "loc. 1
+[4921, 4930] parenthesized_expression
+17 visited
+1 candidates
+0 killed/12 total=0.0
+ (cv != 0) 
+ child of if_statement"
+	"loc. 1
+[4921, 4930] parenthesized_expression
+17 visited
+1 candidates
+0 killed/12 total=0.0
+ (cv != 0) 
+ child of if_statement"
+	"loc. 1
+[4921, 4930] parenthesized_expression
+17 visited
+1 candidates
+0 killed/12 total=0.0
+ (cv != 0) 
+ child of if_statement" -> "loc. 4
+[4932, 4957] expression_statement
+ CANARY_TWEET_LOCATION(4); 
+ child of compound_statement" [label=T]
+	"loc. 1
+[4921, 4930] parenthesized_expression
+17 visited
+1 candidates
+0 killed/12 total=0.0
+ (cv != 0) 
+ child of if_statement" -> "loc. 3
+[5009, 5034] expression_statement
+17 visited
+0 candidates
+ CANARY_TWEET_LOCATION(3); 
+ child of compound_statement" [label=F]
+	"loc. 4
+[4932, 4957] expression_statement
+ CANARY_TWEET_LOCATION(4); 
+ child of compound_statement"
+	"loc. 4
+[4932, 4957] expression_statement
+ CANARY_TWEET_LOCATION(4); 
+ child of compound_statement" -> "loc. 4
+[4966, 4984] expression_statement
+ mem_zero(m, mlen); 
+ child of compound_statement"
+	"loc. 3
+[5009, 5034] expression_statement
+17 visited
+0 candidates
+ CANARY_TWEET_LOCATION(3); 
+ child of compound_statement"
+	"loc. 3
+[5009, 5034] expression_statement
+17 visited
+0 candidates
+ CANARY_TWEET_LOCATION(3); 
+ child of compound_statement" -> "loc. 3
+[5039, 5048] return_statement
+17 visited
+0 candidates
+ return 0; 
+ child of compound_statement"
+	"loc. 4
+[4966, 4984] expression_statement
+ mem_zero(m, mlen); 
+ child of compound_statement"
+	"loc. 4
+[4966, 4984] expression_statement
+ mem_zero(m, mlen); 
+ child of compound_statement" -> "loc. 4
+[4993, 5003] return_statement
+ return -1; 
+ child of compound_statement"
+	"loc. 4
+[4993, 5003] return_statement
+ return -1; 
+ child of compound_statement"
+	"loc. 4
+[4993, 5003] return_statement
+ return -1; 
+ child of compound_statement" -> "loc. 3
+[5009, 5034] expression_statement
+17 visited
+0 candidates
+ CANARY_TWEET_LOCATION(3); 
+ child of compound_statement"
+	"loc. 3
+[5039, 5048] return_statement
+17 visited
+0 candidates
+ return 0; 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    _hydro_attr_aligned_(16) uint32_t int_state[gimli_BLOCKBYTES / 4];
+    uint32_t                          pub_mac[hydro_kx_AEAD_MACBYTES / 4];
+    uint8_t                           k[hydro_kx_AEAD_KEYBYTES];
+    uint8_t *                         aead_state = (uint8_t *) (void *) int_state;
+    const uint8_t *                   mac;
+    const uint8_t *                   ct;
+    size_t                            mlen;
+    uint32_t                          cv;
+
+    if (clen < hydro_kx_AEAD_MACBYTES) {CANARY_TWEET_LOCATION(2);
+        return -1;
+    }CANARY_TWEET_LOCATION(1);
+    mac  = &c[0];
+    ct   = &c[hydro_kx_AEAD_MACBYTES];
+    mlen = clen - hydro_kx_AEAD_MACBYTES;
+    memcpy(pub_mac, mac, sizeof pub_mac);
+    hydro_kx_aead_init(aead_state, k, state);
+    hydro_hash_update(&state->h_st, c, clen);
+    hydro_kx_aead_xor_dec(aead_state, m, ct, mlen);
+    hydro_kx_aead_final(aead_state, k);
+    COMPILER_ASSERT(hydro_kx_AEAD_MACBYTES <= gimli_CAPACITY);
+    COMPILER_ASSERT(gimli_RATE % 4 == 0);
+    cv = hydro_mem_ct_cmp_u32(int_state + gimli_RATE / 4, pub_mac, hydro_kx_AEAD_MACBYTES / 4);
+    hydro_mem_ct_zero_u32(int_state, gimli_BLOCKBYTES / 4);
+    if (cv != 0) {CANARY_TWEET_LOCATION(4);
+        mem_zero(m, mlen);
+        return -1;
+    }CANARY_TWEET_LOCATION(3);
+    return 0;
+}"
+}

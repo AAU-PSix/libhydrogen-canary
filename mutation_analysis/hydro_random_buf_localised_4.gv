@@ -1,0 +1,388 @@
+digraph hydro_random_buf_localised_4 {
+	initial [shape=point]
+	initial -> "loc. 0
+[2398, 2423] expression_statement
+36 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 3
+[3023, 3046] expression_statement
+36 visited
+0 candidates
+ hydro_random_ratchet(); 
+ child of compound_statement" -> final
+	"loc. 0
+[2398, 2423] expression_statement
+36 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[2398, 2423] expression_statement
+36 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[2428, 2457] declaration
+36 visited
+0 candidates
+ uint8_t *p = (uint8_t *) out; 
+ child of compound_statement"
+	"loc. 0
+[2428, 2457] declaration
+36 visited
+0 candidates
+ uint8_t *p = (uint8_t *) out; 
+ child of compound_statement"
+	"loc. 0
+[2428, 2457] declaration
+36 visited
+0 candidates
+ uint8_t *p = (uint8_t *) out; 
+ child of compound_statement" -> "loc. 0
+[2462, 2473] declaration
+36 visited
+0 candidates
+ size_t   i; 
+ child of compound_statement"
+	"loc. 0
+[2462, 2473] declaration
+36 visited
+0 candidates
+ size_t   i; 
+ child of compound_statement"
+	"loc. 0
+[2462, 2473] declaration
+36 visited
+0 candidates
+ size_t   i; 
+ child of compound_statement" -> "loc. 0
+[2478, 2496] declaration
+36 visited
+0 candidates
+ size_t   leftover; 
+ child of compound_statement"
+	"loc. 0
+[2478, 2496] declaration
+36 visited
+0 candidates
+ size_t   leftover; 
+ child of compound_statement"
+	"loc. 0
+[2478, 2496] declaration
+36 visited
+0 candidates
+ size_t   leftover; 
+ child of compound_statement" -> "loc. 0
+[2502, 2536] expression_statement
+36 visited
+0 candidates
+ hydro_random_ensure_initialized(); 
+ child of compound_statement"
+	"loc. 0
+[2502, 2536] expression_statement
+36 visited
+0 candidates
+ hydro_random_ensure_initialized(); 
+ child of compound_statement"
+	"loc. 0
+[2502, 2536] expression_statement
+36 visited
+0 candidates
+ hydro_random_ensure_initialized(); 
+ child of compound_statement" -> "loc. 0
+[2546, 2551] assignment_expression
+36 visited
+1 candidates
+0 killed/10 total=0.0
+ i = 0 
+ child of for_statement"
+	"loc. 0
+[2546, 2551] assignment_expression
+36 visited
+1 candidates
+0 killed/10 total=0.0
+ i = 0 
+ child of for_statement"
+	"loc. 0
+[2546, 2551] assignment_expression
+36 visited
+1 candidates
+0 killed/10 total=0.0
+ i = 0 
+ child of for_statement" -> "loc. 0
+[2553, 2577] binary_expression
+36 visited
+2 candidates
+12 killed/25 total=0.48
+ i < out_len / gimli_RATE 
+ child of for_statement"
+	"loc. 0
+[2553, 2577] binary_expression
+36 visited
+2 candidates
+12 killed/25 total=0.48
+ i < out_len / gimli_RATE 
+ child of for_statement"
+	"loc. 0
+[2553, 2577] binary_expression
+36 visited
+2 candidates
+12 killed/25 total=0.48
+ i < out_len / gimli_RATE 
+ child of for_statement" -> "loc. 1
+[2585, 2610] expression_statement
+722 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" [label=T]
+	"loc. 0
+[2553, 2577] binary_expression
+36 visited
+2 candidates
+12 killed/25 total=0.48
+ i < out_len / gimli_RATE 
+ child of for_statement" -> "loc. 2
+[2746, 2771] expression_statement
+36 visited
+0 candidates
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" [label=F]
+	"loc. 1
+[2585, 2610] expression_statement
+722 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[2585, 2610] expression_statement
+722 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" -> "loc. 1
+[2619, 2664] expression_statement
+722 visited
+0 candidates
+ gimli_core_u8(hydro_random_context.state, 0); 
+ child of compound_statement"
+	"loc. 2
+[2746, 2771] expression_statement
+36 visited
+0 candidates
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement"
+	"loc. 2
+[2746, 2771] expression_statement
+36 visited
+0 candidates
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" -> "loc. 2
+[2776, 2808] expression_statement
+36 visited
+2 candidates
+7 killed/23 total=0.30434782608695654
+ leftover = out_len % gimli_RATE; 
+ child of compound_statement"
+	"loc. 1
+[2579, 2582] update_expression
+722 visited
+0 candidates
+ i++ 
+ child of for_statement"
+	"loc. 1
+[2579, 2582] update_expression
+722 visited
+0 candidates
+ i++ 
+ child of for_statement" -> "loc. 0
+[2553, 2577] binary_expression
+36 visited
+2 candidates
+12 killed/25 total=0.48
+ i < out_len / gimli_RATE 
+ child of for_statement"
+	"loc. 1
+[2619, 2664] expression_statement
+722 visited
+0 candidates
+ gimli_core_u8(hydro_random_context.state, 0); 
+ child of compound_statement"
+	"loc. 1
+[2619, 2664] expression_statement
+722 visited
+0 candidates
+ gimli_core_u8(hydro_random_context.state, 0); 
+ child of compound_statement" -> "loc. 1
+[2673, 2740] expression_statement
+722 visited
+2 candidates
+3 killed/26 total=0.11538461538461539
+ memcpy(p + i * gimli_RATE, hydro_random_context.state, gimli_RATE); 
+ child of compound_statement"
+	"loc. 1
+[2673, 2740] expression_statement
+722 visited
+2 candidates
+3 killed/26 total=0.11538461538461539
+ memcpy(p + i * gimli_RATE, hydro_random_context.state, gimli_RATE); 
+ child of compound_statement"
+	"loc. 1
+[2673, 2740] expression_statement
+722 visited
+2 candidates
+3 killed/26 total=0.11538461538461539
+ memcpy(p + i * gimli_RATE, hydro_random_context.state, gimli_RATE); 
+ child of compound_statement" -> "loc. 1
+[2579, 2582] update_expression
+722 visited
+0 candidates
+ i++ 
+ child of for_statement"
+	"loc. 2
+[2776, 2808] expression_statement
+36 visited
+2 candidates
+7 killed/23 total=0.30434782608695654
+ leftover = out_len % gimli_RATE; 
+ child of compound_statement"
+	"loc. 2
+[2776, 2808] expression_statement
+36 visited
+2 candidates
+7 killed/23 total=0.30434782608695654
+ leftover = out_len % gimli_RATE; 
+ child of compound_statement" -> "loc. 2
+[2816, 2831] parenthesized_expression
+36 visited
+1 candidates
+0 killed/12 total=0.0
+ (leftover != 0) 
+ child of if_statement"
+	"loc. 2
+[2816, 2831] parenthesized_expression
+36 visited
+1 candidates
+0 killed/12 total=0.0
+ (leftover != 0) 
+ child of if_statement"
+	"loc. 2
+[2816, 2831] parenthesized_expression
+36 visited
+1 candidates
+0 killed/12 total=0.0
+ (leftover != 0) 
+ child of if_statement" -> "loc. 4
+[2833, 2858] expression_statement
+7 visited
+0 candidates
+ CANARY_TWEET_LOCATION(4); 
+ child of compound_statement" [label=T]
+	"loc. 2
+[2816, 2831] parenthesized_expression
+36 visited
+1 candidates
+0 killed/12 total=0.0
+ (leftover != 0) 
+ child of if_statement" -> "loc. 3
+[2993, 3018] expression_statement
+36 visited
+0 candidates
+ CANARY_TWEET_LOCATION(3); 
+ child of compound_statement" [label=F]
+	"loc. 4
+[2833, 2858] expression_statement
+7 visited
+0 candidates
+ CANARY_TWEET_LOCATION(4); 
+ child of compound_statement"
+	"loc. 4
+[2833, 2858] expression_statement
+7 visited
+0 candidates
+ CANARY_TWEET_LOCATION(4); 
+ child of compound_statement" -> "loc. 4
+[2867, 2912] expression_statement
+7 visited
+0 candidates
+ gimli_core_u8(hydro_random_context.state, 0); 
+ child of compound_statement"
+	"loc. 3
+[2993, 3018] expression_statement
+36 visited
+0 candidates
+ CANARY_TWEET_LOCATION(3); 
+ child of compound_statement"
+	"loc. 3
+[2993, 3018] expression_statement
+36 visited
+0 candidates
+ CANARY_TWEET_LOCATION(3); 
+ child of compound_statement" -> "loc. 3
+[3023, 3046] expression_statement
+36 visited
+0 candidates
+ hydro_random_ratchet(); 
+ child of compound_statement"
+	"loc. 4
+[2867, 2912] expression_statement
+7 visited
+0 candidates
+ gimli_core_u8(hydro_random_context.state, 0); 
+ child of compound_statement"
+	"loc. 4
+[2867, 2912] expression_statement
+7 visited
+0 candidates
+ gimli_core_u8(hydro_random_context.state, 0); 
+ child of compound_statement" -> "loc. 4
+[2921, 2987] expression_statement
+7 visited
+2 candidates
+0 killed/26 total=0.0
+ mem_cpy(p + i * gimli_RATE, hydro_random_context.state, leftover); 
+ child of compound_statement"
+	"loc. 4
+[2921, 2987] expression_statement
+7 visited
+2 candidates
+0 killed/26 total=0.0
+ mem_cpy(p + i * gimli_RATE, hydro_random_context.state, leftover); 
+ child of compound_statement"
+	"loc. 4
+[2921, 2987] expression_statement
+7 visited
+2 candidates
+0 killed/26 total=0.0
+ mem_cpy(p + i * gimli_RATE, hydro_random_context.state, leftover); 
+ child of compound_statement" -> "loc. 3
+[2993, 3018] expression_statement
+36 visited
+0 candidates
+ CANARY_TWEET_LOCATION(3); 
+ child of compound_statement"
+	"loc. 3
+[3023, 3046] expression_statement
+36 visited
+0 candidates
+ hydro_random_ratchet(); 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    uint8_t *p = (uint8_t *) out;
+    size_t   i;
+    size_t   leftover;
+
+    hydro_random_ensure_initialized();
+    for (i = 0; i < out_len / gimli_RATE; i++) {CANARY_TWEET_LOCATION(1);
+        gimli_core_u8(hydro_random_context.state, 0);
+        memcpy(p + i * gimli_RATE, hydro_random_context.state, gimli_RATE);
+    }CANARY_TWEET_LOCATION(2);
+    leftover = out_len % gimli_RATE;
+    if (leftover != 0) {CANARY_TWEET_LOCATION(4);
+        gimli_core_u8(hydro_random_context.state, 0);
+        mem_cpy(p + i * gimli_RATE, hydro_random_context.state, leftover);
+    }CANARY_TWEET_LOCATION(3);
+    hydro_random_ratchet();
+}"
+}

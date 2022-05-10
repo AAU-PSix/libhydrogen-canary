@@ -1,0 +1,496 @@
+digraph hydro_pwhash_create_localised_3 {
+	initial [shape=point]
+	initial -> "loc. 0
+[3655, 3680] expression_statement
+1 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 1
+[5181, 5349] return_statement
+1 visited
+0 candidates
+ return hydro_secretbox_encrypt(secretbox, hash_alg, hydro_pwhash_PARAMSBYTES,
+                                   (uint64_t) *enc_alg, hydro_pwhash_CONTEXT, master_key); 
+ child of compound_statement" -> final
+	"loc. 0
+[3655, 3680] expression_statement
+1 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[3655, 3680] expression_statement
+1 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[3685, 3725] declaration
+1 visited
+0 candidates
+ uint8_t *const enc_alg     = &stored[0]; 
+ child of compound_statement"
+	"loc. 0
+[3685, 3725] declaration
+1 visited
+0 candidates
+ uint8_t *const enc_alg     = &stored[0]; 
+ child of compound_statement"
+	"loc. 0
+[3685, 3725] declaration
+1 visited
+0 candidates
+ uint8_t *const enc_alg     = &stored[0]; 
+ child of compound_statement" -> "loc. 0
+[3730, 3795] declaration
+1 visited
+0 candidates
+ uint8_t *const secretbox   = &enc_alg[hydro_pwhash_ENC_ALGBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[3730, 3795] declaration
+1 visited
+0 candidates
+ uint8_t *const secretbox   = &enc_alg[hydro_pwhash_ENC_ALGBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[3730, 3795] declaration
+1 visited
+0 candidates
+ uint8_t *const secretbox   = &enc_alg[hydro_pwhash_ENC_ALGBYTES]; 
+ child of compound_statement" -> "loc. 0
+[3800, 3869] declaration
+1 visited
+0 candidates
+ uint8_t *const hash_alg    = &secretbox[hydro_secretbox_HEADERBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[3800, 3869] declaration
+1 visited
+0 candidates
+ uint8_t *const hash_alg    = &secretbox[hydro_secretbox_HEADERBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[3800, 3869] declaration
+1 visited
+0 candidates
+ uint8_t *const hash_alg    = &secretbox[hydro_secretbox_HEADERBYTES]; 
+ child of compound_statement" -> "loc. 0
+[3874, 3941] declaration
+1 visited
+0 candidates
+ uint8_t *const threads_u8  = &hash_alg[hydro_pwhash_HASH_ALGBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[3874, 3941] declaration
+1 visited
+0 candidates
+ uint8_t *const threads_u8  = &hash_alg[hydro_pwhash_HASH_ALGBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[3874, 3941] declaration
+1 visited
+0 candidates
+ uint8_t *const threads_u8  = &hash_alg[hydro_pwhash_HASH_ALGBYTES]; 
+ child of compound_statement" -> "loc. 0
+[3946, 4014] declaration
+1 visited
+0 candidates
+ uint8_t *const opslimit_u8 = &threads_u8[hydro_pwhash_THREADSBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[3946, 4014] declaration
+1 visited
+0 candidates
+ uint8_t *const opslimit_u8 = &threads_u8[hydro_pwhash_THREADSBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[3946, 4014] declaration
+1 visited
+0 candidates
+ uint8_t *const opslimit_u8 = &threads_u8[hydro_pwhash_THREADSBYTES]; 
+ child of compound_statement" -> "loc. 0
+[4019, 4089] declaration
+1 visited
+0 candidates
+ uint8_t *const memlimit_u8 = &opslimit_u8[hydro_pwhash_OPSLIMITBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[4019, 4089] declaration
+1 visited
+0 candidates
+ uint8_t *const memlimit_u8 = &opslimit_u8[hydro_pwhash_OPSLIMITBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[4019, 4089] declaration
+1 visited
+0 candidates
+ uint8_t *const memlimit_u8 = &opslimit_u8[hydro_pwhash_OPSLIMITBYTES]; 
+ child of compound_statement" -> "loc. 0
+[4094, 4164] declaration
+1 visited
+0 candidates
+ uint8_t *const salt        = &memlimit_u8[hydro_pwhash_MEMLIMITBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[4094, 4164] declaration
+1 visited
+0 candidates
+ uint8_t *const salt        = &memlimit_u8[hydro_pwhash_MEMLIMITBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[4094, 4164] declaration
+1 visited
+0 candidates
+ uint8_t *const salt        = &memlimit_u8[hydro_pwhash_MEMLIMITBYTES]; 
+ child of compound_statement" -> "loc. 0
+[4169, 4228] declaration
+1 visited
+0 candidates
+ uint8_t *const h           = &salt[hydro_pwhash_SALTBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[4169, 4228] declaration
+1 visited
+0 candidates
+ uint8_t *const h           = &salt[hydro_pwhash_SALTBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[4169, 4228] declaration
+1 visited
+0 candidates
+ uint8_t *const h           = &salt[hydro_pwhash_SALTBYTES]; 
+ child of compound_statement" -> "loc. 0
+[4234, 4466] expression_statement
+1 visited
+3 candidates
+0 killed/38 total=0.0
+ COMPILER_ASSERT(hydro_pwhash_STOREDBYTES >= hydro_pwhash_ENC_ALGBYTES +
+                                                    hydro_secretbox_HEADERBYTES +
+                                                    hydro_pwhash_PARAMSBYTES); 
+ child of compound_statement"
+	"loc. 0
+[4234, 4466] expression_statement
+1 visited
+3 candidates
+0 killed/38 total=0.0
+ COMPILER_ASSERT(hydro_pwhash_STOREDBYTES >= hydro_pwhash_ENC_ALGBYTES +
+                                                    hydro_secretbox_HEADERBYTES +
+                                                    hydro_pwhash_PARAMSBYTES); 
+ child of compound_statement"
+	"loc. 0
+[4234, 4466] expression_statement
+1 visited
+3 candidates
+0 killed/38 total=0.0
+ COMPILER_ASSERT(hydro_pwhash_STOREDBYTES >= hydro_pwhash_ENC_ALGBYTES +
+                                                    hydro_secretbox_HEADERBYTES +
+                                                    hydro_pwhash_PARAMSBYTES); 
+ child of compound_statement" -> "loc. 0
+[4471, 4487] expression_statement
+1 visited
+0 candidates
+ (void) memlimit; 
+ child of compound_statement"
+	"loc. 0
+[4471, 4487] expression_statement
+1 visited
+0 candidates
+ (void) memlimit; 
+ child of compound_statement"
+	"loc. 0
+[4471, 4487] expression_statement
+1 visited
+0 candidates
+ (void) memlimit; 
+ child of compound_statement" -> "loc. 0
+[4492, 4535] expression_statement
+1 visited
+0 candidates
+ mem_zero(stored, hydro_pwhash_STOREDBYTES); 
+ child of compound_statement"
+	"loc. 0
+[4492, 4535] expression_statement
+1 visited
+0 candidates
+ mem_zero(stored, hydro_pwhash_STOREDBYTES); 
+ child of compound_statement"
+	"loc. 0
+[4492, 4535] expression_statement
+1 visited
+0 candidates
+ mem_zero(stored, hydro_pwhash_STOREDBYTES); 
+ child of compound_statement" -> "loc. 0
+[4540, 4575] expression_statement
+1 visited
+1 candidates
+7 killed/10 total=0.7
+ *enc_alg    = hydro_pwhash_ENC_ALG; 
+ child of compound_statement"
+	"loc. 0
+[4540, 4575] expression_statement
+1 visited
+1 candidates
+7 killed/10 total=0.7
+ *enc_alg    = hydro_pwhash_ENC_ALG; 
+ child of compound_statement"
+	"loc. 0
+[4540, 4575] expression_statement
+1 visited
+1 candidates
+7 killed/10 total=0.7
+ *enc_alg    = hydro_pwhash_ENC_ALG; 
+ child of compound_statement" -> "loc. 0
+[4580, 4616] expression_statement
+1 visited
+1 candidates
+7 killed/10 total=0.7
+ *hash_alg   = hydro_pwhash_HASH_ALG; 
+ child of compound_statement"
+	"loc. 0
+[4580, 4616] expression_statement
+1 visited
+1 candidates
+7 killed/10 total=0.7
+ *hash_alg   = hydro_pwhash_HASH_ALG; 
+ child of compound_statement"
+	"loc. 0
+[4580, 4616] expression_statement
+1 visited
+1 candidates
+7 killed/10 total=0.7
+ *hash_alg   = hydro_pwhash_HASH_ALG; 
+ child of compound_statement" -> "loc. 0
+[4621, 4643] expression_statement
+1 visited
+1 candidates
+7 killed/10 total=0.7
+ *threads_u8 = threads; 
+ child of compound_statement"
+	"loc. 0
+[4621, 4643] expression_statement
+1 visited
+1 candidates
+7 killed/10 total=0.7
+ *threads_u8 = threads; 
+ child of compound_statement"
+	"loc. 0
+[4621, 4643] expression_statement
+1 visited
+1 candidates
+7 killed/10 total=0.7
+ *threads_u8 = threads; 
+ child of compound_statement" -> "loc. 0
+[4648, 4682] expression_statement
+1 visited
+0 candidates
+ STORE64_LE(opslimit_u8, opslimit); 
+ child of compound_statement"
+	"loc. 0
+[4648, 4682] expression_statement
+1 visited
+0 candidates
+ STORE64_LE(opslimit_u8, opslimit); 
+ child of compound_statement"
+	"loc. 0
+[4648, 4682] expression_statement
+1 visited
+0 candidates
+ STORE64_LE(opslimit_u8, opslimit); 
+ child of compound_statement" -> "loc. 0
+[4687, 4732] expression_statement
+1 visited
+0 candidates
+ STORE64_LE(memlimit_u8, (uint64_t) memlimit); 
+ child of compound_statement"
+	"loc. 0
+[4687, 4732] expression_statement
+1 visited
+0 candidates
+ STORE64_LE(memlimit_u8, (uint64_t) memlimit); 
+ child of compound_statement"
+	"loc. 0
+[4687, 4732] expression_statement
+1 visited
+0 candidates
+ STORE64_LE(memlimit_u8, (uint64_t) memlimit); 
+ child of compound_statement" -> "loc. 0
+[4737, 4784] expression_statement
+1 visited
+0 candidates
+ hydro_random_buf(salt, hydro_pwhash_SALTBYTES); 
+ child of compound_statement"
+	"loc. 0
+[4737, 4784] expression_statement
+1 visited
+0 candidates
+ hydro_random_buf(salt, hydro_pwhash_SALTBYTES); 
+ child of compound_statement"
+	"loc. 0
+[4737, 4784] expression_statement
+1 visited
+0 candidates
+ hydro_random_buf(salt, hydro_pwhash_SALTBYTES); 
+ child of compound_statement" -> "loc. 0
+[4790, 4850] expression_statement
+1 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(sizeof zero >= hydro_pwhash_MASTERKEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[4790, 4850] expression_statement
+1 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(sizeof zero >= hydro_pwhash_MASTERKEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[4790, 4850] expression_statement
+1 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(sizeof zero >= hydro_pwhash_MASTERKEYBYTES); 
+ child of compound_statement" -> "loc. 0
+[4858, 5020] parenthesized_expression
+1 visited
+1 candidates
+0 killed/12 total=0.0
+ (_hydro_pwhash_hash(h, hydro_pwhash_HASHBYTES, salt, passwd, passwd_len,
+                           hydro_pwhash_CONTEXT, zero, opslimit, memlimit, threads) != 0) 
+ child of if_statement"
+	"loc. 0
+[4858, 5020] parenthesized_expression
+1 visited
+1 candidates
+0 killed/12 total=0.0
+ (_hydro_pwhash_hash(h, hydro_pwhash_HASHBYTES, salt, passwd, passwd_len,
+                           hydro_pwhash_CONTEXT, zero, opslimit, memlimit, threads) != 0) 
+ child of if_statement"
+	"loc. 0
+[4858, 5020] parenthesized_expression
+1 visited
+1 candidates
+0 killed/12 total=0.0
+ (_hydro_pwhash_hash(h, hydro_pwhash_HASHBYTES, salt, passwd, passwd_len,
+                           hydro_pwhash_CONTEXT, zero, opslimit, memlimit, threads) != 0) 
+ child of if_statement" -> "loc. 2
+[5022, 5047] expression_statement
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" [label=T]
+	"loc. 0
+[4858, 5020] parenthesized_expression
+1 visited
+1 candidates
+0 killed/12 total=0.0
+ (_hydro_pwhash_hash(h, hydro_pwhash_HASHBYTES, salt, passwd, passwd_len,
+                           hydro_pwhash_CONTEXT, zero, opslimit, memlimit, threads) != 0) 
+ child of if_statement" -> "loc. 1
+[5072, 5097] expression_statement
+1 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" [label=F]
+	"loc. 2
+[5022, 5047] expression_statement
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement"
+	"loc. 2
+[5022, 5047] expression_statement
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" -> "loc. 2
+[5056, 5066] return_statement
+ return -1; 
+ child of compound_statement"
+	"loc. 1
+[5072, 5097] expression_statement
+1 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[5072, 5097] expression_statement
+1 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" -> "loc. 1
+[5102, 5175] expression_statement
+1 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_pwhash_MASTERKEYBYTES == hydro_secretbox_KEYBYTES); 
+ child of compound_statement"
+	"loc. 2
+[5056, 5066] return_statement
+ return -1; 
+ child of compound_statement"
+	"loc. 2
+[5056, 5066] return_statement
+ return -1; 
+ child of compound_statement" -> "loc. 1
+[5072, 5097] expression_statement
+1 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[5102, 5175] expression_statement
+1 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_pwhash_MASTERKEYBYTES == hydro_secretbox_KEYBYTES); 
+ child of compound_statement"
+	"loc. 1
+[5102, 5175] expression_statement
+1 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_pwhash_MASTERKEYBYTES == hydro_secretbox_KEYBYTES); 
+ child of compound_statement" -> "loc. 1
+[5181, 5349] return_statement
+1 visited
+0 candidates
+ return hydro_secretbox_encrypt(secretbox, hash_alg, hydro_pwhash_PARAMSBYTES,
+                                   (uint64_t) *enc_alg, hydro_pwhash_CONTEXT, master_key); 
+ child of compound_statement"
+	"loc. 1
+[5181, 5349] return_statement
+1 visited
+0 candidates
+ return hydro_secretbox_encrypt(secretbox, hash_alg, hydro_pwhash_PARAMSBYTES,
+                                   (uint64_t) *enc_alg, hydro_pwhash_CONTEXT, master_key); 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    uint8_t *const enc_alg     = &stored[0];
+    uint8_t *const secretbox   = &enc_alg[hydro_pwhash_ENC_ALGBYTES];
+    uint8_t *const hash_alg    = &secretbox[hydro_secretbox_HEADERBYTES];
+    uint8_t *const threads_u8  = &hash_alg[hydro_pwhash_HASH_ALGBYTES];
+    uint8_t *const opslimit_u8 = &threads_u8[hydro_pwhash_THREADSBYTES];
+    uint8_t *const memlimit_u8 = &opslimit_u8[hydro_pwhash_OPSLIMITBYTES];
+    uint8_t *const salt        = &memlimit_u8[hydro_pwhash_MEMLIMITBYTES];
+    uint8_t *const h           = &salt[hydro_pwhash_SALTBYTES];
+
+    COMPILER_ASSERT(hydro_pwhash_STOREDBYTES >= hydro_pwhash_ENC_ALGBYTES +
+                                                    hydro_secretbox_HEADERBYTES +
+                                                    hydro_pwhash_PARAMSBYTES);
+    (void) memlimit;
+    mem_zero(stored, hydro_pwhash_STOREDBYTES);
+    *enc_alg    = hydro_pwhash_ENC_ALG;
+    *hash_alg   = hydro_pwhash_HASH_ALG;
+    *threads_u8 = threads;
+    STORE64_LE(opslimit_u8, opslimit);
+    STORE64_LE(memlimit_u8, (uint64_t) memlimit);
+    hydro_random_buf(salt, hydro_pwhash_SALTBYTES);
+
+    COMPILER_ASSERT(sizeof zero >= hydro_pwhash_MASTERKEYBYTES);
+    if (_hydro_pwhash_hash(h, hydro_pwhash_HASHBYTES, salt, passwd, passwd_len,
+                           hydro_pwhash_CONTEXT, zero, opslimit, memlimit, threads) != 0) {CANARY_TWEET_LOCATION(2);
+        return -1;
+    }CANARY_TWEET_LOCATION(1);
+    COMPILER_ASSERT(hydro_pwhash_MASTERKEYBYTES == hydro_secretbox_KEYBYTES);
+
+    return hydro_secretbox_encrypt(secretbox, hash_alg, hydro_pwhash_PARAMSBYTES,
+                                   (uint64_t) *enc_alg, hydro_pwhash_CONTEXT, master_key);
+}"
+}

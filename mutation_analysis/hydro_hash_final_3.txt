@@ -1,0 +1,2482 @@
+Mutation took 528.7320901870007 seconds
+Original execution 124 traces
+\Visited count
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+
+Visited locations 0, 1, 3, 4, 6, 5, 2
+Unvisited locations 
+Visited 7, Unvisted 0, percentage visited 1.0
+
+Visited nodes 33
+Unvisited nodes 0
+Percentage visited 1.0
+
+Visited candidates 25
+Unvisited candidates 0
+Percentage visited 1.0
+
+Tested mutations 301
+Untested mutations 0
+Percentage visited 1.0
+
+Location 0
+33 Runs
+
+Code :: 'CANARY_TWEET_LOCATION(0);'
+No mutations
+
+Code :: 'uint8_t  lc[4];'
+No mutations
+
+Code :: 'uint8_t *buf = (uint8_t *) (void *) state->state;'
+No mutations
+
+Code :: 'size_t   i;'
+No mutations
+
+Code :: 'size_t   lc_len;'
+No mutations
+
+Code :: 'size_t   leftover;'
+No mutations
+
+Code :: '(out_len < hydro_hash_BYTES_MIN || out_len > hydro_hash_BYTES_MAX)'
+Is :: if-condition
+Mutant trace count 136
+0 was visited 136 times
+1 was visited 136 times
+3 was visited 290 times
+4 was visited 136 times
+6 was visited 3 times
+5 was visited 136 times
+[Point(line=97, char=39), Point(line=97, char=41)] '||' --> '+' :: SURVIVED
+
+Mutant trace count 136
+0 was visited 136 times
+1 was visited 136 times
+3 was visited 290 times
+4 was visited 136 times
+6 was visited 3 times
+5 was visited 136 times
+[Point(line=97, char=39), Point(line=97, char=41)] '||' --> '-' :: SURVIVED
+
+Mutant trace count 136
+0 was visited 136 times
+1 was visited 136 times
+3 was visited 290 times
+4 was visited 136 times
+6 was visited 3 times
+5 was visited 136 times
+[Point(line=97, char=39), Point(line=97, char=41)] '||' --> '*' :: SURVIVED
+
+Mutant trace count 136
+0 was visited 136 times
+1 was visited 136 times
+3 was visited 290 times
+4 was visited 136 times
+6 was visited 3 times
+5 was visited 136 times
+[Point(line=97, char=39), Point(line=97, char=41)] '||' --> '/' :: SURVIVED
+
+Mutant trace count 136
+0 was visited 136 times
+1 was visited 136 times
+3 was visited 290 times
+4 was visited 136 times
+6 was visited 3 times
+5 was visited 136 times
+[Point(line=97, char=39), Point(line=97, char=41)] '||' --> '%' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=97, char=39), Point(line=97, char=41)] '||' --> '|' :: SURVIVED
+
+Mutant trace count 136
+0 was visited 136 times
+1 was visited 136 times
+3 was visited 290 times
+4 was visited 136 times
+6 was visited 3 times
+5 was visited 136 times
+[Point(line=97, char=39), Point(line=97, char=41)] '||' --> '&' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=97, char=39), Point(line=97, char=41)] '||' --> '^' :: SURVIVED
+
+Mutant trace count 136
+0 was visited 136 times
+1 was visited 136 times
+3 was visited 290 times
+4 was visited 136 times
+6 was visited 3 times
+5 was visited 136 times
+[Point(line=97, char=39), Point(line=97, char=41)] '||' --> '>' :: SURVIVED
+
+Mutant trace count 136
+0 was visited 136 times
+1 was visited 136 times
+3 was visited 290 times
+4 was visited 136 times
+6 was visited 3 times
+5 was visited 136 times
+[Point(line=97, char=39), Point(line=97, char=41)] '||' --> '>=' :: SURVIVED
+
+Mutant trace count 136
+0 was visited 136 times
+1 was visited 136 times
+3 was visited 290 times
+4 was visited 136 times
+6 was visited 3 times
+5 was visited 136 times
+[Point(line=97, char=39), Point(line=97, char=41)] '||' --> '<' :: SURVIVED
+
+Mutant trace count 136
+0 was visited 136 times
+1 was visited 136 times
+3 was visited 290 times
+4 was visited 136 times
+6 was visited 3 times
+5 was visited 136 times
+[Point(line=97, char=39), Point(line=97, char=41)] '||' --> '<=' :: SURVIVED
+
+Mutant trace count 0
+0 was visited 1 times
+2 was visited 1 times
+[Point(line=97, char=39), Point(line=97, char=41)] '||' --> '==' :: KILLED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=97, char=39), Point(line=97, char=41)] '||' --> '!=' :: SURVIVED
+
+Mutant trace count 136
+0 was visited 136 times
+1 was visited 136 times
+3 was visited 290 times
+4 was visited 136 times
+6 was visited 3 times
+5 was visited 136 times
+[Point(line=97, char=39), Point(line=97, char=41)] '||' --> '<<' :: SURVIVED
+
+Mutant trace count 136
+0 was visited 136 times
+1 was visited 136 times
+3 was visited 290 times
+4 was visited 136 times
+6 was visited 3 times
+5 was visited 136 times
+[Point(line=97, char=39), Point(line=97, char=41)] '||' --> '>>' :: SURVIVED
+
+Mutant trace count 136
+0 was visited 136 times
+1 was visited 136 times
+3 was visited 290 times
+4 was visited 136 times
+6 was visited 3 times
+5 was visited 136 times
+[Point(line=97, char=39), Point(line=97, char=41)] '||' --> '&&' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=97, char=39), Point(line=97, char=41)] '||' --> '||' :: SURVIVED
+
+Mutant trace count 0
+0 was visited 1 times
+2 was visited 1 times
+[Point(line=97, char=16), Point(line=97, char=17)] '<' --> '+' :: KILLED
+
+Mutant trace count 0
+0 was visited 1 times
+2 was visited 1 times
+[Point(line=97, char=16), Point(line=97, char=17)] '<' --> '-' :: KILLED
+
+Mutant trace count 0
+0 was visited 1 times
+2 was visited 1 times
+[Point(line=97, char=16), Point(line=97, char=17)] '<' --> '*' :: KILLED
+
+Mutant trace count 0
+0 was visited 1 times
+2 was visited 1 times
+[Point(line=97, char=16), Point(line=97, char=17)] '<' --> '/' :: KILLED
+
+Mutant trace count 0
+0 was visited 1 times
+2 was visited 1 times
+[Point(line=97, char=16), Point(line=97, char=17)] '<' --> '%' :: KILLED
+
+Mutant trace count 0
+0 was visited 1 times
+2 was visited 1 times
+[Point(line=97, char=16), Point(line=97, char=17)] '<' --> '|' :: KILLED
+
+Mutant trace count 5
+0 was visited 8 times
+1 was visited 5 times
+3 was visited 18 times
+4 was visited 5 times
+6 was visited 2 times
+5 was visited 5 times
+2 was visited 3 times
+[Point(line=97, char=16), Point(line=97, char=17)] '<' --> '&' :: KILLED
+
+Mutant trace count 0
+0 was visited 1 times
+2 was visited 1 times
+[Point(line=97, char=16), Point(line=97, char=17)] '<' --> '^' :: KILLED
+
+Mutant trace count 0
+0 was visited 1 times
+2 was visited 1 times
+[Point(line=97, char=16), Point(line=97, char=17)] '<' --> '&&' :: KILLED
+
+Mutant trace count 0
+0 was visited 1 times
+2 was visited 1 times
+[Point(line=97, char=16), Point(line=97, char=17)] '<' --> '||' :: KILLED
+
+Mutant trace count 0
+0 was visited 1 times
+2 was visited 1 times
+[Point(line=97, char=16), Point(line=97, char=17)] '<' --> '<<' :: KILLED
+
+Mutant trace count 136
+0 was visited 136 times
+1 was visited 136 times
+3 was visited 290 times
+4 was visited 136 times
+6 was visited 3 times
+5 was visited 136 times
+[Point(line=97, char=16), Point(line=97, char=17)] '<' --> '>>' :: SURVIVED
+
+Mutant trace count 0
+0 was visited 1 times
+2 was visited 1 times
+[Point(line=97, char=50), Point(line=97, char=51)] '>' --> '+' :: KILLED
+
+Mutant trace count 0
+0 was visited 1 times
+2 was visited 1 times
+[Point(line=97, char=50), Point(line=97, char=51)] '>' --> '-' :: KILLED
+
+Mutant trace count 0
+0 was visited 1 times
+2 was visited 1 times
+[Point(line=97, char=50), Point(line=97, char=51)] '>' --> '*' :: KILLED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=97, char=50), Point(line=97, char=51)] '>' --> '/' :: SURVIVED
+
+Mutant trace count 0
+0 was visited 1 times
+2 was visited 1 times
+[Point(line=97, char=50), Point(line=97, char=51)] '>' --> '%' :: KILLED
+
+Mutant trace count 0
+0 was visited 1 times
+2 was visited 1 times
+[Point(line=97, char=50), Point(line=97, char=51)] '>' --> '|' :: KILLED
+
+Mutant trace count 0
+0 was visited 1 times
+2 was visited 1 times
+[Point(line=97, char=50), Point(line=97, char=51)] '>' --> '&' :: KILLED
+
+Mutant trace count 0
+0 was visited 1 times
+2 was visited 1 times
+[Point(line=97, char=50), Point(line=97, char=51)] '>' --> '^' :: KILLED
+
+Mutant trace count 0
+0 was visited 1 times
+2 was visited 1 times
+[Point(line=97, char=50), Point(line=97, char=51)] '>' --> '&&' :: KILLED
+
+Mutant trace count 0
+0 was visited 1 times
+2 was visited 1 times
+[Point(line=97, char=50), Point(line=97, char=51)] '>' --> '||' :: KILLED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=97, char=50), Point(line=97, char=51)] '>' --> '<<' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=97, char=50), Point(line=97, char=51)] '>' --> '>>' :: SURVIVED
+
+Killed 21 and 21 survived, mutation score of 0.5
+
+Location Killed 21 and 21 survived, mutation score of 0.5
+
+
+Location 1
+33 Runs
+
+Code :: 'CANARY_TWEET_LOCATION(1);'
+No mutations
+
+Code :: 'COMPILER_ASSERT(hydro_hash_BYTES_MAX <= 0xffff);'
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=100, char=41), Point(line=100, char=43)] '<=' --> '+' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=100, char=41), Point(line=100, char=43)] '<=' --> '-' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=100, char=41), Point(line=100, char=43)] '<=' --> '*' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=100, char=41), Point(line=100, char=43)] '<=' --> '/' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=100, char=41), Point(line=100, char=43)] '<=' --> '%' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=100, char=41), Point(line=100, char=43)] '<=' --> '|' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=100, char=41), Point(line=100, char=43)] '<=' --> '&' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=100, char=41), Point(line=100, char=43)] '<=' --> '^' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=100, char=41), Point(line=100, char=43)] '<=' --> '&&' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=100, char=41), Point(line=100, char=43)] '<=' --> '||' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=100, char=41), Point(line=100, char=43)] '<=' --> '<<' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=100, char=41), Point(line=100, char=43)] '<=' --> '>>' :: SURVIVED
+
+Killed 0 and 12 survived, mutation score of 0.0
+
+Code :: 'lc[1]  = (uint8_t) out_len;'
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=101, char=11), Point(line=101, char=12)] '=' --> '+=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=101, char=11), Point(line=101, char=12)] '=' --> '-=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=101, char=11), Point(line=101, char=12)] '=' --> '*=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=101, char=11), Point(line=101, char=12)] '=' --> '/=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=101, char=11), Point(line=101, char=12)] '=' --> '%=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=101, char=11), Point(line=101, char=12)] '=' --> '|=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=101, char=11), Point(line=101, char=12)] '=' --> '&=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=101, char=11), Point(line=101, char=12)] '=' --> '^=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=101, char=11), Point(line=101, char=12)] '=' --> '<<=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=101, char=11), Point(line=101, char=12)] '=' --> '>>=' :: KILLED
+
+Killed 10 and 0 survived, mutation score of 1.0
+
+Code :: 'lc[2]  = (uint8_t) (out_len >> 8);'
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=102, char=11), Point(line=102, char=12)] '=' --> '+=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=102, char=11), Point(line=102, char=12)] '=' --> '-=' :: KILLED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=102, char=11), Point(line=102, char=12)] '=' --> '*=' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=102, char=11), Point(line=102, char=12)] '=' --> '/=' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=102, char=11), Point(line=102, char=12)] '=' --> '%=' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=102, char=11), Point(line=102, char=12)] '=' --> '|=' :: KILLED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=102, char=11), Point(line=102, char=12)] '=' --> '&=' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=102, char=11), Point(line=102, char=12)] '=' --> '^=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=102, char=11), Point(line=102, char=12)] '=' --> '<<=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=102, char=11), Point(line=102, char=12)] '=' --> '>>=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=102, char=32), Point(line=102, char=34)] '>>' --> '+' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=102, char=32), Point(line=102, char=34)] '>>' --> '-' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=102, char=32), Point(line=102, char=34)] '>>' --> '*' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=102, char=32), Point(line=102, char=34)] '>>' --> '/' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=102, char=32), Point(line=102, char=34)] '>>' --> '%' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=102, char=32), Point(line=102, char=34)] '>>' --> '|' :: KILLED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=102, char=32), Point(line=102, char=34)] '>>' --> '&' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=102, char=32), Point(line=102, char=34)] '>>' --> '^' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=102, char=32), Point(line=102, char=34)] '>>' --> '>' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=102, char=32), Point(line=102, char=34)] '>>' --> '>=' :: KILLED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=102, char=32), Point(line=102, char=34)] '>>' --> '<' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=102, char=32), Point(line=102, char=34)] '>>' --> '<=' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=102, char=32), Point(line=102, char=34)] '>>' --> '==' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=102, char=32), Point(line=102, char=34)] '>>' --> '!=' :: KILLED
+
+Killed 16 and 8 survived, mutation score of 0.6666666666666666
+
+Code :: 'lc[3]  = 0;'
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=103, char=11), Point(line=103, char=12)] '=' --> '+=' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=103, char=11), Point(line=103, char=12)] '=' --> '-=' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=103, char=11), Point(line=103, char=12)] '=' --> '*=' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=103, char=11), Point(line=103, char=12)] '=' --> '/=' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=103, char=11), Point(line=103, char=12)] '=' --> '%=' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=103, char=11), Point(line=103, char=12)] '=' --> '|=' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=103, char=11), Point(line=103, char=12)] '=' --> '&=' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=103, char=11), Point(line=103, char=12)] '=' --> '^=' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=103, char=11), Point(line=103, char=12)] '=' --> '<<=' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=103, char=11), Point(line=103, char=12)] '=' --> '>>=' :: SURVIVED
+
+Killed 0 and 10 survived, mutation score of 0.0
+
+Code :: 'lc_len = (size_t) (1 + (lc[2] != 0));'
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=104, char=11), Point(line=104, char=12)] '=' --> '+=' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=104, char=11), Point(line=104, char=12)] '=' --> '-=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=104, char=11), Point(line=104, char=12)] '=' --> '*=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=104, char=11), Point(line=104, char=12)] '=' --> '/=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=104, char=11), Point(line=104, char=12)] '=' --> '%=' :: KILLED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=104, char=11), Point(line=104, char=12)] '=' --> '|=' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=104, char=11), Point(line=104, char=12)] '=' --> '&=' :: KILLED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=104, char=11), Point(line=104, char=12)] '=' --> '^=' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=104, char=11), Point(line=104, char=12)] '=' --> '<<=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=104, char=11), Point(line=104, char=12)] '=' --> '>>=' :: KILLED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=104, char=25), Point(line=104, char=26)] '+' --> '|' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=104, char=25), Point(line=104, char=26)] '+' --> '&' :: KILLED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=104, char=25), Point(line=104, char=26)] '+' --> '^' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=104, char=25), Point(line=104, char=26)] '+' --> '&&' :: KILLED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=104, char=25), Point(line=104, char=26)] '+' --> '||' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=104, char=25), Point(line=104, char=26)] '+' --> '>' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=104, char=25), Point(line=104, char=26)] '+' --> '>=' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=104, char=25), Point(line=104, char=26)] '+' --> '<' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=104, char=25), Point(line=104, char=26)] '+' --> '<=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=104, char=25), Point(line=104, char=26)] '+' --> '==' :: KILLED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=104, char=25), Point(line=104, char=26)] '+' --> '!=' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=104, char=25), Point(line=104, char=26)] '+' --> '<<' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=104, char=25), Point(line=104, char=26)] '+' --> '>>' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=104, char=34), Point(line=104, char=36)] '!=' --> '+' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=104, char=34), Point(line=104, char=36)] '!=' --> '-' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=104, char=34), Point(line=104, char=36)] '!=' --> '*' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=104, char=34), Point(line=104, char=36)] '!=' --> '/' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=104, char=34), Point(line=104, char=36)] '!=' --> '%' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=104, char=34), Point(line=104, char=36)] '!=' --> '|' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=104, char=34), Point(line=104, char=36)] '!=' --> '&' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=104, char=34), Point(line=104, char=36)] '!=' --> '^' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=104, char=34), Point(line=104, char=36)] '!=' --> '&&' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=104, char=34), Point(line=104, char=36)] '!=' --> '||' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=104, char=34), Point(line=104, char=36)] '!=' --> '<<' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=104, char=34), Point(line=104, char=36)] '!=' --> '>>' :: SURVIVED
+
+Killed 12 and 23 survived, mutation score of 0.34285714285714286
+
+Code :: 'lc[0]  = (uint8_t) lc_len;'
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=105, char=11), Point(line=105, char=12)] '=' --> '+=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=105, char=11), Point(line=105, char=12)] '=' --> '-=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=105, char=11), Point(line=105, char=12)] '=' --> '*=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=105, char=11), Point(line=105, char=12)] '=' --> '/=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=105, char=11), Point(line=105, char=12)] '=' --> '%=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=105, char=11), Point(line=105, char=12)] '=' --> '|=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=105, char=11), Point(line=105, char=12)] '=' --> '&=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=105, char=11), Point(line=105, char=12)] '=' --> '^=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=105, char=11), Point(line=105, char=12)] '=' --> '<<=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=105, char=11), Point(line=105, char=12)] '=' --> '>>=' :: KILLED
+
+Killed 10 and 0 survived, mutation score of 1.0
+
+Code :: 'hydro_hash_update(state, lc, 1 + lc_len + 1);'
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=106, char=44), Point(line=106, char=45)] '+' --> '|' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=106, char=44), Point(line=106, char=45)] '+' --> '&' :: KILLED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=106, char=44), Point(line=106, char=45)] '+' --> '^' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=106, char=44), Point(line=106, char=45)] '+' --> '&&' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=106, char=44), Point(line=106, char=45)] '+' --> '||' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=106, char=44), Point(line=106, char=45)] '+' --> '>' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=106, char=44), Point(line=106, char=45)] '+' --> '>=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=106, char=44), Point(line=106, char=45)] '+' --> '<' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=106, char=44), Point(line=106, char=45)] '+' --> '<=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=106, char=44), Point(line=106, char=45)] '+' --> '==' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=106, char=44), Point(line=106, char=45)] '+' --> '!=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=106, char=44), Point(line=106, char=45)] '+' --> '<<' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=106, char=44), Point(line=106, char=45)] '+' --> '>>' :: KILLED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=106, char=35), Point(line=106, char=36)] '+' --> '|' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=106, char=35), Point(line=106, char=36)] '+' --> '&' :: KILLED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=106, char=35), Point(line=106, char=36)] '+' --> '^' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=106, char=35), Point(line=106, char=36)] '+' --> '&&' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=106, char=35), Point(line=106, char=36)] '+' --> '||' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=106, char=35), Point(line=106, char=36)] '+' --> '>' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=106, char=35), Point(line=106, char=36)] '+' --> '>=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=106, char=35), Point(line=106, char=36)] '+' --> '<' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=106, char=35), Point(line=106, char=36)] '+' --> '<=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=106, char=35), Point(line=106, char=36)] '+' --> '==' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=106, char=35), Point(line=106, char=36)] '+' --> '!=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=106, char=35), Point(line=106, char=36)] '+' --> '<<' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=106, char=35), Point(line=106, char=36)] '+' --> '>>' :: KILLED
+
+Killed 22 and 4 survived, mutation score of 0.8461538461538461
+
+Code :: 'gimli_pad_u8(buf, state->buf_off, gimli_DOMAIN_XOF);'
+No mutations
+
+Code :: 'i = 0'
+Is :: for-initalisation
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=108, char=11), Point(line=108, char=12)] '=' --> '+=' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=108, char=11), Point(line=108, char=12)] '=' --> '-=' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=108, char=11), Point(line=108, char=12)] '=' --> '*=' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=108, char=11), Point(line=108, char=12)] '=' --> '/=' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=108, char=11), Point(line=108, char=12)] '=' --> '%=' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=108, char=11), Point(line=108, char=12)] '=' --> '|=' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=108, char=11), Point(line=108, char=12)] '=' --> '&=' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=108, char=11), Point(line=108, char=12)] '=' --> '^=' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=108, char=11), Point(line=108, char=12)] '=' --> '<<=' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=108, char=11), Point(line=108, char=12)] '=' --> '>>=' :: SURVIVED
+
+Killed 0 and 10 survived, mutation score of 0.0
+
+Code :: 'i < out_len / gimli_RATE'
+Is :: for-condition
+Mutant trace count 0
+[Point(line=108, char=18), Point(line=108, char=19)] '<' --> '+' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=108, char=18), Point(line=108, char=19)] '<' --> '-' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=108, char=18), Point(line=108, char=19)] '<' --> '*' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=108, char=18), Point(line=108, char=19)] '<' --> '/' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=108, char=18), Point(line=108, char=19)] '<' --> '%' :: KILLED
+
+Mutant trace count 0
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 370 times
+[Point(line=108, char=18), Point(line=108, char=19)] '<' --> '|' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=108, char=18), Point(line=108, char=19)] '<' --> '&' :: KILLED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=108, char=18), Point(line=108, char=19)] '<' --> '^' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=108, char=18), Point(line=108, char=19)] '<' --> '&&' :: KILLED
+
+Mutant trace count 0
+[Point(line=108, char=18), Point(line=108, char=19)] '<' --> '||' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=108, char=18), Point(line=108, char=19)] '<' --> '<<' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=108, char=18), Point(line=108, char=19)] '<' --> '>>' :: KILLED
+
+Mutant trace count 0
+[Point(line=108, char=28), Point(line=108, char=29)] '/' --> '|' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=108, char=28), Point(line=108, char=29)] '/' --> '&' :: KILLED
+
+Mutant trace count 0
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 370 times
+[Point(line=108, char=28), Point(line=108, char=29)] '/' --> '^' :: SURVIVED
+
+Mutant trace count 2
+0 was visited 2 times
+1 was visited 2 times
+3 was visited 200 times
+4 was visited 2 times
+6 was visited 2 times
+5 was visited 2 times
+[Point(line=108, char=28), Point(line=108, char=29)] '/' --> '&&' :: KILLED
+
+Mutant trace count 0
+[Point(line=108, char=28), Point(line=108, char=29)] '/' --> '||' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=108, char=28), Point(line=108, char=29)] '/' --> '>' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=108, char=28), Point(line=108, char=29)] '/' --> '>=' :: KILLED
+
+Mutant trace count 0
+[Point(line=108, char=28), Point(line=108, char=29)] '/' --> '<' :: SURVIVED
+
+Mutant trace count 0
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 370 times
+[Point(line=108, char=28), Point(line=108, char=29)] '/' --> '<=' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=108, char=28), Point(line=108, char=29)] '/' --> '==' :: KILLED
+
+Mutant trace count 0
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 370 times
+[Point(line=108, char=28), Point(line=108, char=29)] '/' --> '!=' :: SURVIVED
+
+Mutant trace count 0
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 370 times
+[Point(line=108, char=28), Point(line=108, char=29)] '/' --> '<<' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=108, char=28), Point(line=108, char=29)] '/' --> '>>' :: KILLED
+
+Killed 13 and 12 survived, mutation score of 0.52
+
+Location Killed 83 and 79 survived, mutation score of 0.5123456790123457
+
+
+Location 3
+33 Runs
+
+Code :: 'CANARY_TWEET_LOCATION(3);'
+No mutations
+
+Code :: 'i++'
+No mutations
+
+Code :: 'gimli_core_u8(buf, 0);'
+No mutations
+
+Code :: 'memcpy(out + i * gimli_RATE, buf, gimli_RATE);'
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=110, char=19), Point(line=110, char=20)] '+' --> '|' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=110, char=19), Point(line=110, char=20)] '+' --> '&' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=110, char=19), Point(line=110, char=20)] '+' --> '^' :: KILLED
+
+Mutant trace count 0
+[Point(line=110, char=19), Point(line=110, char=20)] '+' --> '&&' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=110, char=19), Point(line=110, char=20)] '+' --> '||' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=110, char=19), Point(line=110, char=20)] '+' --> '>' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=110, char=19), Point(line=110, char=20)] '+' --> '>=' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=110, char=19), Point(line=110, char=20)] '+' --> '<' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=110, char=19), Point(line=110, char=20)] '+' --> '<=' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=110, char=19), Point(line=110, char=20)] '+' --> '==' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=110, char=19), Point(line=110, char=20)] '+' --> '!=' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=110, char=19), Point(line=110, char=20)] '+' --> '<<' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=110, char=19), Point(line=110, char=20)] '+' --> '>>' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=110, char=23), Point(line=110, char=24)] '*' --> '|' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=110, char=23), Point(line=110, char=24)] '*' --> '&' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=110, char=23), Point(line=110, char=24)] '*' --> '^' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=110, char=23), Point(line=110, char=24)] '*' --> '&&' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=110, char=23), Point(line=110, char=24)] '*' --> '||' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=110, char=23), Point(line=110, char=24)] '*' --> '>' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=110, char=23), Point(line=110, char=24)] '*' --> '>=' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=110, char=23), Point(line=110, char=24)] '*' --> '<' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=110, char=23), Point(line=110, char=24)] '*' --> '<=' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=110, char=23), Point(line=110, char=24)] '*' --> '==' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=110, char=23), Point(line=110, char=24)] '*' --> '!=' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=110, char=23), Point(line=110, char=24)] '*' --> '<<' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=110, char=23), Point(line=110, char=24)] '*' --> '>>' :: SURVIVED
+
+Killed 3 and 23 survived, mutation score of 0.11538461538461539
+
+Location Killed 3 and 23 survived, mutation score of 0.11538461538461539
+
+
+Location 4
+33 Runs
+
+Code :: 'CANARY_TWEET_LOCATION(4);'
+No mutations
+
+Code :: 'leftover = out_len % gimli_RATE;'
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=112, char=13), Point(line=112, char=14)] '=' --> '+=' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=112, char=13), Point(line=112, char=14)] '=' --> '-=' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+5 was visited 1 times
+[Point(line=112, char=13), Point(line=112, char=14)] '=' --> '*=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+5 was visited 1 times
+[Point(line=112, char=13), Point(line=112, char=14)] '=' --> '/=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+5 was visited 1 times
+[Point(line=112, char=13), Point(line=112, char=14)] '=' --> '%=' :: KILLED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=112, char=13), Point(line=112, char=14)] '=' --> '|=' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+5 was visited 1 times
+[Point(line=112, char=13), Point(line=112, char=14)] '=' --> '&=' :: KILLED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=112, char=13), Point(line=112, char=14)] '=' --> '^=' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+5 was visited 1 times
+[Point(line=112, char=13), Point(line=112, char=14)] '=' --> '<<=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+5 was visited 1 times
+[Point(line=112, char=13), Point(line=112, char=14)] '=' --> '>>=' :: KILLED
+
+Mutant trace count 8
+0 was visited 8 times
+1 was visited 8 times
+3 was visited 23 times
+4 was visited 8 times
+6 was visited 8 times
+5 was visited 8 times
+[Point(line=112, char=23), Point(line=112, char=24)] '%' --> '|' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+5 was visited 1 times
+[Point(line=112, char=23), Point(line=112, char=24)] '%' --> '&' :: KILLED
+
+Mutant trace count 16
+0 was visited 18 times
+1 was visited 16 times
+3 was visited 39 times
+4 was visited 16 times
+6 was visited 14 times
+5 was visited 16 times
+2 was visited 2 times
+[Point(line=112, char=23), Point(line=112, char=24)] '%' --> '^' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=112, char=23), Point(line=112, char=24)] '%' --> '&&' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=112, char=23), Point(line=112, char=24)] '%' --> '||' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=112, char=23), Point(line=112, char=24)] '%' --> '>' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=112, char=23), Point(line=112, char=24)] '%' --> '>=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+5 was visited 1 times
+[Point(line=112, char=23), Point(line=112, char=24)] '%' --> '<' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+5 was visited 1 times
+[Point(line=112, char=23), Point(line=112, char=24)] '%' --> '<=' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+5 was visited 1 times
+[Point(line=112, char=23), Point(line=112, char=24)] '%' --> '==' :: KILLED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+6 was visited 1 times
+5 was visited 1 times
+[Point(line=112, char=23), Point(line=112, char=24)] '%' --> '!=' :: KILLED
+
+Mutant trace count 0
+[Point(line=112, char=23), Point(line=112, char=24)] '%' --> '<<' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+5 was visited 1 times
+[Point(line=112, char=23), Point(line=112, char=24)] '%' --> '>>' :: KILLED
+
+Killed 18 and 5 survived, mutation score of 0.782608695652174
+
+Code :: '(leftover != 0)'
+Is :: if-condition
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=113, char=17), Point(line=113, char=19)] '!=' --> '+' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=113, char=17), Point(line=113, char=19)] '!=' --> '-' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+5 was visited 1 times
+[Point(line=113, char=17), Point(line=113, char=19)] '!=' --> '*' :: KILLED
+
+Mutant trace count 0
+[Point(line=113, char=17), Point(line=113, char=19)] '!=' --> '/' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=113, char=17), Point(line=113, char=19)] '!=' --> '%' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=113, char=17), Point(line=113, char=19)] '!=' --> '|' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+5 was visited 1 times
+[Point(line=113, char=17), Point(line=113, char=19)] '!=' --> '&' :: KILLED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=113, char=17), Point(line=113, char=19)] '!=' --> '^' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+1 was visited 1 times
+3 was visited 6 times
+4 was visited 1 times
+5 was visited 1 times
+[Point(line=113, char=17), Point(line=113, char=19)] '!=' --> '&&' :: KILLED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=113, char=17), Point(line=113, char=19)] '!=' --> '||' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=113, char=17), Point(line=113, char=19)] '!=' --> '<<' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=113, char=17), Point(line=113, char=19)] '!=' --> '>>' :: SURVIVED
+
+Killed 3 and 9 survived, mutation score of 0.25
+
+Location Killed 21 and 14 survived, mutation score of 0.6
+
+
+Location 6
+33 Runs
+
+Code :: 'CANARY_TWEET_LOCATION(6);'
+No mutations
+
+Code :: 'gimli_core_u8(buf, 0);'
+No mutations
+
+Code :: 'mem_cpy(out + i * gimli_RATE, buf, leftover);'
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=115, char=20), Point(line=115, char=21)] '+' --> '|' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=115, char=20), Point(line=115, char=21)] '+' --> '&' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=115, char=20), Point(line=115, char=21)] '+' --> '^' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=115, char=20), Point(line=115, char=21)] '+' --> '&&' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=115, char=20), Point(line=115, char=21)] '+' --> '||' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=115, char=20), Point(line=115, char=21)] '+' --> '>' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=115, char=20), Point(line=115, char=21)] '+' --> '>=' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=115, char=20), Point(line=115, char=21)] '+' --> '<' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=115, char=20), Point(line=115, char=21)] '+' --> '<=' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=115, char=20), Point(line=115, char=21)] '+' --> '==' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=115, char=20), Point(line=115, char=21)] '+' --> '!=' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=115, char=20), Point(line=115, char=21)] '+' --> '<<' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=115, char=20), Point(line=115, char=21)] '+' --> '>>' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=115, char=24), Point(line=115, char=25)] '*' --> '|' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=115, char=24), Point(line=115, char=25)] '*' --> '&' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=115, char=24), Point(line=115, char=25)] '*' --> '^' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=115, char=24), Point(line=115, char=25)] '*' --> '&&' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=115, char=24), Point(line=115, char=25)] '*' --> '||' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=115, char=24), Point(line=115, char=25)] '*' --> '>' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=115, char=24), Point(line=115, char=25)] '*' --> '>=' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=115, char=24), Point(line=115, char=25)] '*' --> '<' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=115, char=24), Point(line=115, char=25)] '*' --> '<=' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=115, char=24), Point(line=115, char=25)] '*' --> '==' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=115, char=24), Point(line=115, char=25)] '*' --> '!=' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=115, char=24), Point(line=115, char=25)] '*' --> '<<' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=115, char=24), Point(line=115, char=25)] '*' --> '>>' :: SURVIVED
+
+Killed 0 and 26 survived, mutation score of 0.0
+
+Location Killed 0 and 26 survived, mutation score of 0.0
+
+
+Location 5
+33 Runs
+
+Code :: 'CANARY_TWEET_LOCATION(5);'
+No mutations
+
+Code :: 'state->buf_off = gimli_RATE;'
+Mutant trace count 38
+0 was visited 44 times
+1 was visited 38 times
+3 was visited 83 times
+4 was visited 38 times
+6 was visited 3 times
+5 was visited 38 times
+2 was visited 6 times
+[Point(line=117, char=19), Point(line=117, char=20)] '=' --> '+=' :: KILLED
+
+Mutant trace count 13
+0 was visited 15 times
+1 was visited 13 times
+3 was visited 33 times
+4 was visited 13 times
+6 was visited 3 times
+5 was visited 13 times
+2 was visited 2 times
+[Point(line=117, char=19), Point(line=117, char=20)] '=' --> '-=' :: KILLED
+
+Mutant trace count 23
+0 was visited 27 times
+1 was visited 23 times
+3 was visited 53 times
+4 was visited 23 times
+6 was visited 3 times
+5 was visited 23 times
+2 was visited 4 times
+[Point(line=117, char=19), Point(line=117, char=20)] '=' --> '*=' :: KILLED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=117, char=19), Point(line=117, char=20)] '=' --> '/=' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=117, char=19), Point(line=117, char=20)] '=' --> '%=' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=117, char=19), Point(line=117, char=20)] '=' --> '|=' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=117, char=19), Point(line=117, char=20)] '=' --> '&=' :: SURVIVED
+
+Mutant trace count 23
+0 was visited 27 times
+1 was visited 23 times
+3 was visited 53 times
+4 was visited 23 times
+6 was visited 3 times
+5 was visited 23 times
+2 was visited 4 times
+[Point(line=117, char=19), Point(line=117, char=20)] '=' --> '^=' :: KILLED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=117, char=19), Point(line=117, char=20)] '=' --> '<<=' :: SURVIVED
+
+Mutant trace count 124
+0 was visited 136 times
+1 was visited 124 times
+3 was visited 290 times
+4 was visited 124 times
+6 was visited 3 times
+5 was visited 124 times
+2 was visited 12 times
+[Point(line=117, char=19), Point(line=117, char=20)] '=' --> '>>=' :: SURVIVED
+
+Killed 4 and 6 survived, mutation score of 0.4
+
+Code :: 'return 0;'
+No mutations
+
+Location Killed 4 and 6 survived, mutation score of 0.4
+
+
+Location 2
+33 Runs
+
+Code :: 'CANARY_TWEET_LOCATION(2);'
+No mutations
+
+Code :: 'return -1;'
+No mutations
+
+Location Killed 0 and 0 survived
+
+
+Total killed 132 and 169 total survived, with a total mutations score of 0.43853820598006643
+
+Took 530.3035383379993 seconds

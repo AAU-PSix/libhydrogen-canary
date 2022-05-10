@@ -1,0 +1,260 @@
+digraph hydro_kx_xx_1_localised_17 {
+	initial [shape=point]
+	initial -> "loc. 0
+[11837, 11862] expression_statement
+2 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 1
+[12373, 12382] return_statement
+2 visited
+0 candidates
+ return 0; 
+ child of compound_statement" -> final
+	"loc. 0
+[11837, 11862] expression_statement
+2 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[11837, 11862] expression_statement
+2 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[11867, 11905] declaration
+2 visited
+0 candidates
+ uint8_t *packet1_eph_pk = &packet1[0]; 
+ child of compound_statement"
+	"loc. 0
+[11867, 11905] declaration
+2 visited
+0 candidates
+ uint8_t *packet1_eph_pk = &packet1[0]; 
+ child of compound_statement"
+	"loc. 0
+[11867, 11905] declaration
+2 visited
+0 candidates
+ uint8_t *packet1_eph_pk = &packet1[0]; 
+ child of compound_statement" -> "loc. 0
+[11910, 11970] declaration
+2 visited
+0 candidates
+ uint8_t *packet1_mac    = &packet1[hydro_kx_PUBLICKEYBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[11910, 11970] declaration
+2 visited
+0 candidates
+ uint8_t *packet1_mac    = &packet1[hydro_kx_PUBLICKEYBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[11910, 11970] declaration
+2 visited
+0 candidates
+ uint8_t *packet1_mac    = &packet1[hydro_kx_PUBLICKEYBYTES]; 
+ child of compound_statement" -> "loc. 0
+[11979, 11992] parenthesized_expression
+2 visited
+1 candidates
+0 killed/12 total=0.0
+ (psk == NULL) 
+ child of if_statement"
+	"loc. 0
+[11979, 11992] parenthesized_expression
+2 visited
+1 candidates
+0 killed/12 total=0.0
+ (psk == NULL) 
+ child of if_statement"
+	"loc. 0
+[11979, 11992] parenthesized_expression
+2 visited
+1 candidates
+0 killed/12 total=0.0
+ (psk == NULL) 
+ child of if_statement" -> "loc. 2
+[11994, 12019] expression_statement
+1 visited
+0 candidates
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" [label=T]
+	"loc. 0
+[11979, 11992] parenthesized_expression
+2 visited
+1 candidates
+0 killed/12 total=0.0
+ (psk == NULL) 
+ child of if_statement" -> "loc. 1
+[12045, 12070] expression_statement
+2 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" [label=F]
+	"loc. 2
+[11994, 12019] expression_statement
+1 visited
+0 candidates
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement"
+	"loc. 2
+[11994, 12019] expression_statement
+1 visited
+0 candidates
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" -> "loc. 2
+[12028, 12039] expression_statement
+1 visited
+1 candidates
+0 killed/10 total=0.0
+ psk = zero; 
+ child of compound_statement"
+	"loc. 1
+[12045, 12070] expression_statement
+2 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[12045, 12070] expression_statement
+2 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" -> "loc. 1
+[12075, 12130] expression_statement
+2 visited
+0 candidates
+ hydro_kx_init_state(state, \"Noise_XXpsk0+psk3_hydro1\"); 
+ child of compound_statement"
+	"loc. 2
+[12028, 12039] expression_statement
+1 visited
+1 candidates
+0 killed/10 total=0.0
+ psk = zero; 
+ child of compound_statement"
+	"loc. 2
+[12028, 12039] expression_statement
+1 visited
+1 candidates
+0 killed/10 total=0.0
+ psk = zero; 
+ child of compound_statement" -> "loc. 1
+[12045, 12070] expression_statement
+2 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[12075, 12130] expression_statement
+2 visited
+0 candidates
+ hydro_kx_init_state(state, \"Noise_XXpsk0+psk3_hydro1\"); 
+ child of compound_statement"
+	"loc. 1
+[12075, 12130] expression_statement
+2 visited
+0 candidates
+ hydro_kx_init_state(state, \"Noise_XXpsk0+psk3_hydro1\"); 
+ child of compound_statement" -> "loc. 1
+[12136, 12179] expression_statement
+2 visited
+0 candidates
+ hydro_kx_eph_keygen(state, &state->eph_kp); 
+ child of compound_statement"
+	"loc. 1
+[12136, 12179] expression_statement
+2 visited
+0 candidates
+ hydro_kx_eph_keygen(state, &state->eph_kp); 
+ child of compound_statement"
+	"loc. 1
+[12136, 12179] expression_statement
+2 visited
+0 candidates
+ hydro_kx_eph_keygen(state, &state->eph_kp); 
+ child of compound_statement" -> "loc. 1
+[12184, 12240] expression_statement
+2 visited
+0 candidates
+ hydro_hash_update(&state->h_st, psk, hydro_kx_PSKBYTES); 
+ child of compound_statement"
+	"loc. 1
+[12184, 12240] expression_statement
+2 visited
+0 candidates
+ hydro_hash_update(&state->h_st, psk, hydro_kx_PSKBYTES); 
+ child of compound_statement"
+	"loc. 1
+[12184, 12240] expression_statement
+2 visited
+0 candidates
+ hydro_hash_update(&state->h_st, psk, hydro_kx_PSKBYTES); 
+ child of compound_statement" -> "loc. 1
+[12245, 12311] expression_statement
+2 visited
+0 candidates
+ memcpy(packet1_eph_pk, state->eph_kp.pk, sizeof state->eph_kp.pk); 
+ child of compound_statement"
+	"loc. 1
+[12245, 12311] expression_statement
+2 visited
+0 candidates
+ memcpy(packet1_eph_pk, state->eph_kp.pk, sizeof state->eph_kp.pk); 
+ child of compound_statement"
+	"loc. 1
+[12245, 12311] expression_statement
+2 visited
+0 candidates
+ memcpy(packet1_eph_pk, state->eph_kp.pk, sizeof state->eph_kp.pk); 
+ child of compound_statement" -> "loc. 1
+[12316, 12367] expression_statement
+2 visited
+0 candidates
+ hydro_kx_aead_encrypt(state, packet1_mac, NULL, 0); 
+ child of compound_statement"
+	"loc. 1
+[12316, 12367] expression_statement
+2 visited
+0 candidates
+ hydro_kx_aead_encrypt(state, packet1_mac, NULL, 0); 
+ child of compound_statement"
+	"loc. 1
+[12316, 12367] expression_statement
+2 visited
+0 candidates
+ hydro_kx_aead_encrypt(state, packet1_mac, NULL, 0); 
+ child of compound_statement" -> "loc. 1
+[12373, 12382] return_statement
+2 visited
+0 candidates
+ return 0; 
+ child of compound_statement"
+	"loc. 1
+[12373, 12382] return_statement
+2 visited
+0 candidates
+ return 0; 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    uint8_t *packet1_eph_pk = &packet1[0];
+    uint8_t *packet1_mac    = &packet1[hydro_kx_PUBLICKEYBYTES];
+
+    if (psk == NULL) {CANARY_TWEET_LOCATION(2);
+        psk = zero;
+    }CANARY_TWEET_LOCATION(1);
+    hydro_kx_init_state(state, \"Noise_XXpsk0+psk3_hydro1\");
+
+    hydro_kx_eph_keygen(state, &state->eph_kp);
+    hydro_hash_update(&state->h_st, psk, hydro_kx_PSKBYTES);
+    memcpy(packet1_eph_pk, state->eph_kp.pk, sizeof state->eph_kp.pk);
+    hydro_kx_aead_encrypt(state, packet1_mac, NULL, 0);
+
+    return 0;
+}"
+}

@@ -1,0 +1,240 @@
+digraph hydro_pwhash_derive_static_key_localised_6 {
+	initial [shape=point]
+	initial -> "loc. 0
+[8186, 8211] expression_statement
+2 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 1
+[8824, 8833] return_statement
+1 visited
+0 candidates
+ return 0; 
+ child of compound_statement" -> final
+	"loc. 0
+[8186, 8211] expression_statement
+2 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[8186, 8211] expression_statement
+2 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[8216, 8259] declaration
+2 visited
+0 candidates
+ uint8_t computed_h[hydro_pwhash_HASHBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[8216, 8259] declaration
+2 visited
+0 candidates
+ uint8_t computed_h[hydro_pwhash_HASHBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[8216, 8259] declaration
+2 visited
+0 candidates
+ uint8_t computed_h[hydro_pwhash_HASHBYTES]; 
+ child of compound_statement" -> "loc. 0
+[8268, 8417] parenthesized_expression
+2 visited
+1 candidates
+3 killed/12 total=0.25
+ (_hydro_pwhash_verify(computed_h, stored, passwd, passwd_len, master_key, opslimit_max,
+                             memlimit_max, threads_max) != 0) 
+ child of if_statement"
+	"loc. 0
+[8268, 8417] parenthesized_expression
+2 visited
+1 candidates
+3 killed/12 total=0.25
+ (_hydro_pwhash_verify(computed_h, stored, passwd, passwd_len, master_key, opslimit_max,
+                             memlimit_max, threads_max) != 0) 
+ child of if_statement"
+	"loc. 0
+[8268, 8417] parenthesized_expression
+2 visited
+1 candidates
+3 killed/12 total=0.25
+ (_hydro_pwhash_verify(computed_h, stored, passwd, passwd_len, master_key, opslimit_max,
+                             memlimit_max, threads_max) != 0) 
+ child of if_statement" -> "loc. 2
+[8419, 8444] expression_statement
+1 visited
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" [label=T]
+	"loc. 0
+[8268, 8417] parenthesized_expression
+2 visited
+1 candidates
+3 killed/12 total=0.25
+ (_hydro_pwhash_verify(computed_h, stored, passwd, passwd_len, master_key, opslimit_max,
+                             memlimit_max, threads_max) != 0) 
+ child of if_statement" -> "loc. 1
+[8523, 8548] expression_statement
+1 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" [label=F]
+	"loc. 2
+[8419, 8444] expression_statement
+1 visited
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement"
+	"loc. 2
+[8419, 8444] expression_statement
+1 visited
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" -> "loc. 2
+[8453, 8498] expression_statement
+1 visited
+ hydro_memzero(computed_h, sizeof computed_h); 
+ child of compound_statement"
+	"loc. 1
+[8523, 8548] expression_statement
+1 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[8523, 8548] expression_statement
+1 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" -> "loc. 1
+[8553, 8622] expression_statement
+1 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_kdf_CONTEXTBYTES <= hydro_pwhash_CONTEXTBYTES); 
+ child of compound_statement"
+	"loc. 2
+[8453, 8498] expression_statement
+1 visited
+ hydro_memzero(computed_h, sizeof computed_h); 
+ child of compound_statement"
+	"loc. 2
+[8453, 8498] expression_statement
+1 visited
+ hydro_memzero(computed_h, sizeof computed_h); 
+ child of compound_statement" -> "loc. 2
+[8507, 8517] return_statement
+1 visited
+ return -1; 
+ child of compound_statement"
+	"loc. 2
+[8507, 8517] return_statement
+1 visited
+ return -1; 
+ child of compound_statement"
+	"loc. 2
+[8507, 8517] return_statement
+1 visited
+ return -1; 
+ child of compound_statement" -> "loc. 1
+[8523, 8548] expression_statement
+1 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[8553, 8622] expression_statement
+1 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_kdf_CONTEXTBYTES <= hydro_pwhash_CONTEXTBYTES); 
+ child of compound_statement"
+	"loc. 1
+[8553, 8622] expression_statement
+1 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_kdf_CONTEXTBYTES <= hydro_pwhash_CONTEXTBYTES); 
+ child of compound_statement" -> "loc. 1
+[8627, 8689] expression_statement
+1 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_kdf_KEYBYTES <= hydro_pwhash_HASHBYTES); 
+ child of compound_statement"
+	"loc. 1
+[8627, 8689] expression_statement
+1 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_kdf_KEYBYTES <= hydro_pwhash_HASHBYTES); 
+ child of compound_statement"
+	"loc. 1
+[8627, 8689] expression_statement
+1 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_kdf_KEYBYTES <= hydro_pwhash_HASHBYTES); 
+ child of compound_statement" -> "loc. 1
+[8694, 8768] expression_statement
+1 visited
+0 candidates
+ hydro_kdf_derive_from_key(static_key, static_key_len, 0, ctx, computed_h); 
+ child of compound_statement"
+	"loc. 1
+[8694, 8768] expression_statement
+1 visited
+0 candidates
+ hydro_kdf_derive_from_key(static_key, static_key_len, 0, ctx, computed_h); 
+ child of compound_statement"
+	"loc. 1
+[8694, 8768] expression_statement
+1 visited
+0 candidates
+ hydro_kdf_derive_from_key(static_key, static_key_len, 0, ctx, computed_h); 
+ child of compound_statement" -> "loc. 1
+[8773, 8818] expression_statement
+1 visited
+0 candidates
+ hydro_memzero(computed_h, sizeof computed_h); 
+ child of compound_statement"
+	"loc. 1
+[8773, 8818] expression_statement
+1 visited
+0 candidates
+ hydro_memzero(computed_h, sizeof computed_h); 
+ child of compound_statement"
+	"loc. 1
+[8773, 8818] expression_statement
+1 visited
+0 candidates
+ hydro_memzero(computed_h, sizeof computed_h); 
+ child of compound_statement" -> "loc. 1
+[8824, 8833] return_statement
+1 visited
+0 candidates
+ return 0; 
+ child of compound_statement"
+	"loc. 1
+[8824, 8833] return_statement
+1 visited
+0 candidates
+ return 0; 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    uint8_t computed_h[hydro_pwhash_HASHBYTES];
+
+    if (_hydro_pwhash_verify(computed_h, stored, passwd, passwd_len, master_key, opslimit_max,
+                             memlimit_max, threads_max) != 0) {CANARY_TWEET_LOCATION(2);
+        hydro_memzero(computed_h, sizeof computed_h);
+        return -1;
+    }CANARY_TWEET_LOCATION(1);
+    COMPILER_ASSERT(hydro_kdf_CONTEXTBYTES <= hydro_pwhash_CONTEXTBYTES);
+    COMPILER_ASSERT(hydro_kdf_KEYBYTES <= hydro_pwhash_HASHBYTES);
+    hydro_kdf_derive_from_key(static_key, static_key_len, 0, ctx, computed_h);
+    hydro_memzero(computed_h, sizeof computed_h);
+
+    return 0;
+}"
+}

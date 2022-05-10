@@ -1,0 +1,231 @@
+digraph hydro_kx_aead_encrypt_localised_4 {
+	initial [shape=point]
+	initial -> "loc. 0
+[2859, 2884] expression_statement
+17 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 0
+[3409, 3475] expression_statement
+17 visited
+1 candidates
+11 killed/13 total=0.8461538461538461
+ hydro_hash_update(&state->h_st, c, mlen + hydro_kx_AEAD_MACBYTES); 
+ child of compound_statement" -> final
+	"loc. 0
+[2859, 2884] expression_statement
+17 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[2859, 2884] expression_statement
+17 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[2889, 2913] expression_statement
+17 visited
+0 candidates
+ _hydro_attr_aligned_(16) 
+ child of compound_statement"
+	"loc. 0
+[2889, 2913] expression_statement
+17 visited
+0 candidates
+ _hydro_attr_aligned_(16) 
+ child of compound_statement"
+	"loc. 0
+[2889, 2913] expression_statement
+17 visited
+0 candidates
+ _hydro_attr_aligned_(16) 
+ child of compound_statement" -> "loc. 0
+[2914, 2951] declaration
+17 visited
+0 candidates
+ uint8_t aead_state[gimli_BLOCKBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[2914, 2951] declaration
+17 visited
+0 candidates
+ uint8_t aead_state[gimli_BLOCKBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[2914, 2951] declaration
+17 visited
+0 candidates
+ uint8_t aead_state[gimli_BLOCKBYTES]; 
+ child of compound_statement" -> "loc. 0
+[2956, 3015] declaration
+17 visited
+0 candidates
+ uint8_t                          k[hydro_kx_AEAD_KEYBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[2956, 3015] declaration
+17 visited
+0 candidates
+ uint8_t                          k[hydro_kx_AEAD_KEYBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[2956, 3015] declaration
+17 visited
+0 candidates
+ uint8_t                          k[hydro_kx_AEAD_KEYBYTES]; 
+ child of compound_statement" -> "loc. 0
+[3020, 3065] declaration
+17 visited
+0 candidates
+ uint8_t *                        mac = &c[0]; 
+ child of compound_statement"
+	"loc. 0
+[3020, 3065] declaration
+17 visited
+0 candidates
+ uint8_t *                        mac = &c[0]; 
+ child of compound_statement"
+	"loc. 0
+[3020, 3065] declaration
+17 visited
+0 candidates
+ uint8_t *                        mac = &c[0]; 
+ child of compound_statement" -> "loc. 0
+[3070, 3136] declaration
+17 visited
+0 candidates
+ uint8_t *                        ct  = &c[hydro_kx_AEAD_MACBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[3070, 3136] declaration
+17 visited
+0 candidates
+ uint8_t *                        ct  = &c[hydro_kx_AEAD_MACBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[3070, 3136] declaration
+17 visited
+0 candidates
+ uint8_t *                        ct  = &c[hydro_kx_AEAD_MACBYTES]; 
+ child of compound_statement" -> "loc. 0
+[3142, 3183] expression_statement
+17 visited
+0 candidates
+ hydro_kx_aead_init(aead_state, k, state); 
+ child of compound_statement"
+	"loc. 0
+[3142, 3183] expression_statement
+17 visited
+0 candidates
+ hydro_kx_aead_init(aead_state, k, state); 
+ child of compound_statement"
+	"loc. 0
+[3142, 3183] expression_statement
+17 visited
+0 candidates
+ hydro_kx_aead_init(aead_state, k, state); 
+ child of compound_statement" -> "loc. 0
+[3188, 3235] expression_statement
+17 visited
+0 candidates
+ hydro_kx_aead_xor_enc(aead_state, ct, m, mlen); 
+ child of compound_statement"
+	"loc. 0
+[3188, 3235] expression_statement
+17 visited
+0 candidates
+ hydro_kx_aead_xor_enc(aead_state, ct, m, mlen); 
+ child of compound_statement"
+	"loc. 0
+[3188, 3235] expression_statement
+17 visited
+0 candidates
+ hydro_kx_aead_xor_enc(aead_state, ct, m, mlen); 
+ child of compound_statement" -> "loc. 0
+[3240, 3275] expression_statement
+17 visited
+0 candidates
+ hydro_kx_aead_final(aead_state, k); 
+ child of compound_statement"
+	"loc. 0
+[3240, 3275] expression_statement
+17 visited
+0 candidates
+ hydro_kx_aead_final(aead_state, k); 
+ child of compound_statement"
+	"loc. 0
+[3240, 3275] expression_statement
+17 visited
+0 candidates
+ hydro_kx_aead_final(aead_state, k); 
+ child of compound_statement" -> "loc. 0
+[3280, 3338] expression_statement
+17 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_kx_AEAD_MACBYTES <= gimli_CAPACITY); 
+ child of compound_statement"
+	"loc. 0
+[3280, 3338] expression_statement
+17 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_kx_AEAD_MACBYTES <= gimli_CAPACITY); 
+ child of compound_statement"
+	"loc. 0
+[3280, 3338] expression_statement
+17 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_kx_AEAD_MACBYTES <= gimli_CAPACITY); 
+ child of compound_statement" -> "loc. 0
+[3343, 3404] expression_statement
+17 visited
+1 candidates
+0 killed/13 total=0.0
+ memcpy(mac, aead_state + gimli_RATE, hydro_kx_AEAD_MACBYTES); 
+ child of compound_statement"
+	"loc. 0
+[3343, 3404] expression_statement
+17 visited
+1 candidates
+0 killed/13 total=0.0
+ memcpy(mac, aead_state + gimli_RATE, hydro_kx_AEAD_MACBYTES); 
+ child of compound_statement"
+	"loc. 0
+[3343, 3404] expression_statement
+17 visited
+1 candidates
+0 killed/13 total=0.0
+ memcpy(mac, aead_state + gimli_RATE, hydro_kx_AEAD_MACBYTES); 
+ child of compound_statement" -> "loc. 0
+[3409, 3475] expression_statement
+17 visited
+1 candidates
+11 killed/13 total=0.8461538461538461
+ hydro_hash_update(&state->h_st, c, mlen + hydro_kx_AEAD_MACBYTES); 
+ child of compound_statement"
+	"loc. 0
+[3409, 3475] expression_statement
+17 visited
+1 candidates
+11 killed/13 total=0.8461538461538461
+ hydro_hash_update(&state->h_st, c, mlen + hydro_kx_AEAD_MACBYTES); 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    _hydro_attr_aligned_(16) uint8_t aead_state[gimli_BLOCKBYTES];
+    uint8_t                          k[hydro_kx_AEAD_KEYBYTES];
+    uint8_t *                        mac = &c[0];
+    uint8_t *                        ct  = &c[hydro_kx_AEAD_MACBYTES];
+
+    hydro_kx_aead_init(aead_state, k, state);
+    hydro_kx_aead_xor_enc(aead_state, ct, m, mlen);
+    hydro_kx_aead_final(aead_state, k);
+    COMPILER_ASSERT(hydro_kx_AEAD_MACBYTES <= gimli_CAPACITY);
+    memcpy(mac, aead_state + gimli_RATE, hydro_kx_AEAD_MACBYTES);
+    hydro_hash_update(&state->h_st, c, mlen + hydro_kx_AEAD_MACBYTES);
+}"
+}

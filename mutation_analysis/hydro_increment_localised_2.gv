@@ -1,0 +1,230 @@
+digraph hydro_increment_localised_2 {
+	initial [shape=point]
+	initial -> "loc. 0
+[457, 482] expression_statement
+1006 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 2
+[673, 698] expression_statement
+1006 visited
+0 candidates
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" -> final
+	"loc. 0
+[457, 482] expression_statement
+1006 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[457, 482] expression_statement
+1006 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[487, 503] declaration
+1006 visited
+0 candidates
+ size_t        i; 
+ child of compound_statement"
+	"loc. 0
+[487, 503] declaration
+1006 visited
+0 candidates
+ size_t        i; 
+ child of compound_statement"
+	"loc. 0
+[487, 503] declaration
+1006 visited
+0 candidates
+ size_t        i; 
+ child of compound_statement" -> "loc. 0
+[508, 529] declaration
+1006 visited
+0 candidates
+ uint_fast16_t c = 1U; 
+ child of compound_statement"
+	"loc. 0
+[508, 529] declaration
+1006 visited
+0 candidates
+ uint_fast16_t c = 1U; 
+ child of compound_statement"
+	"loc. 0
+[508, 529] declaration
+1006 visited
+0 candidates
+ uint_fast16_t c = 1U; 
+ child of compound_statement" -> "loc. 0
+[540, 545] assignment_expression
+1006 visited
+1 candidates
+0 killed/10 total=0.0
+ i = 0 
+ child of for_statement"
+	"loc. 0
+[540, 545] assignment_expression
+1006 visited
+1 candidates
+0 killed/10 total=0.0
+ i = 0 
+ child of for_statement"
+	"loc. 0
+[540, 545] assignment_expression
+1006 visited
+1 candidates
+0 killed/10 total=0.0
+ i = 0 
+ child of for_statement" -> "loc. 0
+[547, 554] binary_expression
+1006 visited
+1 candidates
+7 killed/12 total=0.5833333333333334
+ i < len 
+ child of for_statement"
+	"loc. 0
+[547, 554] binary_expression
+1006 visited
+1 candidates
+7 killed/12 total=0.5833333333333334
+ i < len 
+ child of for_statement"
+	"loc. 0
+[547, 554] binary_expression
+1006 visited
+1 candidates
+7 killed/12 total=0.5833333333333334
+ i < len 
+ child of for_statement" -> "loc. 1
+[562, 587] expression_statement
+32328 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" [label=T]
+	"loc. 0
+[547, 554] binary_expression
+1006 visited
+1 candidates
+7 killed/12 total=0.5833333333333334
+ i < len 
+ child of for_statement" -> "loc. 2
+[673, 698] expression_statement
+1006 visited
+0 candidates
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" [label=F]
+	"loc. 1
+[562, 587] expression_statement
+32328 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[562, 587] expression_statement
+32328 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" -> "loc. 1
+[596, 622] expression_statement
+32328 visited
+1 candidates
+6 killed/6 total=1.0
+ c += (uint_fast16_t) n[i]; 
+ child of compound_statement"
+	"loc. 2
+[673, 698] expression_statement
+1006 visited
+0 candidates
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement"
+	"loc. 1
+[556, 559] update_expression
+32328 visited
+0 candidates
+ i++ 
+ child of for_statement"
+	"loc. 1
+[556, 559] update_expression
+32328 visited
+0 candidates
+ i++ 
+ child of for_statement" -> "loc. 0
+[547, 554] binary_expression
+1006 visited
+1 candidates
+7 killed/12 total=0.5833333333333334
+ i < len 
+ child of for_statement"
+	"loc. 1
+[596, 622] expression_statement
+32328 visited
+1 candidates
+6 killed/6 total=1.0
+ c += (uint_fast16_t) n[i]; 
+ child of compound_statement"
+	"loc. 1
+[596, 622] expression_statement
+32328 visited
+1 candidates
+6 killed/6 total=1.0
+ c += (uint_fast16_t) n[i]; 
+ child of compound_statement" -> "loc. 1
+[631, 650] expression_statement
+32328 visited
+1 candidates
+8 killed/10 total=0.8
+ n[i] = (uint8_t) c; 
+ child of compound_statement"
+	"loc. 1
+[631, 650] expression_statement
+32328 visited
+1 candidates
+8 killed/10 total=0.8
+ n[i] = (uint8_t) c; 
+ child of compound_statement"
+	"loc. 1
+[631, 650] expression_statement
+32328 visited
+1 candidates
+8 killed/10 total=0.8
+ n[i] = (uint8_t) c; 
+ child of compound_statement" -> "loc. 1
+[659, 667] expression_statement
+32328 visited
+1 candidates
+9 killed/9 total=1.0
+ c >>= 8; 
+ child of compound_statement"
+	"loc. 1
+[659, 667] expression_statement
+32328 visited
+1 candidates
+9 killed/9 total=1.0
+ c >>= 8; 
+ child of compound_statement"
+	"loc. 1
+[659, 667] expression_statement
+32328 visited
+1 candidates
+9 killed/9 total=1.0
+ c >>= 8; 
+ child of compound_statement" -> "loc. 1
+[556, 559] update_expression
+32328 visited
+0 candidates
+ i++ 
+ child of for_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    size_t        i;
+    uint_fast16_t c = 1U;
+
+    for (i = 0; i < len; i++) {CANARY_TWEET_LOCATION(1);
+        c += (uint_fast16_t) n[i];
+        n[i] = (uint8_t) c;
+        c >>= 8;
+    }CANARY_TWEET_LOCATION(2);
+}"
+}

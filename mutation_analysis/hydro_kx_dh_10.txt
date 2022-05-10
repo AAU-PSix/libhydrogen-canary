@@ -1,0 +1,112 @@
+Mutation took 22.07216676200005 seconds
+Original execution 30 traces
+\Visited count
+0 was visited 30 times
+1 was visited 30 times
+
+Visited locations 0, 1
+Unvisited locations 2
+Visited 2, Unvisted 1, percentage visited 0.6666666666666666
+
+Visited nodes 6
+Unvisited nodes 2
+Percentage visited 0.75
+
+Visited candidates 1
+Unvisited candidates 0
+Percentage visited 1.0
+
+Tested mutations 12
+Untested mutations 0
+Percentage visited 1.0
+
+Location 0
+6 Runs
+
+Code :: 'CANARY_TWEET_LOCATION(0);'
+No mutations
+
+Code :: 'uint8_t dh_result[hydro_x25519_BYTES];'
+No mutations
+
+Code :: '(hydro_x25519_scalarmult(dh_result, sk, pk, 1) != 0)'
+Is :: if-condition
+Mutant trace count 30
+0 was visited 30 times
+1 was visited 30 times
+[Point(line=177, char=54), Point(line=177, char=56)] '!=' --> '+' :: SURVIVED
+
+Mutant trace count 30
+0 was visited 30 times
+1 was visited 30 times
+[Point(line=177, char=54), Point(line=177, char=56)] '!=' --> '-' :: SURVIVED
+
+Mutant trace count 30
+0 was visited 30 times
+1 was visited 30 times
+[Point(line=177, char=54), Point(line=177, char=56)] '!=' --> '*' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=177, char=54), Point(line=177, char=56)] '!=' --> '/' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=177, char=54), Point(line=177, char=56)] '!=' --> '%' :: SURVIVED
+
+Mutant trace count 30
+0 was visited 30 times
+1 was visited 30 times
+[Point(line=177, char=54), Point(line=177, char=56)] '!=' --> '|' :: SURVIVED
+
+Mutant trace count 30
+0 was visited 30 times
+1 was visited 30 times
+[Point(line=177, char=54), Point(line=177, char=56)] '!=' --> '&' :: SURVIVED
+
+Mutant trace count 30
+0 was visited 30 times
+1 was visited 30 times
+[Point(line=177, char=54), Point(line=177, char=56)] '!=' --> '^' :: SURVIVED
+
+Mutant trace count 30
+0 was visited 30 times
+1 was visited 30 times
+[Point(line=177, char=54), Point(line=177, char=56)] '!=' --> '&&' :: SURVIVED
+
+Mutant trace count 30
+0 was visited 30 times
+1 was visited 30 times
+[Point(line=177, char=54), Point(line=177, char=56)] '!=' --> '||' :: SURVIVED
+
+Mutant trace count 30
+0 was visited 30 times
+1 was visited 30 times
+[Point(line=177, char=54), Point(line=177, char=56)] '!=' --> '<<' :: SURVIVED
+
+Mutant trace count 30
+0 was visited 30 times
+1 was visited 30 times
+[Point(line=177, char=54), Point(line=177, char=56)] '!=' --> '>>' :: SURVIVED
+
+Killed 0 and 12 survived, mutation score of 0.0
+
+Location Killed 0 and 12 survived, mutation score of 0.0
+
+
+Location 1
+6 Runs
+
+Code :: 'CANARY_TWEET_LOCATION(1);'
+No mutations
+
+Code :: 'hydro_hash_update(&state->h_st, dh_result, hydro_x25519_BYTES);'
+No mutations
+
+Code :: 'return 0;'
+No mutations
+
+Location Killed 0 and 0 survived
+
+
+Total killed 0 and 12 total survived, with a total mutations score of 0.0
+
+Took 23.484237819000555 seconds

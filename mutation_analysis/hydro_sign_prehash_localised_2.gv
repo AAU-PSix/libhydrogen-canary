@@ -1,0 +1,361 @@
+digraph hydro_sign_prehash_localised_2 {
+	initial [shape=point]
+	initial -> "loc. 0
+[1581, 1606] expression_statement
+4 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 0
+[2606, 2615] return_statement
+4 visited
+0 candidates
+ return 0; 
+ child of compound_statement" -> final
+	"loc. 0
+[1581, 1606] expression_statement
+4 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[1581, 1606] expression_statement
+4 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[1611, 1631] declaration
+4 visited
+0 candidates
+ hydro_hash_state st; 
+ child of compound_statement"
+	"loc. 0
+[1611, 1631] declaration
+4 visited
+0 candidates
+ hydro_hash_state st; 
+ child of compound_statement"
+	"loc. 0
+[1611, 1631] declaration
+4 visited
+0 candidates
+ hydro_hash_state st; 
+ child of compound_statement" -> "loc. 0
+[1636, 1690] declaration
+4 visited
+0 candidates
+ uint8_t          challenge[hydro_sign_CHALLENGEBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[1636, 1690] declaration
+4 visited
+0 candidates
+ uint8_t          challenge[hydro_sign_CHALLENGEBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[1636, 1690] declaration
+4 visited
+0 candidates
+ uint8_t          challenge[hydro_sign_CHALLENGEBYTES]; 
+ child of compound_statement" -> "loc. 0
+[1695, 1754] declaration
+4 visited
+0 candidates
+ const uint8_t *  pk     = &sk[hydro_x25519_SECRETKEYBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[1695, 1754] declaration
+4 visited
+0 candidates
+ const uint8_t *  pk     = &sk[hydro_x25519_SECRETKEYBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[1695, 1754] declaration
+4 visited
+0 candidates
+ const uint8_t *  pk     = &sk[hydro_x25519_SECRETKEYBYTES]; 
+ child of compound_statement" -> "loc. 0
+[1759, 1794] declaration
+4 visited
+0 candidates
+ uint8_t *        nonce  = &csig[0]; 
+ child of compound_statement"
+	"loc. 0
+[1759, 1794] declaration
+4 visited
+0 candidates
+ uint8_t *        nonce  = &csig[0]; 
+ child of compound_statement"
+	"loc. 0
+[1759, 1794] declaration
+4 visited
+0 candidates
+ uint8_t *        nonce  = &csig[0]; 
+ child of compound_statement" -> "loc. 0
+[1799, 1854] declaration
+4 visited
+0 candidates
+ uint8_t *        sig    = &csig[hydro_sign_NONCEBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[1799, 1854] declaration
+4 visited
+0 candidates
+ uint8_t *        sig    = &csig[hydro_sign_NONCEBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[1799, 1854] declaration
+4 visited
+0 candidates
+ uint8_t *        sig    = &csig[hydro_sign_NONCEBYTES]; 
+ child of compound_statement" -> "loc. 0
+[1859, 1889] declaration
+4 visited
+0 candidates
+ uint8_t *        eph_sk = sig; 
+ child of compound_statement"
+	"loc. 0
+[1859, 1889] declaration
+4 visited
+0 candidates
+ uint8_t *        eph_sk = sig; 
+ child of compound_statement"
+	"loc. 0
+[1859, 1889] declaration
+4 visited
+0 candidates
+ uint8_t *        eph_sk = sig; 
+ child of compound_statement" -> "loc. 0
+[1895, 1949] expression_statement
+4 visited
+0 candidates
+ hydro_random_buf(eph_sk, hydro_x25519_SECRETKEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[1895, 1949] expression_statement
+4 visited
+0 candidates
+ hydro_random_buf(eph_sk, hydro_x25519_SECRETKEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[1895, 1949] expression_statement
+4 visited
+0 candidates
+ hydro_random_buf(eph_sk, hydro_x25519_SECRETKEYBYTES); 
+ child of compound_statement" -> "loc. 0
+[1954, 2022] expression_statement
+4 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_x25519_SECRETKEYBYTES == hydro_hash_KEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[1954, 2022] expression_statement
+4 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_x25519_SECRETKEYBYTES == hydro_hash_KEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[1954, 2022] expression_statement
+4 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_x25519_SECRETKEYBYTES == hydro_hash_KEYBYTES); 
+ child of compound_statement" -> "loc. 0
+[2027, 2073] expression_statement
+4 visited
+0 candidates
+ hydro_hash_init(&st, (const char *) zero, sk); 
+ child of compound_statement"
+	"loc. 0
+[2027, 2073] expression_statement
+4 visited
+0 candidates
+ hydro_hash_init(&st, (const char *) zero, sk); 
+ child of compound_statement"
+	"loc. 0
+[2027, 2073] expression_statement
+4 visited
+0 candidates
+ hydro_hash_init(&st, (const char *) zero, sk); 
+ child of compound_statement" -> "loc. 0
+[2078, 2138] expression_statement
+4 visited
+0 candidates
+ hydro_hash_update(&st, eph_sk, hydro_x25519_SECRETKEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[2078, 2138] expression_statement
+4 visited
+0 candidates
+ hydro_hash_update(&st, eph_sk, hydro_x25519_SECRETKEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[2078, 2138] expression_statement
+4 visited
+0 candidates
+ hydro_hash_update(&st, eph_sk, hydro_x25519_SECRETKEYBYTES); 
+ child of compound_statement" -> "loc. 0
+[2143, 2200] expression_statement
+4 visited
+0 candidates
+ hydro_hash_update(&st, prehash, hydro_sign_PREHASHBYTES); 
+ child of compound_statement"
+	"loc. 0
+[2143, 2200] expression_statement
+4 visited
+0 candidates
+ hydro_hash_update(&st, prehash, hydro_sign_PREHASHBYTES); 
+ child of compound_statement"
+	"loc. 0
+[2143, 2200] expression_statement
+4 visited
+0 candidates
+ hydro_hash_update(&st, prehash, hydro_sign_PREHASHBYTES); 
+ child of compound_statement" -> "loc. 0
+[2205, 2264] expression_statement
+4 visited
+0 candidates
+ hydro_hash_final(&st, eph_sk, hydro_x25519_SECRETKEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[2205, 2264] expression_statement
+4 visited
+0 candidates
+ hydro_hash_final(&st, eph_sk, hydro_x25519_SECRETKEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[2205, 2264] expression_statement
+4 visited
+0 candidates
+ hydro_hash_final(&st, eph_sk, hydro_x25519_SECRETKEYBYTES); 
+ child of compound_statement" -> "loc. 0
+[2270, 2322] expression_statement
+4 visited
+0 candidates
+ hydro_x25519_scalarmult_base_uniform(nonce, eph_sk); 
+ child of compound_statement"
+	"loc. 0
+[2270, 2322] expression_statement
+4 visited
+0 candidates
+ hydro_x25519_scalarmult_base_uniform(nonce, eph_sk); 
+ child of compound_statement"
+	"loc. 0
+[2270, 2322] expression_statement
+4 visited
+0 candidates
+ hydro_x25519_scalarmult_base_uniform(nonce, eph_sk); 
+ child of compound_statement" -> "loc. 0
+[2327, 2379] expression_statement
+4 visited
+0 candidates
+ hydro_sign_challenge(challenge, nonce, pk, prehash); 
+ child of compound_statement"
+	"loc. 0
+[2327, 2379] expression_statement
+4 visited
+0 candidates
+ hydro_sign_challenge(challenge, nonce, pk, prehash); 
+ child of compound_statement"
+	"loc. 0
+[2327, 2379] expression_statement
+4 visited
+0 candidates
+ hydro_sign_challenge(challenge, nonce, pk, prehash); 
+ child of compound_statement" -> "loc. 0
+[2385, 2474] expression_statement
+4 visited
+2 candidates
+0 killed/25 total=0.0
+ COMPILER_ASSERT(hydro_sign_BYTES == hydro_sign_NONCEBYTES + hydro_x25519_SECRETKEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[2385, 2474] expression_statement
+4 visited
+2 candidates
+0 killed/25 total=0.0
+ COMPILER_ASSERT(hydro_sign_BYTES == hydro_sign_NONCEBYTES + hydro_x25519_SECRETKEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[2385, 2474] expression_statement
+4 visited
+2 candidates
+0 killed/25 total=0.0
+ COMPILER_ASSERT(hydro_sign_BYTES == hydro_sign_NONCEBYTES + hydro_x25519_SECRETKEYBYTES); 
+ child of compound_statement" -> "loc. 0
+[2479, 2553] expression_statement
+4 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_x25519_SECRETKEYBYTES <= hydro_sign_CHALLENGEBYTES); 
+ child of compound_statement"
+	"loc. 0
+[2479, 2553] expression_statement
+4 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_x25519_SECRETKEYBYTES <= hydro_sign_CHALLENGEBYTES); 
+ child of compound_statement"
+	"loc. 0
+[2479, 2553] expression_statement
+4 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_x25519_SECRETKEYBYTES <= hydro_sign_CHALLENGEBYTES); 
+ child of compound_statement" -> "loc. 0
+[2558, 2600] expression_statement
+4 visited
+0 candidates
+ hydro_sign_p2(sig, challenge, eph_sk, sk); 
+ child of compound_statement"
+	"loc. 0
+[2558, 2600] expression_statement
+4 visited
+0 candidates
+ hydro_sign_p2(sig, challenge, eph_sk, sk); 
+ child of compound_statement"
+	"loc. 0
+[2558, 2600] expression_statement
+4 visited
+0 candidates
+ hydro_sign_p2(sig, challenge, eph_sk, sk); 
+ child of compound_statement" -> "loc. 0
+[2606, 2615] return_statement
+4 visited
+0 candidates
+ return 0; 
+ child of compound_statement"
+	"loc. 0
+[2606, 2615] return_statement
+4 visited
+0 candidates
+ return 0; 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    hydro_hash_state st;
+    uint8_t          challenge[hydro_sign_CHALLENGEBYTES];
+    const uint8_t *  pk     = &sk[hydro_x25519_SECRETKEYBYTES];
+    uint8_t *        nonce  = &csig[0];
+    uint8_t *        sig    = &csig[hydro_sign_NONCEBYTES];
+    uint8_t *        eph_sk = sig;
+
+    hydro_random_buf(eph_sk, hydro_x25519_SECRETKEYBYTES);
+    COMPILER_ASSERT(hydro_x25519_SECRETKEYBYTES == hydro_hash_KEYBYTES);
+    hydro_hash_init(&st, (const char *) zero, sk);
+    hydro_hash_update(&st, eph_sk, hydro_x25519_SECRETKEYBYTES);
+    hydro_hash_update(&st, prehash, hydro_sign_PREHASHBYTES);
+    hydro_hash_final(&st, eph_sk, hydro_x25519_SECRETKEYBYTES);
+
+    hydro_x25519_scalarmult_base_uniform(nonce, eph_sk);
+    hydro_sign_challenge(challenge, nonce, pk, prehash);
+
+    COMPILER_ASSERT(hydro_sign_BYTES == hydro_sign_NONCEBYTES + hydro_x25519_SECRETKEYBYTES);
+    COMPILER_ASSERT(hydro_x25519_SECRETKEYBYTES <= hydro_sign_CHALLENGEBYTES);
+    hydro_sign_p2(sig, challenge, eph_sk, sk);
+
+    return 0;
+}"
+}

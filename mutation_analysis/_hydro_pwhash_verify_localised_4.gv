@@ -1,0 +1,635 @@
+digraph _hydro_pwhash_verify_localised_4 {
+	initial [shape=point]
+	initial -> "loc. 0
+[5631, 5656] expression_statement
+12 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 7
+[7378, 7388] return_statement
+3 visited
+0 candidates
+ return -1; 
+ child of compound_statement" -> final
+	"loc. 0
+[5631, 5656] expression_statement
+12 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[5631, 5656] expression_statement
+12 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[5661, 5705] declaration
+12 visited
+0 candidates
+ const uint8_t *const enc_alg   = &stored[0]; 
+ child of compound_statement"
+	"loc. 0
+[5661, 5705] declaration
+12 visited
+0 candidates
+ const uint8_t *const enc_alg   = &stored[0]; 
+ child of compound_statement"
+	"loc. 0
+[5661, 5705] declaration
+12 visited
+0 candidates
+ const uint8_t *const enc_alg   = &stored[0]; 
+ child of compound_statement" -> "loc. 0
+[5710, 5779] declaration
+12 visited
+0 candidates
+ const uint8_t *const secretbox = &enc_alg[hydro_pwhash_ENC_ALGBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[5710, 5779] declaration
+12 visited
+0 candidates
+ const uint8_t *const secretbox = &enc_alg[hydro_pwhash_ENC_ALGBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[5710, 5779] declaration
+12 visited
+0 candidates
+ const uint8_t *const secretbox = &enc_alg[hydro_pwhash_ENC_ALGBYTES]; 
+ child of compound_statement" -> "loc. 0
+[5785, 5833] declaration
+12 visited
+0 candidates
+ uint8_t        params[hydro_pwhash_PARAMSBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[5785, 5833] declaration
+12 visited
+0 candidates
+ uint8_t        params[hydro_pwhash_PARAMSBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[5785, 5833] declaration
+12 visited
+0 candidates
+ uint8_t        params[hydro_pwhash_PARAMSBYTES]; 
+ child of compound_statement" -> "loc. 0
+[5838, 5878] declaration
+12 visited
+0 candidates
+ uint8_t *const hash_alg    = &params[0]; 
+ child of compound_statement"
+	"loc. 0
+[5838, 5878] declaration
+12 visited
+0 candidates
+ uint8_t *const hash_alg    = &params[0]; 
+ child of compound_statement"
+	"loc. 0
+[5838, 5878] declaration
+12 visited
+0 candidates
+ uint8_t *const hash_alg    = &params[0]; 
+ child of compound_statement" -> "loc. 0
+[5883, 5950] declaration
+12 visited
+0 candidates
+ uint8_t *const threads_u8  = &hash_alg[hydro_pwhash_HASH_ALGBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[5883, 5950] declaration
+12 visited
+0 candidates
+ uint8_t *const threads_u8  = &hash_alg[hydro_pwhash_HASH_ALGBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[5883, 5950] declaration
+12 visited
+0 candidates
+ uint8_t *const threads_u8  = &hash_alg[hydro_pwhash_HASH_ALGBYTES]; 
+ child of compound_statement" -> "loc. 0
+[5955, 6023] declaration
+12 visited
+0 candidates
+ uint8_t *const opslimit_u8 = &threads_u8[hydro_pwhash_THREADSBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[5955, 6023] declaration
+12 visited
+0 candidates
+ uint8_t *const opslimit_u8 = &threads_u8[hydro_pwhash_THREADSBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[5955, 6023] declaration
+12 visited
+0 candidates
+ uint8_t *const opslimit_u8 = &threads_u8[hydro_pwhash_THREADSBYTES]; 
+ child of compound_statement" -> "loc. 0
+[6028, 6098] declaration
+12 visited
+0 candidates
+ uint8_t *const memlimit_u8 = &opslimit_u8[hydro_pwhash_OPSLIMITBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[6028, 6098] declaration
+12 visited
+0 candidates
+ uint8_t *const memlimit_u8 = &opslimit_u8[hydro_pwhash_OPSLIMITBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[6028, 6098] declaration
+12 visited
+0 candidates
+ uint8_t *const memlimit_u8 = &opslimit_u8[hydro_pwhash_OPSLIMITBYTES]; 
+ child of compound_statement" -> "loc. 0
+[6103, 6173] declaration
+12 visited
+0 candidates
+ uint8_t *const salt        = &memlimit_u8[hydro_pwhash_MEMLIMITBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[6103, 6173] declaration
+12 visited
+0 candidates
+ uint8_t *const salt        = &memlimit_u8[hydro_pwhash_MEMLIMITBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[6103, 6173] declaration
+12 visited
+0 candidates
+ uint8_t *const salt        = &memlimit_u8[hydro_pwhash_MEMLIMITBYTES]; 
+ child of compound_statement" -> "loc. 0
+[6178, 6237] declaration
+12 visited
+0 candidates
+ uint8_t *const h           = &salt[hydro_pwhash_SALTBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[6178, 6237] declaration
+12 visited
+0 candidates
+ uint8_t *const h           = &salt[hydro_pwhash_SALTBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[6178, 6237] declaration
+12 visited
+0 candidates
+ uint8_t *const h           = &salt[hydro_pwhash_SALTBYTES]; 
+ child of compound_statement" -> "loc. 0
+[6243, 6261] declaration
+12 visited
+0 candidates
+ uint64_t opslimit; 
+ child of compound_statement"
+	"loc. 0
+[6243, 6261] declaration
+12 visited
+0 candidates
+ uint64_t opslimit; 
+ child of compound_statement"
+	"loc. 0
+[6243, 6261] declaration
+12 visited
+0 candidates
+ uint64_t opslimit; 
+ child of compound_statement" -> "loc. 0
+[6266, 6284] declaration
+12 visited
+0 candidates
+ size_t   memlimit; 
+ child of compound_statement"
+	"loc. 0
+[6266, 6284] declaration
+12 visited
+0 candidates
+ size_t   memlimit; 
+ child of compound_statement"
+	"loc. 0
+[6266, 6284] declaration
+12 visited
+0 candidates
+ size_t   memlimit; 
+ child of compound_statement" -> "loc. 0
+[6289, 6306] declaration
+12 visited
+0 candidates
+ uint8_t  threads; 
+ child of compound_statement"
+	"loc. 0
+[6289, 6306] declaration
+12 visited
+0 candidates
+ uint8_t  threads; 
+ child of compound_statement"
+	"loc. 0
+[6289, 6306] declaration
+12 visited
+0 candidates
+ uint8_t  threads; 
+ child of compound_statement" -> "loc. 0
+[6312, 6328] expression_statement
+12 visited
+0 candidates
+ (void) memlimit; 
+ child of compound_statement"
+	"loc. 0
+[6312, 6328] expression_statement
+12 visited
+0 candidates
+ (void) memlimit; 
+ child of compound_statement"
+	"loc. 0
+[6312, 6328] expression_statement
+12 visited
+0 candidates
+ (void) memlimit; 
+ child of compound_statement" -> "loc. 0
+[6336, 6370] parenthesized_expression
+12 visited
+1 candidates
+8 killed/12 total=0.6666666666666666
+ (*enc_alg != hydro_pwhash_ENC_ALG) 
+ child of if_statement"
+	"loc. 0
+[6336, 6370] parenthesized_expression
+12 visited
+1 candidates
+8 killed/12 total=0.6666666666666666
+ (*enc_alg != hydro_pwhash_ENC_ALG) 
+ child of if_statement"
+	"loc. 0
+[6336, 6370] parenthesized_expression
+12 visited
+1 candidates
+8 killed/12 total=0.6666666666666666
+ (*enc_alg != hydro_pwhash_ENC_ALG) 
+ child of if_statement" -> "loc. 2
+[6372, 6397] expression_statement
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" [label=T]
+	"loc. 0
+[6336, 6370] parenthesized_expression
+12 visited
+1 candidates
+8 killed/12 total=0.6666666666666666
+ (*enc_alg != hydro_pwhash_ENC_ALG) 
+ child of if_statement" -> "loc. 1
+[6422, 6447] expression_statement
+12 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" [label=F]
+	"loc. 2
+[6372, 6397] expression_statement
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement"
+	"loc. 2
+[6372, 6397] expression_statement
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" -> "loc. 2
+[6406, 6416] return_statement
+ return -1; 
+ child of compound_statement"
+	"loc. 1
+[6422, 6447] expression_statement
+12 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[6422, 6447] expression_statement
+12 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" -> "loc. 1
+[6455, 6679] parenthesized_expression
+12 visited
+2 candidates
+11 killed/25 total=0.44
+ (hydro_secretbox_decrypt(params, secretbox,
+                                hydro_secretbox_HEADERBYTES + hydro_pwhash_PARAMSBYTES,
+                                (uint64_t) *enc_alg, hydro_pwhash_CONTEXT, master_key) != 0) 
+ child of if_statement"
+	"loc. 2
+[6406, 6416] return_statement
+ return -1; 
+ child of compound_statement"
+	"loc. 2
+[6406, 6416] return_statement
+ return -1; 
+ child of compound_statement" -> "loc. 1
+[6422, 6447] expression_statement
+12 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[6455, 6679] parenthesized_expression
+12 visited
+2 candidates
+11 killed/25 total=0.44
+ (hydro_secretbox_decrypt(params, secretbox,
+                                hydro_secretbox_HEADERBYTES + hydro_pwhash_PARAMSBYTES,
+                                (uint64_t) *enc_alg, hydro_pwhash_CONTEXT, master_key) != 0) 
+ child of if_statement"
+	"loc. 1
+[6455, 6679] parenthesized_expression
+12 visited
+2 candidates
+11 killed/25 total=0.44
+ (hydro_secretbox_decrypt(params, secretbox,
+                                hydro_secretbox_HEADERBYTES + hydro_pwhash_PARAMSBYTES,
+                                (uint64_t) *enc_alg, hydro_pwhash_CONTEXT, master_key) != 0) 
+ child of if_statement" -> "loc. 4
+[6681, 6706] expression_statement
+1 visited
+ CANARY_TWEET_LOCATION(4); 
+ child of compound_statement" [label=T]
+	"loc. 1
+[6455, 6679] parenthesized_expression
+12 visited
+2 candidates
+11 killed/25 total=0.44
+ (hydro_secretbox_decrypt(params, secretbox,
+                                hydro_secretbox_HEADERBYTES + hydro_pwhash_PARAMSBYTES,
+                                (uint64_t) *enc_alg, hydro_pwhash_CONTEXT, master_key) != 0) 
+ child of if_statement" -> "loc. 3
+[6731, 6756] expression_statement
+11 visited
+0 candidates
+ CANARY_TWEET_LOCATION(3); 
+ child of compound_statement" [label=F]
+	"loc. 4
+[6681, 6706] expression_statement
+1 visited
+ CANARY_TWEET_LOCATION(4); 
+ child of compound_statement"
+	"loc. 4
+[6681, 6706] expression_statement
+1 visited
+ CANARY_TWEET_LOCATION(4); 
+ child of compound_statement" -> "loc. 4
+[6715, 6725] return_statement
+1 visited
+ return -1; 
+ child of compound_statement"
+	"loc. 3
+[6731, 6756] expression_statement
+11 visited
+0 candidates
+ CANARY_TWEET_LOCATION(3); 
+ child of compound_statement"
+	"loc. 3
+[6731, 6756] expression_statement
+11 visited
+0 candidates
+ CANARY_TWEET_LOCATION(3); 
+ child of compound_statement" -> "loc. 3
+[6764, 6974] parenthesized_expression
+11 visited
+10 candidates
+78 killed/132 total=0.5909090909090909
+ (*hash_alg != hydro_pwhash_HASH_ALG || (opslimit = LOAD64_LE(opslimit_u8)) > opslimit_max ||
+        (memlimit = (size_t) LOAD64_LE(memlimit_u8)) > memlimit_max ||
+        (threads = *threads_u8) > threads_max) 
+ child of if_statement"
+	"loc. 4
+[6715, 6725] return_statement
+1 visited
+ return -1; 
+ child of compound_statement"
+	"loc. 4
+[6715, 6725] return_statement
+1 visited
+ return -1; 
+ child of compound_statement" -> "loc. 3
+[6731, 6756] expression_statement
+11 visited
+0 candidates
+ CANARY_TWEET_LOCATION(3); 
+ child of compound_statement"
+	"loc. 3
+[6764, 6974] parenthesized_expression
+11 visited
+10 candidates
+78 killed/132 total=0.5909090909090909
+ (*hash_alg != hydro_pwhash_HASH_ALG || (opslimit = LOAD64_LE(opslimit_u8)) > opslimit_max ||
+        (memlimit = (size_t) LOAD64_LE(memlimit_u8)) > memlimit_max ||
+        (threads = *threads_u8) > threads_max) 
+ child of if_statement"
+	"loc. 3
+[6764, 6974] parenthesized_expression
+11 visited
+10 candidates
+78 killed/132 total=0.5909090909090909
+ (*hash_alg != hydro_pwhash_HASH_ALG || (opslimit = LOAD64_LE(opslimit_u8)) > opslimit_max ||
+        (memlimit = (size_t) LOAD64_LE(memlimit_u8)) > memlimit_max ||
+        (threads = *threads_u8) > threads_max) 
+ child of if_statement" -> "loc. 6
+[6976, 7001] expression_statement
+2 visited
+0 candidates
+ CANARY_TWEET_LOCATION(6); 
+ child of compound_statement" [label=T]
+	"loc. 3
+[6764, 6974] parenthesized_expression
+11 visited
+10 candidates
+78 killed/132 total=0.5909090909090909
+ (*hash_alg != hydro_pwhash_HASH_ALG || (opslimit = LOAD64_LE(opslimit_u8)) > opslimit_max ||
+        (memlimit = (size_t) LOAD64_LE(memlimit_u8)) > memlimit_max ||
+        (threads = *threads_u8) > threads_max) 
+ child of if_statement" -> "loc. 5
+[7026, 7051] expression_statement
+9 visited
+0 candidates
+ CANARY_TWEET_LOCATION(5); 
+ child of compound_statement" [label=F]
+	"loc. 6
+[6976, 7001] expression_statement
+2 visited
+0 candidates
+ CANARY_TWEET_LOCATION(6); 
+ child of compound_statement"
+	"loc. 6
+[6976, 7001] expression_statement
+2 visited
+0 candidates
+ CANARY_TWEET_LOCATION(6); 
+ child of compound_statement" -> "loc. 6
+[7010, 7020] return_statement
+2 visited
+0 candidates
+ return -1; 
+ child of compound_statement"
+	"loc. 5
+[7026, 7051] expression_statement
+9 visited
+0 candidates
+ CANARY_TWEET_LOCATION(5); 
+ child of compound_statement"
+	"loc. 5
+[7026, 7051] expression_statement
+9 visited
+0 candidates
+ CANARY_TWEET_LOCATION(5); 
+ child of compound_statement" -> "loc. 5
+[7059, 7297] parenthesized_expression
+9 visited
+3 candidates
+31 killed/42 total=0.7380952380952381
+ (_hydro_pwhash_hash(computed_h, hydro_pwhash_HASHBYTES, salt, passwd, passwd_len,
+                           hydro_pwhash_CONTEXT, zero, opslimit, memlimit, threads) == 0 &&
+        hydro_equal(computed_h, h, hydro_pwhash_HASHBYTES) == 1) 
+ child of if_statement"
+	"loc. 6
+[7010, 7020] return_statement
+2 visited
+0 candidates
+ return -1; 
+ child of compound_statement"
+	"loc. 6
+[7010, 7020] return_statement
+2 visited
+0 candidates
+ return -1; 
+ child of compound_statement" -> "loc. 5
+[7026, 7051] expression_statement
+9 visited
+0 candidates
+ CANARY_TWEET_LOCATION(5); 
+ child of compound_statement"
+	"loc. 5
+[7059, 7297] parenthesized_expression
+9 visited
+3 candidates
+31 killed/42 total=0.7380952380952381
+ (_hydro_pwhash_hash(computed_h, hydro_pwhash_HASHBYTES, salt, passwd, passwd_len,
+                           hydro_pwhash_CONTEXT, zero, opslimit, memlimit, threads) == 0 &&
+        hydro_equal(computed_h, h, hydro_pwhash_HASHBYTES) == 1) 
+ child of if_statement"
+	"loc. 5
+[7059, 7297] parenthesized_expression
+9 visited
+3 candidates
+31 killed/42 total=0.7380952380952381
+ (_hydro_pwhash_hash(computed_h, hydro_pwhash_HASHBYTES, salt, passwd, passwd_len,
+                           hydro_pwhash_CONTEXT, zero, opslimit, memlimit, threads) == 0 &&
+        hydro_equal(computed_h, h, hydro_pwhash_HASHBYTES) == 1) 
+ child of if_statement" -> "loc. 8
+[7299, 7324] expression_statement
+6 visited
+0 candidates
+ CANARY_TWEET_LOCATION(8); 
+ child of compound_statement" [label=T]
+	"loc. 5
+[7059, 7297] parenthesized_expression
+9 visited
+3 candidates
+31 killed/42 total=0.7380952380952381
+ (_hydro_pwhash_hash(computed_h, hydro_pwhash_HASHBYTES, salt, passwd, passwd_len,
+                           hydro_pwhash_CONTEXT, zero, opslimit, memlimit, threads) == 0 &&
+        hydro_equal(computed_h, h, hydro_pwhash_HASHBYTES) == 1) 
+ child of if_statement" -> "loc. 7
+[7348, 7373] expression_statement
+3 visited
+0 candidates
+ CANARY_TWEET_LOCATION(7); 
+ child of compound_statement" [label=F]
+	"loc. 8
+[7299, 7324] expression_statement
+6 visited
+0 candidates
+ CANARY_TWEET_LOCATION(8); 
+ child of compound_statement"
+	"loc. 8
+[7299, 7324] expression_statement
+6 visited
+0 candidates
+ CANARY_TWEET_LOCATION(8); 
+ child of compound_statement" -> "loc. 8
+[7333, 7342] return_statement
+6 visited
+0 candidates
+ return 0; 
+ child of compound_statement"
+	"loc. 7
+[7348, 7373] expression_statement
+3 visited
+0 candidates
+ CANARY_TWEET_LOCATION(7); 
+ child of compound_statement"
+	"loc. 7
+[7348, 7373] expression_statement
+3 visited
+0 candidates
+ CANARY_TWEET_LOCATION(7); 
+ child of compound_statement" -> "loc. 7
+[7378, 7388] return_statement
+3 visited
+0 candidates
+ return -1; 
+ child of compound_statement"
+	"loc. 8
+[7333, 7342] return_statement
+6 visited
+0 candidates
+ return 0; 
+ child of compound_statement"
+	"loc. 8
+[7333, 7342] return_statement
+6 visited
+0 candidates
+ return 0; 
+ child of compound_statement" -> "loc. 7
+[7348, 7373] expression_statement
+3 visited
+0 candidates
+ CANARY_TWEET_LOCATION(7); 
+ child of compound_statement"
+	"loc. 7
+[7378, 7388] return_statement
+3 visited
+0 candidates
+ return -1; 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    const uint8_t *const enc_alg   = &stored[0];
+    const uint8_t *const secretbox = &enc_alg[hydro_pwhash_ENC_ALGBYTES];
+
+    uint8_t        params[hydro_pwhash_PARAMSBYTES];
+    uint8_t *const hash_alg    = &params[0];
+    uint8_t *const threads_u8  = &hash_alg[hydro_pwhash_HASH_ALGBYTES];
+    uint8_t *const opslimit_u8 = &threads_u8[hydro_pwhash_THREADSBYTES];
+    uint8_t *const memlimit_u8 = &opslimit_u8[hydro_pwhash_OPSLIMITBYTES];
+    uint8_t *const salt        = &memlimit_u8[hydro_pwhash_MEMLIMITBYTES];
+    uint8_t *const h           = &salt[hydro_pwhash_SALTBYTES];
+
+    uint64_t opslimit;
+    size_t   memlimit;
+    uint8_t  threads;
+
+    (void) memlimit;
+    if (*enc_alg != hydro_pwhash_ENC_ALG) {CANARY_TWEET_LOCATION(2);
+        return -1;
+    }CANARY_TWEET_LOCATION(1);
+    if (hydro_secretbox_decrypt(params, secretbox,
+                                hydro_secretbox_HEADERBYTES + hydro_pwhash_PARAMSBYTES,
+                                (uint64_t) *enc_alg, hydro_pwhash_CONTEXT, master_key) != 0) {CANARY_TWEET_LOCATION(4);
+        return -1;
+    }CANARY_TWEET_LOCATION(3);
+    if (*hash_alg != hydro_pwhash_HASH_ALG || (opslimit = LOAD64_LE(opslimit_u8)) > opslimit_max ||
+        (memlimit = (size_t) LOAD64_LE(memlimit_u8)) > memlimit_max ||
+        (threads = *threads_u8) > threads_max) {CANARY_TWEET_LOCATION(6);
+        return -1;
+    }CANARY_TWEET_LOCATION(5);
+    if (_hydro_pwhash_hash(computed_h, hydro_pwhash_HASHBYTES, salt, passwd, passwd_len,
+                           hydro_pwhash_CONTEXT, zero, opslimit, memlimit, threads) == 0 &&
+        hydro_equal(computed_h, h, hydro_pwhash_HASHBYTES) == 1) {CANARY_TWEET_LOCATION(8);
+        return 0;
+    }CANARY_TWEET_LOCATION(7);
+    return -1;
+}"
+}

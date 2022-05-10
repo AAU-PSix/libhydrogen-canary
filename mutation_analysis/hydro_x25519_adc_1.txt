@@ -1,0 +1,294 @@
+Mutation took 126.95479788400189 seconds
+Original execution 286896 traces
+\Visited count
+0 was visited 286896 times
+
+Visited locations 0
+Unvisited locations 
+Visited 1, Unvisted 0, percentage visited 1.0
+
+Visited nodes 4
+Unvisited nodes 0
+Percentage visited 1.0
+
+Visited candidates 5
+Unvisited candidates 0
+Percentage visited 1.0
+
+Tested mutations 63
+Untested mutations 0
+Percentage visited 1.0
+
+Location 0
+4 Runs
+
+Code :: 'CANARY_TWEET_LOCATION(0);'
+No mutations
+
+Code :: 'hydro_x25519_dlimb_t total = (hydro_x25519_dlimb_t) *carry + acc + mand;'
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=64, char=69), Point(line=64, char=70)] '+' --> '|' :: KILLED
+
+Mutant trace count 4096
+0 was visited 4096 times
+[Point(line=64, char=69), Point(line=64, char=70)] '+' --> '&' :: SURVIVED
+
+Mutant trace count 4096
+0 was visited 4096 times
+[Point(line=64, char=69), Point(line=64, char=70)] '+' --> '^' :: SURVIVED
+
+Mutant trace count 4096
+0 was visited 4096 times
+[Point(line=64, char=69), Point(line=64, char=70)] '+' --> '&&' :: SURVIVED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=64, char=69), Point(line=64, char=70)] '+' --> '||' :: KILLED
+
+Mutant trace count 4096
+0 was visited 4096 times
+[Point(line=64, char=69), Point(line=64, char=70)] '+' --> '>' :: SURVIVED
+
+Mutant trace count 4096
+0 was visited 4096 times
+[Point(line=64, char=69), Point(line=64, char=70)] '+' --> '>=' :: SURVIVED
+
+Mutant trace count 4096
+0 was visited 4096 times
+[Point(line=64, char=69), Point(line=64, char=70)] '+' --> '<' :: SURVIVED
+
+Mutant trace count 4096
+0 was visited 4096 times
+[Point(line=64, char=69), Point(line=64, char=70)] '+' --> '<=' :: SURVIVED
+
+Mutant trace count 4096
+0 was visited 4096 times
+[Point(line=64, char=69), Point(line=64, char=70)] '+' --> '==' :: SURVIVED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=64, char=69), Point(line=64, char=70)] '+' --> '!=' :: KILLED
+
+Mutant trace count 4096
+0 was visited 4096 times
+[Point(line=64, char=69), Point(line=64, char=70)] '+' --> '<<' :: SURVIVED
+
+Mutant trace count 4096
+0 was visited 4096 times
+[Point(line=64, char=69), Point(line=64, char=70)] '+' --> '>>' :: SURVIVED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=64, char=63), Point(line=64, char=64)] '+' --> '|' :: KILLED
+
+Mutant trace count 4096
+0 was visited 4096 times
+[Point(line=64, char=63), Point(line=64, char=64)] '+' --> '&' :: SURVIVED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=64, char=63), Point(line=64, char=64)] '+' --> '^' :: KILLED
+
+Mutant trace count 4096
+0 was visited 4096 times
+[Point(line=64, char=63), Point(line=64, char=64)] '+' --> '&&' :: SURVIVED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=64, char=63), Point(line=64, char=64)] '+' --> '||' :: KILLED
+
+Mutant trace count 4096
+0 was visited 4096 times
+[Point(line=64, char=63), Point(line=64, char=64)] '+' --> '>' :: SURVIVED
+
+Mutant trace count 4096
+0 was visited 4096 times
+[Point(line=64, char=63), Point(line=64, char=64)] '+' --> '>=' :: SURVIVED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=64, char=63), Point(line=64, char=64)] '+' --> '<' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=64, char=63), Point(line=64, char=64)] '+' --> '<=' :: KILLED
+
+Mutant trace count 4096
+0 was visited 4096 times
+[Point(line=64, char=63), Point(line=64, char=64)] '+' --> '==' :: SURVIVED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=64, char=63), Point(line=64, char=64)] '+' --> '!=' :: KILLED
+
+Mutant trace count 4096
+0 was visited 4096 times
+[Point(line=64, char=63), Point(line=64, char=64)] '+' --> '<<' :: SURVIVED
+
+Mutant trace count 4096
+0 was visited 4096 times
+[Point(line=64, char=63), Point(line=64, char=64)] '+' --> '>>' :: SURVIVED
+
+Mutant trace count 4096
+0 was visited 4096 times
+[Point(line=64, char=56), Point(line=64, char=57)] '*' --> '|' :: SURVIVED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=64, char=56), Point(line=64, char=57)] '*' --> '&' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=64, char=56), Point(line=64, char=57)] '*' --> '^' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=64, char=56), Point(line=64, char=57)] '*' --> '&&' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=64, char=56), Point(line=64, char=57)] '*' --> '||' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=64, char=56), Point(line=64, char=57)] '*' --> '>' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=64, char=56), Point(line=64, char=57)] '*' --> '>=' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=64, char=56), Point(line=64, char=57)] '*' --> '<' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=64, char=56), Point(line=64, char=57)] '*' --> '<=' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=64, char=56), Point(line=64, char=57)] '*' --> '==' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=64, char=56), Point(line=64, char=57)] '*' --> '!=' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=64, char=56), Point(line=64, char=57)] '*' --> '<<' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=64, char=56), Point(line=64, char=57)] '*' --> '>>' :: KILLED
+
+Killed 21 and 18 survived, mutation score of 0.5384615384615384
+
+Code :: '*carry = total >> hydro_x25519_WBITS;'
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=66, char=11), Point(line=66, char=12)] '=' --> '+=' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=66, char=11), Point(line=66, char=12)] '=' --> '-=' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=66, char=11), Point(line=66, char=12)] '=' --> '*=' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=66, char=11), Point(line=66, char=12)] '=' --> '/=' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=66, char=11), Point(line=66, char=12)] '=' --> '%=' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=66, char=11), Point(line=66, char=12)] '=' --> '|=' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=66, char=11), Point(line=66, char=12)] '=' --> '&=' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=66, char=11), Point(line=66, char=12)] '=' --> '^=' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=66, char=11), Point(line=66, char=12)] '=' --> '<<=' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=66, char=11), Point(line=66, char=12)] '=' --> '>>=' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=66, char=19), Point(line=66, char=21)] '>>' --> '+' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=66, char=19), Point(line=66, char=21)] '>>' --> '-' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=66, char=19), Point(line=66, char=21)] '>>' --> '*' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=66, char=19), Point(line=66, char=21)] '>>' --> '/' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=66, char=19), Point(line=66, char=21)] '>>' --> '%' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=66, char=19), Point(line=66, char=21)] '>>' --> '|' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=66, char=19), Point(line=66, char=21)] '>>' --> '&' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=66, char=19), Point(line=66, char=21)] '>>' --> '^' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=66, char=19), Point(line=66, char=21)] '>>' --> '>' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=66, char=19), Point(line=66, char=21)] '>>' --> '>=' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=66, char=19), Point(line=66, char=21)] '>>' --> '<' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=66, char=19), Point(line=66, char=21)] '>>' --> '<=' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=66, char=19), Point(line=66, char=21)] '>>' --> '==' :: KILLED
+
+Mutant trace count 16383
+0 was visited 16383 times
+[Point(line=66, char=19), Point(line=66, char=21)] '>>' --> '!=' :: KILLED
+
+Killed 24 and 0 survived, mutation score of 1.0
+
+Code :: 'return (hydro_x25519_limb_t) total;'
+No mutations
+
+Location Killed 45 and 18 survived, mutation score of 0.7142857142857143
+
+
+Total killed 45 and 18 total survived, with a total mutations score of 0.7142857142857143
+
+Took 135.40948454799945 seconds

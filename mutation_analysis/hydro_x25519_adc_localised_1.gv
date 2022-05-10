@@ -1,0 +1,85 @@
+digraph hydro_x25519_adc_localised_1 {
+	initial [shape=point]
+	initial -> "loc. 0
+[2620, 2645] expression_statement
+286896 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 0
+[2770, 2805] return_statement
+286896 visited
+0 candidates
+ return (hydro_x25519_limb_t) total; 
+ child of compound_statement" -> final
+	"loc. 0
+[2620, 2645] expression_statement
+286896 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[2620, 2645] expression_statement
+286896 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[2650, 2722] declaration
+286896 visited
+3 candidates
+21 killed/39 total=0.5384615384615384
+ hydro_x25519_dlimb_t total = (hydro_x25519_dlimb_t) *carry + acc + mand; 
+ child of compound_statement"
+	"loc. 0
+[2650, 2722] declaration
+286896 visited
+3 candidates
+21 killed/39 total=0.5384615384615384
+ hydro_x25519_dlimb_t total = (hydro_x25519_dlimb_t) *carry + acc + mand; 
+ child of compound_statement"
+	"loc. 0
+[2650, 2722] declaration
+286896 visited
+3 candidates
+21 killed/39 total=0.5384615384615384
+ hydro_x25519_dlimb_t total = (hydro_x25519_dlimb_t) *carry + acc + mand; 
+ child of compound_statement" -> "loc. 0
+[2728, 2765] expression_statement
+286896 visited
+2 candidates
+24 killed/24 total=1.0
+ *carry = total >> hydro_x25519_WBITS; 
+ child of compound_statement"
+	"loc. 0
+[2728, 2765] expression_statement
+286896 visited
+2 candidates
+24 killed/24 total=1.0
+ *carry = total >> hydro_x25519_WBITS; 
+ child of compound_statement"
+	"loc. 0
+[2728, 2765] expression_statement
+286896 visited
+2 candidates
+24 killed/24 total=1.0
+ *carry = total >> hydro_x25519_WBITS; 
+ child of compound_statement" -> "loc. 0
+[2770, 2805] return_statement
+286896 visited
+0 candidates
+ return (hydro_x25519_limb_t) total; 
+ child of compound_statement"
+	"loc. 0
+[2770, 2805] return_statement
+286896 visited
+0 candidates
+ return (hydro_x25519_limb_t) total; 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    hydro_x25519_dlimb_t total = (hydro_x25519_dlimb_t) *carry + acc + mand;
+
+    *carry = total >> hydro_x25519_WBITS;
+    return (hydro_x25519_limb_t) total;
+}"
+}

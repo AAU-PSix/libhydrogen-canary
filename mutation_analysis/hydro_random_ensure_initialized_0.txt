@@ -1,0 +1,282 @@
+Mutation took 109.75436409400027 seconds
+Original execution 108038 traces
+\Visited count
+2 was visited 108038 times
+1 was visited 1 times
+3 was visited 1 times
+0 was visited 108038 times
+
+Visited locations 2, 1, 3, 0
+Unvisited locations 4
+Visited 4, Unvisted 1, percentage visited 0.8
+
+Visited nodes 9
+Unvisited nodes 2
+Percentage visited 0.8181818181818182
+
+Visited candidates 3
+Unvisited candidates 0
+Percentage visited 1.0
+
+Tested mutations 34
+Untested mutations 0
+Percentage visited 1.0
+
+Location 2
+9 Runs
+
+Code :: 'CANARY_TWEET_LOCATION(2);'
+No mutations
+
+Code :: '(hydro_random_context.initialized == 0)'
+Is :: if-condition
+Mutant trace count 108038
+2 was visited 108038 times
+0 was visited 108038 times
+[Point(line=37, char=41), Point(line=37, char=43)] '==' --> '+' :: SURVIVED
+
+Mutant trace count 108038
+2 was visited 108038 times
+0 was visited 108038 times
+[Point(line=37, char=41), Point(line=37, char=43)] '==' --> '-' :: SURVIVED
+
+Mutant trace count 108038
+2 was visited 108038 times
+0 was visited 108038 times
+[Point(line=37, char=41), Point(line=37, char=43)] '==' --> '*' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=37, char=41), Point(line=37, char=43)] '==' --> '/' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=37, char=41), Point(line=37, char=43)] '==' --> '%' :: SURVIVED
+
+Mutant trace count 108038
+2 was visited 108038 times
+0 was visited 108038 times
+[Point(line=37, char=41), Point(line=37, char=43)] '==' --> '|' :: SURVIVED
+
+Mutant trace count 108038
+2 was visited 108038 times
+0 was visited 108038 times
+[Point(line=37, char=41), Point(line=37, char=43)] '==' --> '&' :: SURVIVED
+
+Mutant trace count 108038
+2 was visited 108038 times
+0 was visited 108038 times
+[Point(line=37, char=41), Point(line=37, char=43)] '==' --> '^' :: SURVIVED
+
+Mutant trace count 108038
+2 was visited 108038 times
+0 was visited 108038 times
+[Point(line=37, char=41), Point(line=37, char=43)] '==' --> '&&' :: SURVIVED
+
+Mutant trace count 108038
+2 was visited 108038 times
+0 was visited 108038 times
+[Point(line=37, char=41), Point(line=37, char=43)] '==' --> '||' :: SURVIVED
+
+Mutant trace count 108038
+2 was visited 108038 times
+0 was visited 108038 times
+[Point(line=37, char=41), Point(line=37, char=43)] '==' --> '<<' :: SURVIVED
+
+Mutant trace count 108038
+2 was visited 108038 times
+0 was visited 108038 times
+[Point(line=37, char=41), Point(line=37, char=43)] '==' --> '>>' :: SURVIVED
+
+Killed 0 and 12 survived, mutation score of 0.0
+
+Location Killed 0 and 12 survived, mutation score of 0.0
+
+
+Location 1
+9 Runs
+
+Code :: 'CANARY_TWEET_LOCATION(1);'
+No mutations
+
+Code :: '(hydro_random_init() != 0)'
+Is :: if-condition
+Mutant trace count 108038
+2 was visited 108038 times
+1 was visited 1 times
+3 was visited 1 times
+0 was visited 108038 times
+[Point(line=38, char=32), Point(line=38, char=34)] '!=' --> '+' :: SURVIVED
+
+Mutant trace count 108038
+2 was visited 108038 times
+1 was visited 1 times
+3 was visited 1 times
+0 was visited 108038 times
+[Point(line=38, char=32), Point(line=38, char=34)] '!=' --> '-' :: SURVIVED
+
+Mutant trace count 108038
+2 was visited 108038 times
+1 was visited 1 times
+3 was visited 1 times
+0 was visited 108038 times
+[Point(line=38, char=32), Point(line=38, char=34)] '!=' --> '*' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=38, char=32), Point(line=38, char=34)] '!=' --> '/' :: SURVIVED
+
+Mutant trace count 0
+[Point(line=38, char=32), Point(line=38, char=34)] '!=' --> '%' :: SURVIVED
+
+Mutant trace count 108038
+2 was visited 108038 times
+1 was visited 1 times
+3 was visited 1 times
+0 was visited 108038 times
+[Point(line=38, char=32), Point(line=38, char=34)] '!=' --> '|' :: SURVIVED
+
+Mutant trace count 108038
+2 was visited 108038 times
+1 was visited 1 times
+3 was visited 1 times
+0 was visited 108038 times
+[Point(line=38, char=32), Point(line=38, char=34)] '!=' --> '&' :: SURVIVED
+
+Mutant trace count 108038
+2 was visited 108038 times
+1 was visited 1 times
+3 was visited 1 times
+0 was visited 108038 times
+[Point(line=38, char=32), Point(line=38, char=34)] '!=' --> '^' :: SURVIVED
+
+Mutant trace count 108038
+2 was visited 108038 times
+1 was visited 1 times
+3 was visited 1 times
+0 was visited 108038 times
+[Point(line=38, char=32), Point(line=38, char=34)] '!=' --> '&&' :: SURVIVED
+
+Mutant trace count 108038
+2 was visited 108038 times
+1 was visited 1 times
+3 was visited 1 times
+0 was visited 108038 times
+[Point(line=38, char=32), Point(line=38, char=34)] '!=' --> '||' :: SURVIVED
+
+Mutant trace count 108038
+2 was visited 108038 times
+1 was visited 1 times
+3 was visited 1 times
+0 was visited 108038 times
+[Point(line=38, char=32), Point(line=38, char=34)] '!=' --> '<<' :: SURVIVED
+
+Mutant trace count 108038
+2 was visited 108038 times
+1 was visited 1 times
+3 was visited 1 times
+0 was visited 108038 times
+[Point(line=38, char=32), Point(line=38, char=34)] '!=' --> '>>' :: SURVIVED
+
+Killed 0 and 12 survived, mutation score of 0.0
+
+Location Killed 0 and 12 survived, mutation score of 0.0
+
+
+Location 3
+9 Runs
+
+Code :: 'CANARY_TWEET_LOCATION(3);'
+No mutations
+
+Code :: 'gimli_core_u8(hydro_random_context.state, 0);'
+No mutations
+
+Code :: 'hydro_random_ratchet();'
+No mutations
+
+Code :: 'hydro_random_context.initialized = 1;'
+Mutant trace count 108038
+2 was visited 108038 times
+1 was visited 1 times
+3 was visited 1 times
+0 was visited 108038 times
+[Point(line=43, char=41), Point(line=43, char=42)] '=' --> '+=' :: SURVIVED
+
+Mutant trace count 108038
+2 was visited 108038 times
+1 was visited 1 times
+3 was visited 1 times
+0 was visited 108038 times
+[Point(line=43, char=41), Point(line=43, char=42)] '=' --> '-=' :: SURVIVED
+
+Mutant trace count 108038
+2 was visited 108038 times
+1 was visited 108038 times
+3 was visited 108038 times
+0 was visited 108038 times
+[Point(line=43, char=41), Point(line=43, char=42)] '=' --> '*=' :: SURVIVED
+
+Mutant trace count 108038
+2 was visited 108038 times
+1 was visited 108038 times
+3 was visited 108038 times
+0 was visited 108038 times
+[Point(line=43, char=41), Point(line=43, char=42)] '=' --> '/=' :: SURVIVED
+
+Mutant trace count 108038
+2 was visited 108038 times
+1 was visited 108038 times
+3 was visited 108038 times
+0 was visited 108038 times
+[Point(line=43, char=41), Point(line=43, char=42)] '=' --> '%=' :: SURVIVED
+
+Mutant trace count 108038
+2 was visited 108038 times
+1 was visited 1 times
+3 was visited 1 times
+0 was visited 108038 times
+[Point(line=43, char=41), Point(line=43, char=42)] '=' --> '|=' :: SURVIVED
+
+Mutant trace count 108038
+2 was visited 108038 times
+1 was visited 108038 times
+3 was visited 108038 times
+0 was visited 108038 times
+[Point(line=43, char=41), Point(line=43, char=42)] '=' --> '&=' :: SURVIVED
+
+Mutant trace count 108038
+2 was visited 108038 times
+1 was visited 1 times
+3 was visited 1 times
+0 was visited 108038 times
+[Point(line=43, char=41), Point(line=43, char=42)] '=' --> '^=' :: SURVIVED
+
+Mutant trace count 108038
+2 was visited 108038 times
+1 was visited 108038 times
+3 was visited 108038 times
+0 was visited 108038 times
+[Point(line=43, char=41), Point(line=43, char=42)] '=' --> '<<=' :: SURVIVED
+
+Mutant trace count 108038
+2 was visited 108038 times
+1 was visited 108038 times
+3 was visited 108038 times
+0 was visited 108038 times
+[Point(line=43, char=41), Point(line=43, char=42)] '=' --> '>>=' :: SURVIVED
+
+Killed 0 and 10 survived, mutation score of 0.0
+
+Location Killed 0 and 10 survived, mutation score of 0.0
+
+
+Location 0
+9 Runs
+
+Code :: 'CANARY_TWEET_LOCATION(0);'
+No mutations
+
+Location Killed 0 and 0 survived
+
+
+Total killed 0 and 34 total survived, with a total mutations score of 0.0
+
+Took 129.46583343499879 seconds

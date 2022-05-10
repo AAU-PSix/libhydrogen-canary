@@ -1,0 +1,313 @@
+digraph hydro_sign_verify_core_localised_3 {
+	initial [shape=point]
+	initial -> "loc. 0
+[2752, 2777] expression_statement
+9 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 0
+[3532, 3588] return_statement
+9 visited
+1 candidates
+12 killed/15 total=0.8
+ return hydro_x25519_canon(z2) | ~hydro_x25519_canon(z3); 
+ child of compound_statement" -> final
+	"loc. 0
+[2752, 2777] expression_statement
+9 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[2752, 2777] expression_statement
+9 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[2782, 2845] declaration
+9 visited
+0 candidates
+ hydro_x25519_limb_t *     z2 = xs[1], *x3 = xs[2], *z3 = xs[3]; 
+ child of compound_statement"
+	"loc. 0
+[2782, 2845] declaration
+9 visited
+0 candidates
+ hydro_x25519_limb_t *     z2 = xs[1], *x3 = xs[2], *z3 = xs[3]; 
+ child of compound_statement"
+	"loc. 0
+[2782, 2845] declaration
+9 visited
+0 candidates
+ hydro_x25519_limb_t *     z2 = xs[1], *x3 = xs[2], *z3 = xs[3]; 
+ child of compound_statement" -> "loc. 0
+[2850, 2880] declaration
+9 visited
+0 candidates
+ hydro_x25519_fe           xo2; 
+ child of compound_statement"
+	"loc. 0
+[2850, 2880] declaration
+9 visited
+0 candidates
+ hydro_x25519_fe           xo2; 
+ child of compound_statement"
+	"loc. 0
+[2850, 2880] declaration
+9 visited
+0 candidates
+ hydro_x25519_fe           xo2; 
+ child of compound_statement" -> "loc. 0
+[2885, 2924] declaration
+9 visited
+0 candidates
+ const hydro_x25519_limb_t sixteen = 16; 
+ child of compound_statement"
+	"loc. 0
+[2885, 2924] declaration
+9 visited
+0 candidates
+ const hydro_x25519_limb_t sixteen = 16; 
+ child of compound_statement"
+	"loc. 0
+[2885, 2924] declaration
+9 visited
+0 candidates
+ const hydro_x25519_limb_t sixteen = 16; 
+ child of compound_statement" -> "loc. 0
+[2930, 2963] expression_statement
+9 visited
+0 candidates
+ hydro_x25519_swapin(xo2, other2); 
+ child of compound_statement"
+	"loc. 0
+[2930, 2963] expression_statement
+9 visited
+0 candidates
+ hydro_x25519_swapin(xo2, other2); 
+ child of compound_statement"
+	"loc. 0
+[2930, 2963] expression_statement
+9 visited
+0 candidates
+ hydro_x25519_swapin(xo2, other2); 
+ child of compound_statement" -> "loc. 0
+[2968, 3016] expression_statement
+9 visited
+1 candidates
+13 killed/13 total=1.0
+ memcpy(x3, other1, 2 * sizeof(hydro_x25519_fe)); 
+ child of compound_statement"
+	"loc. 0
+[2968, 3016] expression_statement
+9 visited
+1 candidates
+13 killed/13 total=1.0
+ memcpy(x3, other1, 2 * sizeof(hydro_x25519_fe)); 
+ child of compound_statement"
+	"loc. 0
+[2968, 3016] expression_statement
+9 visited
+1 candidates
+13 killed/13 total=1.0
+ memcpy(x3, other1, 2 * sizeof(hydro_x25519_fe)); 
+ child of compound_statement" -> "loc. 0
+[3021, 3051] expression_statement
+9 visited
+0 candidates
+ hydro_x25519_ladder_part1(xs); 
+ child of compound_statement"
+	"loc. 0
+[3021, 3051] expression_statement
+9 visited
+0 candidates
+ hydro_x25519_ladder_part1(xs); 
+ child of compound_statement"
+	"loc. 0
+[3021, 3051] expression_statement
+9 visited
+0 candidates
+ hydro_x25519_ladder_part1(xs); 
+ child of compound_statement" -> "loc. 0
+[3082, 3112] expression_statement
+9 visited
+0 candidates
+ hydro_x25519_mul1(z2, other1); 
+ child of compound_statement"
+	"loc. 0
+[3082, 3112] expression_statement
+9 visited
+0 candidates
+ hydro_x25519_mul1(z2, other1); 
+ child of compound_statement"
+	"loc. 0
+[3082, 3112] expression_statement
+9 visited
+0 candidates
+ hydro_x25519_mul1(z2, other1); 
+ child of compound_statement" -> "loc. 0
+[3117, 3169] expression_statement
+9 visited
+1 candidates
+3 killed/13 total=0.23076923076923078
+ hydro_x25519_mul1(z2, other1 + hydro_x25519_NLIMBS); 
+ child of compound_statement"
+	"loc. 0
+[3117, 3169] expression_statement
+9 visited
+1 candidates
+3 killed/13 total=0.23076923076923078
+ hydro_x25519_mul1(z2, other1 + hydro_x25519_NLIMBS); 
+ child of compound_statement"
+	"loc. 0
+[3117, 3169] expression_statement
+9 visited
+1 candidates
+3 killed/13 total=0.23076923076923078
+ hydro_x25519_mul1(z2, other1 + hydro_x25519_NLIMBS); 
+ child of compound_statement" -> "loc. 0
+[3174, 3201] expression_statement
+9 visited
+0 candidates
+ hydro_x25519_mul1(z2, xo2); 
+ child of compound_statement"
+	"loc. 0
+[3174, 3201] expression_statement
+9 visited
+0 candidates
+ hydro_x25519_mul1(z2, xo2); 
+ child of compound_statement"
+	"loc. 0
+[3174, 3201] expression_statement
+9 visited
+0 candidates
+ hydro_x25519_mul1(z2, xo2); 
+ child of compound_statement" -> "loc. 0
+[3207, 3245] expression_statement
+9 visited
+0 candidates
+ hydro_x25519_mul(z2, z2, &sixteen, 1); 
+ child of compound_statement"
+	"loc. 0
+[3207, 3245] expression_statement
+9 visited
+0 candidates
+ hydro_x25519_mul(z2, z2, &sixteen, 1); 
+ child of compound_statement"
+	"loc. 0
+[3207, 3245] expression_statement
+9 visited
+0 candidates
+ hydro_x25519_mul(z2, z2, &sixteen, 1); 
+ child of compound_statement" -> "loc. 0
+[3251, 3278] expression_statement
+9 visited
+0 candidates
+ hydro_x25519_mul1(z3, xo2); 
+ child of compound_statement"
+	"loc. 0
+[3251, 3278] expression_statement
+9 visited
+0 candidates
+ hydro_x25519_mul1(z3, xo2); 
+ child of compound_statement"
+	"loc. 0
+[3251, 3278] expression_statement
+9 visited
+0 candidates
+ hydro_x25519_mul1(z3, xo2); 
+ child of compound_statement" -> "loc. 0
+[3283, 3312] expression_statement
+9 visited
+0 candidates
+ hydro_x25519_sub(z3, z3, x3); 
+ child of compound_statement"
+	"loc. 0
+[3283, 3312] expression_statement
+9 visited
+0 candidates
+ hydro_x25519_sub(z3, z3, x3); 
+ child of compound_statement"
+	"loc. 0
+[3283, 3312] expression_statement
+9 visited
+0 candidates
+ hydro_x25519_sub(z3, z3, x3); 
+ child of compound_statement" -> "loc. 0
+[3317, 3339] expression_statement
+9 visited
+0 candidates
+ hydro_x25519_sqr1(z3); 
+ child of compound_statement"
+	"loc. 0
+[3317, 3339] expression_statement
+9 visited
+0 candidates
+ hydro_x25519_sqr1(z3); 
+ child of compound_statement"
+	"loc. 0
+[3317, 3339] expression_statement
+9 visited
+0 candidates
+ hydro_x25519_sqr1(z3); 
+ child of compound_statement" -> "loc. 0
+[3370, 3399] expression_statement
+9 visited
+0 candidates
+ hydro_x25519_sub(z3, z3, z2); 
+ child of compound_statement"
+	"loc. 0
+[3370, 3399] expression_statement
+9 visited
+0 candidates
+ hydro_x25519_sub(z3, z3, z2); 
+ child of compound_statement"
+	"loc. 0
+[3370, 3399] expression_statement
+9 visited
+0 candidates
+ hydro_x25519_sub(z3, z3, z2); 
+ child of compound_statement" -> "loc. 0
+[3532, 3588] return_statement
+9 visited
+1 candidates
+12 killed/15 total=0.8
+ return hydro_x25519_canon(z2) | ~hydro_x25519_canon(z3); 
+ child of compound_statement"
+	"loc. 0
+[3532, 3588] return_statement
+9 visited
+1 candidates
+12 killed/15 total=0.8
+ return hydro_x25519_canon(z2) | ~hydro_x25519_canon(z3); 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    hydro_x25519_limb_t *     z2 = xs[1], *x3 = xs[2], *z3 = xs[3];
+    hydro_x25519_fe           xo2;
+    const hydro_x25519_limb_t sixteen = 16;
+
+    hydro_x25519_swapin(xo2, other2);
+    memcpy(x3, other1, 2 * sizeof(hydro_x25519_fe));
+    hydro_x25519_ladder_part1(xs);
+
+    /* Here z2 = t2^2 */
+    hydro_x25519_mul1(z2, other1);
+    hydro_x25519_mul1(z2, other1 + hydro_x25519_NLIMBS);
+    hydro_x25519_mul1(z2, xo2);
+
+    hydro_x25519_mul(z2, z2, &sixteen, 1);
+
+    hydro_x25519_mul1(z3, xo2);
+    hydro_x25519_sub(z3, z3, x3);
+    hydro_x25519_sqr1(z3);
+
+    /* check equality */
+    hydro_x25519_sub(z3, z3, z2);
+
+    /* canon(z2)| both sides are zero. canon(z3)| the two sides are equal. */
+    /* Reject sigs where both sides are zero. */
+    return hydro_x25519_canon(z2) | ~hydro_x25519_canon(z3);
+}"
+}

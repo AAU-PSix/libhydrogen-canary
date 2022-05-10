@@ -1,0 +1,391 @@
+digraph hydro_hash_init_localised_1 {
+	initial [shape=point]
+	initial -> "loc. 0
+[983, 1008] expression_statement
+61 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 1
+[1827, 1836] return_statement
+61 visited
+0 candidates
+ return 0; 
+ child of compound_statement" -> final
+	"loc. 0
+[983, 1008] expression_statement
+61 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[983, 1008] expression_statement
+61 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[1013, 1062] declaration
+61 visited
+0 candidates
+ uint8_t block[64] = { 4, 'k', 'm', 'a', 'c', 8 }; 
+ child of compound_statement"
+	"loc. 0
+[1013, 1062] declaration
+61 visited
+0 candidates
+ uint8_t block[64] = { 4, 'k', 'm', 'a', 'c', 8 }; 
+ child of compound_statement"
+	"loc. 0
+[1013, 1062] declaration
+61 visited
+0 candidates
+ uint8_t block[64] = { 4, 'k', 'm', 'a', 'c', 8 }; 
+ child of compound_statement" -> "loc. 0
+[1067, 1077] declaration
+61 visited
+0 candidates
+ size_t  p; 
+ child of compound_statement"
+	"loc. 0
+[1067, 1077] declaration
+61 visited
+0 candidates
+ size_t  p; 
+ child of compound_statement"
+	"loc. 0
+[1067, 1077] declaration
+61 visited
+0 candidates
+ size_t  p; 
+ child of compound_statement" -> "loc. 0
+[1083, 1153] expression_statement
+61 visited
+3 candidates
+0 killed/38 total=0.0
+ COMPILER_ASSERT(hydro_hash_KEYBYTES <= sizeof block - gimli_RATE - 1); 
+ child of compound_statement"
+	"loc. 0
+[1083, 1153] expression_statement
+61 visited
+3 candidates
+0 killed/38 total=0.0
+ COMPILER_ASSERT(hydro_hash_KEYBYTES <= sizeof block - gimli_RATE - 1); 
+ child of compound_statement"
+	"loc. 0
+[1083, 1153] expression_statement
+61 visited
+3 candidates
+0 killed/38 total=0.0
+ COMPILER_ASSERT(hydro_hash_KEYBYTES <= sizeof block - gimli_RATE - 1); 
+ child of compound_statement" -> "loc. 0
+[1158, 1204] expression_statement
+61 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_hash_CONTEXTBYTES == 8); 
+ child of compound_statement"
+	"loc. 0
+[1158, 1204] expression_statement
+61 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_hash_CONTEXTBYTES == 8); 
+ child of compound_statement"
+	"loc. 0
+[1158, 1204] expression_statement
+61 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(hydro_hash_CONTEXTBYTES == 8); 
+ child of compound_statement" -> "loc. 0
+[1209, 1249] expression_statement
+61 visited
+2 candidates
+0 killed/26 total=0.0
+ mem_zero(block + 14, sizeof block - 14); 
+ child of compound_statement"
+	"loc. 0
+[1209, 1249] expression_statement
+61 visited
+2 candidates
+0 killed/26 total=0.0
+ mem_zero(block + 14, sizeof block - 14); 
+ child of compound_statement"
+	"loc. 0
+[1209, 1249] expression_statement
+61 visited
+2 candidates
+0 killed/26 total=0.0
+ mem_zero(block + 14, sizeof block - 14); 
+ child of compound_statement" -> "loc. 0
+[1254, 1280] expression_statement
+61 visited
+1 candidates
+0 killed/13 total=0.0
+ memcpy(block + 6, ctx, 8); 
+ child of compound_statement"
+	"loc. 0
+[1254, 1280] expression_statement
+61 visited
+1 candidates
+0 killed/13 total=0.0
+ memcpy(block + 6, ctx, 8); 
+ child of compound_statement"
+	"loc. 0
+[1254, 1280] expression_statement
+61 visited
+1 candidates
+0 killed/13 total=0.0
+ memcpy(block + 6, ctx, 8); 
+ child of compound_statement" -> "loc. 0
+[1288, 1301] parenthesized_expression
+61 visited
+1 candidates
+1 killed/12 total=0.08333333333333333
+ (key != NULL) 
+ child of if_statement"
+	"loc. 0
+[1288, 1301] parenthesized_expression
+61 visited
+1 candidates
+1 killed/12 total=0.08333333333333333
+ (key != NULL) 
+ child of if_statement"
+	"loc. 0
+[1288, 1301] parenthesized_expression
+61 visited
+1 candidates
+1 killed/12 total=0.08333333333333333
+ (key != NULL) 
+ child of if_statement" -> "loc. 2
+[1303, 1328] expression_statement
+23 visited
+0 candidates
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" [label=T]
+	"loc. 0
+[1288, 1301] parenthesized_expression
+61 visited
+1 candidates
+1 killed/12 total=0.08333333333333333
+ (key != NULL) 
+ child of if_statement" -> "loc. 3
+[1566, 1591] expression_statement
+38 visited
+0 candidates
+ CANARY_TWEET_LOCATION(3); 
+ child of compound_statement" [label=F]
+	"loc. 2
+[1303, 1328] expression_statement
+23 visited
+0 candidates
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement"
+	"loc. 2
+[1303, 1328] expression_statement
+23 visited
+0 candidates
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" -> "loc. 2
+[1337, 1387] expression_statement
+23 visited
+1 candidates
+7 killed/10 total=0.7
+ block[gimli_RATE] = (uint8_t) hydro_hash_KEYBYTES; 
+ child of compound_statement"
+	"loc. 3
+[1566, 1591] expression_statement
+38 visited
+0 candidates
+ CANARY_TWEET_LOCATION(3); 
+ child of compound_statement"
+	"loc. 3
+[1566, 1591] expression_statement
+38 visited
+0 candidates
+ CANARY_TWEET_LOCATION(3); 
+ child of compound_statement" -> "loc. 3
+[1600, 1632] expression_statement
+38 visited
+1 candidates
+0 killed/10 total=0.0
+ block[gimli_RATE] = (uint8_t) 0; 
+ child of compound_statement"
+	"loc. 2
+[1337, 1387] expression_statement
+23 visited
+1 candidates
+7 killed/10 total=0.7
+ block[gimli_RATE] = (uint8_t) hydro_hash_KEYBYTES; 
+ child of compound_statement"
+	"loc. 2
+[1337, 1387] expression_statement
+23 visited
+1 candidates
+7 killed/10 total=0.7
+ block[gimli_RATE] = (uint8_t) hydro_hash_KEYBYTES; 
+ child of compound_statement" -> "loc. 2
+[1396, 1453] expression_statement
+23 visited
+2 candidates
+3 killed/26 total=0.11538461538461539
+ memcpy(block + gimli_RATE + 1, key, hydro_hash_KEYBYTES); 
+ child of compound_statement"
+	"loc. 2
+[1396, 1453] expression_statement
+23 visited
+2 candidates
+3 killed/26 total=0.11538461538461539
+ memcpy(block + gimli_RATE + 1, key, hydro_hash_KEYBYTES); 
+ child of compound_statement"
+	"loc. 2
+[1396, 1453] expression_statement
+23 visited
+2 candidates
+3 killed/26 total=0.11538461538461539
+ memcpy(block + gimli_RATE + 1, key, hydro_hash_KEYBYTES); 
+ child of compound_statement" -> "loc. 2
+[1462, 1553] expression_statement
+23 visited
+7 candidates
+69 killed/90 total=0.7666666666666667
+ p = (gimli_RATE + 1 + hydro_hash_KEYBYTES + (gimli_RATE - 1)) & ~(size_t) (gimli_RATE - 1); 
+ child of compound_statement"
+	"loc. 2
+[1462, 1553] expression_statement
+23 visited
+7 candidates
+69 killed/90 total=0.7666666666666667
+ p = (gimli_RATE + 1 + hydro_hash_KEYBYTES + (gimli_RATE - 1)) & ~(size_t) (gimli_RATE - 1); 
+ child of compound_statement"
+	"loc. 2
+[1462, 1553] expression_statement
+23 visited
+7 candidates
+69 killed/90 total=0.7666666666666667
+ p = (gimli_RATE + 1 + hydro_hash_KEYBYTES + (gimli_RATE - 1)) & ~(size_t) (gimli_RATE - 1); 
+ child of compound_statement" -> "loc. 1
+[1720, 1745] expression_statement
+61 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[1720, 1745] expression_statement
+61 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[1720, 1745] expression_statement
+61 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" -> "loc. 1
+[1750, 1781] expression_statement
+61 visited
+0 candidates
+ mem_zero(state, sizeof *state); 
+ child of compound_statement"
+	"loc. 1
+[1750, 1781] expression_statement
+61 visited
+0 candidates
+ mem_zero(state, sizeof *state); 
+ child of compound_statement"
+	"loc. 1
+[1750, 1781] expression_statement
+61 visited
+0 candidates
+ mem_zero(state, sizeof *state); 
+ child of compound_statement" -> "loc. 1
+[1786, 1821] expression_statement
+61 visited
+0 candidates
+ hydro_hash_update(state, block, p); 
+ child of compound_statement"
+	"loc. 3
+[1641, 1714] expression_statement
+38 visited
+7 candidates
+0 killed/90 total=0.0
+ p = (gimli_RATE + 1 + 0 + (gimli_RATE - 1)) & ~(size_t) (gimli_RATE - 1); 
+ child of compound_statement"
+	"loc. 3
+[1641, 1714] expression_statement
+38 visited
+7 candidates
+0 killed/90 total=0.0
+ p = (gimli_RATE + 1 + 0 + (gimli_RATE - 1)) & ~(size_t) (gimli_RATE - 1); 
+ child of compound_statement" -> "loc. 1
+[1720, 1745] expression_statement
+61 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 3
+[1600, 1632] expression_statement
+38 visited
+1 candidates
+0 killed/10 total=0.0
+ block[gimli_RATE] = (uint8_t) 0; 
+ child of compound_statement"
+	"loc. 3
+[1600, 1632] expression_statement
+38 visited
+1 candidates
+0 killed/10 total=0.0
+ block[gimli_RATE] = (uint8_t) 0; 
+ child of compound_statement" -> "loc. 3
+[1641, 1714] expression_statement
+38 visited
+7 candidates
+0 killed/90 total=0.0
+ p = (gimli_RATE + 1 + 0 + (gimli_RATE - 1)) & ~(size_t) (gimli_RATE - 1); 
+ child of compound_statement"
+	"loc. 1
+[1786, 1821] expression_statement
+61 visited
+0 candidates
+ hydro_hash_update(state, block, p); 
+ child of compound_statement"
+	"loc. 1
+[1786, 1821] expression_statement
+61 visited
+0 candidates
+ hydro_hash_update(state, block, p); 
+ child of compound_statement" -> "loc. 1
+[1827, 1836] return_statement
+61 visited
+0 candidates
+ return 0; 
+ child of compound_statement"
+	"loc. 1
+[1827, 1836] return_statement
+61 visited
+0 candidates
+ return 0; 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    uint8_t block[64] = { 4, 'k', 'm', 'a', 'c', 8 };
+    size_t  p;
+
+    COMPILER_ASSERT(hydro_hash_KEYBYTES <= sizeof block - gimli_RATE - 1);
+    COMPILER_ASSERT(hydro_hash_CONTEXTBYTES == 8);
+    mem_zero(block + 14, sizeof block - 14);
+    memcpy(block + 6, ctx, 8);
+    if (key != NULL) {CANARY_TWEET_LOCATION(2);
+        block[gimli_RATE] = (uint8_t) hydro_hash_KEYBYTES;
+        memcpy(block + gimli_RATE + 1, key, hydro_hash_KEYBYTES);
+        p = (gimli_RATE + 1 + hydro_hash_KEYBYTES + (gimli_RATE - 1)) & ~(size_t) (gimli_RATE - 1);
+    } else {CANARY_TWEET_LOCATION(3);
+        block[gimli_RATE] = (uint8_t) 0;
+        p = (gimli_RATE + 1 + 0 + (gimli_RATE - 1)) & ~(size_t) (gimli_RATE - 1);
+    }CANARY_TWEET_LOCATION(1);
+    mem_zero(state, sizeof *state);
+    hydro_hash_update(state, block, p);
+
+    return 0;
+}"
+}

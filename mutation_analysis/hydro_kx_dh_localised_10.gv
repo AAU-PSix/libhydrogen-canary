@@ -1,0 +1,154 @@
+digraph hydro_kx_dh_localised_10 {
+	initial [shape=point]
+	initial -> "loc. 0
+[6399, 6424] expression_statement
+30 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 1
+[6679, 6688] return_statement
+30 visited
+0 candidates
+ return 0; 
+ child of compound_statement" -> final
+	"loc. 0
+[6399, 6424] expression_statement
+30 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[6399, 6424] expression_statement
+30 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[6429, 6467] declaration
+30 visited
+0 candidates
+ uint8_t dh_result[hydro_x25519_BYTES]; 
+ child of compound_statement"
+	"loc. 0
+[6429, 6467] declaration
+30 visited
+0 candidates
+ uint8_t dh_result[hydro_x25519_BYTES]; 
+ child of compound_statement"
+	"loc. 0
+[6429, 6467] declaration
+30 visited
+0 candidates
+ uint8_t dh_result[hydro_x25519_BYTES]; 
+ child of compound_statement" -> "loc. 0
+[6476, 6528] parenthesized_expression
+30 visited
+1 candidates
+0 killed/12 total=0.0
+ (hydro_x25519_scalarmult(dh_result, sk, pk, 1) != 0) 
+ child of if_statement"
+	"loc. 0
+[6476, 6528] parenthesized_expression
+30 visited
+1 candidates
+0 killed/12 total=0.0
+ (hydro_x25519_scalarmult(dh_result, sk, pk, 1) != 0) 
+ child of if_statement"
+	"loc. 0
+[6476, 6528] parenthesized_expression
+30 visited
+1 candidates
+0 killed/12 total=0.0
+ (hydro_x25519_scalarmult(dh_result, sk, pk, 1) != 0) 
+ child of if_statement" -> "loc. 2
+[6530, 6555] expression_statement
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" [label=T]
+	"loc. 0
+[6476, 6528] parenthesized_expression
+30 visited
+1 candidates
+0 killed/12 total=0.0
+ (hydro_x25519_scalarmult(dh_result, sk, pk, 1) != 0) 
+ child of if_statement" -> "loc. 1
+[6580, 6605] expression_statement
+30 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" [label=F]
+	"loc. 2
+[6530, 6555] expression_statement
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement"
+	"loc. 2
+[6530, 6555] expression_statement
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" -> "loc. 2
+[6564, 6574] return_statement
+ return -1; 
+ child of compound_statement"
+	"loc. 1
+[6580, 6605] expression_statement
+30 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[6580, 6605] expression_statement
+30 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" -> "loc. 1
+[6610, 6673] expression_statement
+30 visited
+0 candidates
+ hydro_hash_update(&state->h_st, dh_result, hydro_x25519_BYTES); 
+ child of compound_statement"
+	"loc. 2
+[6564, 6574] return_statement
+ return -1; 
+ child of compound_statement"
+	"loc. 2
+[6564, 6574] return_statement
+ return -1; 
+ child of compound_statement" -> "loc. 1
+[6580, 6605] expression_statement
+30 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[6610, 6673] expression_statement
+30 visited
+0 candidates
+ hydro_hash_update(&state->h_st, dh_result, hydro_x25519_BYTES); 
+ child of compound_statement"
+	"loc. 1
+[6610, 6673] expression_statement
+30 visited
+0 candidates
+ hydro_hash_update(&state->h_st, dh_result, hydro_x25519_BYTES); 
+ child of compound_statement" -> "loc. 1
+[6679, 6688] return_statement
+30 visited
+0 candidates
+ return 0; 
+ child of compound_statement"
+	"loc. 1
+[6679, 6688] return_statement
+30 visited
+0 candidates
+ return 0; 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    uint8_t dh_result[hydro_x25519_BYTES];
+
+    if (hydro_x25519_scalarmult(dh_result, sk, pk, 1) != 0) {CANARY_TWEET_LOCATION(2);
+        return -1;
+    }CANARY_TWEET_LOCATION(1);
+    hydro_hash_update(&state->h_st, dh_result, hydro_x25519_BYTES);
+
+    return 0;
+}"
+}

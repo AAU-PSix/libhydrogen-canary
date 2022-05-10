@@ -1,0 +1,200 @@
+Mutation took 59.38002204499935 seconds
+Original execution 1 traces
+\Visited count
+0 was visited 1 times
+
+Visited locations 0
+Unvisited locations 
+Visited 1, Unvisted 0, percentage visited 1.0
+
+Visited nodes 7
+Unvisited nodes 0
+Percentage visited 1.0
+
+Visited candidates 3
+Unvisited candidates 0
+Percentage visited 1.0
+
+Tested mutations 37
+Untested mutations 0
+Percentage visited 1.0
+
+Location 0
+7 Runs
+
+Code :: 'CANARY_TWEET_LOCATION(0);'
+No mutations
+
+Code :: 'uint8_t *pk_copy = &kp->sk[hydro_x25519_SECRETKEYBYTES];'
+No mutations
+
+Code :: 'COMPILER_ASSERT(hydro_sign_SECRETKEYBYTES ==
+                    hydro_x25519_SECRETKEYBYTES + hydro_x25519_PUBLICKEYBYTES);'
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=125, char=46), Point(line=125, char=48)] '==' --> '+' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=125, char=46), Point(line=125, char=48)] '==' --> '-' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=125, char=46), Point(line=125, char=48)] '==' --> '*' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=125, char=46), Point(line=125, char=48)] '==' --> '/' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=125, char=46), Point(line=125, char=48)] '==' --> '%' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=125, char=46), Point(line=125, char=48)] '==' --> '|' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=125, char=46), Point(line=125, char=48)] '==' --> '&' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=125, char=46), Point(line=125, char=48)] '==' --> '^' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=125, char=46), Point(line=125, char=48)] '==' --> '&&' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=125, char=46), Point(line=125, char=48)] '==' --> '||' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=125, char=46), Point(line=125, char=48)] '==' --> '<<' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=125, char=46), Point(line=125, char=48)] '==' --> '>>' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=126, char=48), Point(line=126, char=49)] '+' --> '|' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=126, char=48), Point(line=126, char=49)] '+' --> '&' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=126, char=48), Point(line=126, char=49)] '+' --> '^' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=126, char=48), Point(line=126, char=49)] '+' --> '&&' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=126, char=48), Point(line=126, char=49)] '+' --> '||' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=126, char=48), Point(line=126, char=49)] '+' --> '>' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=126, char=48), Point(line=126, char=49)] '+' --> '>=' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=126, char=48), Point(line=126, char=49)] '+' --> '<' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=126, char=48), Point(line=126, char=49)] '+' --> '<=' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=126, char=48), Point(line=126, char=49)] '+' --> '==' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=126, char=48), Point(line=126, char=49)] '+' --> '!=' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=126, char=48), Point(line=126, char=49)] '+' --> '<<' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=126, char=48), Point(line=126, char=49)] '+' --> '>>' :: SURVIVED
+
+Killed 0 and 25 survived, mutation score of 0.0
+
+Code :: 'COMPILER_ASSERT(hydro_sign_PUBLICKEYBYTES == hydro_x25519_PUBLICKEYBYTES);'
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=127, char=46), Point(line=127, char=48)] '==' --> '+' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=127, char=46), Point(line=127, char=48)] '==' --> '-' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=127, char=46), Point(line=127, char=48)] '==' --> '*' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=127, char=46), Point(line=127, char=48)] '==' --> '/' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=127, char=46), Point(line=127, char=48)] '==' --> '%' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=127, char=46), Point(line=127, char=48)] '==' --> '|' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=127, char=46), Point(line=127, char=48)] '==' --> '&' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=127, char=46), Point(line=127, char=48)] '==' --> '^' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=127, char=46), Point(line=127, char=48)] '==' --> '&&' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=127, char=46), Point(line=127, char=48)] '==' --> '||' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=127, char=46), Point(line=127, char=48)] '==' --> '<<' :: SURVIVED
+
+Mutant trace count 1
+0 was visited 1 times
+[Point(line=127, char=46), Point(line=127, char=48)] '==' --> '>>' :: SURVIVED
+
+Killed 0 and 12 survived, mutation score of 0.0
+
+Code :: 'hydro_random_buf(kp->sk, hydro_x25519_SECRETKEYBYTES);'
+No mutations
+
+Code :: 'hydro_x25519_scalarmult_base_uniform(kp->pk, kp->sk);'
+No mutations
+
+Code :: 'memcpy(pk_copy, kp->pk, hydro_x25519_PUBLICKEYBYTES);'
+No mutations
+
+Location Killed 0 and 37 survived, mutation score of 0.0
+
+
+Total killed 0 and 37 total survived, with a total mutations score of 0.0
+
+Took 62.00027719100035 seconds

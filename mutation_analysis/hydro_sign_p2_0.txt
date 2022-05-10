@@ -1,0 +1,108 @@
+Mutation took 19.55363198199848 seconds
+Original execution 4 traces
+\Visited count
+0 was visited 4 times
+
+Visited locations 0
+Unvisited locations 
+Visited 1, Unvisted 0, percentage visited 1.0
+
+Visited nodes 10
+Unvisited nodes 0
+Percentage visited 1.0
+
+Visited candidates 1
+Unvisited candidates 0
+Percentage visited 1.0
+
+Tested mutations 12
+Untested mutations 0
+Percentage visited 1.0
+
+Location 0
+10 Runs
+
+Code :: 'CANARY_TWEET_LOCATION(0);'
+No mutations
+
+Code :: 'hydro_x25519_scalar_t scalar1, scalar2, scalar3;'
+No mutations
+
+Code :: 'COMPILER_ASSERT(hydro_sign_CHALLENGEBYTES == hydro_x25519_BYTES);'
+Mutant trace count 4
+0 was visited 4 times
+[Point(line=11, char=46), Point(line=11, char=48)] '==' --> '+' :: SURVIVED
+
+Mutant trace count 4
+0 was visited 4 times
+[Point(line=11, char=46), Point(line=11, char=48)] '==' --> '-' :: SURVIVED
+
+Mutant trace count 4
+0 was visited 4 times
+[Point(line=11, char=46), Point(line=11, char=48)] '==' --> '*' :: SURVIVED
+
+Mutant trace count 4
+0 was visited 4 times
+[Point(line=11, char=46), Point(line=11, char=48)] '==' --> '/' :: SURVIVED
+
+Mutant trace count 4
+0 was visited 4 times
+[Point(line=11, char=46), Point(line=11, char=48)] '==' --> '%' :: SURVIVED
+
+Mutant trace count 4
+0 was visited 4 times
+[Point(line=11, char=46), Point(line=11, char=48)] '==' --> '|' :: SURVIVED
+
+Mutant trace count 4
+0 was visited 4 times
+[Point(line=11, char=46), Point(line=11, char=48)] '==' --> '&' :: SURVIVED
+
+Mutant trace count 4
+0 was visited 4 times
+[Point(line=11, char=46), Point(line=11, char=48)] '==' --> '^' :: SURVIVED
+
+Mutant trace count 4
+0 was visited 4 times
+[Point(line=11, char=46), Point(line=11, char=48)] '==' --> '&&' :: SURVIVED
+
+Mutant trace count 4
+0 was visited 4 times
+[Point(line=11, char=46), Point(line=11, char=48)] '==' --> '||' :: SURVIVED
+
+Mutant trace count 4
+0 was visited 4 times
+[Point(line=11, char=46), Point(line=11, char=48)] '==' --> '<<' :: SURVIVED
+
+Mutant trace count 4
+0 was visited 4 times
+[Point(line=11, char=46), Point(line=11, char=48)] '==' --> '>>' :: SURVIVED
+
+Killed 0 and 12 survived, mutation score of 0.0
+
+Code :: 'hydro_x25519_swapin(scalar1, eph_sk);'
+No mutations
+
+Code :: 'hydro_x25519_swapin(scalar2, sk);'
+No mutations
+
+Code :: 'hydro_x25519_swapin(scalar3, challenge);'
+No mutations
+
+Code :: 'hydro_x25519_sc_montmul(scalar1, scalar2, scalar3);'
+No mutations
+
+Code :: 'mem_zero(scalar2, sizeof scalar2);'
+No mutations
+
+Code :: 'hydro_x25519_sc_montmul(scalar2, scalar1, hydro_x25519_sc_r2);'
+No mutations
+
+Code :: 'hydro_x25519_swapout(sig, scalar2);'
+No mutations
+
+Location Killed 0 and 12 survived, mutation score of 0.0
+
+
+Total killed 0 and 12 total survived, with a total mutations score of 0.0
+
+Took 21.610319962001086 seconds

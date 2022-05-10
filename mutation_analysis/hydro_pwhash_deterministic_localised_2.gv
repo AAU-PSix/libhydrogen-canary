@@ -1,0 +1,238 @@
+digraph hydro_pwhash_deterministic_localised_2 {
+	initial [shape=point]
+	initial -> "loc. 0
+[2930, 2955] expression_statement
+1 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 1
+[3463, 3472] return_statement
+1 visited
+0 candidates
+ return 0; 
+ child of compound_statement" -> final
+	"loc. 0
+[2930, 2955] expression_statement
+1 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[2930, 2955] expression_statement
+1 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[2960, 2997] declaration
+1 visited
+0 candidates
+ uint8_t seed[hydro_random_SEEDBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[2960, 2997] declaration
+1 visited
+0 candidates
+ uint8_t seed[hydro_random_SEEDBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[2960, 2997] declaration
+1 visited
+0 candidates
+ uint8_t seed[hydro_random_SEEDBYTES]; 
+ child of compound_statement" -> "loc. 0
+[3003, 3058] expression_statement
+1 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(sizeof zero >= hydro_pwhash_SALTBYTES); 
+ child of compound_statement"
+	"loc. 0
+[3003, 3058] expression_statement
+1 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(sizeof zero >= hydro_pwhash_SALTBYTES); 
+ child of compound_statement"
+	"loc. 0
+[3003, 3058] expression_statement
+1 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(sizeof zero >= hydro_pwhash_SALTBYTES); 
+ child of compound_statement" -> "loc. 0
+[3063, 3123] expression_statement
+1 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(sizeof zero >= hydro_pwhash_MASTERKEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[3063, 3123] expression_statement
+1 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(sizeof zero >= hydro_pwhash_MASTERKEYBYTES); 
+ child of compound_statement"
+	"loc. 0
+[3063, 3123] expression_statement
+1 visited
+1 candidates
+0 killed/12 total=0.0
+ COMPILER_ASSERT(sizeof zero >= hydro_pwhash_MASTERKEYBYTES); 
+ child of compound_statement" -> "loc. 0
+[3129, 3145] expression_statement
+1 visited
+0 candidates
+ (void) memlimit; 
+ child of compound_statement"
+	"loc. 0
+[3129, 3145] expression_statement
+1 visited
+0 candidates
+ (void) memlimit; 
+ child of compound_statement"
+	"loc. 0
+[3129, 3145] expression_statement
+1 visited
+0 candidates
+ (void) memlimit; 
+ child of compound_statement" -> "loc. 0
+[3153, 3290] parenthesized_expression
+1 visited
+1 candidates
+0 killed/12 total=0.0
+ (_hydro_pwhash_hash(seed, h_len, zero, passwd, passwd_len, ctx, master_key, opslimit,
+                           memlimit, threads) != 0) 
+ child of if_statement"
+	"loc. 0
+[3153, 3290] parenthesized_expression
+1 visited
+1 candidates
+0 killed/12 total=0.0
+ (_hydro_pwhash_hash(seed, h_len, zero, passwd, passwd_len, ctx, master_key, opslimit,
+                           memlimit, threads) != 0) 
+ child of if_statement"
+	"loc. 0
+[3153, 3290] parenthesized_expression
+1 visited
+1 candidates
+0 killed/12 total=0.0
+ (_hydro_pwhash_hash(seed, h_len, zero, passwd, passwd_len, ctx, master_key, opslimit,
+                           memlimit, threads) != 0) 
+ child of if_statement" -> "loc. 2
+[3292, 3317] expression_statement
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" [label=T]
+	"loc. 0
+[3153, 3290] parenthesized_expression
+1 visited
+1 candidates
+0 killed/12 total=0.0
+ (_hydro_pwhash_hash(seed, h_len, zero, passwd, passwd_len, ctx, master_key, opslimit,
+                           memlimit, threads) != 0) 
+ child of if_statement" -> "loc. 1
+[3342, 3367] expression_statement
+1 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" [label=F]
+	"loc. 2
+[3292, 3317] expression_statement
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement"
+	"loc. 2
+[3292, 3317] expression_statement
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" -> "loc. 2
+[3326, 3336] return_statement
+ return -1; 
+ child of compound_statement"
+	"loc. 1
+[3342, 3367] expression_statement
+1 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[3342, 3367] expression_statement
+1 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" -> "loc. 1
+[3372, 3419] expression_statement
+1 visited
+0 candidates
+ hydro_random_buf_deterministic(h, h_len, seed); 
+ child of compound_statement"
+	"loc. 2
+[3326, 3336] return_statement
+ return -1; 
+ child of compound_statement"
+	"loc. 2
+[3326, 3336] return_statement
+ return -1; 
+ child of compound_statement" -> "loc. 1
+[3342, 3367] expression_statement
+1 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[3372, 3419] expression_statement
+1 visited
+0 candidates
+ hydro_random_buf_deterministic(h, h_len, seed); 
+ child of compound_statement"
+	"loc. 1
+[3372, 3419] expression_statement
+1 visited
+0 candidates
+ hydro_random_buf_deterministic(h, h_len, seed); 
+ child of compound_statement" -> "loc. 1
+[3424, 3457] expression_statement
+1 visited
+0 candidates
+ hydro_memzero(seed, sizeof seed); 
+ child of compound_statement"
+	"loc. 1
+[3424, 3457] expression_statement
+1 visited
+0 candidates
+ hydro_memzero(seed, sizeof seed); 
+ child of compound_statement"
+	"loc. 1
+[3424, 3457] expression_statement
+1 visited
+0 candidates
+ hydro_memzero(seed, sizeof seed); 
+ child of compound_statement" -> "loc. 1
+[3463, 3472] return_statement
+1 visited
+0 candidates
+ return 0; 
+ child of compound_statement"
+	"loc. 1
+[3463, 3472] return_statement
+1 visited
+0 candidates
+ return 0; 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    uint8_t seed[hydro_random_SEEDBYTES];
+
+    COMPILER_ASSERT(sizeof zero >= hydro_pwhash_SALTBYTES);
+    COMPILER_ASSERT(sizeof zero >= hydro_pwhash_MASTERKEYBYTES);
+
+    (void) memlimit;
+    if (_hydro_pwhash_hash(seed, h_len, zero, passwd, passwd_len, ctx, master_key, opslimit,
+                           memlimit, threads) != 0) {CANARY_TWEET_LOCATION(2);
+        return -1;
+    }CANARY_TWEET_LOCATION(1);
+    hydro_random_buf_deterministic(h, h_len, seed);
+    hydro_memzero(seed, sizeof seed);
+
+    return 0;
+}"
+}

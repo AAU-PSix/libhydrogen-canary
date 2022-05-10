@@ -1,0 +1,140 @@
+digraph hydro_sign_create_localised_12 {
+	initial [shape=point]
+	initial -> "loc. 0
+[6671, 6696] expression_statement
+3 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 1
+[6940, 6949] return_statement
+3 visited
+0 candidates
+ return 0; 
+ child of compound_statement" -> final
+	"loc. 0
+[6671, 6696] expression_statement
+3 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[6671, 6696] expression_statement
+3 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[6701, 6721] declaration
+3 visited
+0 candidates
+ hydro_sign_state st; 
+ child of compound_statement"
+	"loc. 0
+[6701, 6721] declaration
+3 visited
+0 candidates
+ hydro_sign_state st; 
+ child of compound_statement"
+	"loc. 0
+[6701, 6721] declaration
+3 visited
+0 candidates
+ hydro_sign_state st; 
+ child of compound_statement" -> "loc. 0
+[6730, 6858] parenthesized_expression
+3 visited
+5 candidates
+9 killed/72 total=0.125
+ (hydro_sign_init(&st, ctx) != 0 || hydro_sign_update(&st, m_, mlen) != 0 ||
+        hydro_sign_final_create(&st, csig, sk) != 0) 
+ child of if_statement"
+	"loc. 0
+[6730, 6858] parenthesized_expression
+3 visited
+5 candidates
+9 killed/72 total=0.125
+ (hydro_sign_init(&st, ctx) != 0 || hydro_sign_update(&st, m_, mlen) != 0 ||
+        hydro_sign_final_create(&st, csig, sk) != 0) 
+ child of if_statement"
+	"loc. 0
+[6730, 6858] parenthesized_expression
+3 visited
+5 candidates
+9 killed/72 total=0.125
+ (hydro_sign_init(&st, ctx) != 0 || hydro_sign_update(&st, m_, mlen) != 0 ||
+        hydro_sign_final_create(&st, csig, sk) != 0) 
+ child of if_statement" -> "loc. 2
+[6860, 6885] expression_statement
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" [label=T]
+	"loc. 0
+[6730, 6858] parenthesized_expression
+3 visited
+5 candidates
+9 killed/72 total=0.125
+ (hydro_sign_init(&st, ctx) != 0 || hydro_sign_update(&st, m_, mlen) != 0 ||
+        hydro_sign_final_create(&st, csig, sk) != 0) 
+ child of if_statement" -> "loc. 1
+[6910, 6935] expression_statement
+3 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" [label=F]
+	"loc. 2
+[6860, 6885] expression_statement
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement"
+	"loc. 2
+[6860, 6885] expression_statement
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" -> "loc. 2
+[6894, 6904] return_statement
+ return -1; 
+ child of compound_statement"
+	"loc. 1
+[6910, 6935] expression_statement
+3 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[6910, 6935] expression_statement
+3 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" -> "loc. 1
+[6940, 6949] return_statement
+3 visited
+0 candidates
+ return 0; 
+ child of compound_statement"
+	"loc. 2
+[6894, 6904] return_statement
+ return -1; 
+ child of compound_statement"
+	"loc. 2
+[6894, 6904] return_statement
+ return -1; 
+ child of compound_statement" -> "loc. 1
+[6910, 6935] expression_statement
+3 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[6940, 6949] return_statement
+3 visited
+0 candidates
+ return 0; 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    hydro_sign_state st;
+
+    if (hydro_sign_init(&st, ctx) != 0 || hydro_sign_update(&st, m_, mlen) != 0 ||
+        hydro_sign_final_create(&st, csig, sk) != 0) {CANARY_TWEET_LOCATION(2);
+        return -1;
+    }CANARY_TWEET_LOCATION(1);
+    return 0;
+}"
+}

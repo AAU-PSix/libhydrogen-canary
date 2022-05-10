@@ -1,0 +1,370 @@
+digraph hydro_kx_aead_xor_enc_localised_2 {
+	initial [shape=point]
+	initial -> "loc. 0
+[1392, 1417] expression_statement
+17 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 3
+[2081, 2126] expression_statement
+17 visited
+0 candidates
+ gimli_core_u8(aead_state, gimli_TAG_PAYLOAD); 
+ child of compound_statement" -> final
+	"loc. 0
+[1392, 1417] expression_statement
+17 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[1392, 1417] expression_statement
+17 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[1422, 1431] declaration
+17 visited
+0 candidates
+ size_t i; 
+ child of compound_statement"
+	"loc. 0
+[1422, 1431] declaration
+17 visited
+0 candidates
+ size_t i; 
+ child of compound_statement"
+	"loc. 0
+[1422, 1431] declaration
+17 visited
+0 candidates
+ size_t i; 
+ child of compound_statement" -> "loc. 0
+[1436, 1452] declaration
+17 visited
+0 candidates
+ size_t leftover; 
+ child of compound_statement"
+	"loc. 0
+[1436, 1452] declaration
+17 visited
+0 candidates
+ size_t leftover; 
+ child of compound_statement"
+	"loc. 0
+[1436, 1452] declaration
+17 visited
+0 candidates
+ size_t leftover; 
+ child of compound_statement" -> "loc. 0
+[1463, 1468] assignment_expression
+17 visited
+1 candidates
+0 killed/10 total=0.0
+ i = 0 
+ child of for_statement"
+	"loc. 0
+[1463, 1468] assignment_expression
+17 visited
+1 candidates
+0 killed/10 total=0.0
+ i = 0 
+ child of for_statement"
+	"loc. 0
+[1463, 1468] assignment_expression
+17 visited
+1 candidates
+0 killed/10 total=0.0
+ i = 0 
+ child of for_statement" -> "loc. 0
+[1470, 1492] binary_expression
+17 visited
+2 candidates
+13 killed/25 total=0.52
+ i < inlen / gimli_RATE 
+ child of for_statement"
+	"loc. 0
+[1470, 1492] binary_expression
+17 visited
+2 candidates
+13 killed/25 total=0.52
+ i < inlen / gimli_RATE 
+ child of for_statement"
+	"loc. 0
+[1470, 1492] binary_expression
+17 visited
+2 candidates
+13 killed/25 total=0.52
+ i < inlen / gimli_RATE 
+ child of for_statement" -> "loc. 1
+[1500, 1525] expression_statement
+8 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" [label=T]
+	"loc. 0
+[1470, 1492] binary_expression
+17 visited
+2 candidates
+13 killed/25 total=0.52
+ i < inlen / gimli_RATE 
+ child of for_statement" -> "loc. 2
+[1732, 1757] expression_statement
+17 visited
+0 candidates
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" [label=F]
+	"loc. 1
+[1500, 1525] expression_statement
+8 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[1500, 1525] expression_statement
+8 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" -> "loc. 1
+[1534, 1610] expression_statement
+8 visited
+2 candidates
+24 killed/26 total=0.9230769230769231
+ mem_xor2(&out[i * gimli_RATE], &in[i * gimli_RATE], aead_state, gimli_RATE); 
+ child of compound_statement"
+	"loc. 2
+[1732, 1757] expression_statement
+17 visited
+0 candidates
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement"
+	"loc. 2
+[1732, 1757] expression_statement
+17 visited
+0 candidates
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" -> "loc. 2
+[1762, 1792] expression_statement
+17 visited
+2 candidates
+3 killed/23 total=0.13043478260869565
+ leftover = inlen % gimli_RATE; 
+ child of compound_statement"
+	"loc. 1
+[1494, 1497] update_expression
+8 visited
+0 candidates
+ i++ 
+ child of for_statement"
+	"loc. 1
+[1494, 1497] update_expression
+8 visited
+0 candidates
+ i++ 
+ child of for_statement" -> "loc. 0
+[1470, 1492] binary_expression
+17 visited
+2 candidates
+13 killed/25 total=0.52
+ i < inlen / gimli_RATE 
+ child of for_statement"
+	"loc. 1
+[1534, 1610] expression_statement
+8 visited
+2 candidates
+24 killed/26 total=0.9230769230769231
+ mem_xor2(&out[i * gimli_RATE], &in[i * gimli_RATE], aead_state, gimli_RATE); 
+ child of compound_statement"
+	"loc. 1
+[1534, 1610] expression_statement
+8 visited
+2 candidates
+24 killed/26 total=0.9230769230769231
+ mem_xor2(&out[i * gimli_RATE], &in[i * gimli_RATE], aead_state, gimli_RATE); 
+ child of compound_statement" -> "loc. 1
+[1619, 1672] expression_statement
+8 visited
+1 candidates
+12 killed/13 total=0.9230769230769231
+ memcpy(aead_state, &out[i * gimli_RATE], gimli_RATE); 
+ child of compound_statement"
+	"loc. 1
+[1619, 1672] expression_statement
+8 visited
+1 candidates
+12 killed/13 total=0.9230769230769231
+ memcpy(aead_state, &out[i * gimli_RATE], gimli_RATE); 
+ child of compound_statement"
+	"loc. 1
+[1619, 1672] expression_statement
+8 visited
+1 candidates
+12 killed/13 total=0.9230769230769231
+ memcpy(aead_state, &out[i * gimli_RATE], gimli_RATE); 
+ child of compound_statement" -> "loc. 1
+[1681, 1726] expression_statement
+8 visited
+0 candidates
+ gimli_core_u8(aead_state, gimli_TAG_PAYLOAD); 
+ child of compound_statement"
+	"loc. 1
+[1681, 1726] expression_statement
+8 visited
+0 candidates
+ gimli_core_u8(aead_state, gimli_TAG_PAYLOAD); 
+ child of compound_statement"
+	"loc. 1
+[1681, 1726] expression_statement
+8 visited
+0 candidates
+ gimli_core_u8(aead_state, gimli_TAG_PAYLOAD); 
+ child of compound_statement" -> "loc. 1
+[1494, 1497] update_expression
+8 visited
+0 candidates
+ i++ 
+ child of for_statement"
+	"loc. 2
+[1762, 1792] expression_statement
+17 visited
+2 candidates
+3 killed/23 total=0.13043478260869565
+ leftover = inlen % gimli_RATE; 
+ child of compound_statement"
+	"loc. 2
+[1762, 1792] expression_statement
+17 visited
+2 candidates
+3 killed/23 total=0.13043478260869565
+ leftover = inlen % gimli_RATE; 
+ child of compound_statement" -> "loc. 2
+[1800, 1815] parenthesized_expression
+17 visited
+1 candidates
+0 killed/12 total=0.0
+ (leftover != 0) 
+ child of if_statement"
+	"loc. 2
+[1800, 1815] parenthesized_expression
+17 visited
+1 candidates
+0 killed/12 total=0.0
+ (leftover != 0) 
+ child of if_statement"
+	"loc. 2
+[1800, 1815] parenthesized_expression
+17 visited
+1 candidates
+0 killed/12 total=0.0
+ (leftover != 0) 
+ child of if_statement" -> "loc. 4
+[1817, 1842] expression_statement
+ CANARY_TWEET_LOCATION(4); 
+ child of compound_statement" [label=T]
+	"loc. 2
+[1800, 1815] parenthesized_expression
+17 visited
+1 candidates
+0 killed/12 total=0.0
+ (leftover != 0) 
+ child of if_statement" -> "loc. 3
+[1992, 2017] expression_statement
+17 visited
+0 candidates
+ CANARY_TWEET_LOCATION(3); 
+ child of compound_statement" [label=F]
+	"loc. 4
+[1817, 1842] expression_statement
+ CANARY_TWEET_LOCATION(4); 
+ child of compound_statement"
+	"loc. 4
+[1817, 1842] expression_statement
+ CANARY_TWEET_LOCATION(4); 
+ child of compound_statement" -> "loc. 4
+[1851, 1925] expression_statement
+ mem_xor2(&out[i * gimli_RATE], &in[i * gimli_RATE], aead_state, leftover); 
+ child of compound_statement"
+	"loc. 3
+[1992, 2017] expression_statement
+17 visited
+0 candidates
+ CANARY_TWEET_LOCATION(3); 
+ child of compound_statement"
+	"loc. 3
+[1992, 2017] expression_statement
+17 visited
+0 candidates
+ CANARY_TWEET_LOCATION(3); 
+ child of compound_statement" -> "loc. 3
+[2022, 2076] expression_statement
+17 visited
+0 candidates
+ gimli_pad_u8(aead_state, leftover, gimli_DOMAIN_AEAD); 
+ child of compound_statement"
+	"loc. 4
+[1851, 1925] expression_statement
+ mem_xor2(&out[i * gimli_RATE], &in[i * gimli_RATE], aead_state, leftover); 
+ child of compound_statement"
+	"loc. 4
+[1851, 1925] expression_statement
+ mem_xor2(&out[i * gimli_RATE], &in[i * gimli_RATE], aead_state, leftover); 
+ child of compound_statement" -> "loc. 4
+[1934, 1986] expression_statement
+ mem_cpy(aead_state, &out[i * gimli_RATE], leftover); 
+ child of compound_statement"
+	"loc. 4
+[1934, 1986] expression_statement
+ mem_cpy(aead_state, &out[i * gimli_RATE], leftover); 
+ child of compound_statement"
+	"loc. 4
+[1934, 1986] expression_statement
+ mem_cpy(aead_state, &out[i * gimli_RATE], leftover); 
+ child of compound_statement" -> "loc. 3
+[1992, 2017] expression_statement
+17 visited
+0 candidates
+ CANARY_TWEET_LOCATION(3); 
+ child of compound_statement"
+	"loc. 3
+[2022, 2076] expression_statement
+17 visited
+0 candidates
+ gimli_pad_u8(aead_state, leftover, gimli_DOMAIN_AEAD); 
+ child of compound_statement"
+	"loc. 3
+[2022, 2076] expression_statement
+17 visited
+0 candidates
+ gimli_pad_u8(aead_state, leftover, gimli_DOMAIN_AEAD); 
+ child of compound_statement" -> "loc. 3
+[2081, 2126] expression_statement
+17 visited
+0 candidates
+ gimli_core_u8(aead_state, gimli_TAG_PAYLOAD); 
+ child of compound_statement"
+	"loc. 3
+[2081, 2126] expression_statement
+17 visited
+0 candidates
+ gimli_core_u8(aead_state, gimli_TAG_PAYLOAD); 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    size_t i;
+    size_t leftover;
+
+    for (i = 0; i < inlen / gimli_RATE; i++) {CANARY_TWEET_LOCATION(1);
+        mem_xor2(&out[i * gimli_RATE], &in[i * gimli_RATE], aead_state, gimli_RATE);
+        memcpy(aead_state, &out[i * gimli_RATE], gimli_RATE);
+        gimli_core_u8(aead_state, gimli_TAG_PAYLOAD);
+    }CANARY_TWEET_LOCATION(2);
+    leftover = inlen % gimli_RATE;
+    if (leftover != 0) {CANARY_TWEET_LOCATION(4);
+        mem_xor2(&out[i * gimli_RATE], &in[i * gimli_RATE], aead_state, leftover);
+        mem_cpy(aead_state, &out[i * gimli_RATE], leftover);
+    }CANARY_TWEET_LOCATION(3);
+    gimli_pad_u8(aead_state, leftover, gimli_DOMAIN_AEAD);
+    gimli_core_u8(aead_state, gimli_TAG_PAYLOAD);
+}"
+}

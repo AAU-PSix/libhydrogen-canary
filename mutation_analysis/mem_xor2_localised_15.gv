@@ -1,0 +1,224 @@
+digraph mem_xor2_localised_15 {
+	initial [shape=point]
+	initial -> "loc. 0
+[6615, 6640] expression_statement
+121 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 2
+[6948, 6973] expression_statement
+121 visited
+0 candidates
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" -> final
+	"loc. 0
+[6615, 6640] expression_statement
+121 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[6615, 6640] expression_statement
+121 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[6645, 6696] declaration
+121 visited
+0 candidates
+ unsigned char *      dst  = (unsigned char *) dst_; 
+ child of compound_statement"
+	"loc. 0
+[6645, 6696] declaration
+121 visited
+0 candidates
+ unsigned char *      dst  = (unsigned char *) dst_; 
+ child of compound_statement"
+	"loc. 0
+[6645, 6696] declaration
+121 visited
+0 candidates
+ unsigned char *      dst  = (unsigned char *) dst_; 
+ child of compound_statement" -> "loc. 0
+[6701, 6759] declaration
+121 visited
+0 candidates
+ const unsigned char *src1 = (const unsigned char *) src1_; 
+ child of compound_statement"
+	"loc. 0
+[6701, 6759] declaration
+121 visited
+0 candidates
+ const unsigned char *src1 = (const unsigned char *) src1_; 
+ child of compound_statement"
+	"loc. 0
+[6701, 6759] declaration
+121 visited
+0 candidates
+ const unsigned char *src1 = (const unsigned char *) src1_; 
+ child of compound_statement" -> "loc. 0
+[6764, 6822] declaration
+121 visited
+0 candidates
+ const unsigned char *src2 = (const unsigned char *) src2_; 
+ child of compound_statement"
+	"loc. 0
+[6764, 6822] declaration
+121 visited
+0 candidates
+ const unsigned char *src2 = (const unsigned char *) src2_; 
+ child of compound_statement"
+	"loc. 0
+[6764, 6822] declaration
+121 visited
+0 candidates
+ const unsigned char *src2 = (const unsigned char *) src2_; 
+ child of compound_statement" -> "loc. 0
+[6827, 6850] declaration
+121 visited
+0 candidates
+ size_t               i; 
+ child of compound_statement"
+	"loc. 0
+[6827, 6850] declaration
+121 visited
+0 candidates
+ size_t               i; 
+ child of compound_statement"
+	"loc. 0
+[6827, 6850] declaration
+121 visited
+0 candidates
+ size_t               i; 
+ child of compound_statement" -> "loc. 0
+[6861, 6866] assignment_expression
+121 visited
+1 candidates
+0 killed/10 total=0.0
+ i = 0 
+ child of for_statement"
+	"loc. 0
+[6861, 6866] assignment_expression
+121 visited
+1 candidates
+0 killed/10 total=0.0
+ i = 0 
+ child of for_statement"
+	"loc. 0
+[6861, 6866] assignment_expression
+121 visited
+1 candidates
+0 killed/10 total=0.0
+ i = 0 
+ child of for_statement" -> "loc. 0
+[6868, 6873] binary_expression
+121 visited
+1 candidates
+7 killed/12 total=0.5833333333333334
+ i < n 
+ child of for_statement"
+	"loc. 0
+[6868, 6873] binary_expression
+121 visited
+1 candidates
+7 killed/12 total=0.5833333333333334
+ i < n 
+ child of for_statement"
+	"loc. 0
+[6868, 6873] binary_expression
+121 visited
+1 candidates
+7 killed/12 total=0.5833333333333334
+ i < n 
+ child of for_statement" -> "loc. 1
+[6881, 6906] expression_statement
+1635 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" [label=T]
+	"loc. 0
+[6868, 6873] binary_expression
+121 visited
+1 candidates
+7 killed/12 total=0.5833333333333334
+ i < n 
+ child of for_statement" -> "loc. 2
+[6948, 6973] expression_statement
+121 visited
+0 candidates
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement" [label=F]
+	"loc. 1
+[6881, 6906] expression_statement
+1635 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement"
+	"loc. 1
+[6881, 6906] expression_statement
+1635 visited
+0 candidates
+ CANARY_TWEET_LOCATION(1); 
+ child of compound_statement" -> "loc. 1
+[6915, 6942] expression_statement
+1635 visited
+2 candidates
+23 killed/25 total=0.92
+ dst[i] = src1[i] ^ src2[i]; 
+ child of compound_statement"
+	"loc. 2
+[6948, 6973] expression_statement
+121 visited
+0 candidates
+ CANARY_TWEET_LOCATION(2); 
+ child of compound_statement"
+	"loc. 1
+[6875, 6878] update_expression
+1635 visited
+0 candidates
+ i++ 
+ child of for_statement"
+	"loc. 1
+[6875, 6878] update_expression
+1635 visited
+0 candidates
+ i++ 
+ child of for_statement" -> "loc. 0
+[6868, 6873] binary_expression
+121 visited
+1 candidates
+7 killed/12 total=0.5833333333333334
+ i < n 
+ child of for_statement"
+	"loc. 1
+[6915, 6942] expression_statement
+1635 visited
+2 candidates
+23 killed/25 total=0.92
+ dst[i] = src1[i] ^ src2[i]; 
+ child of compound_statement"
+	"loc. 1
+[6915, 6942] expression_statement
+1635 visited
+2 candidates
+23 killed/25 total=0.92
+ dst[i] = src1[i] ^ src2[i]; 
+ child of compound_statement" -> "loc. 1
+[6875, 6878] update_expression
+1635 visited
+0 candidates
+ i++ 
+ child of for_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    unsigned char *      dst  = (unsigned char *) dst_;
+    const unsigned char *src1 = (const unsigned char *) src1_;
+    const unsigned char *src2 = (const unsigned char *) src2_;
+    size_t               i;
+
+    for (i = 0; i < n; i++) {CANARY_TWEET_LOCATION(1);
+        dst[i] = src1[i] ^ src2[i];
+    }CANARY_TWEET_LOCATION(2);
+}"
+}

@@ -1,0 +1,123 @@
+digraph hydro_pwhash_verify_localised_5 {
+	initial [shape=point]
+	initial -> "loc. 0
+[7439, 7464] expression_statement
+10 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	final [shape=point]
+	"loc. 0
+[7742, 7753] return_statement
+10 visited
+0 candidates
+ return ret; 
+ child of compound_statement" -> final
+	"loc. 0
+[7439, 7464] expression_statement
+10 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement"
+	"loc. 0
+[7439, 7464] expression_statement
+10 visited
+0 candidates
+ CANARY_TWEET_LOCATION(0); 
+ child of compound_statement" -> "loc. 0
+[7469, 7512] declaration
+10 visited
+0 candidates
+ uint8_t computed_h[hydro_pwhash_HASHBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[7469, 7512] declaration
+10 visited
+0 candidates
+ uint8_t computed_h[hydro_pwhash_HASHBYTES]; 
+ child of compound_statement"
+	"loc. 0
+[7469, 7512] declaration
+10 visited
+0 candidates
+ uint8_t computed_h[hydro_pwhash_HASHBYTES]; 
+ child of compound_statement" -> "loc. 0
+[7517, 7529] declaration
+10 visited
+0 candidates
+ int     ret; 
+ child of compound_statement"
+	"loc. 0
+[7517, 7529] declaration
+10 visited
+0 candidates
+ int     ret; 
+ child of compound_statement"
+	"loc. 0
+[7517, 7529] declaration
+10 visited
+0 candidates
+ int     ret; 
+ child of compound_statement" -> "loc. 0
+[7535, 7686] expression_statement
+10 visited
+1 candidates
+7 killed/10 total=0.7
+ ret = _hydro_pwhash_verify(computed_h, stored, passwd, passwd_len, master_key, opslimit_max,
+                               memlimit_max, threads_max); 
+ child of compound_statement"
+	"loc. 0
+[7535, 7686] expression_statement
+10 visited
+1 candidates
+7 killed/10 total=0.7
+ ret = _hydro_pwhash_verify(computed_h, stored, passwd, passwd_len, master_key, opslimit_max,
+                               memlimit_max, threads_max); 
+ child of compound_statement"
+	"loc. 0
+[7535, 7686] expression_statement
+10 visited
+1 candidates
+7 killed/10 total=0.7
+ ret = _hydro_pwhash_verify(computed_h, stored, passwd, passwd_len, master_key, opslimit_max,
+                               memlimit_max, threads_max); 
+ child of compound_statement" -> "loc. 0
+[7691, 7736] expression_statement
+10 visited
+0 candidates
+ hydro_memzero(computed_h, sizeof computed_h); 
+ child of compound_statement"
+	"loc. 0
+[7691, 7736] expression_statement
+10 visited
+0 candidates
+ hydro_memzero(computed_h, sizeof computed_h); 
+ child of compound_statement"
+	"loc. 0
+[7691, 7736] expression_statement
+10 visited
+0 candidates
+ hydro_memzero(computed_h, sizeof computed_h); 
+ child of compound_statement" -> "loc. 0
+[7742, 7753] return_statement
+10 visited
+0 candidates
+ return ret; 
+ child of compound_statement"
+	"loc. 0
+[7742, 7753] return_statement
+10 visited
+0 candidates
+ return ret; 
+ child of compound_statement"
+	label="{CANARY_TWEET_LOCATION(0);
+    uint8_t computed_h[hydro_pwhash_HASHBYTES];
+    int     ret;
+
+    ret = _hydro_pwhash_verify(computed_h, stored, passwd, passwd_len, master_key, opslimit_max,
+                               memlimit_max, threads_max);
+    hydro_memzero(computed_h, sizeof computed_h);
+
+    return ret;
+}"
+}

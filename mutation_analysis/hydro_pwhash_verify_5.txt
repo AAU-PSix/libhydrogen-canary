@@ -1,0 +1,89 @@
+Mutation took 21.296704780001164 seconds
+Original execution 10 traces
+\Visited count
+0 was visited 10 times
+
+Visited locations 0
+Unvisited locations 
+Visited 1, Unvisted 0, percentage visited 1.0
+
+Visited nodes 6
+Unvisited nodes 0
+Percentage visited 1.0
+
+Visited candidates 1
+Unvisited candidates 0
+Percentage visited 1.0
+
+Tested mutations 10
+Untested mutations 0
+Percentage visited 1.0
+
+Location 0
+6 Runs
+
+Code :: 'CANARY_TWEET_LOCATION(0);'
+No mutations
+
+Code :: 'uint8_t computed_h[hydro_pwhash_HASHBYTES];'
+No mutations
+
+Code :: 'int     ret;'
+No mutations
+
+Code :: 'ret = _hydro_pwhash_verify(computed_h, stored, passwd, passwd_len, master_key, opslimit_max,
+                               memlimit_max, threads_max);'
+Mutant trace count 10
+0 was visited 10 times
+[Point(line=182, char=8), Point(line=182, char=9)] '=' --> '+=' :: SURVIVED
+
+Mutant trace count 3
+0 was visited 3 times
+[Point(line=182, char=8), Point(line=182, char=9)] '=' --> '-=' :: KILLED
+
+Mutant trace count 3
+0 was visited 3 times
+[Point(line=182, char=8), Point(line=182, char=9)] '=' --> '*=' :: KILLED
+
+Mutant trace count 3
+0 was visited 3 times
+[Point(line=182, char=8), Point(line=182, char=9)] '=' --> '/=' :: KILLED
+
+Mutant trace count 3
+0 was visited 3 times
+[Point(line=182, char=8), Point(line=182, char=9)] '=' --> '%=' :: KILLED
+
+Mutant trace count 10
+0 was visited 10 times
+[Point(line=182, char=8), Point(line=182, char=9)] '=' --> '|=' :: SURVIVED
+
+Mutant trace count 3
+0 was visited 3 times
+[Point(line=182, char=8), Point(line=182, char=9)] '=' --> '&=' :: KILLED
+
+Mutant trace count 10
+0 was visited 10 times
+[Point(line=182, char=8), Point(line=182, char=9)] '=' --> '^=' :: SURVIVED
+
+Mutant trace count 3
+0 was visited 3 times
+[Point(line=182, char=8), Point(line=182, char=9)] '=' --> '<<=' :: KILLED
+
+Mutant trace count 3
+0 was visited 3 times
+[Point(line=182, char=8), Point(line=182, char=9)] '=' --> '>>=' :: KILLED
+
+Killed 7 and 3 survived, mutation score of 0.7
+
+Code :: 'hydro_memzero(computed_h, sizeof computed_h);'
+No mutations
+
+Code :: 'return ret;'
+No mutations
+
+Location Killed 7 and 3 survived, mutation score of 0.7
+
+
+Total killed 7 and 3 total survived, with a total mutations score of 0.7
+
+Took 23.20376616700014 seconds
