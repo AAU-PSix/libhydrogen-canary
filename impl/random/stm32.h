@@ -2,6 +2,7 @@
 // Use hardware RNG peripheral
 // Working with HAL, LL Driver (untested)
 
+#include "../Canary.h"
 #ifdef STM32F4
 
 #include "stm32f4xx.h"

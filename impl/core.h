@@ -1,3 +1,5 @@
+#include "Canary.h"
+
 int
 hydro_init(void)
 {

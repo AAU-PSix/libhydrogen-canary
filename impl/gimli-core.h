@@ -3,6 +3,7 @@
 #else
 #include "gimli-core/portable.h"
 #endif
+#include "Canary.h"
 
 static void
 gimli_core_u8(uint8_t state_u8[gimli_BLOCKBYTES], uint8_t tag)

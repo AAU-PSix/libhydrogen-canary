@@ -1,4 +1,5 @@
 #include <windows.h>
+#include "../Canary.h"
 #define RtlGenRandom SystemFunction036
 #if defined(__cplusplus)
 extern "C"

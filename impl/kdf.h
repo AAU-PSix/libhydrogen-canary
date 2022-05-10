@@ -1,3 +1,4 @@
+#include "Canary.h"
 int
 hydro_kdf_derive_from_key(uint8_t *subkey, size_t subkey_len, uint64_t subkey_id,
                           const char    ctx[hydro_kdf_CONTEXTBYTES],

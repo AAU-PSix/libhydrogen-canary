@@ -1,3 +1,4 @@
+#include "Canary.h"
 /*
  * Based on Michael Hamburg's STROBE reference implementation.
  * Copyright (c) 2015-2016 Cryptography Research, Inc.

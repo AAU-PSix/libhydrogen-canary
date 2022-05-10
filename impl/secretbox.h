@@ -1,3 +1,4 @@
+#include "Canary.h"
 #define hydro_secretbox_IVBYTES  20
 #define hydro_secretbox_SIVBYTES 20
 #define hydro_secretbox_MACBYTES 16

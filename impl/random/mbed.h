@@ -1,5 +1,6 @@
 #include <mbedtls/ctr_drbg.h>
 #include <mbedtls/entropy.h>
+#include "../Canary.h"
 
 #if defined(MBEDTLS_ENTROPY_C)
 

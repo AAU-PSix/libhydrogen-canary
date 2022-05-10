@@ -1,3 +1,4 @@
+#include "../Canary.h"
 #include <emmintrin.h>
 #ifdef __SSSE3__
 # include <tmmintrin.h>

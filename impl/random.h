@@ -1,3 +1,4 @@
+#include "Canary.h"
 static TLS struct {
     _hydro_attr_aligned_(16) uint8_t state[gimli_BLOCKBYTES];
     uint64_t counter;

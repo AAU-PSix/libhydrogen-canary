@@ -2,6 +2,7 @@
 // http://infocenter.nordicsemi.com/index.jsp?topic=%2Fcom.nordic.infocenter.nrf52832.ps.v1.1%2Frng.html
 
 #include <nrf_soc.h>
+#include "../Canary.h"
 
 static int
 hydro_random_init(void)
