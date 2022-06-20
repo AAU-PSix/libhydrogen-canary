@@ -1,8 +1,14 @@
-from random import choice
-from typing import Dict, List, Tuple
+from itertools import count
+from typing import Dict, List
 from os import linesep, listdir
 from os.path import isfile, join
 
+class Mutation():
+    def __init__(self, original: str, mutant: str, survived: bool) -> None:
+        self.original = original
+        self.mutant = mutant
+        self.survived = survived
+        pass
 
 class MutationLocationData():
     def __init__(
@@ -11,11 +17,15 @@ class MutationLocationData():
         runs: int = None,
         mutants_killed_count: int = None,
         mutants_survived_count: int = None,
+        type: str = None,
+        mutants: List[Mutation] = None
     ) -> None:
         self.id = id
         self.runs = runs
         self.mutants_killed_count = mutants_killed_count
         self.mutants_survived_count = mutants_survived_count
+        self.type = type
+        self.mutants = list()
 
     @property
     def mutant_count(self) -> int:
@@ -29,6 +39,10 @@ class MutationLocationData():
     @property
     def exhaustive_mutation_score_str(self) -> str:
         return f'{self.mutants_killed_count} / ({self.mutants_killed_count} + {self.mutants_survived_count}) = {self.exhaustive_mutation_score}'
+
+    @property
+    def mutation_score(self) -> float:
+        return self.mutants_killed_count / (self.mutants_killed_count + self.mutants_survived_count)
 
     def sampled_mutation_score(self, weight: float) -> str:
         if self.mutant_count == 0: return None
@@ -290,6 +304,12 @@ def parse_file(path: str) -> MutationFileData:
                 next()
 
                 while "Location Killed" not in line:
+                    if line.startswith("Is :: "):
+                        mutation_location_data.type = line.split("Is :: ")[1]
+                    elif line.startswith("[Point"):
+                        mutation_location_data.mutants.append(
+                            Mutation(split[-5], split[-3], split[-1] == "SURVIVED")
+                        )
                     next()
 
                 mutation_location_data.mutants_killed_count = int(split[2])
@@ -327,71 +347,93 @@ parsed_data.sort(reverse=True, key=lambda x: x.original_execution_data.untested_
 
 data = parsed_data[0]
 
-#print(data.name)
-#print(f"  Uniform mutation score '{data.uniformly_weighted_mutation_score}'")
-#print(f"  Weighted mutation score '{data.path_weighted_mutation_score}'")
+# Mutation location statistics
+if True:
+    mutation_scores_per_type: Dict[str, List[float]] = dict()
+    for data in parsed_data:
+        for location in data.mutation_locations_data:
+            if location.type is None: continue
+            if location.type not in mutation_scores_per_type:
+                mutation_scores_per_type[location.type] = list()
+            mutation_scores_per_type[location.type].append(location.mutation_score)
+    
+    mutation_score_per_type: Dict[str, float] = dict()
+    for type in mutation_scores_per_type:
+        curr = 0
+        for value in mutation_scores_per_type[type]:
+            curr += value
+        mutation_score_per_type[type] = curr / len(mutation_scores_per_type[type])
 
-# total_inverse_ratio = 0
-# for location_ratio in data.original_execution_data.location_visition_ratio:
-#     location = location_ratio[0]
-#     ratio = location_ratio[1]
-# 
-#     found = False
-#     for mutation_location in data.mutation_locations_data:
-#         if mutation_location.id == location.id:
-#             found = True
-#             break
-#     if not found: continue
-# 
-#     inverse_ratio = 1 - ratio
-#     total_inverse_ratio += inverse_ratio
+    for type in mutation_score_per_type:
+        print(type + " :: " + str(mutation_score_per_type[type]))
 
-# Path-based: 114,   126,   29    =  269
-# 33% sample: 37,62  41,58  9,57  =  88,77
-#   weighted: 22,8   25,2   17,4  =  65,4
+# Overall likeliness for mutation operator to survive
+if False:
+    class MutationAggregate():
+        def __init__(self, mutant: str) -> None:
+            self.mutant = mutant
+            self.killed = 0
+            self.survived = 0
 
-# print("Normalized inverse ratio")
-# weights: Dict[str, float] = dict()
-# for location_ratio in data.original_execution_data.location_visition_ratio:
-#     location = location_ratio[0]
-#     ratio = location_ratio[1]
-#     
-#     found = False
-#     for mutation_location in data.mutation_locations_data:
-#         if mutation_location.id == location.id:
-#             found = True
-#             break
-#     if not found: continue
-# 
-#     inverse_ratio = 1 - ratio
-#     normalied_inverse_ratio = inverse_ratio / total_inverse_ratio
-#     # print(f"  {location_ratio[0].id} -> {ratio}, {inverse_ratio} -> {normalied_inverse_ratio}")
-#     weights[location.id] = normalied_inverse_ratio
+        @property
+        def amount(self) -> int:
+            return self.killed + self.survived
 
-# print(f"  Uniform sample size 20% '{data.uniform_sample_size(0.2)}'")
-# adjusted_total = 0
-# adjusted_weights = data.weight_sample_size(0.2, weights)
-# for location in adjusted_weights:
-#     adjusted_weight = adjusted_weights[location]
-#     weight_mutant_count = data.get_mutation_location(location).mutant_count * adjusted_weight
-#     adjusted_total += weight_mutant_count
-#     print(f"    {location} -> {adjusted_weight} = {weight_mutant_count}")
-# print(f"  Weight sample size '{adjusted_total}'")
+    aggregated_mutations: Dict[str, Dict[str, MutationAggregate]] = dict()
+    for data in parsed_data:
+        for location in data.mutation_locations_data:
+            for mutation in location.mutants:
+                if mutation.original not in aggregated_mutations:
+                    aggregated_mutations[mutation.original] = dict()
+                
+                aggregate_dict = aggregated_mutations[mutation.original]
+                if mutation.mutant not in aggregate_dict:
+                    aggregate_dict[mutation.mutant] = MutationAggregate(mutation.mutant)
+                
+                if mutation.survived:
+                    aggregate_dict[mutation.mutant].survived += 1
+                else:
+                    aggregate_dict[mutation.mutant].killed += 1
+                counter += 1
 
+    for original in aggregated_mutations:
+        print(original + " ->")
+        for mutant in aggregated_mutations[original]:
+            amount = str(aggregated_mutations[original][mutant].amount)
+            killed = str(aggregated_mutations[original][mutant].killed)
+            survived = str(aggregated_mutations[original][mutant].survived)
+            print("  " + mutant + " :: " + killed + " _ " + survived)
 
-# print("Mutations on locations")
-# print(f"  {data.mutation_locations_data[0].id} -> {data.mutation_locations_data[0].sampled_mutation_score_str(1 / 3)}")
-# print(f"  {data.mutation_locations_data[1].id} -> {data.mutation_locations_data[1].sampled_mutation_score_str(1 / 3)}")
-# print(f"  {data.mutation_locations_data[2].id} -> {data.mutation_locations_data[2].sampled_mutation_score_str(1 / 3)}")
-# print(f"  {data.mutation_locations_data[0].id} -> {data.mutation_locations_data[0].sampled_mutation_score_str(0.20)}")
-# print(f"  {data.mutation_locations_data[1].id} -> {data.mutation_locations_data[1].sampled_mutation_score_str(0.20)}")
-# print(f"  {data.mutation_locations_data[2].id} -> {data.mutation_locations_data[2].sampled_mutation_score_str(0.60)}")
+# Reduction statistics
+if False:
+    total_functions_with_bb_reduction = 0
+    total_bb_reduction = 0
+    total_functions_with_candidate_reduction = 0
+    total_candidate_reduction = 0
+    total_functions_with_mutations_reduction = 0
+    total_mutation_reduction = 0
+    total_mutants = 0
+    
+    for data in parsed_data:
+        if len(data.original_execution_data.unvisited_locations) > 0:
+            total_functions_with_bb_reduction += 1
+        total_bb_reduction += len(data.original_execution_data.unvisited_locations)
+        
+        if data.original_execution_data.unvisited_candidates_count > 0:
+            total_functions_with_candidate_reduction += 1
+        total_candidate_reduction += data.original_execution_data.unvisited_candidates_count
+        
+        if data.original_execution_data.untested_mutations_count > 0:
+            total_functions_with_mutations_reduction += 1
+        total_mutation_reduction += data.original_execution_data.untested_mutations_count
+        total_mutants += data.original_execution_data.tested_mutations_count
+        
+    print(f"{total_functions_with_bb_reduction} functions had BB reduction, with a total of {total_bb_reduction} BB reduction")
+    print(f"{total_functions_with_candidate_reduction} functions had candidate reduction, with a total of {total_candidate_reduction} candidate reduction")
+    print(f"{total_functions_with_mutations_reduction} functions had mutation reduction, with a total of {total_mutation_reduction} mutant reduction")
+    print(f"{total_mutants}")
 
-# for mutation_location in data.mutation_locations_data:
-#     if mutation_location.id in weights:
-#         weight = weights[mutation_location.id]
-#         print(f"  {mutation_location.id} -> {mutation_location.sampled_mutation_score_str(weight)}")
-
+# Mutation scores
 if False:
     points = list()
     for data in parsed_data:
@@ -401,7 +443,8 @@ if False:
         # points.append("%.2f" % round(data.path_based_mutation_score, 2))
     print(", ".join(points))
 
-if True:
+# For generating the LaTex Table
+if False:
     for data in parsed_data:
         counter += 1
 
